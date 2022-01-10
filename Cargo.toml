@@ -1,0 +1,26 @@
+[package]
+name = "units"
+version = "0.1.0"
+edition = "2018"
+authors = ["Mark Timmings <mark.timmings@putridparrot.com>"]
+license = "MIT"
+description = "Various units of measurement conversions"
+
+documentation = "https://github.com/putridparrot/RustUnits"
+homepage = "https://github.com/putridparrot/RustUnits"
+repository = "https://github.com/putridparrot/RustUnits"
+readme = "README.md"
+
+keywords = [
+    "units",
+    "measurement",
+    "conversions"
+]
+
+[lib]
+name = "units"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dev-dependencies]
+assert_approx_eq = "1.1.0"
