@@ -22,6 +22,7 @@ The main aim for this project is to produce conversion functions for the various
 Example of usage:
 
 ```
+let radians: f64 = angle::degrees::to_radians(8000.0);
 ```
 
 Each unit of measure then includes functions to convert to each for example, converting each Temperature unit of measure to each other Temperature.
