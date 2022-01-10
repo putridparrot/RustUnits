@@ -4,7 +4,7 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-///Data Transfer Rate conversion functions
+/// Data Transfer Rate conversion functions
 pub mod data_transfer_rate {
 	/// Bits Per Second conversion functions
 	pub mod bits_per_second {
@@ -699,4 +699,2321 @@ pub mod data_transfer_rate {
 			return value / 0.000000131072;
 		}
 	}
+}
+
+#[cfg(test)]
+mod tests {
+	use super::*;
+	use assert_approx_eq::assert_approx_eq;
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_kilo_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_kilo_bits_per_second(100.0);
+		assert_approx_eq!(0.1, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_kilo_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_kilo_bits_per_second(6021.0);
+		assert_approx_eq!(6.021, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_kilo_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_kilo_bits_per_second(9100.0);
+		assert_approx_eq!(9.1, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_mega_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_mega_bits_per_second(9000000.0);
+		assert_approx_eq!(9.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_mega_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_mega_bits_per_second(123456.0);
+		assert_approx_eq!(0.123456, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_mega_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_mega_bits_per_second(1900000.0);
+		assert_approx_eq!(1.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_giga_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_giga_bits_per_second(190000000.0);
+		assert_approx_eq!(0.19, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_giga_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_giga_bits_per_second(8009.0);
+		assert_approx_eq!(8.009e-6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_giga_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_giga_bits_per_second(987654321.0);
+		assert_approx_eq!(0.987654321, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_tera_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_tera_bits_per_second(987654321234.0);
+		assert_approx_eq!(0.987654321234, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_tera_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_tera_bits_per_second(1234567890123456.0);
+		assert_approx_eq!(1234.567890123455982, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_tera_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_tera_bits_per_second(999888777666555.0);
+		assert_approx_eq!(999.888777666555029, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_kilo_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_kilo_bytes_per_second(900.0);
+		assert_approx_eq!(0.1125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_kilo_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_kilo_bytes_per_second(12345.0);
+		assert_approx_eq!(1.543125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_kilo_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_kilo_bytes_per_second(6000.9);
+		assert_approx_eq!(0.7501125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_mega_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_mega_bytes_per_second(123456.0);
+		assert_approx_eq!(0.015432, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_mega_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_mega_bytes_per_second(900800.0);
+		assert_approx_eq!(0.1126, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_mega_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_mega_bytes_per_second(999888777.0);
+		assert_approx_eq!(124.986097125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_giga_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_giga_bytes_per_second(999888777.0);
+		assert_approx_eq!(0.124986097125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_giga_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_giga_bytes_per_second(1.9e+9);
+		assert_approx_eq!(0.2375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_giga_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_giga_bytes_per_second(80090077.0);
+		assert_approx_eq!(0.010011259625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_tera_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_tera_bytes_per_second(999888777666.0);
+		assert_approx_eq!(0.12498609720825, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_tera_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_tera_bytes_per_second(12345678912345.0);
+		assert_approx_eq!(1.5432098640431251, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_tera_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_tera_bytes_per_second(111999222888333.0);
+		assert_approx_eq!(13.9999028610416243, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_kibibits_per_second_1() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_kibibits_per_second(1800.0);
+		assert_approx_eq!(1.757813, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_kibibits_per_second_2() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_kibibits_per_second(888.0);
+		assert_approx_eq!(0.867188, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_kibibits_per_second_3() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_kibibits_per_second(7687.0);
+		assert_approx_eq!(7.506836, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_mebibits_per_second_1() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_mebibits_per_second(999888.0);
+		assert_approx_eq!(0.953567505, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_mebibits_per_second_2() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_mebibits_per_second(1234567.0);
+		assert_approx_eq!(1.17737484, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbits_per_second_to_mebibits_per_second_3() {
+		let result: f64 = data_transfer_rate::bits_per_second::to_mebibits_per_second(900800.0);
+		assert_approx_eq!(0.859069824, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_bits_per_second(0.0009);
+		assert_approx_eq!(900000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_bits_per_second(0.00007);
+		assert_approx_eq!(70000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_bits_per_second(1.2e-5);
+		assert_approx_eq!(12000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_kilo_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_kilo_bits_per_second(0.01);
+		assert_approx_eq!(10000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_kilo_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_kilo_bits_per_second(0.91);
+		assert_approx_eq!(910000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_kilo_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_kilo_bits_per_second(6.1);
+		assert_approx_eq!(6.1e+6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_mega_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mega_bits_per_second(6.1);
+		assert_approx_eq!(6100.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_mega_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mega_bits_per_second(0.961);
+		assert_approx_eq!(961.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_mega_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mega_bits_per_second(1.2e-3);
+		assert_approx_eq!(1.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_tera_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_tera_bits_per_second(1200.0);
+		assert_approx_eq!(1.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_tera_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_tera_bits_per_second(90012.0);
+		assert_approx_eq!(90.012, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_tera_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_tera_bits_per_second(8000.0);
+		assert_approx_eq!(8.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_kilo_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_kilo_bytes_per_second(1.2);
+		assert_approx_eq!(150000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_kilo_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_kilo_bytes_per_second(0.9);
+		assert_approx_eq!(112500.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_kilo_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_kilo_bytes_per_second(0.001);
+		assert_approx_eq!(125.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_mega_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mega_bytes_per_second(0.9);
+		assert_approx_eq!(112.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_mega_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mega_bytes_per_second(1.2);
+		assert_approx_eq!(150.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_mega_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mega_bytes_per_second(80.1);
+		assert_approx_eq!(10012.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_giga_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_giga_bytes_per_second(99.0);
+		assert_approx_eq!(12.375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_giga_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_giga_bytes_per_second(123.123);
+		assert_approx_eq!(15.390375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_giga_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_giga_bytes_per_second(8000.9);
+		assert_approx_eq!(1000.1125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_tera_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_tera_bytes_per_second(9000.0);
+		assert_approx_eq!(1.125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_tera_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_tera_bytes_per_second(1234567.0);
+		assert_approx_eq!(154.320875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_tera_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_tera_bytes_per_second(613.0);
+		assert_approx_eq!(0.076625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_kibibits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_kibibits_per_second(0.8);
+		assert_approx_eq!(781250.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_kibibits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_kibibits_per_second(0.012);
+		assert_approx_eq!(11718.75, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_kibibits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_kibibits_per_second(0.002);
+		assert_approx_eq!(1953.125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_mebibits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mebibits_per_second(0.002);
+		assert_approx_eq!(1.9073486, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_mebibits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mebibits_per_second(0.9);
+		assert_approx_eq!(858.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bits_per_second_to_mebibits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mebibits_per_second(6.1);
+		assert_approx_eq!(5819.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_bits_per_second(0.004);
+		assert_approx_eq!(32000000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_bits_per_second(0.012);
+		assert_approx_eq!(96000000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_bits_per_second(3e-9);
+		assert_approx_eq!(24.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_kilo_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_kilo_bits_per_second(0.009);
+		assert_approx_eq!(72000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_kilo_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_kilo_bits_per_second(1.2e-4);
+		assert_approx_eq!(960.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_kilo_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_kilo_bits_per_second(0.0078);
+		assert_approx_eq!(62400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_mega_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_mega_bits_per_second(0.0078);
+		assert_approx_eq!(62.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_mega_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_mega_bits_per_second(0.01);
+		assert_approx_eq!(80.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_mega_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_mega_bits_per_second(0.001234);
+		assert_approx_eq!(9.872, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_giga_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_giga_bits_per_second(5.0);
+		assert_approx_eq!(40.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_giga_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_giga_bits_per_second(1.2);
+		assert_approx_eq!(9.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_giga_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_giga_bits_per_second(0.01);
+		assert_approx_eq!(0.08, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_tera_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_tera_bits_per_second(70.0);
+		assert_approx_eq!(0.56, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_tera_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_tera_bits_per_second(9001.0);
+		assert_approx_eq!(72.008, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_tera_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_tera_bits_per_second(768123.9);
+		assert_approx_eq!(6144.9912, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_kilo_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_kilo_bytes_per_second(0.2);
+		assert_approx_eq!(200000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_kilo_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_kilo_bytes_per_second(0.009);
+		assert_approx_eq!(9000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_kilo_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_kilo_bytes_per_second(0.00123);
+		assert_approx_eq!(1230.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_mega_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_mega_bytes_per_second(0.9);
+		assert_approx_eq!(900.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_mega_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_mega_bytes_per_second(12.0);
+		assert_approx_eq!(12000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_mega_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_mega_bytes_per_second(35.6);
+		assert_approx_eq!(35600.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_tera_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_tera_bytes_per_second(35.6);
+		assert_approx_eq!(0.0356, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_tera_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_tera_bytes_per_second(100.23);
+		assert_approx_eq!(0.10023, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_tera_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_tera_bytes_per_second(900100.0);
+		assert_approx_eq!(900.1, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_kibibits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_kibibits_per_second(0.05);
+		assert_approx_eq!(390625.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_kibibits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_kibibits_per_second(0.008);
+		assert_approx_eq!(62500.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_kibibits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_kibibits_per_second(0.00123);
+		assert_approx_eq!(9609.375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_mebibits_per_second_1() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_mebibits_per_second(0.009);
+		assert_approx_eq!(68.66451, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_mebibits_per_second_2() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_mebibits_per_second(1.2);
+		assert_approx_eq!(9155.268, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngiga_bytes_per_second_to_mebibits_per_second_3() {
+		let result: f64 = data_transfer_rate::giga_bytes_per_second::to_mebibits_per_second(19.2);
+		assert_approx_eq!(146484.288, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_bits_per_second(2.0);
+		assert_approx_eq!(2048.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_bits_per_second(9.0);
+		assert_approx_eq!(9216.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_bits_per_second(17.8);
+		assert_approx_eq!(18227.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_kilo_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_kilo_bits_per_second(6.2);
+		assert_approx_eq!(6.3488, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_kilo_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_kilo_bits_per_second(0.9);
+		assert_approx_eq!(0.9216, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_kilo_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_kilo_bits_per_second(87.0);
+		assert_approx_eq!(89.088, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_mega_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_mega_bits_per_second(87.0);
+		assert_approx_eq!(0.089088, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_mega_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_mega_bits_per_second(12.34);
+		assert_approx_eq!(0.01263616, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_mega_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_mega_bits_per_second(123456.0);
+		assert_approx_eq!(126.418879, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_giga_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_giga_bits_per_second(123456.0);
+		assert_approx_eq!(0.126418944, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_giga_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_giga_bits_per_second(8000000.0);
+		assert_approx_eq!(8.192, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_giga_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_giga_bits_per_second(1276876.0);
+		assert_approx_eq!(1.307521024, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_tera_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_tera_bits_per_second(800000000.0);
+		assert_approx_eq!(0.8192, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_tera_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_tera_bits_per_second(1.5e12);
+		assert_approx_eq!(1536.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_tera_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_tera_bits_per_second(9999999.0);
+		assert_approx_eq!(0.01023999898, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_kilo_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_kilo_bytes_per_second(919.0);
+		assert_approx_eq!(117.632, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_kilo_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_kilo_bytes_per_second(77.4);
+		assert_approx_eq!(9.9072, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_kilo_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_kilo_bytes_per_second(109.109);
+		assert_approx_eq!(13.965952, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_mega_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_mega_bytes_per_second(1000.0);
+		assert_approx_eq!(0.128, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_mega_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_mega_bytes_per_second(800.123);
+		assert_approx_eq!(0.102415744, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_mega_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_mega_bytes_per_second(123456.0);
+		assert_approx_eq!(15.802368, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_giga_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_giga_bytes_per_second(12345678.0);
+		assert_approx_eq!(1.580347926, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_giga_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_giga_bytes_per_second(8e12);
+		assert_approx_eq!(1024000.00, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_giga_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_giga_bytes_per_second(1.2e5);
+		assert_approx_eq!(0.01536, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_tera_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_tera_bytes_per_second(120000000.0);
+		assert_approx_eq!(0.01536, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_tera_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_tera_bytes_per_second(88e12);
+		assert_approx_eq!(11264.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_tera_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_tera_bytes_per_second(9000000.0);
+		assert_approx_eq!(0.009216, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_mebibits_per_second_1() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_mebibits_per_second(600.0);
+		assert_approx_eq!(0.5859375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_mebibits_per_second_2() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_mebibits_per_second(12345.0);
+		assert_approx_eq!(12.055664, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkibibits_per_second_to_mebibits_per_second_3() {
+		let result: f64 = data_transfer_rate::kibibits_per_second::to_mebibits_per_second(101.0);
+		assert_approx_eq!(0.0986328, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_bits_per_second(9.0);
+		assert_approx_eq!(9000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_bits_per_second(6.7);
+		assert_approx_eq!(6700.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_bits_per_second(1.2345);
+		assert_approx_eq!(1234.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_mega_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_mega_bits_per_second(900.0);
+		assert_approx_eq!(0.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_mega_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_mega_bits_per_second(12345.0);
+		assert_approx_eq!(12.345, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_mega_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_mega_bits_per_second(9988.0);
+		assert_approx_eq!(9.988, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_giga_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_giga_bits_per_second(123456.0);
+		assert_approx_eq!(0.123456, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_giga_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_giga_bits_per_second(8000700.0);
+		assert_approx_eq!(8.0007, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_giga_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_giga_bits_per_second(191987578.0);
+		assert_approx_eq!(191.987578, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_tera_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_tera_bits_per_second(191987578.0);
+		assert_approx_eq!(0.191987578, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_tera_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_tera_bits_per_second(9010081903.0);
+		assert_approx_eq!(9.010081903, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_tera_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_tera_bits_per_second(123456789.0);
+		assert_approx_eq!(0.123456789, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_kilo_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_kilo_bytes_per_second(80.0);
+		assert_approx_eq!(10.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_kilo_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_kilo_bytes_per_second(15.67);
+		assert_approx_eq!(1.95875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_kilo_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_kilo_bytes_per_second(8007.09);
+		assert_approx_eq!(1000.88625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_mega_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_mega_bytes_per_second(123456.0);
+		assert_approx_eq!(15.432, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_mega_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_mega_bytes_per_second(998877.0);
+		assert_approx_eq!(124.859625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_mega_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_mega_bytes_per_second(10090.0);
+		assert_approx_eq!(1.26125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_giga_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_giga_bytes_per_second(1828972.0);
+		assert_approx_eq!(0.2286215, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_giga_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_giga_bytes_per_second(879860.8);
+		assert_approx_eq!(0.1099826, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_giga_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_giga_bytes_per_second(78178971.0);
+		assert_approx_eq!(9.772371375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_tera_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_tera_bytes_per_second(1234567891.0);
+		assert_approx_eq!(0.154320986375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_tera_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_tera_bytes_per_second(999999098.0);
+		assert_approx_eq!(0.12499988725, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_tera_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_tera_bytes_per_second(84618364142.0);
+		assert_approx_eq!(10.57729551775, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_kibibits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_kibibits_per_second(89.1);
+		assert_approx_eq!(87.01172, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_kibibits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_kibibits_per_second(7.1);
+		assert_approx_eq!(6.93359, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_kibibits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_kibibits_per_second(438.0);
+		assert_approx_eq!(427.734, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_mebibits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_mebibits_per_second(77790.0);
+		assert_approx_eq!(74.186325, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_mebibits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_mebibits_per_second(123456.0);
+		assert_approx_eq!(117.736816, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bits_per_second_to_mebibits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bits_per_second::to_mebibits_per_second(23972.0);
+		assert_approx_eq!(22.861481, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_bits_per_second(123.456);
+		assert_approx_eq!(987648.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_bits_per_second(900.0);
+		assert_approx_eq!(7.2e+6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_bits_per_second(100200.0);
+		assert_approx_eq!(801600000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_kilo_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_kilo_bits_per_second(4.0);
+		assert_approx_eq!(32.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_kilo_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_kilo_bits_per_second(1.2);
+		assert_approx_eq!(9.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_kilo_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_kilo_bits_per_second(88.1);
+		assert_approx_eq!(704.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_mega_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_mega_bits_per_second(88.1);
+		assert_approx_eq!(0.7048, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_mega_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_mega_bits_per_second(7.1);
+		assert_approx_eq!(0.0568, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_mega_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_mega_bits_per_second(12.8);
+		assert_approx_eq!(0.1024, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_giga_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_giga_bits_per_second(10080.0);
+		assert_approx_eq!(0.08064, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_giga_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_giga_bits_per_second(4.5e+9);
+		assert_approx_eq!(36000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_giga_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_giga_bits_per_second(271279.0);
+		assert_approx_eq!(2.170232, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_tera_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_tera_bits_per_second(9009000.0);
+		assert_approx_eq!(0.072072, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_tera_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_tera_bits_per_second(7.2e9);
+		assert_approx_eq!(57.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_tera_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_tera_bits_per_second(100100100900.0);
+		assert_approx_eq!(800.8008072, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_mega_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_mega_bytes_per_second(1009.0);
+		assert_approx_eq!(1.009, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_mega_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_mega_bytes_per_second(8899.0);
+		assert_approx_eq!(8.899, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_mega_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_mega_bytes_per_second(619.0);
+		assert_approx_eq!(0.619, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_giga_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_giga_bytes_per_second(900800.0);
+		assert_approx_eq!(0.9008, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_giga_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_giga_bytes_per_second(1234567.0);
+		assert_approx_eq!(1.234567, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_giga_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_giga_bytes_per_second(7.9e9);
+		assert_approx_eq!(7900.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_tera_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_tera_bytes_per_second(0.9);
+		assert_approx_eq!(9e-10, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_tera_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_tera_bytes_per_second(140000000.0);
+		assert_approx_eq!(0.14, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_tera_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_tera_bytes_per_second(7.0);
+		assert_approx_eq!(7e-9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_kibibits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_kibibits_per_second(0.009);
+		assert_approx_eq!(0.0703125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_kibibits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_kibibits_per_second(6e+3);
+		assert_approx_eq!(46872.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_kibibits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_kibibits_per_second(1.23);
+		assert_approx_eq!(9.609375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_mebibits_per_second_1() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_mebibits_per_second(70.0);
+		assert_approx_eq!(0.534058, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_mebibits_per_second_2() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_mebibits_per_second(9.0);
+		assert_approx_eq!(0.0686646, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilo_bytes_per_second_to_mebibits_per_second_3() {
+		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_mebibits_per_second(10022.0);
+		assert_approx_eq!(76.461792, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_bits_per_second(0.9);
+		assert_approx_eq!(943718.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_bits_per_second(0.006);
+		assert_approx_eq!(6291.456, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_bits_per_second(2.0);
+		assert_approx_eq!(2097152.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_kilo_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_kilo_bits_per_second(0.8);
+		assert_approx_eq!(838.861, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_kilo_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_kilo_bits_per_second(2.0);
+		assert_approx_eq!(2097.15, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_kilo_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_kilo_bits_per_second(0.23);
+		assert_approx_eq!(241.1725, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_mega_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_mega_bits_per_second(0.9);
+		assert_approx_eq!(0.943718, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_mega_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_mega_bits_per_second(12.3);
+		assert_approx_eq!(12.89748, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_mega_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_mega_bits_per_second(8.1);
+		assert_approx_eq!(8.49347, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_giga_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_giga_bits_per_second(12345.0);
+		assert_approx_eq!(12.944671, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_giga_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_giga_bits_per_second(100.0);
+		assert_approx_eq!(0.104858, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_giga_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_giga_bits_per_second(999.9);
+		assert_approx_eq!(1.0484711, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_tera_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_tera_bits_per_second(100009.0);
+		assert_approx_eq!(0.104867037, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_tera_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_tera_bits_per_second(9876543.0);
+		assert_approx_eq!(10.35630595, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_tera_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_tera_bits_per_second(1000900.0);
+		assert_approx_eq!(1.049519718, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_kilo_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_kilo_bytes_per_second(4.0);
+		assert_approx_eq!(524.288, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_kilo_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_kilo_bytes_per_second(1.45);
+		assert_approx_eq!(190.0544, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_kilo_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_kilo_bytes_per_second(88.11);
+		assert_approx_eq!(11548.754, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_mega_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_mega_bytes_per_second(109.0);
+		assert_approx_eq!(14.2868, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_mega_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_mega_bytes_per_second(55.67);
+		assert_approx_eq!(7.2967782, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_mega_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_mega_bytes_per_second(45678.0);
+		assert_approx_eq!(5987.1068, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_giga_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_giga_bytes_per_second(4000.0);
+		assert_approx_eq!(0.524288311, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_giga_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_giga_bytes_per_second(90100.0);
+		assert_approx_eq!(11.80959421, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_giga_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_giga_bytes_per_second(1009.0);
+		assert_approx_eq!(0.132251727, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_tera_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_tera_bytes_per_second(1000009.0);
+		assert_approx_eq!(0.1310731796, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_tera_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_tera_bytes_per_second(90808080.0);
+		assert_approx_eq!(11.902396662, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_tera_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_tera_bytes_per_second(5.2e12);
+		assert_approx_eq!(681574.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_kibibits_per_second_1() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_kibibits_per_second(5.0);
+		assert_approx_eq!(5120.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_kibibits_per_second_2() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_kibibits_per_second(1234.56);
+		assert_approx_eq!(1264189.44, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmebibits_per_second_to_kibibits_per_second_3() {
+		let result: f64 = data_transfer_rate::mebibits_per_second::to_kibibits_per_second(505.0);
+		assert_approx_eq!(517120.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_bits_per_second(0.34);
+		assert_approx_eq!(340000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_bits_per_second(9.12);
+		assert_approx_eq!(9120000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_bits_per_second(0.987);
+		assert_approx_eq!(987000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_kilo_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_kilo_bits_per_second(0.77);
+		assert_approx_eq!(770.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_kilo_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_kilo_bits_per_second(5.0);
+		assert_approx_eq!(5000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_kilo_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_kilo_bits_per_second(0.987);
+		assert_approx_eq!(987.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_giga_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_giga_bits_per_second(900.0);
+		assert_approx_eq!(0.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_giga_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_giga_bits_per_second(12345.0);
+		assert_approx_eq!(12.345, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_giga_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_giga_bits_per_second(189.1);
+		assert_approx_eq!(0.1891, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_tera_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_tera_bits_per_second(100200300.0);
+		assert_approx_eq!(100.2003, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_tera_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_tera_bits_per_second(99887777.0);
+		assert_approx_eq!(99.887777, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_tera_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_tera_bits_per_second(80009.0);
+		assert_approx_eq!(0.080009, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_kilo_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_kilo_bytes_per_second(9.0);
+		assert_approx_eq!(1125.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_kilo_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_kilo_bytes_per_second(1.23);
+		assert_approx_eq!(153.75, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_kilo_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_kilo_bytes_per_second(98.1);
+		assert_approx_eq!(12262.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_mega_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_mega_bytes_per_second(98.1);
+		assert_approx_eq!(12.2625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_mega_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_mega_bytes_per_second(10.9);
+		assert_approx_eq!(1.3625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_mega_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_mega_bytes_per_second(888.123);
+		assert_approx_eq!(111.015375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_giga_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_giga_bytes_per_second(900.0);
+		assert_approx_eq!(0.1125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_giga_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_giga_bytes_per_second(10123.0);
+		assert_approx_eq!(1.265375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_giga_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_giga_bytes_per_second(9988.0);
+		assert_approx_eq!(1.2485, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_tera_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_tera_bytes_per_second(998877.0);
+		assert_approx_eq!(0.124859625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_tera_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_tera_bytes_per_second(100200400.0);
+		assert_approx_eq!(12.5250375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_tera_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_tera_bytes_per_second(9008877.0);
+		assert_approx_eq!(1.126109625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_kibibits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_kibibits_per_second(12.0);
+		assert_approx_eq!(11718.756, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_kibibits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_kibibits_per_second(0.9);
+		assert_approx_eq!(878.906, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_kibibits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_kibibits_per_second(1.23);
+		assert_approx_eq!(1201.172, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_mebibits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_mebibits_per_second(4.5);
+		assert_approx_eq!(4.29153, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_mebibits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_mebibits_per_second(0.8);
+		assert_approx_eq!(0.762939, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bits_per_second_to_mebibits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bits_per_second::to_mebibits_per_second(900.0);
+		assert_approx_eq!(858.307, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_bits_per_second(0.04);
+		assert_approx_eq!(320000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_bits_per_second(0.0091);
+		assert_approx_eq!(72800.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_bits_per_second(3e-5);
+		assert_approx_eq!(240.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_kilo_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_kilo_bits_per_second(6.0);
+		assert_approx_eq!(48000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_kilo_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_kilo_bits_per_second(0.3);
+		assert_approx_eq!(2400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_kilo_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_kilo_bits_per_second(0.009);
+		assert_approx_eq!(72.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_mega_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_mega_bits_per_second(3.0);
+		assert_approx_eq!(24.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_mega_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_mega_bits_per_second(0.9);
+		assert_approx_eq!(7.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_mega_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_mega_bits_per_second(13.0);
+		assert_approx_eq!(104.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_giga_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_giga_bits_per_second(13.0);
+		assert_approx_eq!(0.104, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_giga_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_giga_bits_per_second(900.0);
+		assert_approx_eq!(7.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_giga_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_giga_bits_per_second(18000.0);
+		assert_approx_eq!(144.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_tera_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_tera_bits_per_second(18000.0);
+		assert_approx_eq!(0.144, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_tera_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_tera_bits_per_second(9718290.0);
+		assert_approx_eq!(77.74632, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_tera_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_tera_bits_per_second(9e12);
+		assert_approx_eq!(72000000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_kilo_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_kilo_bytes_per_second(6.0);
+		assert_approx_eq!(6000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_kilo_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_kilo_bytes_per_second(0.9);
+		assert_approx_eq!(900.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_kilo_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_kilo_bytes_per_second(123.4);
+		assert_approx_eq!(123400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_giga_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_giga_bytes_per_second(123.4);
+		assert_approx_eq!(0.1234, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_giga_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_giga_bytes_per_second(900.0);
+		assert_approx_eq!(0.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_giga_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_giga_bytes_per_second(8e6);
+		assert_approx_eq!(8000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_tera_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_tera_bytes_per_second(80000.0);
+		assert_approx_eq!(0.08, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_tera_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_tera_bytes_per_second(12345678.0);
+		assert_approx_eq!(12.345678, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_tera_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_tera_bytes_per_second(900800.0);
+		assert_approx_eq!(0.9008, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_kibibits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_kibibits_per_second(6.0);
+		assert_approx_eq!(46875.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_kibibits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_kibibits_per_second(0.9);
+		assert_approx_eq!(7031.25, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_kibibits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_kibibits_per_second(0.03);
+		assert_approx_eq!(234.375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_mebibits_per_second_1() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_mebibits_per_second(0.03);
+		assert_approx_eq!(0.2288818, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_mebibits_per_second_2() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_mebibits_per_second(4.5);
+		assert_approx_eq!(34.3323, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmega_bytes_per_second_to_mebibits_per_second_3() {
+		let result: f64 = data_transfer_rate::mega_bytes_per_second::to_mebibits_per_second(80.1);
+		assert_approx_eq!(611.1145, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_bits_per_second(0.0007);
+		assert_approx_eq!(700000000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_bits_per_second(1.23e-6);
+		assert_approx_eq!(1230000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_bits_per_second(0.00098);
+		assert_approx_eq!(980000000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_kilo_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_kilo_bits_per_second(0.001);
+		assert_approx_eq!(1000000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_kilo_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_kilo_bits_per_second(6.1e-6);
+		assert_approx_eq!(6100.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_kilo_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_kilo_bits_per_second(0.00009);
+		assert_approx_eq!(90000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_mega_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_mega_bits_per_second(0.09);
+		assert_approx_eq!(90000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_mega_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_mega_bits_per_second(3.5e-4);
+		assert_approx_eq!(350.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_mega_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_mega_bits_per_second(0.0123);
+		assert_approx_eq!(12300.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_giga_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_giga_bits_per_second(0.9);
+		assert_approx_eq!(900.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_giga_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_giga_bits_per_second(1.45);
+		assert_approx_eq!(1450.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_giga_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_giga_bits_per_second(8.19);
+		assert_approx_eq!(8190.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_kilo_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_kilo_bytes_per_second(0.0009);
+		assert_approx_eq!(112500.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_kilo_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_kilo_bytes_per_second(3.14e-6);
+		assert_approx_eq!(392.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_kilo_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_kilo_bytes_per_second(0.001);
+		assert_approx_eq!(125000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_mega_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_mega_bytes_per_second(0.4);
+		assert_approx_eq!(50000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_mega_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_mega_bytes_per_second(3.9e-3);
+		assert_approx_eq!(487.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_mega_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_mega_bytes_per_second(0.007);
+		assert_approx_eq!(875.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_giga_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_giga_bytes_per_second(0.009);
+		assert_approx_eq!(1.125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_giga_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_giga_bytes_per_second(0.00123);
+		assert_approx_eq!(0.15375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_giga_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_giga_bytes_per_second(8.1e-3);
+		assert_approx_eq!(1.0125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_tera_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_tera_bytes_per_second(0.3);
+		assert_approx_eq!(0.0375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_tera_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_tera_bytes_per_second(14.0);
+		assert_approx_eq!(1.75, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_tera_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_tera_bytes_per_second(0.8);
+		assert_approx_eq!(0.1, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_kibibits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_kibibits_per_second(0.0009);
+		assert_approx_eq!(878906.25, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_kibibits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_kibibits_per_second(6.1e-6);
+		assert_approx_eq!(5957.031, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_kibibits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_kibibits_per_second(12e-9);
+		assert_approx_eq!(11.71875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_mebibits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_mebibits_per_second(0.9);
+		assert_approx_eq!(858306.59999, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_mebibits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_mebibits_per_second(4.6e-3);
+		assert_approx_eq!(4386.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bits_per_second_to_mebibits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bits_per_second::to_mebibits_per_second(0.00123);
+		assert_approx_eq!(1173.0194092, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_bits_per_second(0.00008);
+		assert_approx_eq!(640000000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_bits_per_second(1.2e-12);
+		assert_approx_eq!(9.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_bits_per_second(9.0);
+		assert_approx_eq!(7.2e+13, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_kilo_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_kilo_bits_per_second(0.009);
+		assert_approx_eq!(72000000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_kilo_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_kilo_bits_per_second(1.4e-6);
+		assert_approx_eq!(11200.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_kilo_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_kilo_bits_per_second(6.1e-5);
+		assert_approx_eq!(488000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_mega_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_mega_bits_per_second(0.005);
+		assert_approx_eq!(40000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_mega_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_mega_bits_per_second(0.000123);
+		assert_approx_eq!(984.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_mega_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_mega_bits_per_second(0.00006);
+		assert_approx_eq!(480.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_giga_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_giga_bits_per_second(0.008);
+		assert_approx_eq!(64.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_giga_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_giga_bits_per_second(3e-7);
+		assert_approx_eq!(0.0024, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_giga_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_giga_bits_per_second(0.00023);
+		assert_approx_eq!(1.84, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_tera_bits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_tera_bits_per_second(5.0);
+		assert_approx_eq!(40.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_tera_bits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_tera_bits_per_second(1.23);
+		assert_approx_eq!(9.84, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_tera_bits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_tera_bits_per_second(800.0);
+		assert_approx_eq!(6400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_kilo_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_kilo_bytes_per_second(0.0009);
+		assert_approx_eq!(900000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_kilo_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_kilo_bytes_per_second(3.14e-7);
+		assert_approx_eq!(314.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_kilo_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_kilo_bytes_per_second(0.00063);
+		assert_approx_eq!(630000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_mega_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_mega_bytes_per_second(0.009);
+		assert_approx_eq!(9000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_mega_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_mega_bytes_per_second(0.234);
+		assert_approx_eq!(234000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_mega_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_mega_bytes_per_second(2.0);
+		assert_approx_eq!(2e+6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_giga_bytes_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_giga_bytes_per_second(2.7);
+		assert_approx_eq!(2700.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_giga_bytes_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_giga_bytes_per_second(0.9);
+		assert_approx_eq!(900.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_giga_bytes_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_giga_bytes_per_second(0.0123);
+		assert_approx_eq!(12.3, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_kibibits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_kibibits_per_second(0.0009);
+		assert_approx_eq!(7031250.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_kibibits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_kibibits_per_second(1.23e-5);
+		assert_approx_eq!(96093.75, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_kibibits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_kibibits_per_second(0.0001);
+		assert_approx_eq!(781250.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_mebibits_per_second_1() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_mebibits_per_second(0.01);
+		assert_approx_eq!(76293.95, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_mebibits_per_second_2() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_mebibits_per_second(0.008);
+		assert_approx_eq!(61035.156, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntera_bytes_per_second_to_mebibits_per_second_3() {
+		let result: f64 = data_transfer_rate::tera_bytes_per_second::to_mebibits_per_second(2.0);
+		assert_approx_eq!(15258789.0625, result, 0.01);
+	}
+
 }

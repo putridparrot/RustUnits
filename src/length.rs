@@ -4,7 +4,7 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-///Length conversion functions
+/// Length conversion functions
 pub mod length {
 	/// Centimetres conversion functions
 	pub mod centimetres {
@@ -465,4 +465,1523 @@ pub mod length {
 			return value / 2025.37;
 		}
 	}
+}
+
+#[cfg(test)]
+mod tests {
+	use super::*;
+	use assert_approx_eq::assert_approx_eq;
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_millimetres_1() {
+		let result: f64 = length::centimetres::to_millimetres(900.0);
+		assert_approx_eq!(9000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_millimetres_2() {
+		let result: f64 = length::centimetres::to_millimetres(34.9);
+		assert_approx_eq!(349.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_millimetres_3() {
+		let result: f64 = length::centimetres::to_millimetres(2.0);
+		assert_approx_eq!(20.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_metres_1() {
+		let result: f64 = length::centimetres::to_metres(13.0);
+		assert_approx_eq!(0.13, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_metres_2() {
+		let result: f64 = length::centimetres::to_metres(3900.0);
+		assert_approx_eq!(39.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_metres_3() {
+		let result: f64 = length::centimetres::to_metres(1.0);
+		assert_approx_eq!(0.01, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_kilometres_1() {
+		let result: f64 = length::centimetres::to_kilometres(123456.0);
+		assert_approx_eq!(1.23456, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_kilometres_2() {
+		let result: f64 = length::centimetres::to_kilometres(8900.0);
+		assert_approx_eq!(0.089, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_kilometres_3() {
+		let result: f64 = length::centimetres::to_kilometres(6009000.0);
+		assert_approx_eq!(60.09, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_inches_1() {
+		let result: f64 = length::centimetres::to_inches(600.0);
+		assert_approx_eq!(236.22, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_inches_2() {
+		let result: f64 = length::centimetres::to_inches(12.0);
+		assert_approx_eq!(4.72441, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_inches_3() {
+		let result: f64 = length::centimetres::to_inches(7.8);
+		assert_approx_eq!(3.07087, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_feet_1() {
+		let result: f64 = length::centimetres::to_feet(12.3);
+		assert_approx_eq!(0.4035433, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_feet_2() {
+		let result: f64 = length::centimetres::to_feet(89.0);
+		assert_approx_eq!(2.91995, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_feet_3() {
+		let result: f64 = length::centimetres::to_feet(0.7);
+		assert_approx_eq!(0.0229659, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_yards_1() {
+		let result: f64 = length::centimetres::to_yards(700.0);
+		assert_approx_eq!(7.65529, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_yards_2() {
+		let result: f64 = length::centimetres::to_yards(56.3);
+		assert_approx_eq!(0.6157043, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_yards_3() {
+		let result: f64 = length::centimetres::to_yards(8.0);
+		assert_approx_eq!(0.0874891, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_miles_1() {
+		let result: f64 = length::centimetres::to_miles(80000.0);
+		assert_approx_eq!(0.49709695, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_miles_2() {
+		let result: f64 = length::centimetres::to_miles(123456.0);
+		assert_approx_eq!(0.767120019, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_miles_3() {
+		let result: f64 = length::centimetres::to_miles(90909090.0);
+		assert_approx_eq!(564.88289639, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_nautical_miles_1() {
+		let result: f64 = length::centimetres::to_nautical_miles(30000.0);
+		assert_approx_eq!(0.16198704, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_nautical_miles_2() {
+		let result: f64 = length::centimetres::to_nautical_miles(987654.0);
+		assert_approx_eq!(5.33290497, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncentimetres_to_nautical_miles_3() {
+		let result: f64 = length::centimetres::to_nautical_miles(100200.0);
+		assert_approx_eq!(0.541036717, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_millimetres_1() {
+		let result: f64 = length::feet::to_millimetres(0.3);
+		assert_approx_eq!(91.44, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_millimetres_2() {
+		let result: f64 = length::feet::to_millimetres(2.0);
+		assert_approx_eq!(609.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_millimetres_3() {
+		let result: f64 = length::feet::to_millimetres(0.06);
+		assert_approx_eq!(18.288, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_centimetres_1() {
+		let result: f64 = length::feet::to_centimetres(0.07);
+		assert_approx_eq!(2.1336, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_centimetres_2() {
+		let result: f64 = length::feet::to_centimetres(3.5);
+		assert_approx_eq!(106.68, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_centimetres_3() {
+		let result: f64 = length::feet::to_centimetres(89.0);
+		assert_approx_eq!(2712.72, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_metres_1() {
+		let result: f64 = length::feet::to_metres(900.0);
+		assert_approx_eq!(274.32, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_metres_2() {
+		let result: f64 = length::feet::to_metres(1.2);
+		assert_approx_eq!(0.36576, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_metres_3() {
+		let result: f64 = length::feet::to_metres(0.8);
+		assert_approx_eq!(0.24384, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_kilometres_1() {
+		let result: f64 = length::feet::to_kilometres(1999.0);
+		assert_approx_eq!(0.6092952, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_kilometres_2() {
+		let result: f64 = length::feet::to_kilometres(123456.0);
+		assert_approx_eq!(37.6293888, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_kilometres_3() {
+		let result: f64 = length::feet::to_kilometres(800.0);
+		assert_approx_eq!(0.24384, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_inches_1() {
+		let result: f64 = length::feet::to_inches(8.0);
+		assert_approx_eq!(96.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_inches_2() {
+		let result: f64 = length::feet::to_inches(1.2);
+		assert_approx_eq!(14.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_inches_3() {
+		let result: f64 = length::feet::to_inches(0.4);
+		assert_approx_eq!(4.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_yards_1() {
+		let result: f64 = length::feet::to_yards(78.0);
+		assert_approx_eq!(26.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_yards_2() {
+		let result: f64 = length::feet::to_yards(0.1);
+		assert_approx_eq!(0.0333333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_yards_3() {
+		let result: f64 = length::feet::to_yards(7162.0);
+		assert_approx_eq!(2387.333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_miles_1() {
+		let result: f64 = length::feet::to_miles(9000.0);
+		assert_approx_eq!(1.704545, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_miles_2() {
+		let result: f64 = length::feet::to_miles(1999.0);
+		assert_approx_eq!(0.3785985, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_miles_3() {
+		let result: f64 = length::feet::to_miles(5020.0);
+		assert_approx_eq!(0.9507576, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_nautical_miles_1() {
+		let result: f64 = length::feet::to_nautical_miles(8765.0);
+		assert_approx_eq!(1.442533, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_nautical_miles_2() {
+		let result: f64 = length::feet::to_nautical_miles(19000.0);
+		assert_approx_eq!(3.1269978, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_to_nautical_miles_3() {
+		let result: f64 = length::feet::to_nautical_miles(1000.0);
+		assert_approx_eq!(0.164579, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_millimetres_1() {
+		let result: f64 = length::inches::to_millimetres(1.0);
+		assert_approx_eq!(25.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_millimetres_2() {
+		let result: f64 = length::inches::to_millimetres(0.6);
+		assert_approx_eq!(15.24, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_millimetres_3() {
+		let result: f64 = length::inches::to_millimetres(456.0);
+		assert_approx_eq!(11582.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_centimetres_1() {
+		let result: f64 = length::inches::to_centimetres(123.0);
+		assert_approx_eq!(312.42, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_centimetres_2() {
+		let result: f64 = length::inches::to_centimetres(0.9);
+		assert_approx_eq!(2.286, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_centimetres_3() {
+		let result: f64 = length::inches::to_centimetres(3.4);
+		assert_approx_eq!(8.636, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_metres_1() {
+		let result: f64 = length::inches::to_metres(3.4);
+		assert_approx_eq!(0.08636, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_metres_2() {
+		let result: f64 = length::inches::to_metres(1002.0);
+		assert_approx_eq!(25.4508, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_metres_3() {
+		let result: f64 = length::inches::to_metres(56.0);
+		assert_approx_eq!(1.4224, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_kilometres_1() {
+		let result: f64 = length::inches::to_kilometres(17890.0);
+		assert_approx_eq!(0.454406, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_kilometres_2() {
+		let result: f64 = length::inches::to_kilometres(999000.0);
+		assert_approx_eq!(25.3746, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_kilometres_3() {
+		let result: f64 = length::inches::to_kilometres(100200.0);
+		assert_approx_eq!(2.54508, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_feet_1() {
+		let result: f64 = length::inches::to_feet(23.0);
+		assert_approx_eq!(1.91667, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_feet_2() {
+		let result: f64 = length::inches::to_feet(0.9);
+		assert_approx_eq!(0.075, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_feet_3() {
+		let result: f64 = length::inches::to_feet(479.0);
+		assert_approx_eq!(39.9167, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_yards_1() {
+		let result: f64 = length::inches::to_yards(123.0);
+		assert_approx_eq!(3.41667, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_yards_2() {
+		let result: f64 = length::inches::to_yards(6.7);
+		assert_approx_eq!(0.186111, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_yards_3() {
+		let result: f64 = length::inches::to_yards(9.0);
+		assert_approx_eq!(0.25, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_miles_1() {
+		let result: f64 = length::inches::to_miles(9000.0);
+		assert_approx_eq!(0.1420455, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_miles_2() {
+		let result: f64 = length::inches::to_miles(123456.0);
+		assert_approx_eq!(1.94848485, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_miles_3() {
+		let result: f64 = length::inches::to_miles(8800.0);
+		assert_approx_eq!(0.1388889, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_nautical_miles_1() {
+		let result: f64 = length::inches::to_nautical_miles(9000.0);
+		assert_approx_eq!(0.1234341, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_nautical_miles_2() {
+		let result: f64 = length::inches::to_nautical_miles(123456.0);
+		assert_approx_eq!(1.69318704, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowninches_to_nautical_miles_3() {
+		let result: f64 = length::inches::to_nautical_miles(100200.0);
+		assert_approx_eq!(1.37423326, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_millimetres_1() {
+		let result: f64 = length::kilometres::to_millimetres(0.09);
+		assert_approx_eq!(90000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_millimetres_2() {
+		let result: f64 = length::kilometres::to_millimetres(0.12);
+		assert_approx_eq!(120000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_millimetres_3() {
+		let result: f64 = length::kilometres::to_millimetres(2.3);
+		assert_approx_eq!(2.3e+6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_centimetres_1() {
+		let result: f64 = length::kilometres::to_centimetres(7.9);
+		assert_approx_eq!(790000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_centimetres_2() {
+		let result: f64 = length::kilometres::to_centimetres(0.2);
+		assert_approx_eq!(20000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_centimetres_3() {
+		let result: f64 = length::kilometres::to_centimetres(0.09);
+		assert_approx_eq!(9000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_metres_1() {
+		let result: f64 = length::kilometres::to_metres(0.8);
+		assert_approx_eq!(800.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_metres_2() {
+		let result: f64 = length::kilometres::to_metres(45.0);
+		assert_approx_eq!(45000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_metres_3() {
+		let result: f64 = length::kilometres::to_metres(1.2);
+		assert_approx_eq!(1200.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_inches_1() {
+		let result: f64 = length::kilometres::to_inches(1.2);
+		assert_approx_eq!(47244.1, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_inches_2() {
+		let result: f64 = length::kilometres::to_inches(0.65);
+		assert_approx_eq!(25590.55, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_inches_3() {
+		let result: f64 = length::kilometres::to_inches(5.0);
+		assert_approx_eq!(196850.3937, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_feet_1() {
+		let result: f64 = length::kilometres::to_feet(3.8);
+		assert_approx_eq!(12467.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_feet_2() {
+		let result: f64 = length::kilometres::to_feet(1.2);
+		assert_approx_eq!(3937.01, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_feet_3() {
+		let result: f64 = length::kilometres::to_feet(0.65);
+		assert_approx_eq!(2132.546, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_yards_1() {
+		let result: f64 = length::kilometres::to_yards(0.08);
+		assert_approx_eq!(87.48906, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_yards_2() {
+		let result: f64 = length::kilometres::to_yards(1.2);
+		assert_approx_eq!(1312.34, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_yards_3() {
+		let result: f64 = length::kilometres::to_yards(34.0);
+		assert_approx_eq!(37182.852143, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_miles_1() {
+		let result: f64 = length::kilometres::to_miles(12.0);
+		assert_approx_eq!(7.45645, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_miles_2() {
+		let result: f64 = length::kilometres::to_miles(0.9);
+		assert_approx_eq!(0.559234, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_miles_3() {
+		let result: f64 = length::kilometres::to_miles(3.9);
+		assert_approx_eq!(2.42335, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_nautical_miles_1() {
+		let result: f64 = length::kilometres::to_nautical_miles(1.2);
+		assert_approx_eq!(0.647948, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_nautical_miles_2() {
+		let result: f64 = length::kilometres::to_nautical_miles(0.2);
+		assert_approx_eq!(0.107991, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_to_nautical_miles_3() {
+		let result: f64 = length::kilometres::to_nautical_miles(99.9);
+		assert_approx_eq!(53.94168, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_millimetres_1() {
+		let result: f64 = length::metres::to_millimetres(123.0);
+		assert_approx_eq!(123000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_millimetres_2() {
+		let result: f64 = length::metres::to_millimetres(0.9);
+		assert_approx_eq!(900.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_millimetres_3() {
+		let result: f64 = length::metres::to_millimetres(0.0023);
+		assert_approx_eq!(2.3, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_centimetres_1() {
+		let result: f64 = length::metres::to_centimetres(2.3);
+		assert_approx_eq!(230.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_centimetres_2() {
+		let result: f64 = length::metres::to_centimetres(34.0);
+		assert_approx_eq!(3400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_centimetres_3() {
+		let result: f64 = length::metres::to_centimetres(0.9);
+		assert_approx_eq!(90.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_kilometres_1() {
+		let result: f64 = length::metres::to_kilometres(100.0);
+		assert_approx_eq!(0.1, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_kilometres_2() {
+		let result: f64 = length::metres::to_kilometres(123456.0);
+		assert_approx_eq!(123.456, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_kilometres_3() {
+		let result: f64 = length::metres::to_kilometres(91.1);
+		assert_approx_eq!(0.0911, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_inches_1() {
+		let result: f64 = length::metres::to_inches(12.0);
+		assert_approx_eq!(472.441, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_inches_2() {
+		let result: f64 = length::metres::to_inches(9.3);
+		assert_approx_eq!(366.142, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_inches_3() {
+		let result: f64 = length::metres::to_inches(0.1);
+		assert_approx_eq!(3.93701, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_feet_1() {
+		let result: f64 = length::metres::to_feet(67.0);
+		assert_approx_eq!(219.816, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_feet_2() {
+		let result: f64 = length::metres::to_feet(1.2);
+		assert_approx_eq!(3.93701, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_feet_3() {
+		let result: f64 = length::metres::to_feet(0.7);
+		assert_approx_eq!(2.29659, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_yards_1() {
+		let result: f64 = length::metres::to_yards(0.8);
+		assert_approx_eq!(0.874891, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_yards_2() {
+		let result: f64 = length::metres::to_yards(34.5);
+		assert_approx_eq!(37.72966, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_yards_3() {
+		let result: f64 = length::metres::to_yards(1.23);
+		assert_approx_eq!(1.345144, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_miles_1() {
+		let result: f64 = length::metres::to_miles(7900.0);
+		assert_approx_eq!(4.908832, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_miles_2() {
+		let result: f64 = length::metres::to_miles(123456.0);
+		assert_approx_eq!(76.7120019, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_miles_3() {
+		let result: f64 = length::metres::to_miles(1000.0);
+		assert_approx_eq!(0.621371, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_nautical_miles_1() {
+		let result: f64 = length::metres::to_nautical_miles(900.0);
+		assert_approx_eq!(0.485961, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_nautical_miles_2() {
+		let result: f64 = length::metres::to_nautical_miles(71819.0);
+		assert_approx_eq!(38.779158, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_to_nautical_miles_3() {
+		let result: f64 = length::metres::to_nautical_miles(123456.0);
+		assert_approx_eq!(66.6609071, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_millimetres_1() {
+		let result: f64 = length::miles::to_millimetres(0.09);
+		assert_approx_eq!(144840.95999, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_millimetres_2() {
+		let result: f64 = length::miles::to_millimetres(0.001);
+		assert_approx_eq!(1609.344, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_millimetres_3() {
+		let result: f64 = length::miles::to_millimetres(0.5);
+		assert_approx_eq!(804672.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_centimetres_1() {
+		let result: f64 = length::miles::to_centimetres(0.23);
+		assert_approx_eq!(37014.91, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_centimetres_2() {
+		let result: f64 = length::miles::to_centimetres(0.01);
+		assert_approx_eq!(1609.344, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_centimetres_3() {
+		let result: f64 = length::miles::to_centimetres(0.8);
+		assert_approx_eq!(128747.52, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_metres_1() {
+		let result: f64 = length::miles::to_metres(0.1);
+		assert_approx_eq!(160.934, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_metres_2() {
+		let result: f64 = length::miles::to_metres(0.08);
+		assert_approx_eq!(128.7475, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_metres_3() {
+		let result: f64 = length::miles::to_metres(0.002);
+		assert_approx_eq!(3.218688, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_kilometres_1() {
+		let result: f64 = length::miles::to_kilometres(2.0);
+		assert_approx_eq!(3.21869, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_kilometres_2() {
+		let result: f64 = length::miles::to_kilometres(0.8);
+		assert_approx_eq!(1.28748, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_kilometres_3() {
+		let result: f64 = length::miles::to_kilometres(23.0);
+		assert_approx_eq!(37.0149, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_inches_1() {
+		let result: f64 = length::miles::to_inches(0.7);
+		assert_approx_eq!(44352.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_inches_2() {
+		let result: f64 = length::miles::to_inches(0.09);
+		assert_approx_eq!(5702.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_inches_3() {
+		let result: f64 = length::miles::to_inches(2.0);
+		assert_approx_eq!(126720.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_feet_1() {
+		let result: f64 = length::miles::to_feet(2.0);
+		assert_approx_eq!(10560.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_feet_2() {
+		let result: f64 = length::miles::to_feet(0.6);
+		assert_approx_eq!(3168.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_feet_3() {
+		let result: f64 = length::miles::to_feet(0.07);
+		assert_approx_eq!(369.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_yards_1() {
+		let result: f64 = length::miles::to_yards(0.07);
+		assert_approx_eq!(123.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_yards_2() {
+		let result: f64 = length::miles::to_yards(2.0);
+		assert_approx_eq!(3520.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_yards_3() {
+		let result: f64 = length::miles::to_yards(8.1);
+		assert_approx_eq!(14256.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_nautical_miles_1() {
+		let result: f64 = length::miles::to_nautical_miles(8.1);
+		assert_approx_eq!(7.03871, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_nautical_miles_2() {
+		let result: f64 = length::miles::to_nautical_miles(0.8);
+		assert_approx_eq!(0.695181, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_to_nautical_miles_3() {
+		let result: f64 = length::miles::to_nautical_miles(1.2);
+		assert_approx_eq!(1.04277, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_centimetres_1() {
+		let result: f64 = length::millimetres::to_centimetres(900.0);
+		assert_approx_eq!(90.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_centimetres_2() {
+		let result: f64 = length::millimetres::to_centimetres(190.0);
+		assert_approx_eq!(19.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_centimetres_3() {
+		let result: f64 = length::millimetres::to_centimetres(5000.0);
+		assert_approx_eq!(500.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_metres_1() {
+		let result: f64 = length::millimetres::to_metres(1090.0);
+		assert_approx_eq!(1.09, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_metres_2() {
+		let result: f64 = length::millimetres::to_metres(9000.0);
+		assert_approx_eq!(9.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_metres_3() {
+		let result: f64 = length::millimetres::to_metres(12345.0);
+		assert_approx_eq!(12.345, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_kilometres_1() {
+		let result: f64 = length::millimetres::to_kilometres(109000.0);
+		assert_approx_eq!(0.109, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_kilometres_2() {
+		let result: f64 = length::millimetres::to_kilometres(9876543.0);
+		assert_approx_eq!(9.876543, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_kilometres_3() {
+		let result: f64 = length::millimetres::to_kilometres(900800.0);
+		assert_approx_eq!(0.9008, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_inches_1() {
+		let result: f64 = length::millimetres::to_inches(900.0);
+		assert_approx_eq!(35.4331, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_inches_2() {
+		let result: f64 = length::millimetres::to_inches(123.0);
+		assert_approx_eq!(4.84252, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_inches_3() {
+		let result: f64 = length::millimetres::to_inches(80.0);
+		assert_approx_eq!(3.14961, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_feet_1() {
+		let result: f64 = length::millimetres::to_feet(800.0);
+		assert_approx_eq!(2.62467, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_feet_2() {
+		let result: f64 = length::millimetres::to_feet(1234.0);
+		assert_approx_eq!(4.048556, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_feet_3() {
+		let result: f64 = length::millimetres::to_feet(600.8);
+		assert_approx_eq!(1.9711286, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_yards_1() {
+		let result: f64 = length::millimetres::to_yards(800.0);
+		assert_approx_eq!(0.874891, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_yards_2() {
+		let result: f64 = length::millimetres::to_yards(1200.0);
+		assert_approx_eq!(1.312336, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_yards_3() {
+		let result: f64 = length::millimetres::to_yards(909.0);
+		assert_approx_eq!(0.994094, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_miles_1() {
+		let result: f64 = length::millimetres::to_miles(900000.0);
+		assert_approx_eq!(0.559234073, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_miles_2() {
+		let result: f64 = length::millimetres::to_miles(12345678.9);
+		assert_approx_eq!(7.671249217072, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_miles_3() {
+		let result: f64 = length::millimetres::to_miles(100200300.0);
+		assert_approx_eq!(62.2615798735, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_nautical_miles_1() {
+		let result: f64 = length::millimetres::to_nautical_miles(9000000.0);
+		assert_approx_eq!(4.859611231, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_nautical_miles_2() {
+		let result: f64 = length::millimetres::to_nautical_miles(12345678.0);
+		assert_approx_eq!(6.6661328294, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillimetres_to_nautical_miles_3() {
+		let result: f64 = length::millimetres::to_nautical_miles(926000.0);
+		assert_approx_eq!(0.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_millimetres_1() {
+		let result: f64 = length::nautical_miles::to_millimetres(0.08);
+		assert_approx_eq!(148160.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_millimetres_2() {
+		let result: f64 = length::nautical_miles::to_millimetres(0.001);
+		assert_approx_eq!(1852.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_millimetres_3() {
+		let result: f64 = length::nautical_miles::to_millimetres(0.02);
+		assert_approx_eq!(37040.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_centimetres_1() {
+		let result: f64 = length::nautical_miles::to_centimetres(0.9);
+		assert_approx_eq!(166680.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_centimetres_2() {
+		let result: f64 = length::nautical_miles::to_centimetres(1.2);
+		assert_approx_eq!(222240.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_centimetres_3() {
+		let result: f64 = length::nautical_miles::to_centimetres(0.1);
+		assert_approx_eq!(18520.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_metres_1() {
+		let result: f64 = length::nautical_miles::to_metres(0.1);
+		assert_approx_eq!(185.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_metres_2() {
+		let result: f64 = length::nautical_miles::to_metres(1.2);
+		assert_approx_eq!(2222.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_metres_3() {
+		let result: f64 = length::nautical_miles::to_metres(89.0);
+		assert_approx_eq!(164828.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_kilometres_1() {
+		let result: f64 = length::nautical_miles::to_kilometres(23.0);
+		assert_approx_eq!(42.596, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_kilometres_2() {
+		let result: f64 = length::nautical_miles::to_kilometres(1.7);
+		assert_approx_eq!(3.1484, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_kilometres_3() {
+		let result: f64 = length::nautical_miles::to_kilometres(56.0);
+		assert_approx_eq!(103.712, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_inches_1() {
+		let result: f64 = length::nautical_miles::to_inches(0.1);
+		assert_approx_eq!(7291.34, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_inches_2() {
+		let result: f64 = length::nautical_miles::to_inches(2.0);
+		assert_approx_eq!(145826.7999, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_inches_3() {
+		let result: f64 = length::nautical_miles::to_inches(3.5);
+		assert_approx_eq!(255196.899, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_feet_1() {
+		let result: f64 = length::nautical_miles::to_feet(1.4);
+		assert_approx_eq!(8506.56, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_feet_2() {
+		let result: f64 = length::nautical_miles::to_feet(0.1);
+		assert_approx_eq!(607.612, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_feet_3() {
+		let result: f64 = length::nautical_miles::to_feet(8.9);
+		assert_approx_eq!(54077.4680, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_yards_1() {
+		let result: f64 = length::nautical_miles::to_yards(9.0);
+		assert_approx_eq!(18228.329, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_yards_2() {
+		let result: f64 = length::nautical_miles::to_yards(1.5);
+		assert_approx_eq!(3038.06, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_yards_3() {
+		let result: f64 = length::nautical_miles::to_yards(0.8);
+		assert_approx_eq!(1620.3, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_miles_1() {
+		let result: f64 = length::nautical_miles::to_miles(0.5);
+		assert_approx_eq!(0.57539, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_miles_2() {
+		let result: f64 = length::nautical_miles::to_miles(23.0);
+		assert_approx_eq!(26.4679, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnautical_miles_to_miles_3() {
+		let result: f64 = length::nautical_miles::to_miles(8.2);
+		assert_approx_eq!(9.43639, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_millimetres_1() {
+		let result: f64 = length::yards::to_millimetres(34.0);
+		assert_approx_eq!(31089.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_millimetres_2() {
+		let result: f64 = length::yards::to_millimetres(0.9);
+		assert_approx_eq!(822.96, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_millimetres_3() {
+		let result: f64 = length::yards::to_millimetres(2.0);
+		assert_approx_eq!(1828.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_centimetres_1() {
+		let result: f64 = length::yards::to_centimetres(9.8);
+		assert_approx_eq!(896.112, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_centimetres_2() {
+		let result: f64 = length::yards::to_centimetres(0.8);
+		assert_approx_eq!(73.152, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_centimetres_3() {
+		let result: f64 = length::yards::to_centimetres(12.0);
+		assert_approx_eq!(1097.28, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_metres_1() {
+		let result: f64 = length::yards::to_metres(12.0);
+		assert_approx_eq!(10.9728, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_metres_2() {
+		let result: f64 = length::yards::to_metres(0.7);
+		assert_approx_eq!(0.64008, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_metres_3() {
+		let result: f64 = length::yards::to_metres(3.0);
+		assert_approx_eq!(2.7432, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_kilometres_1() {
+		let result: f64 = length::yards::to_kilometres(400.0);
+		assert_approx_eq!(0.36576, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_kilometres_2() {
+		let result: f64 = length::yards::to_kilometres(1900.0);
+		assert_approx_eq!(1.73736, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_kilometres_3() {
+		let result: f64 = length::yards::to_kilometres(12345.0);
+		assert_approx_eq!(11.288268, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_inches_1() {
+		let result: f64 = length::yards::to_inches(23.0);
+		assert_approx_eq!(828.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_inches_2() {
+		let result: f64 = length::yards::to_inches(0.9);
+		assert_approx_eq!(32.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_inches_3() {
+		let result: f64 = length::yards::to_inches(12.0);
+		assert_approx_eq!(432.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_feet_1() {
+		let result: f64 = length::yards::to_feet(12.0);
+		assert_approx_eq!(36.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_feet_2() {
+		let result: f64 = length::yards::to_feet(1.8);
+		assert_approx_eq!(5.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_feet_3() {
+		let result: f64 = length::yards::to_feet(67.0);
+		assert_approx_eq!(201.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_miles_1() {
+		let result: f64 = length::yards::to_miles(8900.0);
+		assert_approx_eq!(5.056818, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_miles_2() {
+		let result: f64 = length::yards::to_miles(5000.0);
+		assert_approx_eq!(2.840909, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_miles_3() {
+		let result: f64 = length::yards::to_miles(123456.0);
+		assert_approx_eq!(70.1454545, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_nautical_miles_1() {
+		let result: f64 = length::yards::to_nautical_miles(1000.0);
+		assert_approx_eq!(0.493737, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_nautical_miles_2() {
+		let result: f64 = length::yards::to_nautical_miles(202020.0);
+		assert_approx_eq!(99.7446479, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyards_to_nautical_miles_3() {
+		let result: f64 = length::yards::to_nautical_miles(71928.0);
+		assert_approx_eq!(35.513479, result, 0.01);
+	}
+
 }

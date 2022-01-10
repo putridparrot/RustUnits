@@ -4,7 +4,7 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-///Volume conversion functions
+/// Volume conversion functions
 pub mod volume {
 	/// Fluid Ounces conversion functions
 	pub mod fluid_ounces {
@@ -1494,4 +1494,5051 @@ pub mod volume {
 			return value / 48.0;
 		}
 	}
+}
+
+#[cfg(test)]
+mod tests {
+	use super::*;
+	use assert_approx_eq::assert_approx_eq;
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_millilitres_1() {
+		let result: f64 = volume::fluid_ounces::to_millilitres(12.0);
+		assert_approx_eq!(340.957, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_millilitres_2() {
+		let result: f64 = volume::fluid_ounces::to_millilitres(6.01);
+		assert_approx_eq!(170.7625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_millilitres_3() {
+		let result: f64 = volume::fluid_ounces::to_millilitres(0.78);
+		assert_approx_eq!(22.16219, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_litres_1() {
+		let result: f64 = volume::fluid_ounces::to_litres(800.0);
+		assert_approx_eq!(22.7305, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_litres_2() {
+		let result: f64 = volume::fluid_ounces::to_litres(4.5);
+		assert_approx_eq!(0.127859, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_litres_3() {
+		let result: f64 = volume::fluid_ounces::to_litres(109.0);
+		assert_approx_eq!(3.09702, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_kilolitres_1() {
+		let result: f64 = volume::fluid_ounces::to_kilolitres(56909.0);
+		assert_approx_eq!(1.616959, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_kilolitres_2() {
+		let result: f64 = volume::fluid_ounces::to_kilolitres(9009.0);
+		assert_approx_eq!(0.2559733, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_kilolitres_3() {
+		let result: f64 = volume::fluid_ounces::to_kilolitres(123456.0);
+		assert_approx_eq!(3.50776304, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_teaspoons_1() {
+		let result: f64 = volume::fluid_ounces::to_teaspoons(123.0);
+		assert_approx_eq!(590.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_teaspoons_2() {
+		let result: f64 = volume::fluid_ounces::to_teaspoons(9.12);
+		assert_approx_eq!(43.77598, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_teaspoons_3() {
+		let result: f64 = volume::fluid_ounces::to_teaspoons(0.2);
+		assert_approx_eq!(0.96, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_tablespoons_1() {
+		let result: f64 = volume::fluid_ounces::to_tablespoons(7.0);
+		assert_approx_eq!(11.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_tablespoons_2() {
+		let result: f64 = volume::fluid_ounces::to_tablespoons(165.4);
+		assert_approx_eq!(264.63989, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_tablespoons_3() {
+		let result: f64 = volume::fluid_ounces::to_tablespoons(80.1);
+		assert_approx_eq!(128.1599, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_quarts_1() {
+		let result: f64 = volume::fluid_ounces::to_quarts(89.0);
+		assert_approx_eq!(2.225, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_quarts_2() {
+		let result: f64 = volume::fluid_ounces::to_quarts(5.9);
+		assert_approx_eq!(0.1475, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_quarts_3() {
+		let result: f64 = volume::fluid_ounces::to_quarts(1300.0);
+		assert_approx_eq!(32.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_pints_1() {
+		let result: f64 = volume::fluid_ounces::to_pints(1300.0);
+		assert_approx_eq!(65.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_pints_2() {
+		let result: f64 = volume::fluid_ounces::to_pints(5.7);
+		assert_approx_eq!(0.285, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_pints_3() {
+		let result: f64 = volume::fluid_ounces::to_pints(1900.0);
+		assert_approx_eq!(95.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_gallons_1() {
+		let result: f64 = volume::fluid_ounces::to_gallons(1900.0);
+		assert_approx_eq!(11.875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_gallons_2() {
+		let result: f64 = volume::fluid_ounces::to_gallons(5.6);
+		assert_approx_eq!(0.035, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_gallons_3() {
+		let result: f64 = volume::fluid_ounces::to_gallons(12345.0);
+		assert_approx_eq!(77.15625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_teaspoons_1() {
+		let result: f64 = volume::fluid_ounces::to_u_s_teaspoons(12345.0);
+		assert_approx_eq!(71163.512, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_teaspoons_2() {
+		let result: f64 = volume::fluid_ounces::to_u_s_teaspoons(8.9);
+		assert_approx_eq!(51.3046, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_teaspoons_3() {
+		let result: f64 = volume::fluid_ounces::to_u_s_teaspoons(0.005);
+		assert_approx_eq!(0.028822808, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_tablespoons_1() {
+		let result: f64 = volume::fluid_ounces::to_u_s_tablespoons(190.0);
+		assert_approx_eq!(365.089, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_tablespoons_2() {
+		let result: f64 = volume::fluid_ounces::to_u_s_tablespoons(6.8);
+		assert_approx_eq!(13.0663, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_tablespoons_3() {
+		let result: f64 = volume::fluid_ounces::to_u_s_tablespoons(2340.0);
+		assert_approx_eq!(4496.357, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_quarts_1() {
+		let result: f64 = volume::fluid_ounces::to_u_s_quarts(45.0);
+		assert_approx_eq!(1.35107, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_quarts_2() {
+		let result: f64 = volume::fluid_ounces::to_u_s_quarts(1090.0);
+		assert_approx_eq!(32.72589, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_quarts_3() {
+		let result: f64 = volume::fluid_ounces::to_u_s_quarts(777.0);
+		assert_approx_eq!(23.3285, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_pints_1() {
+		let result: f64 = volume::fluid_ounces::to_u_s_pints(678.0);
+		assert_approx_eq!(40.7122, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_pints_2() {
+		let result: f64 = volume::fluid_ounces::to_u_s_pints(4.5);
+		assert_approx_eq!(0.270214, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_pints_3() {
+		let result: f64 = volume::fluid_ounces::to_u_s_pints(1900.0);
+		assert_approx_eq!(114.0902, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_gallons_1() {
+		let result: f64 = volume::fluid_ounces::to_u_s_gallons(1890.0);
+		assert_approx_eq!(14.18622, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_gallons_2() {
+		let result: f64 = volume::fluid_ounces::to_u_s_gallons(5.8);
+		assert_approx_eq!(0.0435344, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_gallons_3() {
+		let result: f64 = volume::fluid_ounces::to_u_s_gallons(10090.0);
+		assert_approx_eq!(75.734905, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::fluid_ounces::to_u_s_fluid_ounces(190.0);
+		assert_approx_eq!(182.544, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::fluid_ounces::to_u_s_fluid_ounces(54.8);
+		assert_approx_eq!(52.64964, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::fluid_ounces::to_u_s_fluid_ounces(1.7);
+		assert_approx_eq!(1.63329, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_cups_1() {
+		let result: f64 = volume::fluid_ounces::to_u_s_cups(6.0);
+		assert_approx_eq!(0.72057, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_cups_2() {
+		let result: f64 = volume::fluid_ounces::to_u_s_cups(1800.0);
+		assert_approx_eq!(216.171, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfluid_ounces_to_u_s_cups_3() {
+		let result: f64 = volume::fluid_ounces::to_u_s_cups(6.9);
+		assert_approx_eq!(0.828655, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_millilitres_1() {
+		let result: f64 = volume::gallons::to_millilitres(1.3);
+		assert_approx_eq!(5909.92, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_millilitres_2() {
+		let result: f64 = volume::gallons::to_millilitres(0.45);
+		assert_approx_eq!(2045.741, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_millilitres_3() {
+		let result: f64 = volume::gallons::to_millilitres(1.8);
+		assert_approx_eq!(8182.96, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_litres_1() {
+		let result: f64 = volume::gallons::to_litres(123.0);
+		assert_approx_eq!(559.169, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_litres_2() {
+		let result: f64 = volume::gallons::to_litres(9.3);
+		assert_approx_eq!(42.2786, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_litres_3() {
+		let result: f64 = volume::gallons::to_litres(0.67);
+		assert_approx_eq!(3.04588, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_kilolitres_1() {
+		let result: f64 = volume::gallons::to_kilolitres(1009.0);
+		assert_approx_eq!(4.587005, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_kilolitres_2() {
+		let result: f64 = volume::gallons::to_kilolitres(9.6);
+		assert_approx_eq!(0.0436425, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_kilolitres_3() {
+		let result: f64 = volume::gallons::to_kilolitres(123456.0);
+		assert_approx_eq!(561.242087, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_teaspoons_1() {
+		let result: f64 = volume::gallons::to_teaspoons(6.0);
+		assert_approx_eq!(4608.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_teaspoons_2() {
+		let result: f64 = volume::gallons::to_teaspoons(78.12);
+		assert_approx_eq!(59996.16, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_teaspoons_3() {
+		let result: f64 = volume::gallons::to_teaspoons(0.34);
+		assert_approx_eq!(261.1199, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_tablespoons_1() {
+		let result: f64 = volume::gallons::to_tablespoons(0.9);
+		assert_approx_eq!(230.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_tablespoons_2() {
+		let result: f64 = volume::gallons::to_tablespoons(1.6);
+		assert_approx_eq!(409.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_tablespoons_3() {
+		let result: f64 = volume::gallons::to_tablespoons(0.33);
+		assert_approx_eq!(84.47997, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_quarts_1() {
+		let result: f64 = volume::gallons::to_quarts(109.0);
+		assert_approx_eq!(436.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_quarts_2() {
+		let result: f64 = volume::gallons::to_quarts(5.8);
+		assert_approx_eq!(23.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_quarts_3() {
+		let result: f64 = volume::gallons::to_quarts(0.23);
+		assert_approx_eq!(0.92, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_pints_1() {
+		let result: f64 = volume::gallons::to_pints(0.23);
+		assert_approx_eq!(1.84, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_pints_2() {
+		let result: f64 = volume::gallons::to_pints(190.0);
+		assert_approx_eq!(1520.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_pints_3() {
+		let result: f64 = volume::gallons::to_pints(24.7);
+		assert_approx_eq!(197.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_fluid_ounces_1() {
+		let result: f64 = volume::gallons::to_fluid_ounces(24.7);
+		assert_approx_eq!(3952.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_fluid_ounces_2() {
+		let result: f64 = volume::gallons::to_fluid_ounces(13.09);
+		assert_approx_eq!(2094.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_fluid_ounces_3() {
+		let result: f64 = volume::gallons::to_fluid_ounces(5.8);
+		assert_approx_eq!(928.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_teaspoons_1() {
+		let result: f64 = volume::gallons::to_u_s_teaspoons(5.8);
+		assert_approx_eq!(5349.51, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_teaspoons_2() {
+		let result: f64 = volume::gallons::to_u_s_teaspoons(0.44);
+		assert_approx_eq!(405.8251, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_teaspoons_3() {
+		let result: f64 = volume::gallons::to_u_s_teaspoons(1.9);
+		assert_approx_eq!(1752.43, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_tablespoons_1() {
+		let result: f64 = volume::gallons::to_u_s_tablespoons(1.8);
+		assert_approx_eq!(553.398, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_tablespoons_2() {
+		let result: f64 = volume::gallons::to_u_s_tablespoons(0.33);
+		assert_approx_eq!(101.4562, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_tablespoons_3() {
+		let result: f64 = volume::gallons::to_u_s_tablespoons(100.0);
+		assert_approx_eq!(30744.33080, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_quarts_1() {
+		let result: f64 = volume::gallons::to_u_s_quarts(78.0);
+		assert_approx_eq!(374.696, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_quarts_2() {
+		let result: f64 = volume::gallons::to_u_s_quarts(1.7);
+		assert_approx_eq!(8.16646, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_quarts_3() {
+		let result: f64 = volume::gallons::to_u_s_quarts(16.9);
+		assert_approx_eq!(81.18421, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_pints_1() {
+		let result: f64 = volume::gallons::to_u_s_pints(13.4);
+		assert_approx_eq!(128.7418, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_pints_2() {
+		let result: f64 = volume::gallons::to_u_s_pints(8.12);
+		assert_approx_eq!(78.01371, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_pints_3() {
+		let result: f64 = volume::gallons::to_u_s_pints(0.99);
+		assert_approx_eq!(9.511523, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_gallons_1() {
+		let result: f64 = volume::gallons::to_u_s_gallons(1.5);
+		assert_approx_eq!(1.80142, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_gallons_2() {
+		let result: f64 = volume::gallons::to_u_s_gallons(0.78);
+		assert_approx_eq!(0.9367409, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_gallons_3() {
+		let result: f64 = volume::gallons::to_u_s_gallons(103.0);
+		assert_approx_eq!(123.698, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::gallons::to_u_s_fluid_ounces(111.0);
+		assert_approx_eq!(17063.1, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::gallons::to_u_s_fluid_ounces(89.9);
+		assert_approx_eq!(13819.57, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::gallons::to_u_s_fluid_ounces(1.2);
+		assert_approx_eq!(184.466, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_cups_1() {
+		let result: f64 = volume::gallons::to_u_s_cups(1.2);
+		assert_approx_eq!(23.0582, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_cups_2() {
+		let result: f64 = volume::gallons::to_u_s_cups(0.55);
+		assert_approx_eq!(10.56836, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowngallons_to_u_s_cups_3() {
+		let result: f64 = volume::gallons::to_u_s_cups(890.0);
+		assert_approx_eq!(17101.534007630, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_millilitres_1() {
+		let result: f64 = volume::kilolitres::to_millilitres(0.09);
+		assert_approx_eq!(90000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_millilitres_2() {
+		let result: f64 = volume::kilolitres::to_millilitres(0.00123);
+		assert_approx_eq!(1230.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_millilitres_3() {
+		let result: f64 = volume::kilolitres::to_millilitres(1.2);
+		assert_approx_eq!(1.2e+6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_litres_1() {
+		let result: f64 = volume::kilolitres::to_litres(1.2);
+		assert_approx_eq!(1200.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_litres_2() {
+		let result: f64 = volume::kilolitres::to_litres(0.8);
+		assert_approx_eq!(800.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_litres_3() {
+		let result: f64 = volume::kilolitres::to_litres(456.0);
+		assert_approx_eq!(456000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_teaspoons_1() {
+		let result: f64 = volume::kilolitres::to_teaspoons(0.7);
+		assert_approx_eq!(118255.41900799, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_teaspoons_2() {
+		let result: f64 = volume::kilolitres::to_teaspoons(0.01);
+		assert_approx_eq!(1689.363, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_teaspoons_3() {
+		let result: f64 = volume::kilolitres::to_teaspoons(4.5);
+		assert_approx_eq!(760213.407908, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_tablespoons_1() {
+		let result: f64 = volume::kilolitres::to_tablespoons(0.3);
+		assert_approx_eq!(16893.631286856, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_tablespoons_2() {
+		let result: f64 = volume::kilolitres::to_tablespoons(2.9);
+		assert_approx_eq!(163305.10243961, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_tablespoons_3() {
+		let result: f64 = volume::kilolitres::to_tablespoons(0.067);
+		assert_approx_eq!(3772.911, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_quarts_1() {
+		let result: f64 = volume::kilolitres::to_quarts(0.09);
+		assert_approx_eq!(79.18893, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_quarts_2() {
+		let result: f64 = volume::kilolitres::to_quarts(2.3);
+		assert_approx_eq!(2023.72, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_quarts_3() {
+		let result: f64 = volume::kilolitres::to_quarts(0.67);
+		assert_approx_eq!(589.5176, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_pints_1() {
+		let result: f64 = volume::kilolitres::to_pints(0.4);
+		assert_approx_eq!(703.902, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_pints_2() {
+		let result: f64 = volume::kilolitres::to_pints(67.0);
+		assert_approx_eq!(117903.46835618, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_pints_3() {
+		let result: f64 = volume::kilolitres::to_pints(9.3);
+		assert_approx_eq!(16365.7, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_gallons_1() {
+		let result: f64 = volume::kilolitres::to_gallons(109.0);
+		assert_approx_eq!(23976.638149, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_gallons_2() {
+		let result: f64 = volume::kilolitres::to_gallons(7.2);
+		assert_approx_eq!(1583.78, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_gallons_3() {
+		let result: f64 = volume::kilolitres::to_gallons(0.4);
+		assert_approx_eq!(87.9877, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_fluid_ounces_1() {
+		let result: f64 = volume::kilolitres::to_fluid_ounces(0.2);
+		assert_approx_eq!(7039.02, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_fluid_ounces_2() {
+		let result: f64 = volume::kilolitres::to_fluid_ounces(4.8);
+		assert_approx_eq!(168936.31286856, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_fluid_ounces_3() {
+		let result: f64 = volume::kilolitres::to_fluid_ounces(6.0);
+		assert_approx_eq!(211170.391085, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_teaspoons_1() {
+		let result: f64 = volume::kilolitres::to_u_s_teaspoons(4.0);
+		assert_approx_eq!(811536.5448442, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_teaspoons_2() {
+		let result: f64 = volume::kilolitres::to_u_s_teaspoons(0.2);
+		assert_approx_eq!(40576.82724221160, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_teaspoons_3() {
+		let result: f64 = volume::kilolitres::to_u_s_teaspoons(2.4);
+		assert_approx_eq!(486921.92690653, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_tablespoons_1() {
+		let result: f64 = volume::kilolitres::to_u_s_tablespoons(1.3);
+		assert_approx_eq!(87916.45902479, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_tablespoons_2() {
+		let result: f64 = volume::kilolitres::to_u_s_tablespoons(0.6);
+		assert_approx_eq!(40576.82724221, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_tablespoons_3() {
+		let result: f64 = volume::kilolitres::to_u_s_tablespoons(0.03);
+		assert_approx_eq!(2028.841, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_quarts_1() {
+		let result: f64 = volume::kilolitres::to_u_s_quarts(0.09);
+		assert_approx_eq!(95.10194, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_quarts_2() {
+		let result: f64 = volume::kilolitres::to_u_s_quarts(2.5);
+		assert_approx_eq!(2641.72, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_quarts_3() {
+		let result: f64 = volume::kilolitres::to_u_s_quarts(178.9);
+		assert_approx_eq!(189041.52, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_pints_1() {
+		let result: f64 = volume::kilolitres::to_u_s_pints(67.0);
+		assert_approx_eq!(141596.2200639, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_pints_2() {
+		let result: f64 = volume::kilolitres::to_u_s_pints(4.7);
+		assert_approx_eq!(9932.87, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_pints_3() {
+		let result: f64 = volume::kilolitres::to_u_s_pints(108.9);
+		assert_approx_eq!(230146.69, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_gallons_1() {
+		let result: f64 = volume::kilolitres::to_u_s_gallons(1.6);
+		assert_approx_eq!(422.675, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_gallons_2() {
+		let result: f64 = volume::kilolitres::to_u_s_gallons(57.0);
+		assert_approx_eq!(15057.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_gallons_3() {
+		let result: f64 = volume::kilolitres::to_u_s_gallons(0.88);
+		assert_approx_eq!(232.4714, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::kilolitres::to_u_s_fluid_ounces(0.07);
+		assert_approx_eq!(2366.982, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::kilolitres::to_u_s_fluid_ounces(4.2);
+		assert_approx_eq!(142018.89516765, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::kilolitres::to_u_s_fluid_ounces(12.0);
+		assert_approx_eq!(405768.27190759, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_cups_1() {
+		let result: f64 = volume::kilolitres::to_u_s_cups(12.0);
+		assert_approx_eq!(50721.03405276, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_cups_2() {
+		let result: f64 = volume::kilolitres::to_u_s_cups(0.8);
+		assert_approx_eq!(3381.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilolitres_to_u_s_cups_3() {
+		let result: f64 = volume::kilolitres::to_u_s_cups(6.2);
+		assert_approx_eq!(26205.86759392, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_millilitres_1() {
+		let result: f64 = volume::litres::to_millilitres(34.0);
+		assert_approx_eq!(34000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_millilitres_2() {
+		let result: f64 = volume::litres::to_millilitres(0.67);
+		assert_approx_eq!(670.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_millilitres_3() {
+		let result: f64 = volume::litres::to_millilitres(1.09);
+		assert_approx_eq!(1090.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_kilolitres_1() {
+		let result: f64 = volume::litres::to_kilolitres(200.0);
+		assert_approx_eq!(0.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_kilolitres_2() {
+		let result: f64 = volume::litres::to_kilolitres(12345.0);
+		assert_approx_eq!(12.345, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_kilolitres_3() {
+		let result: f64 = volume::litres::to_kilolitres(80.0);
+		assert_approx_eq!(0.08, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_teaspoons_1() {
+		let result: f64 = volume::litres::to_teaspoons(3.0);
+		assert_approx_eq!(506.809, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_teaspoons_2() {
+		let result: f64 = volume::litres::to_teaspoons(0.2);
+		assert_approx_eq!(33.7873, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_teaspoons_3() {
+		let result: f64 = volume::litres::to_teaspoons(4.2);
+		assert_approx_eq!(709.533, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_tablespoons_1() {
+		let result: f64 = volume::litres::to_tablespoons(3.0);
+		assert_approx_eq!(168.936, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_tablespoons_2() {
+		let result: f64 = volume::litres::to_tablespoons(0.4);
+		assert_approx_eq!(22.5248, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_tablespoons_3() {
+		let result: f64 = volume::litres::to_tablespoons(67.0);
+		assert_approx_eq!(3772.91, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_quarts_1() {
+		let result: f64 = volume::litres::to_quarts(54.0);
+		assert_approx_eq!(47.5134, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_quarts_2() {
+		let result: f64 = volume::litres::to_quarts(2.0);
+		assert_approx_eq!(1.75975, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_quarts_3() {
+		let result: f64 = volume::litres::to_quarts(0.7);
+		assert_approx_eq!(0.615914, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_pints_1() {
+		let result: f64 = volume::litres::to_pints(0.5);
+		assert_approx_eq!(0.879877, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_pints_2() {
+		let result: f64 = volume::litres::to_pints(145.0);
+		assert_approx_eq!(255.164, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_pints_3() {
+		let result: f64 = volume::litres::to_pints(9.1);
+		assert_approx_eq!(16.0138, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_gallons_1() {
+		let result: f64 = volume::litres::to_gallons(12.9);
+		assert_approx_eq!(2.837603, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_gallons_2() {
+		let result: f64 = volume::litres::to_gallons(109.0);
+		assert_approx_eq!(23.9766, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_gallons_3() {
+		let result: f64 = volume::litres::to_gallons(67.0);
+		assert_approx_eq!(14.7379, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_fluid_ounces_1() {
+		let result: f64 = volume::litres::to_fluid_ounces(5.0);
+		assert_approx_eq!(175.975, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_fluid_ounces_2() {
+		let result: f64 = volume::litres::to_fluid_ounces(0.3);
+		assert_approx_eq!(10.5585, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_fluid_ounces_3() {
+		let result: f64 = volume::litres::to_fluid_ounces(1.1);
+		assert_approx_eq!(38.7146, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_teaspoons_1() {
+		let result: f64 = volume::litres::to_u_s_teaspoons(12.0);
+		assert_approx_eq!(2434.61, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_teaspoons_2() {
+		let result: f64 = volume::litres::to_u_s_teaspoons(0.7);
+		assert_approx_eq!(142.019, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_teaspoons_3() {
+		let result: f64 = volume::litres::to_u_s_teaspoons(89.9);
+		assert_approx_eq!(18239.29, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_tablespoons_1() {
+		let result: f64 = volume::litres::to_u_s_tablespoons(12.0);
+		assert_approx_eq!(811.537, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_tablespoons_2() {
+		let result: f64 = volume::litres::to_u_s_tablespoons(5.6);
+		assert_approx_eq!(378.717, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_tablespoons_3() {
+		let result: f64 = volume::litres::to_u_s_tablespoons(0.5);
+		assert_approx_eq!(33.814, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_quarts_1() {
+		let result: f64 = volume::litres::to_u_s_quarts(12.0);
+		assert_approx_eq!(12.6803, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_quarts_2() {
+		let result: f64 = volume::litres::to_u_s_quarts(1.09);
+		assert_approx_eq!(1.15179, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_quarts_3() {
+		let result: f64 = volume::litres::to_u_s_quarts(5.5);
+		assert_approx_eq!(5.81179, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_pints_1() {
+		let result: f64 = volume::litres::to_u_s_pints(3.4);
+		assert_approx_eq!(7.18548, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_pints_2() {
+		let result: f64 = volume::litres::to_u_s_pints(0.8);
+		assert_approx_eq!(1.6907, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_pints_3() {
+		let result: f64 = volume::litres::to_u_s_pints(3000.0);
+		assert_approx_eq!(6340.129, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_gallons_1() {
+		let result: f64 = volume::litres::to_u_s_gallons(109.1);
+		assert_approx_eq!(28.821171, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_gallons_2() {
+		let result: f64 = volume::litres::to_u_s_gallons(41.5);
+		assert_approx_eq!(10.96314, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_gallons_3() {
+		let result: f64 = volume::litres::to_u_s_gallons(0.8);
+		assert_approx_eq!(0.211338, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::litres::to_u_s_fluid_ounces(81.0);
+		assert_approx_eq!(2738.94, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::litres::to_u_s_fluid_ounces(7.3);
+		assert_approx_eq!(246.842, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::litres::to_u_s_fluid_ounces(0.65);
+		assert_approx_eq!(21.97911, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_cups_1() {
+		let result: f64 = volume::litres::to_u_s_cups(0.9);
+		assert_approx_eq!(3.80408, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_cups_2() {
+		let result: f64 = volume::litres::to_u_s_cups(103.9);
+		assert_approx_eq!(439.15962, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownlitres_to_u_s_cups_3() {
+		let result: f64 = volume::litres::to_u_s_cups(71.6);
+		assert_approx_eq!(302.6355, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_litres_1() {
+		let result: f64 = volume::millilitres::to_litres(1900.0);
+		assert_approx_eq!(1.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_litres_2() {
+		let result: f64 = volume::millilitres::to_litres(56789.0);
+		assert_approx_eq!(56.789, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_litres_3() {
+		let result: f64 = volume::millilitres::to_litres(567.0);
+		assert_approx_eq!(0.567, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_kilolitres_1() {
+		let result: f64 = volume::millilitres::to_kilolitres(10060000.0);
+		assert_approx_eq!(10.06, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_kilolitres_2() {
+		let result: f64 = volume::millilitres::to_kilolitres(987654.0);
+		assert_approx_eq!(0.987654, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_kilolitres_3() {
+		let result: f64 = volume::millilitres::to_kilolitres(405000.0);
+		assert_approx_eq!(0.405, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_teaspoons_1() {
+		let result: f64 = volume::millilitres::to_teaspoons(1.0);
+		assert_approx_eq!(0.168936, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_teaspoons_2() {
+		let result: f64 = volume::millilitres::to_teaspoons(56.0);
+		assert_approx_eq!(9.46043, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_teaspoons_3() {
+		let result: f64 = volume::millilitres::to_teaspoons(12.3);
+		assert_approx_eq!(2.077917, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_tablespoons_1() {
+		let result: f64 = volume::millilitres::to_tablespoons(109.0);
+		assert_approx_eq!(6.13802, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_tablespoons_2() {
+		let result: f64 = volume::millilitres::to_tablespoons(88.0);
+		assert_approx_eq!(4.95547, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_tablespoons_3() {
+		let result: f64 = volume::millilitres::to_tablespoons(12.0);
+		assert_approx_eq!(0.675745, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_quarts_1() {
+		let result: f64 = volume::millilitres::to_quarts(890.0);
+		assert_approx_eq!(0.783091, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_quarts_2() {
+		let result: f64 = volume::millilitres::to_quarts(12345.0);
+		assert_approx_eq!(10.862081, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_quarts_3() {
+		let result: f64 = volume::millilitres::to_quarts(129.0);
+		assert_approx_eq!(0.113504, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_pints_1() {
+		let result: f64 = volume::millilitres::to_pints(124.0);
+		assert_approx_eq!(0.218209, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_pints_2() {
+		let result: f64 = volume::millilitres::to_pints(99.0);
+		assert_approx_eq!(0.174216, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_pints_3() {
+		let result: f64 = volume::millilitres::to_pints(607.3);
+		assert_approx_eq!(1.0686986, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_gallons_1() {
+		let result: f64 = volume::millilitres::to_gallons(1234.0);
+		assert_approx_eq!(0.2714421, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_gallons_2() {
+		let result: f64 = volume::millilitres::to_gallons(9000.0);
+		assert_approx_eq!(1.979723, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_gallons_3() {
+		let result: f64 = volume::millilitres::to_gallons(10209.98);
+		assert_approx_eq!(2.2458816257, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_fluid_ounces_1() {
+		let result: f64 = volume::millilitres::to_fluid_ounces(78.0);
+		assert_approx_eq!(2.74522, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_fluid_ounces_2() {
+		let result: f64 = volume::millilitres::to_fluid_ounces(12.9);
+		assert_approx_eq!(0.4540165, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_fluid_ounces_3() {
+		let result: f64 = volume::millilitres::to_fluid_ounces(1009.0);
+		assert_approx_eq!(35.51184, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_teaspoons_1() {
+		let result: f64 = volume::millilitres::to_u_s_teaspoons(100.0);
+		assert_approx_eq!(20.2884, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_teaspoons_2() {
+		let result: f64 = volume::millilitres::to_u_s_teaspoons(12.3);
+		assert_approx_eq!(2.495476, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_teaspoons_3() {
+		let result: f64 = volume::millilitres::to_u_s_teaspoons(69.0);
+		assert_approx_eq!(13.999, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_tablespoons_1() {
+		let result: f64 = volume::millilitres::to_u_s_tablespoons(38.0);
+		assert_approx_eq!(2.56987, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_tablespoons_2() {
+		let result: f64 = volume::millilitres::to_u_s_tablespoons(1023.0);
+		assert_approx_eq!(69.18349, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_tablespoons_3() {
+		let result: f64 = volume::millilitres::to_u_s_tablespoons(88.8);
+		assert_approx_eq!(6.00537, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_quarts_1() {
+		let result: f64 = volume::millilitres::to_u_s_quarts(1009.0);
+		assert_approx_eq!(1.066198, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_quarts_2() {
+		let result: f64 = volume::millilitres::to_u_s_quarts(4567.0);
+		assert_approx_eq!(4.825895, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_quarts_3() {
+		let result: f64 = volume::millilitres::to_u_s_quarts(8009.0);
+		assert_approx_eq!(8.463016, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_pints_1() {
+		let result: f64 = volume::millilitres::to_u_s_pints(110.0);
+		assert_approx_eq!(0.232471, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_pints_2() {
+		let result: f64 = volume::millilitres::to_u_s_pints(2032.0);
+		assert_approx_eq!(4.294381, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_pints_3() {
+		let result: f64 = volume::millilitres::to_u_s_pints(1000.9);
+		assert_approx_eq!(2.11527846, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_gallons_1() {
+		let result: f64 = volume::millilitres::to_u_s_gallons(5000.0);
+		assert_approx_eq!(1.32086, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_gallons_2() {
+		let result: f64 = volume::millilitres::to_u_s_gallons(123456.0);
+		assert_approx_eq!(32.6136249, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_gallons_3() {
+		let result: f64 = volume::millilitres::to_u_s_gallons(900.0);
+		assert_approx_eq!(0.237755, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::millilitres::to_u_s_fluid_ounces(67.0);
+		assert_approx_eq!(2.26554, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::millilitres::to_u_s_fluid_ounces(12.6);
+		assert_approx_eq!(0.4260567, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::millilitres::to_u_s_fluid_ounces(11009.0);
+		assert_approx_eq!(372.25858, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_cups_1() {
+		let result: f64 = volume::millilitres::to_u_s_cups(348.0);
+		assert_approx_eq!(1.47091, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_cups_2() {
+		let result: f64 = volume::millilitres::to_u_s_cups(12.9);
+		assert_approx_eq!(0.05452511, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmillilitres_to_u_s_cups_3() {
+		let result: f64 = volume::millilitres::to_u_s_cups(700.0);
+		assert_approx_eq!(2.95873, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_millilitres_1() {
+		let result: f64 = volume::pints::to_millilitres(0.7);
+		assert_approx_eq!(397.783, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_millilitres_2() {
+		let result: f64 = volume::pints::to_millilitres(5.6);
+		assert_approx_eq!(3182.26, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_millilitres_3() {
+		let result: f64 = volume::pints::to_millilitres(6.0);
+		assert_approx_eq!(3409.57, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_litres_1() {
+		let result: f64 = volume::pints::to_litres(6.0);
+		assert_approx_eq!(3.40957, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_litres_2() {
+		let result: f64 = volume::pints::to_litres(0.123);
+		assert_approx_eq!(0.069896134, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_litres_3() {
+		let result: f64 = volume::pints::to_litres(45.9);
+		assert_approx_eq!(26.08319, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_kilolitres_1() {
+		let result: f64 = volume::pints::to_kilolitres(456.0);
+		assert_approx_eq!(0.259127, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_kilolitres_2() {
+		let result: f64 = volume::pints::to_kilolitres(10450.0);
+		assert_approx_eq!(5.9383301, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_kilolitres_3() {
+		let result: f64 = volume::pints::to_kilolitres(9000.9);
+		assert_approx_eq!(5.11486269, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_teaspoons_1() {
+		let result: f64 = volume::pints::to_teaspoons(5.0);
+		assert_approx_eq!(480.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_teaspoons_2() {
+		let result: f64 = volume::pints::to_teaspoons(0.3);
+		assert_approx_eq!(28.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_teaspoons_3() {
+		let result: f64 = volume::pints::to_teaspoons(190.0);
+		assert_approx_eq!(18240.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_tablespoons_1() {
+		let result: f64 = volume::pints::to_tablespoons(187.0);
+		assert_approx_eq!(5984.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_tablespoons_2() {
+		let result: f64 = volume::pints::to_tablespoons(54.5);
+		assert_approx_eq!(1743.999, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_tablespoons_3() {
+		let result: f64 = volume::pints::to_tablespoons(0.33);
+		assert_approx_eq!(10.56, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_quarts_1() {
+		let result: f64 = volume::pints::to_quarts(5.6);
+		assert_approx_eq!(2.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_quarts_2() {
+		let result: f64 = volume::pints::to_quarts(109.0);
+		assert_approx_eq!(54.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_quarts_3() {
+		let result: f64 = volume::pints::to_quarts(0.3);
+		assert_approx_eq!(0.15, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_gallons_1() {
+		let result: f64 = volume::pints::to_gallons(0.3);
+		assert_approx_eq!(0.0375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_gallons_2() {
+		let result: f64 = volume::pints::to_gallons(800.0);
+		assert_approx_eq!(100.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_gallons_3() {
+		let result: f64 = volume::pints::to_gallons(1.5);
+		assert_approx_eq!(0.1875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_fluid_ounces_1() {
+		let result: f64 = volume::pints::to_fluid_ounces(1.5);
+		assert_approx_eq!(30.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_fluid_ounces_2() {
+		let result: f64 = volume::pints::to_fluid_ounces(789.0);
+		assert_approx_eq!(15780.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_fluid_ounces_3() {
+		let result: f64 = volume::pints::to_fluid_ounces(1020.8);
+		assert_approx_eq!(20416.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_teaspoons_1() {
+		let result: f64 = volume::pints::to_u_s_teaspoons(1020.8);
+		assert_approx_eq!(117689.298303295, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_teaspoons_2() {
+		let result: f64 = volume::pints::to_u_s_teaspoons(0.4);
+		assert_approx_eq!(46.1165, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_teaspoons_3() {
+		let result: f64 = volume::pints::to_u_s_teaspoons(104.0);
+		assert_approx_eq!(11990.2890120912, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_tablespoons_1() {
+		let result: f64 = volume::pints::to_u_s_tablespoons(104.0);
+		assert_approx_eq!(3996.76, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_tablespoons_2() {
+		let result: f64 = volume::pints::to_u_s_tablespoons(5.6);
+		assert_approx_eq!(215.21, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_tablespoons_3() {
+		let result: f64 = volume::pints::to_u_s_tablespoons(0.4);
+		assert_approx_eq!(15.3722, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_quarts_1() {
+		let result: f64 = volume::pints::to_u_s_quarts(0.55);
+		assert_approx_eq!(0.3302612, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_quarts_2() {
+		let result: f64 = volume::pints::to_u_s_quarts(80.6);
+		assert_approx_eq!(48.39828, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_quarts_3() {
+		let result: f64 = volume::pints::to_u_s_quarts(12.0);
+		assert_approx_eq!(7.2057, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_pints_1() {
+		let result: f64 = volume::pints::to_u_s_pints(12.0);
+		assert_approx_eq!(14.4114, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_pints_2() {
+		let result: f64 = volume::pints::to_u_s_pints(4.7);
+		assert_approx_eq!(5.64446, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_pints_3() {
+		let result: f64 = volume::pints::to_u_s_pints(0.44);
+		assert_approx_eq!(0.528418, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_gallons_1() {
+		let result: f64 = volume::pints::to_u_s_gallons(1.2);
+		assert_approx_eq!(0.180142, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_gallons_2() {
+		let result: f64 = volume::pints::to_u_s_gallons(9000.0);
+		assert_approx_eq!(1351.069, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_gallons_3() {
+		let result: f64 = volume::pints::to_u_s_gallons(108.4);
+		assert_approx_eq!(16.272871, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::pints::to_u_s_fluid_ounces(108.0);
+		assert_approx_eq!(2075.24, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::pints::to_u_s_fluid_ounces(23.4);
+		assert_approx_eq!(449.6357, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::pints::to_u_s_fluid_ounces(8.65);
+		assert_approx_eq!(166.2115, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_cups_1() {
+		let result: f64 = volume::pints::to_u_s_cups(23.0);
+		assert_approx_eq!(55.2437, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_cups_2() {
+		let result: f64 = volume::pints::to_u_s_cups(3.0);
+		assert_approx_eq!(7.2057, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownpints_to_u_s_cups_3() {
+		let result: f64 = volume::pints::to_u_s_cups(50.6);
+		assert_approx_eq!(121.5361, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_millilitres_1() {
+		let result: f64 = volume::quarts::to_millilitres(1.4);
+		assert_approx_eq!(1591.13, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_millilitres_2() {
+		let result: f64 = volume::quarts::to_millilitres(800.0);
+		assert_approx_eq!(909218.37579999, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_millilitres_3() {
+		let result: f64 = volume::quarts::to_millilitres(0.7);
+		assert_approx_eq!(795.566, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_litres_1() {
+		let result: f64 = volume::quarts::to_litres(675.0);
+		assert_approx_eq!(767.153, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_litres_2() {
+		let result: f64 = volume::quarts::to_litres(45.8);
+		assert_approx_eq!(52.05273, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_litres_3() {
+		let result: f64 = volume::quarts::to_litres(0.8);
+		assert_approx_eq!(0.909218, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_kilolitres_1() {
+		let result: f64 = volume::quarts::to_kilolitres(8009.0);
+		assert_approx_eq!(9.102409, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_kilolitres_2() {
+		let result: f64 = volume::quarts::to_kilolitres(12345.0);
+		assert_approx_eq!(14.03037, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_kilolitres_3() {
+		let result: f64 = volume::quarts::to_kilolitres(601.0);
+		assert_approx_eq!(0.68305, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_teaspoons_1() {
+		let result: f64 = volume::quarts::to_teaspoons(6.0);
+		assert_approx_eq!(1152.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_teaspoons_2() {
+		let result: f64 = volume::quarts::to_teaspoons(0.9);
+		assert_approx_eq!(172.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_teaspoons_3() {
+		let result: f64 = volume::quarts::to_teaspoons(0.03);
+		assert_approx_eq!(5.759998, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_tablespoons_1() {
+		let result: f64 = volume::quarts::to_tablespoons(5.9);
+		assert_approx_eq!(377.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_tablespoons_2() {
+		let result: f64 = volume::quarts::to_tablespoons(0.34);
+		assert_approx_eq!(21.75999, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_tablespoons_3() {
+		let result: f64 = volume::quarts::to_tablespoons(2.9);
+		assert_approx_eq!(185.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_pints_1() {
+		let result: f64 = volume::quarts::to_pints(4.5);
+		assert_approx_eq!(9.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_pints_2() {
+		let result: f64 = volume::quarts::to_pints(102.8);
+		assert_approx_eq!(205.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_pints_3() {
+		let result: f64 = volume::quarts::to_pints(0.46);
+		assert_approx_eq!(0.92, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_gallons_1() {
+		let result: f64 = volume::quarts::to_gallons(0.46);
+		assert_approx_eq!(0.115, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_gallons_2() {
+		let result: f64 = volume::quarts::to_gallons(190.0);
+		assert_approx_eq!(47.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_gallons_3() {
+		let result: f64 = volume::quarts::to_gallons(67.6);
+		assert_approx_eq!(16.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_fluid_ounces_1() {
+		let result: f64 = volume::quarts::to_fluid_ounces(67.6);
+		assert_approx_eq!(2704.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_fluid_ounces_2() {
+		let result: f64 = volume::quarts::to_fluid_ounces(1009.0);
+		assert_approx_eq!(40360.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_fluid_ounces_3() {
+		let result: f64 = volume::quarts::to_fluid_ounces(6.2);
+		assert_approx_eq!(248.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_teaspoons_1() {
+		let result: f64 = volume::quarts::to_u_s_teaspoons(6.2);
+		assert_approx_eq!(1429.61, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_teaspoons_2() {
+		let result: f64 = volume::quarts::to_u_s_teaspoons(0.7);
+		assert_approx_eq!(161.408, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_teaspoons_3() {
+		let result: f64 = volume::quarts::to_u_s_teaspoons(80.3);
+		assert_approx_eq!(18515.77, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_tablespoons_1() {
+		let result: f64 = volume::quarts::to_u_s_tablespoons(80.0);
+		assert_approx_eq!(6148.86, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_tablespoons_2() {
+		let result: f64 = volume::quarts::to_u_s_tablespoons(5.7);
+		assert_approx_eq!(438.107, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_tablespoons_3() {
+		let result: f64 = volume::quarts::to_u_s_tablespoons(0.44);
+		assert_approx_eq!(33.81875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_quarts_1() {
+		let result: f64 = volume::quarts::to_u_s_quarts(0.44);
+		assert_approx_eq!(0.528418, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_quarts_2() {
+		let result: f64 = volume::quarts::to_u_s_quarts(12.7);
+		assert_approx_eq!(15.25206, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_quarts_3() {
+		let result: f64 = volume::quarts::to_u_s_quarts(109.0);
+		assert_approx_eq!(130.904, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_pints_1() {
+		let result: f64 = volume::quarts::to_u_s_pints(18.0);
+		assert_approx_eq!(43.2342, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_pints_2() {
+		let result: f64 = volume::quarts::to_u_s_pints(2.5);
+		assert_approx_eq!(6.00475, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_pints_3() {
+		let result: f64 = volume::quarts::to_u_s_pints(0.4);
+		assert_approx_eq!(0.96076, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_gallons_1() {
+		let result: f64 = volume::quarts::to_u_s_gallons(4.8);
+		assert_approx_eq!(1.44114, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_gallons_2() {
+		let result: f64 = volume::quarts::to_u_s_gallons(0.3);
+		assert_approx_eq!(0.0900712, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_gallons_3() {
+		let result: f64 = volume::quarts::to_u_s_gallons(1.5);
+		assert_approx_eq!(0.450356, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::quarts::to_u_s_fluid_ounces(6.0);
+		assert_approx_eq!(230.582, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::quarts::to_u_s_fluid_ounces(0.46);
+		assert_approx_eq!(17.67798, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::quarts::to_u_s_fluid_ounces(2.0);
+		assert_approx_eq!(76.8608, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_cups_1() {
+		let result: f64 = volume::quarts::to_u_s_cups(2.0);
+		assert_approx_eq!(9.6076, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_cups_2() {
+		let result: f64 = volume::quarts::to_u_s_cups(800.9);
+		assert_approx_eq!(3847.3632, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownquarts_to_u_s_cups_3() {
+		let result: f64 = volume::quarts::to_u_s_cups(0.23);
+		assert_approx_eq!(1.104874, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_millilitres_1() {
+		let result: f64 = volume::tablespoons::to_millilitres(2.7);
+		assert_approx_eq!(47.9471, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_millilitres_2() {
+		let result: f64 = volume::tablespoons::to_millilitres(0.65);
+		assert_approx_eq!(11.54281, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_millilitres_3() {
+		let result: f64 = volume::tablespoons::to_millilitres(80.1);
+		assert_approx_eq!(1422.43, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_litres_1() {
+		let result: f64 = volume::tablespoons::to_litres(55.0);
+		assert_approx_eq!(0.976699, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_litres_2() {
+		let result: f64 = volume::tablespoons::to_litres(190.0);
+		assert_approx_eq!(3.37405, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_litres_3() {
+		let result: f64 = volume::tablespoons::to_litres(4000.0);
+		assert_approx_eq!(71.0397889, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_kilolitres_1() {
+		let result: f64 = volume::tablespoons::to_kilolitres(10000.0);
+		assert_approx_eq!(0.1775817, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_kilolitres_2() {
+		let result: f64 = volume::tablespoons::to_kilolitres(98765.0);
+		assert_approx_eq!(1.7538858, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_kilolitres_3() {
+		let result: f64 = volume::tablespoons::to_kilolitres(666999.0);
+		assert_approx_eq!(11.8446826, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_teaspoons_1() {
+		let result: f64 = volume::tablespoons::to_teaspoons(12.0);
+		assert_approx_eq!(36.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_teaspoons_2() {
+		let result: f64 = volume::tablespoons::to_teaspoons(0.24);
+		assert_approx_eq!(0.72, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_teaspoons_3() {
+		let result: f64 = volume::tablespoons::to_teaspoons(19.9);
+		assert_approx_eq!(59.7, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_quarts_1() {
+		let result: f64 = volume::tablespoons::to_quarts(190.0);
+		assert_approx_eq!(2.96875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_quarts_2() {
+		let result: f64 = volume::tablespoons::to_quarts(9.0);
+		assert_approx_eq!(0.140625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_quarts_3() {
+		let result: f64 = volume::tablespoons::to_quarts(3.7);
+		assert_approx_eq!(0.0578125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_pints_1() {
+		let result: f64 = volume::tablespoons::to_pints(4.7);
+		assert_approx_eq!(0.146875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_pints_2() {
+		let result: f64 = volume::tablespoons::to_pints(190.0);
+		assert_approx_eq!(5.9375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_pints_3() {
+		let result: f64 = volume::tablespoons::to_pints(1090.9);
+		assert_approx_eq!(34.0906391, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_gallons_1() {
+		let result: f64 = volume::tablespoons::to_gallons(8000.0);
+		assert_approx_eq!(31.25001, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_gallons_2() {
+		let result: f64 = volume::tablespoons::to_gallons(54.0);
+		assert_approx_eq!(0.210938, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_gallons_3() {
+		let result: f64 = volume::tablespoons::to_gallons(99.3);
+		assert_approx_eq!(0.3878908, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_fluid_ounces_1() {
+		let result: f64 = volume::tablespoons::to_fluid_ounces(80.8);
+		assert_approx_eq!(50.50002, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_fluid_ounces_2() {
+		let result: f64 = volume::tablespoons::to_fluid_ounces(9009.0);
+		assert_approx_eq!(5630.627, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_fluid_ounces_3() {
+		let result: f64 = volume::tablespoons::to_fluid_ounces(12.6);
+		assert_approx_eq!(7.875003, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_teaspoons_1() {
+		let result: f64 = volume::tablespoons::to_u_s_teaspoons(12.0);
+		assert_approx_eq!(43.2342, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_teaspoons_2() {
+		let result: f64 = volume::tablespoons::to_u_s_teaspoons(0.6);
+		assert_approx_eq!(2.16171, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_teaspoons_3() {
+		let result: f64 = volume::tablespoons::to_u_s_teaspoons(52.9);
+		assert_approx_eq!(190.5909, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_tablespoons_1() {
+		let result: f64 = volume::tablespoons::to_u_s_tablespoons(67.0);
+		assert_approx_eq!(80.4637, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_tablespoons_2() {
+		let result: f64 = volume::tablespoons::to_u_s_tablespoons(5.8);
+		assert_approx_eq!(6.96551, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_tablespoons_3() {
+		let result: f64 = volume::tablespoons::to_u_s_tablespoons(0.23);
+		assert_approx_eq!(0.2762186, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_quarts_1() {
+		let result: f64 = volume::tablespoons::to_u_s_quarts(54.0);
+		assert_approx_eq!(1.0133, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_quarts_2() {
+		let result: f64 = volume::tablespoons::to_u_s_quarts(1005.9);
+		assert_approx_eq!(18.875563, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_quarts_3() {
+		let result: f64 = volume::tablespoons::to_u_s_quarts(0.9);
+		assert_approx_eq!(0.0168884, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_pints_1() {
+		let result: f64 = volume::tablespoons::to_u_s_pints(34.0);
+		assert_approx_eq!(1.27601, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_pints_2() {
+		let result: f64 = volume::tablespoons::to_u_s_pints(109.3);
+		assert_approx_eq!(4.1019963, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_pints_3() {
+		let result: f64 = volume::tablespoons::to_u_s_pints(190.0);
+		assert_approx_eq!(7.13064, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_gallons_1() {
+		let result: f64 = volume::tablespoons::to_u_s_gallons(900.0);
+		assert_approx_eq!(4.22209, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_gallons_2() {
+		let result: f64 = volume::tablespoons::to_u_s_gallons(2.8);
+		assert_approx_eq!(0.0131354, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_gallons_3() {
+		let result: f64 = volume::tablespoons::to_u_s_gallons(1469.0);
+		assert_approx_eq!(6.891391, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::tablespoons::to_u_s_fluid_ounces(1009.0);
+		assert_approx_eq!(605.8795, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::tablespoons::to_u_s_fluid_ounces(8.2);
+		assert_approx_eq!(4.9239, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::tablespoons::to_u_s_fluid_ounces(190.5);
+		assert_approx_eq!(114.39053, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_cups_1() {
+		let result: f64 = volume::tablespoons::to_u_s_cups(109.0);
+		assert_approx_eq!(8.18147, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_cups_2() {
+		let result: f64 = volume::tablespoons::to_u_s_cups(3.4);
+		assert_approx_eq!(0.255202, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowntablespoons_to_u_s_cups_3() {
+		let result: f64 = volume::tablespoons::to_u_s_cups(1000.0);
+		assert_approx_eq!(75.0594, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_millilitres_1() {
+		let result: f64 = volume::teaspoons::to_millilitres(0.6);
+		assert_approx_eq!(3.55163, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_millilitres_2() {
+		let result: f64 = volume::teaspoons::to_millilitres(1.3);
+		assert_approx_eq!(7.69521, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_millilitres_3() {
+		let result: f64 = volume::teaspoons::to_millilitres(0.07);
+		assert_approx_eq!(0.4143573, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_litres_1() {
+		let result: f64 = volume::teaspoons::to_litres(32.0);
+		assert_approx_eq!(0.18942, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_litres_2() {
+		let result: f64 = volume::teaspoons::to_litres(180.0);
+		assert_approx_eq!(1.06549, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_litres_3() {
+		let result: f64 = volume::teaspoons::to_litres(4567.0);
+		assert_approx_eq!(27.03386, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_kilolitres_1() {
+		let result: f64 = volume::teaspoons::to_kilolitres(236511.0);
+		assert_approx_eq!(1.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_kilolitres_2() {
+		let result: f64 = volume::teaspoons::to_kilolitres(33787.3);
+		assert_approx_eq!(0.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_kilolitres_3() {
+		let result: f64 = volume::teaspoons::to_kilolitres(1689.363);
+		assert_approx_eq!(0.01, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_tablespoons_1() {
+		let result: f64 = volume::teaspoons::to_tablespoons(12.0);
+		assert_approx_eq!(4.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_tablespoons_2() {
+		let result: f64 = volume::teaspoons::to_tablespoons(900.8);
+		assert_approx_eq!(300.26667, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_tablespoons_3() {
+		let result: f64 = volume::teaspoons::to_tablespoons(1.23);
+		assert_approx_eq!(0.41, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_quarts_1() {
+		let result: f64 = volume::teaspoons::to_quarts(109.0);
+		assert_approx_eq!(0.567709, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_quarts_2() {
+		let result: f64 = volume::teaspoons::to_quarts(4500.0);
+		assert_approx_eq!(23.43751, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_quarts_3() {
+		let result: f64 = volume::teaspoons::to_quarts(89.0);
+		assert_approx_eq!(0.463542, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_pints_1() {
+		let result: f64 = volume::teaspoons::to_pints(678.0);
+		assert_approx_eq!(7.0625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_pints_2() {
+		let result: f64 = volume::teaspoons::to_pints(109.0);
+		assert_approx_eq!(1.13542, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_pints_3() {
+		let result: f64 = volume::teaspoons::to_pints(12.5);
+		assert_approx_eq!(0.1302084, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_gallons_1() {
+		let result: f64 = volume::teaspoons::to_gallons(190.0);
+		assert_approx_eq!(0.247396, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_gallons_2() {
+		let result: f64 = volume::teaspoons::to_gallons(8090.0);
+		assert_approx_eq!(10.53386, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_gallons_3() {
+		let result: f64 = volume::teaspoons::to_gallons(238.9);
+		assert_approx_eq!(0.31106784, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_fluid_ounces_1() {
+		let result: f64 = volume::teaspoons::to_fluid_ounces(109.0);
+		assert_approx_eq!(22.7083, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_fluid_ounces_2() {
+		let result: f64 = volume::teaspoons::to_fluid_ounces(55.7);
+		assert_approx_eq!(11.60417, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_fluid_ounces_3() {
+		let result: f64 = volume::teaspoons::to_fluid_ounces(609.0);
+		assert_approx_eq!(126.875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_teaspoons_1() {
+		let result: f64 = volume::teaspoons::to_u_s_teaspoons(90.0);
+		assert_approx_eq!(108.086, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_teaspoons_2() {
+		let result: f64 = volume::teaspoons::to_u_s_teaspoons(1.45);
+		assert_approx_eq!(1.741379, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_teaspoons_3() {
+		let result: f64 = volume::teaspoons::to_u_s_teaspoons(80.1);
+		assert_approx_eq!(96.19616, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_tablespoons_1() {
+		let result: f64 = volume::teaspoons::to_u_s_tablespoons(56.0);
+		assert_approx_eq!(22.4177, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_tablespoons_2() {
+		let result: f64 = volume::teaspoons::to_u_s_tablespoons(7.0);
+		assert_approx_eq!(2.80222, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_tablespoons_3() {
+		let result: f64 = volume::teaspoons::to_u_s_tablespoons(109.0);
+		assert_approx_eq!(43.6345, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_quarts_1() {
+		let result: f64 = volume::teaspoons::to_u_s_quarts(199.0);
+		assert_approx_eq!(1.24474, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_quarts_2() {
+		let result: f64 = volume::teaspoons::to_u_s_quarts(5.9);
+		assert_approx_eq!(0.0369042, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_quarts_3() {
+		let result: f64 = volume::teaspoons::to_u_s_quarts(23.0);
+		assert_approx_eq!(0.143864, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_pints_1() {
+		let result: f64 = volume::teaspoons::to_u_s_pints(106.0);
+		assert_approx_eq!(1.32605, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_pints_2() {
+		let result: f64 = volume::teaspoons::to_u_s_pints(34.0);
+		assert_approx_eq!(0.425337, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_pints_3() {
+		let result: f64 = volume::teaspoons::to_u_s_pints(6.21);
+		assert_approx_eq!(0.07656059, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_gallons_1() {
+		let result: f64 = volume::teaspoons::to_u_s_gallons(900.0);
+		assert_approx_eq!(1.40736, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_gallons_2() {
+		let result: f64 = volume::teaspoons::to_u_s_gallons(1234.6);
+		assert_approx_eq!(1.93059035, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_gallons_3() {
+		let result: f64 = volume::teaspoons::to_u_s_gallons(88.0);
+		assert_approx_eq!(0.137609, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::teaspoons::to_u_s_fluid_ounces(56.0);
+		assert_approx_eq!(11.2089, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::teaspoons::to_u_s_fluid_ounces(2.9);
+		assert_approx_eq!(0.580459, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::teaspoons::to_u_s_fluid_ounces(1020.0);
+		assert_approx_eq!(204.1616, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_cups_1() {
+		let result: f64 = volume::teaspoons::to_u_s_cups(8000.0);
+		assert_approx_eq!(200.1584, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_cups_2() {
+		let result: f64 = volume::teaspoons::to_u_s_cups(34.0);
+		assert_approx_eq!(0.850673, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownteaspoons_to_u_s_cups_3() {
+		let result: f64 = volume::teaspoons::to_u_s_cups(109.9);
+		assert_approx_eq!(2.7496761, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_millilitres_1() {
+		let result: f64 = volume::u_s_cups::to_millilitres(11.0);
+		assert_approx_eq!(2602.47, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_millilitres_2() {
+		let result: f64 = volume::u_s_cups::to_millilitres(109.0);
+		assert_approx_eq!(25788.1177, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_millilitres_3() {
+		let result: f64 = volume::u_s_cups::to_millilitres(4.5);
+		assert_approx_eq!(1064.65, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_litres_1() {
+		let result: f64 = volume::u_s_cups::to_litres(56.0);
+		assert_approx_eq!(13.2489, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_litres_2() {
+		let result: f64 = volume::u_s_cups::to_litres(4.1);
+		assert_approx_eq!(0.970012, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_litres_3() {
+		let result: f64 = volume::u_s_cups::to_litres(399.0);
+		assert_approx_eq!(94.3987, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_kilolitres_1() {
+		let result: f64 = volume::u_s_cups::to_kilolitres(67.0);
+		assert_approx_eq!(0.0158514, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_kilolitres_2() {
+		let result: f64 = volume::u_s_cups::to_kilolitres(1009.7);
+		assert_approx_eq!(0.238883142, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_kilolitres_3() {
+		let result: f64 = volume::u_s_cups::to_kilolitres(918273.0);
+		assert_approx_eq!(217.25259, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_teaspoons_1() {
+		let result: f64 = volume::u_s_cups::to_teaspoons(4.0);
+		assert_approx_eq!(159.873, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_teaspoons_2() {
+		let result: f64 = volume::u_s_cups::to_teaspoons(0.2);
+		assert_approx_eq!(7.99367, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_teaspoons_3() {
+		let result: f64 = volume::u_s_cups::to_teaspoons(6.12);
+		assert_approx_eq!(244.6063, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_tablespoons_1() {
+		let result: f64 = volume::u_s_cups::to_tablespoons(4.3);
+		assert_approx_eq!(57.288, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_tablespoons_2() {
+		let result: f64 = volume::u_s_cups::to_tablespoons(120.6);
+		assert_approx_eq!(1606.7274, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_tablespoons_3() {
+		let result: f64 = volume::u_s_cups::to_tablespoons(0.66);
+		assert_approx_eq!(8.793036, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_quarts_1() {
+		let result: f64 = volume::u_s_cups::to_quarts(1009.0);
+		assert_approx_eq!(210.0421, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_quarts_2() {
+		let result: f64 = volume::u_s_cups::to_quarts(66.98);
+		assert_approx_eq!(13.943129, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_quarts_3() {
+		let result: f64 = volume::u_s_cups::to_quarts(0.123);
+		assert_approx_eq!(0.025604731, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_pints_1() {
+		let result: f64 = volume::u_s_cups::to_pints(5.0);
+		assert_approx_eq!(2.08169, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_pints_2() {
+		let result: f64 = volume::u_s_cups::to_pints(0.43);
+		assert_approx_eq!(0.1790249, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_pints_3() {
+		let result: f64 = volume::u_s_cups::to_pints(800.4);
+		assert_approx_eq!(333.23621, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_gallons_1() {
+		let result: f64 = volume::u_s_cups::to_gallons(56.0);
+		assert_approx_eq!(2.91436, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_gallons_2() {
+		let result: f64 = volume::u_s_cups::to_gallons(104.12);
+		assert_approx_eq!(5.41862726, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_gallons_3() {
+		let result: f64 = volume::u_s_cups::to_gallons(6.1);
+		assert_approx_eq!(0.317457, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_fluid_ounces_1() {
+		let result: f64 = volume::u_s_cups::to_fluid_ounces(55.0);
+		assert_approx_eq!(457.971, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_fluid_ounces_2() {
+		let result: f64 = volume::u_s_cups::to_fluid_ounces(0.4);
+		assert_approx_eq!(3.3307, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_fluid_ounces_3() {
+		let result: f64 = volume::u_s_cups::to_fluid_ounces(88.4);
+		assert_approx_eq!(736.084, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_teaspoons_1() {
+		let result: f64 = volume::u_s_cups::to_u_s_teaspoons(12.0);
+		assert_approx_eq!(576.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_teaspoons_2() {
+		let result: f64 = volume::u_s_cups::to_u_s_teaspoons(5.12);
+		assert_approx_eq!(245.7601, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_teaspoons_3() {
+		let result: f64 = volume::u_s_cups::to_u_s_teaspoons(6701.0);
+		assert_approx_eq!(321648.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_tablespoons_1() {
+		let result: f64 = volume::u_s_cups::to_u_s_tablespoons(677.0);
+		assert_approx_eq!(10832.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_tablespoons_2() {
+		let result: f64 = volume::u_s_cups::to_u_s_tablespoons(1.9);
+		assert_approx_eq!(30.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_tablespoons_3() {
+		let result: f64 = volume::u_s_cups::to_u_s_tablespoons(800.8);
+		assert_approx_eq!(12812.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_quarts_1() {
+		let result: f64 = volume::u_s_cups::to_u_s_quarts(800.8);
+		assert_approx_eq!(200.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_quarts_2() {
+		let result: f64 = volume::u_s_cups::to_u_s_quarts(4.84);
+		assert_approx_eq!(1.21, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_quarts_3() {
+		let result: f64 = volume::u_s_cups::to_u_s_quarts(0.99);
+		assert_approx_eq!(0.2475, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_pints_1() {
+		let result: f64 = volume::u_s_cups::to_u_s_pints(0.99);
+		assert_approx_eq!(0.495, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_pints_2() {
+		let result: f64 = volume::u_s_cups::to_u_s_pints(358.9);
+		assert_approx_eq!(179.45, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_pints_3() {
+		let result: f64 = volume::u_s_cups::to_u_s_pints(1000.0);
+		assert_approx_eq!(500.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_gallons_1() {
+		let result: f64 = volume::u_s_cups::to_u_s_gallons(1000.0);
+		assert_approx_eq!(62.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_gallons_2() {
+		let result: f64 = volume::u_s_cups::to_u_s_gallons(0.78);
+		assert_approx_eq!(0.04875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_gallons_3() {
+		let result: f64 = volume::u_s_cups::to_u_s_gallons(123.123);
+		assert_approx_eq!(7.6951875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::u_s_cups::to_u_s_fluid_ounces(123.123);
+		assert_approx_eq!(984.984, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::u_s_cups::to_u_s_fluid_ounces(4.0);
+		assert_approx_eq!(32.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_cups_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::u_s_cups::to_u_s_fluid_ounces(0.9);
+		assert_approx_eq!(7.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_millilitres_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_millilitres(0.98);
+		assert_approx_eq!(28.98206, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_millilitres_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_millilitres(8.2);
+		assert_approx_eq!(242.503, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_millilitres_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_millilitres(100.3);
+		assert_approx_eq!(2966.225, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_litres_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_litres(12.0);
+		assert_approx_eq!(0.354882, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_litres_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_litres(150.6);
+		assert_approx_eq!(4.4537736, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_litres_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_litres(5.9);
+		assert_approx_eq!(0.174484, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_kilolitres_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_kilolitres(34.0);
+		assert_approx_eq!(0.0010055, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_kilolitres_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_kilolitres(109.1);
+		assert_approx_eq!(0.0032264721, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_kilolitres_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_kilolitres(45678.0);
+		assert_approx_eq!(1.3508597, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_teaspoons_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_teaspoons(4.0);
+		assert_approx_eq!(19.9842, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_teaspoons_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_teaspoons(0.12);
+		assert_approx_eq!(0.5995252, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_teaspoons_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_teaspoons(2.99);
+		assert_approx_eq!(14.93817, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_tablespoons_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_tablespoons(800.0);
+		assert_approx_eq!(1332.28, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_tablespoons_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_tablespoons(0.02);
+		assert_approx_eq!(0.03330695, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_tablespoons_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_tablespoons(2.7);
+		assert_approx_eq!(4.49644, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_quarts_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_quarts(3.5);
+		assert_approx_eq!(0.0910737, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_quarts_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_quarts(0.76);
+		assert_approx_eq!(0.01977601, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_quarts_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_quarts(2.0);
+		assert_approx_eq!(0.0520421, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_pints_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_pints(12.0);
+		assert_approx_eq!(0.624506, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_pints_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_pints(0.4);
+		assert_approx_eq!(0.0208169, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_pints_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_pints(1.99);
+		assert_approx_eq!(0.1035639, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_gallons_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_gallons(3.0);
+		assert_approx_eq!(0.0195158, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_gallons_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_gallons(100.5);
+		assert_approx_eq!(0.65377934, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_gallons_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_gallons(0.9);
+		assert_approx_eq!(0.00585474, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_fluid_ounces_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_fluid_ounces(0.6);
+		assert_approx_eq!(0.624506, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_fluid_ounces_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_fluid_ounces(123.0);
+		assert_approx_eq!(128.024, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_fluid_ounces_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_fluid_ounces(8009.0);
+		assert_approx_eq!(8336.109, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_teaspoons_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_teaspoons(45.0);
+		assert_approx_eq!(270.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_teaspoons_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_teaspoons(1.5);
+		assert_approx_eq!(9.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_teaspoons_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_teaspoons(400.8);
+		assert_approx_eq!(2404.8008, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_tablespoons_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_tablespoons(4.0);
+		assert_approx_eq!(8.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_tablespoons_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_tablespoons(170.2);
+		assert_approx_eq!(340.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_tablespoons_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_tablespoons(8811.0);
+		assert_approx_eq!(17622.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_quarts_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_quarts(8811.0);
+		assert_approx_eq!(275.3438, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_quarts_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_quarts(4.2);
+		assert_approx_eq!(0.13125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_quarts_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_quarts(109.0);
+		assert_approx_eq!(3.40625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_pints_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_pints(109.0);
+		assert_approx_eq!(6.8125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_pints_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_pints(77.09);
+		assert_approx_eq!(4.818125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_pints_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_pints(180.4);
+		assert_approx_eq!(11.275, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_gallons_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_gallons(45.0);
+		assert_approx_eq!(0.351563, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_gallons_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_gallons(1.8);
+		assert_approx_eq!(0.0140625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_gallons_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_gallons(778.9);
+		assert_approx_eq!(6.0851562, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_cups_1() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_cups(45.0);
+		assert_approx_eq!(5.625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_cups_2() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_cups(66.9);
+		assert_approx_eq!(8.3625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_fluid_ounces_to_u_s_cups_3() {
+		let result: f64 = volume::u_s_fluid_ounces::to_u_s_cups(0.29);
+		assert_approx_eq!(0.03625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_millilitres_1() {
+		let result: f64 = volume::u_s_gallons::to_millilitres(2.0);
+		assert_approx_eq!(7570.82, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_millilitres_2() {
+		let result: f64 = volume::u_s_gallons::to_millilitres(0.1);
+		assert_approx_eq!(378.541, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_millilitres_3() {
+		let result: f64 = volume::u_s_gallons::to_millilitres(56.0);
+		assert_approx_eq!(211983.0599039, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_litres_1() {
+		let result: f64 = volume::u_s_gallons::to_litres(56.0);
+		assert_approx_eq!(211.983, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_litres_2() {
+		let result: f64 = volume::u_s_gallons::to_litres(5.1);
+		assert_approx_eq!(19.3056, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_litres_3() {
+		let result: f64 = volume::u_s_gallons::to_litres(2.5);
+		assert_approx_eq!(9.46353, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_kilolitres_1() {
+		let result: f64 = volume::u_s_gallons::to_kilolitres(111.0);
+		assert_approx_eq!(0.420181, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_kilolitres_2() {
+		let result: f64 = volume::u_s_gallons::to_kilolitres(9090.0);
+		assert_approx_eq!(34.40939, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_kilolitres_3() {
+		let result: f64 = volume::u_s_gallons::to_kilolitres(12345.0);
+		assert_approx_eq!(46.730908, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_teaspoons_1() {
+		let result: f64 = volume::u_s_gallons::to_teaspoons(5.0);
+		assert_approx_eq!(3197.47, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_teaspoons_2() {
+		let result: f64 = volume::u_s_gallons::to_teaspoons(0.4);
+		assert_approx_eq!(255.797, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_teaspoons_3() {
+		let result: f64 = volume::u_s_gallons::to_teaspoons(8000.0);
+		assert_approx_eq!(5115948.07582550, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_tablespoons_1() {
+		let result: f64 = volume::u_s_gallons::to_tablespoons(79.0);
+		assert_approx_eq!(16840.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_tablespoons_2() {
+		let result: f64 = volume::u_s_gallons::to_tablespoons(12.67);
+		assert_approx_eq!(2700.7943, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_tablespoons_3() {
+		let result: f64 = volume::u_s_gallons::to_tablespoons(55.1);
+		assert_approx_eq!(11745.36, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_quarts_1() {
+		let result: f64 = volume::u_s_gallons::to_quarts(54.0);
+		assert_approx_eq!(179.858, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_quarts_2() {
+		let result: f64 = volume::u_s_gallons::to_quarts(2.9);
+		assert_approx_eq!(9.65902, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_quarts_3() {
+		let result: f64 = volume::u_s_gallons::to_quarts(0.2);
+		assert_approx_eq!(0.666139, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_pints_1() {
+		let result: f64 = volume::u_s_gallons::to_pints(2.0);
+		assert_approx_eq!(13.3228, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_pints_2() {
+		let result: f64 = volume::u_s_gallons::to_pints(0.12);
+		assert_approx_eq!(0.7993672, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_pints_3() {
+		let result: f64 = volume::u_s_gallons::to_pints(500.0);
+		assert_approx_eq!(3330.7, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_gallons_1() {
+		let result: f64 = volume::u_s_gallons::to_gallons(23.0);
+		assert_approx_eq!(19.1515, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_gallons_2() {
+		let result: f64 = volume::u_s_gallons::to_gallons(8.2);
+		assert_approx_eq!(6.82793, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_gallons_3() {
+		let result: f64 = volume::u_s_gallons::to_gallons(1.09);
+		assert_approx_eq!(0.9076149, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_fluid_ounces_1() {
+		let result: f64 = volume::u_s_gallons::to_fluid_ounces(1.09);
+		assert_approx_eq!(145.2184, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_fluid_ounces_2() {
+		let result: f64 = volume::u_s_gallons::to_fluid_ounces(34.0);
+		assert_approx_eq!(4529.75, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_fluid_ounces_3() {
+		let result: f64 = volume::u_s_gallons::to_fluid_ounces(666.0);
+		assert_approx_eq!(88729.724440098, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_teaspoons_1() {
+		let result: f64 = volume::u_s_gallons::to_u_s_teaspoons(4.0);
+		assert_approx_eq!(3072.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_teaspoons_2() {
+		let result: f64 = volume::u_s_gallons::to_u_s_teaspoons(1.28);
+		assert_approx_eq!(983.0403, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_teaspoons_3() {
+		let result: f64 = volume::u_s_gallons::to_u_s_teaspoons(6.99);
+		assert_approx_eq!(5368.322, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_tablespoons_1() {
+		let result: f64 = volume::u_s_gallons::to_u_s_tablespoons(34.0);
+		assert_approx_eq!(8704.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_tablespoons_2() {
+		let result: f64 = volume::u_s_gallons::to_u_s_tablespoons(8.4);
+		assert_approx_eq!(2150.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_tablespoons_3() {
+		let result: f64 = volume::u_s_gallons::to_u_s_tablespoons(0.091);
+		assert_approx_eq!(23.296, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_quarts_1() {
+		let result: f64 = volume::u_s_gallons::to_u_s_quarts(0.091);
+		assert_approx_eq!(0.364, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_quarts_2() {
+		let result: f64 = volume::u_s_gallons::to_u_s_quarts(23.0);
+		assert_approx_eq!(92.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_quarts_3() {
+		let result: f64 = volume::u_s_gallons::to_u_s_quarts(1000.8);
+		assert_approx_eq!(4003.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_pints_1() {
+		let result: f64 = volume::u_s_gallons::to_u_s_pints(1000.8);
+		assert_approx_eq!(8006.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_pints_2() {
+		let result: f64 = volume::u_s_gallons::to_u_s_pints(23.6);
+		assert_approx_eq!(188.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_pints_3() {
+		let result: f64 = volume::u_s_gallons::to_u_s_pints(0.71);
+		assert_approx_eq!(5.68, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::u_s_gallons::to_u_s_fluid_ounces(0.71);
+		assert_approx_eq!(90.88, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::u_s_gallons::to_u_s_fluid_ounces(83.2);
+		assert_approx_eq!(10649.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::u_s_gallons::to_u_s_fluid_ounces(777.0);
+		assert_approx_eq!(99456.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_cups_1() {
+		let result: f64 = volume::u_s_gallons::to_u_s_cups(777.0);
+		assert_approx_eq!(12432.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_cups_2() {
+		let result: f64 = volume::u_s_gallons::to_u_s_cups(5.71);
+		assert_approx_eq!(91.36, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_gallons_to_u_s_cups_3() {
+		let result: f64 = volume::u_s_gallons::to_u_s_cups(0.98);
+		assert_approx_eq!(15.68, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_millilitres_1() {
+		let result: f64 = volume::u_s_pints::to_millilitres(0.66);
+		assert_approx_eq!(312.2965, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_millilitres_2() {
+		let result: f64 = volume::u_s_pints::to_millilitres(9.1);
+		assert_approx_eq!(4305.91, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_millilitres_3() {
+		let result: f64 = volume::u_s_pints::to_millilitres(0.8);
+		assert_approx_eq!(378.541, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_litres_1() {
+		let result: f64 = volume::u_s_pints::to_litres(1.5);
+		assert_approx_eq!(0.709765, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_litres_2() {
+		let result: f64 = volume::u_s_pints::to_litres(0.6);
+		assert_approx_eq!(0.283906, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_litres_3() {
+		let result: f64 = volume::u_s_pints::to_litres(1367.0);
+		assert_approx_eq!(646.8322, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_kilolitres_1() {
+		let result: f64 = volume::u_s_pints::to_kilolitres(1900.0);
+		assert_approx_eq!(0.8990353, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_kilolitres_2() {
+		let result: f64 = volume::u_s_pints::to_kilolitres(8888.0);
+		assert_approx_eq!(4.205592, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_kilolitres_3() {
+		let result: f64 = volume::u_s_pints::to_kilolitres(123456.0);
+		assert_approx_eq!(58.4164747, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_teaspoons_1() {
+		let result: f64 = volume::u_s_pints::to_teaspoons(6.0);
+		assert_approx_eq!(479.62, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_teaspoons_2() {
+		let result: f64 = volume::u_s_pints::to_teaspoons(0.08);
+		assert_approx_eq!(6.394935, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_teaspoons_3() {
+		let result: f64 = volume::u_s_pints::to_teaspoons(3.1);
+		assert_approx_eq!(247.804, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_tablespoons_1() {
+		let result: f64 = volume::u_s_pints::to_tablespoons(2.0);
+		assert_approx_eq!(53.2911, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_tablespoons_2() {
+		let result: f64 = volume::u_s_pints::to_tablespoons(0.09);
+		assert_approx_eq!(2.398101, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_tablespoons_3() {
+		let result: f64 = volume::u_s_pints::to_tablespoons(1678.0);
+		assert_approx_eq!(44711.25, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_quarts_1() {
+		let result: f64 = volume::u_s_pints::to_quarts(12.0);
+		assert_approx_eq!(4.99605, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_quarts_2() {
+		let result: f64 = volume::u_s_pints::to_quarts(503.8);
+		assert_approx_eq!(209.75063, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_quarts_3() {
+		let result: f64 = volume::u_s_pints::to_quarts(0.65);
+		assert_approx_eq!(0.2706191, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_pints_1() {
+		let result: f64 = volume::u_s_pints::to_pints(0.9);
+		assert_approx_eq!(0.749407, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_pints_2() {
+		let result: f64 = volume::u_s_pints::to_pints(102.0);
+		assert_approx_eq!(84.9328, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_pints_3() {
+		let result: f64 = volume::u_s_pints::to_pints(8000.7);
+		assert_approx_eq!(6661.97635, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_gallons_1() {
+		let result: f64 = volume::u_s_pints::to_gallons(80.0);
+		assert_approx_eq!(8.32674, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_gallons_2() {
+		let result: f64 = volume::u_s_pints::to_gallons(6.2);
+		assert_approx_eq!(0.645322, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_gallons_3() {
+		let result: f64 = volume::u_s_pints::to_gallons(0.7);
+		assert_approx_eq!(0.072859, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_fluid_ounces_1() {
+		let result: f64 = volume::u_s_pints::to_fluid_ounces(12.0);
+		assert_approx_eq!(199.842, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_fluid_ounces_2() {
+		let result: f64 = volume::u_s_pints::to_fluid_ounces(9.7);
+		assert_approx_eq!(161.539, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_fluid_ounces_3() {
+		let result: f64 = volume::u_s_pints::to_fluid_ounces(124.0);
+		assert_approx_eq!(2065.03, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_teaspoons_1() {
+		let result: f64 = volume::u_s_pints::to_u_s_teaspoons(4.0);
+		assert_approx_eq!(384.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_teaspoons_2() {
+		let result: f64 = volume::u_s_pints::to_u_s_teaspoons(2.5);
+		assert_approx_eq!(240.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_teaspoons_3() {
+		let result: f64 = volume::u_s_pints::to_u_s_teaspoons(8001.9);
+		assert_approx_eq!(768182.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_tablespoons_1() {
+		let result: f64 = volume::u_s_pints::to_u_s_tablespoons(80.0);
+		assert_approx_eq!(2560.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_tablespoons_2() {
+		let result: f64 = volume::u_s_pints::to_u_s_tablespoons(12.7);
+		assert_approx_eq!(406.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_tablespoons_3() {
+		let result: f64 = volume::u_s_pints::to_u_s_tablespoons(0.6);
+		assert_approx_eq!(19.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_quarts_1() {
+		let result: f64 = volume::u_s_pints::to_u_s_quarts(0.6);
+		assert_approx_eq!(0.3, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_quarts_2() {
+		let result: f64 = volume::u_s_pints::to_u_s_quarts(10090.0);
+		assert_approx_eq!(5045.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_quarts_3() {
+		let result: f64 = volume::u_s_pints::to_u_s_quarts(4.56);
+		assert_approx_eq!(2.28, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_gallons_1() {
+		let result: f64 = volume::u_s_pints::to_u_s_gallons(4.56);
+		assert_approx_eq!(0.57, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_gallons_2() {
+		let result: f64 = volume::u_s_pints::to_u_s_gallons(9000.0);
+		assert_approx_eq!(1125.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_gallons_3() {
+		let result: f64 = volume::u_s_pints::to_u_s_gallons(47.2);
+		assert_approx_eq!(5.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::u_s_pints::to_u_s_fluid_ounces(47.2);
+		assert_approx_eq!(755.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::u_s_pints::to_u_s_fluid_ounces(1001.0);
+		assert_approx_eq!(16016.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::u_s_pints::to_u_s_fluid_ounces(23.9);
+		assert_approx_eq!(382.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_cups_1() {
+		let result: f64 = volume::u_s_pints::to_u_s_cups(23.9);
+		assert_approx_eq!(47.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_cups_2() {
+		let result: f64 = volume::u_s_pints::to_u_s_cups(1009.0);
+		assert_approx_eq!(2018.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_pints_to_u_s_cups_3() {
+		let result: f64 = volume::u_s_pints::to_u_s_cups(45.9);
+		assert_approx_eq!(91.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_millilitres_1() {
+		let result: f64 = volume::u_s_quarts::to_millilitres(9000.0);
+		assert_approx_eq!(8517176.51400, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_millilitres_2() {
+		let result: f64 = volume::u_s_quarts::to_millilitres(5.0);
+		assert_approx_eq!(4731.76, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_millilitres_3() {
+		let result: f64 = volume::u_s_quarts::to_millilitres(0.7);
+		assert_approx_eq!(662.447, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_litres_1() {
+		let result: f64 = volume::u_s_quarts::to_litres(9.0);
+		assert_approx_eq!(8.51718, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_litres_2() {
+		let result: f64 = volume::u_s_quarts::to_litres(1024.0);
+		assert_approx_eq!(969.0654, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_litres_3() {
+		let result: f64 = volume::u_s_quarts::to_litres(0.8);
+		assert_approx_eq!(0.757082, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_kilolitres_1() {
+		let result: f64 = volume::u_s_quarts::to_kilolitres(1000.0);
+		assert_approx_eq!(0.946353, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_kilolitres_2() {
+		let result: f64 = volume::u_s_quarts::to_kilolitres(6789.0);
+		assert_approx_eq!(6.42479, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_kilolitres_3() {
+		let result: f64 = volume::u_s_quarts::to_kilolitres(45.0);
+		assert_approx_eq!(0.0425859, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_teaspoons_1() {
+		let result: f64 = volume::u_s_quarts::to_teaspoons(45.0);
+		assert_approx_eq!(7194.3, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_teaspoons_2() {
+		let result: f64 = volume::u_s_quarts::to_teaspoons(6.5);
+		assert_approx_eq!(1039.18, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_teaspoons_3() {
+		let result: f64 = volume::u_s_quarts::to_teaspoons(0.9);
+		assert_approx_eq!(143.886, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_tablespoons_1() {
+		let result: f64 = volume::u_s_quarts::to_tablespoons(6.0);
+		assert_approx_eq!(319.747, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_tablespoons_2() {
+		let result: f64 = volume::u_s_quarts::to_tablespoons(89.4);
+		assert_approx_eq!(4764.227, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_tablespoons_3() {
+		let result: f64 = volume::u_s_quarts::to_tablespoons(4.67);
+		assert_approx_eq!(248.8696, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_quarts_1() {
+		let result: f64 = volume::u_s_quarts::to_quarts(4.6);
+		assert_approx_eq!(3.8303, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_quarts_2() {
+		let result: f64 = volume::u_s_quarts::to_quarts(0.9);
+		assert_approx_eq!(0.749407, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_quarts_3() {
+		let result: f64 = volume::u_s_quarts::to_quarts(134.0);
+		assert_approx_eq!(111.578, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_pints_1() {
+		let result: f64 = volume::u_s_quarts::to_pints(123.0);
+		assert_approx_eq!(204.838, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_pints_2() {
+		let result: f64 = volume::u_s_quarts::to_pints(1090.9);
+		assert_approx_eq!(1816.72854, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_pints_3() {
+		let result: f64 = volume::u_s_quarts::to_pints(56.0);
+		assert_approx_eq!(93.2595, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_gallons_1() {
+		let result: f64 = volume::u_s_quarts::to_gallons(56.0);
+		assert_approx_eq!(11.6574, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_gallons_2() {
+		let result: f64 = volume::u_s_quarts::to_gallons(7.12);
+		assert_approx_eq!(1.48216, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_gallons_3() {
+		let result: f64 = volume::u_s_quarts::to_gallons(800.0);
+		assert_approx_eq!(166.535, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_fluid_ounces_1() {
+		let result: f64 = volume::u_s_quarts::to_fluid_ounces(800.0);
+		assert_approx_eq!(26645.56289492, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_fluid_ounces_2() {
+		let result: f64 = volume::u_s_quarts::to_fluid_ounces(6.8);
+		assert_approx_eq!(226.487, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_fluid_ounces_3() {
+		let result: f64 = volume::u_s_quarts::to_fluid_ounces(0.9);
+		assert_approx_eq!(29.9763, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_teaspoons_1() {
+		let result: f64 = volume::u_s_quarts::to_u_s_teaspoons(3.0);
+		assert_approx_eq!(576.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_teaspoons_2() {
+		let result: f64 = volume::u_s_quarts::to_u_s_teaspoons(0.12);
+		assert_approx_eq!(23.04001, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_teaspoons_3() {
+		let result: f64 = volume::u_s_quarts::to_u_s_teaspoons(4.5);
+		assert_approx_eq!(864.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_tablespoons_1() {
+		let result: f64 = volume::u_s_quarts::to_u_s_tablespoons(4.5);
+		assert_approx_eq!(288.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_tablespoons_2() {
+		let result: f64 = volume::u_s_quarts::to_u_s_tablespoons(0.777);
+		assert_approx_eq!(49.728, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_tablespoons_3() {
+		let result: f64 = volume::u_s_quarts::to_u_s_tablespoons(1.8);
+		assert_approx_eq!(115.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_pints_1() {
+		let result: f64 = volume::u_s_quarts::to_u_s_pints(1.8);
+		assert_approx_eq!(3.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_pints_2() {
+		let result: f64 = volume::u_s_quarts::to_u_s_pints(900.0);
+		assert_approx_eq!(1800.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_pints_3() {
+		let result: f64 = volume::u_s_quarts::to_u_s_pints(12.45);
+		assert_approx_eq!(24.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_gallons_1() {
+		let result: f64 = volume::u_s_quarts::to_u_s_gallons(12.45);
+		assert_approx_eq!(3.1125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_gallons_2() {
+		let result: f64 = volume::u_s_quarts::to_u_s_gallons(0.8);
+		assert_approx_eq!(0.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_gallons_3() {
+		let result: f64 = volume::u_s_quarts::to_u_s_gallons(100.9);
+		assert_approx_eq!(25.225, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::u_s_quarts::to_u_s_fluid_ounces(100.9);
+		assert_approx_eq!(3228.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::u_s_quarts::to_u_s_fluid_ounces(12345.0);
+		assert_approx_eq!(395040.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::u_s_quarts::to_u_s_fluid_ounces(8.7);
+		assert_approx_eq!(278.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_cups_1() {
+		let result: f64 = volume::u_s_quarts::to_u_s_cups(8.7);
+		assert_approx_eq!(34.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_cups_2() {
+		let result: f64 = volume::u_s_quarts::to_u_s_cups(123.9);
+		assert_approx_eq!(495.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_quarts_to_u_s_cups_3() {
+		let result: f64 = volume::u_s_quarts::to_u_s_cups(0.66);
+		assert_approx_eq!(2.64, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_millilitres_1() {
+		let result: f64 = volume::u_s_tablespoons::to_millilitres(12.0);
+		assert_approx_eq!(177.441, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_millilitres_2() {
+		let result: f64 = volume::u_s_tablespoons::to_millilitres(0.8);
+		assert_approx_eq!(11.8294, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_millilitres_3() {
+		let result: f64 = volume::u_s_tablespoons::to_millilitres(4500.0);
+		assert_approx_eq!(66540.44, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_litres_1() {
+		let result: f64 = volume::u_s_tablespoons::to_litres(567.0);
+		assert_approx_eq!(8.3841, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_litres_2() {
+		let result: f64 = volume::u_s_tablespoons::to_litres(80.9);
+		assert_approx_eq!(1.196249, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_litres_3() {
+		let result: f64 = volume::u_s_tablespoons::to_litres(10000.0);
+		assert_approx_eq!(147.8676, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_kilolitres_1() {
+		let result: f64 = volume::u_s_tablespoons::to_kilolitres(9900.0);
+		assert_approx_eq!(0.146389, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_kilolitres_2() {
+		let result: f64 = volume::u_s_tablespoons::to_kilolitres(123456.0);
+		assert_approx_eq!(1.82551483, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_kilolitres_3() {
+		let result: f64 = volume::u_s_tablespoons::to_kilolitres(18009.0);
+		assert_approx_eq!(0.26629485, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_teaspoons_1() {
+		let result: f64 = volume::u_s_tablespoons::to_teaspoons(14.0);
+		assert_approx_eq!(34.9723, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_teaspoons_2() {
+		let result: f64 = volume::u_s_tablespoons::to_teaspoons(0.9);
+		assert_approx_eq!(2.24822, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_teaspoons_3() {
+		let result: f64 = volume::u_s_tablespoons::to_teaspoons(180.0);
+		assert_approx_eq!(449.644, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_tablespoons_1() {
+		let result: f64 = volume::u_s_tablespoons::to_tablespoons(109.0);
+		assert_approx_eq!(90.7614, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_tablespoons_2() {
+		let result: f64 = volume::u_s_tablespoons::to_tablespoons(89.0);
+		assert_approx_eq!(74.108, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_tablespoons_3() {
+		let result: f64 = volume::u_s_tablespoons::to_tablespoons(5.2);
+		assert_approx_eq!(4.3299, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_quarts_1() {
+		let result: f64 = volume::u_s_tablespoons::to_quarts(345.0);
+		assert_approx_eq!(4.48863, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_quarts_2() {
+		let result: f64 = volume::u_s_tablespoons::to_quarts(89.9);
+		assert_approx_eq!(1.169647, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_quarts_3() {
+		let result: f64 = volume::u_s_tablespoons::to_quarts(12.88);
+		assert_approx_eq!(0.16757568, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_pints_1() {
+		let result: f64 = volume::u_s_tablespoons::to_pints(12.0);
+		assert_approx_eq!(0.312253, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_pints_2() {
+		let result: f64 = volume::u_s_tablespoons::to_pints(809.7);
+		assert_approx_eq!(21.069259, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_pints_3() {
+		let result: f64 = volume::u_s_tablespoons::to_pints(0.4);
+		assert_approx_eq!(0.0104084, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_gallons_1() {
+		let result: f64 = volume::u_s_tablespoons::to_gallons(400.0);
+		assert_approx_eq!(1.30105, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_gallons_2() {
+		let result: f64 = volume::u_s_tablespoons::to_gallons(1200.9);
+		assert_approx_eq!(3.90608761, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_gallons_3() {
+		let result: f64 = volume::u_s_tablespoons::to_gallons(8.0);
+		assert_approx_eq!(0.0260211, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_fluid_ounces_1() {
+		let result: f64 = volume::u_s_tablespoons::to_fluid_ounces(4.0);
+		assert_approx_eq!(2.08169, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_fluid_ounces_2() {
+		let result: f64 = volume::u_s_tablespoons::to_fluid_ounces(50.9);
+		assert_approx_eq!(26.48945, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_fluid_ounces_3() {
+		let result: f64 = volume::u_s_tablespoons::to_fluid_ounces(123.0);
+		assert_approx_eq!(64.0118, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_teaspoons_1() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_teaspoons(90.0);
+		assert_approx_eq!(270.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_teaspoons_2() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_teaspoons(4.5);
+		assert_approx_eq!(13.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_teaspoons_3() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_teaspoons(4608.0);
+		assert_approx_eq!(13824.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_quarts_1() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_quarts(456.0);
+		assert_approx_eq!(7.125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_quarts_2() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_quarts(7.12);
+		assert_approx_eq!(0.11125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_quarts_3() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_quarts(194.9);
+		assert_approx_eq!(3.0453125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_pints_1() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_pints(194.9);
+		assert_approx_eq!(6.090625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_pints_2() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_pints(2000.0);
+		assert_approx_eq!(62.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_pints_3() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_pints(18.7);
+		assert_approx_eq!(0.584375, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_gallons_1() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_gallons(18.7);
+		assert_approx_eq!(0.07304687, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_gallons_2() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_gallons(1900.0);
+		assert_approx_eq!(7.421875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_gallons_3() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_gallons(12345.0);
+		assert_approx_eq!(48.222656, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_fluid_ounces(1234.0);
+		assert_approx_eq!(617.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_fluid_ounces(89.3);
+		assert_approx_eq!(44.65, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_fluid_ounces(90.99);
+		assert_approx_eq!(45.495, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_cups_1() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_cups(90.99);
+		assert_approx_eq!(5.686875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_cups_2() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_cups(1230.0);
+		assert_approx_eq!(76.875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_tablespoons_to_u_s_cups_3() {
+		let result: f64 = volume::u_s_tablespoons::to_u_s_cups(9000.9);
+		assert_approx_eq!(562.55625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_millilitres_1() {
+		let result: f64 = volume::u_s_teaspoons::to_millilitres(6.9);
+		assert_approx_eq!(34.0095, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_millilitres_2() {
+		let result: f64 = volume::u_s_teaspoons::to_millilitres(1.6);
+		assert_approx_eq!(7.88627, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_millilitres_3() {
+		let result: f64 = volume::u_s_teaspoons::to_millilitres(800.0);
+		assert_approx_eq!(3943.14, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_litres_1() {
+		let result: f64 = volume::u_s_teaspoons::to_litres(7.0);
+		assert_approx_eq!(0.0345024, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_litres_2() {
+		let result: f64 = volume::u_s_teaspoons::to_litres(90.0);
+		assert_approx_eq!(0.443603, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_litres_3() {
+		let result: f64 = volume::u_s_teaspoons::to_litres(56.7);
+		assert_approx_eq!(0.2794698, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_kilolitres_1() {
+		let result: f64 = volume::u_s_teaspoons::to_kilolitres(10009000.0);
+		assert_approx_eq!(49.33356028, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_kilolitres_2() {
+		let result: f64 = volume::u_s_teaspoons::to_kilolitres(1234567.8);
+		assert_approx_eq!(6.08508592078, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_kilolitres_3() {
+		let result: f64 = volume::u_s_teaspoons::to_kilolitres(9800.0);
+		assert_approx_eq!(0.04830342, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_teaspoons_1() {
+		let result: f64 = volume::u_s_teaspoons::to_teaspoons(122.0);
+		assert_approx_eq!(101.586, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_teaspoons_2() {
+		let result: f64 = volume::u_s_teaspoons::to_teaspoons(89.2);
+		assert_approx_eq!(74.27448, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_teaspoons_3() {
+		let result: f64 = volume::u_s_teaspoons::to_teaspoons(900.0);
+		assert_approx_eq!(749.406, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_tablespoons_1() {
+		let result: f64 = volume::u_s_teaspoons::to_tablespoons(500.0);
+		assert_approx_eq!(138.779, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_tablespoons_2() {
+		let result: f64 = volume::u_s_teaspoons::to_tablespoons(12.34);
+		assert_approx_eq!(3.425064, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_tablespoons_3() {
+		let result: f64 = volume::u_s_teaspoons::to_tablespoons(667.0);
+		assert_approx_eq!(185.131, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_quarts_1() {
+		let result: f64 = volume::u_s_teaspoons::to_quarts(78.0);
+		assert_approx_eq!(0.338274, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_quarts_2() {
+		let result: f64 = volume::u_s_teaspoons::to_quarts(900.1);
+		assert_approx_eq!(3.9035927, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_quarts_3() {
+		let result: f64 = volume::u_s_teaspoons::to_quarts(116.9);
+		assert_approx_eq!(0.50697698, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_pints_1() {
+		let result: f64 = volume::u_s_teaspoons::to_pints(116.0);
+		assert_approx_eq!(1.00615, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_pints_2() {
+		let result: f64 = volume::u_s_teaspoons::to_pints(59.5);
+		assert_approx_eq!(0.5160844, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_pints_3() {
+		let result: f64 = volume::u_s_teaspoons::to_pints(1900.0);
+		assert_approx_eq!(16.48, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_gallons_1() {
+		let result: f64 = volume::u_s_teaspoons::to_gallons(199.0);
+		assert_approx_eq!(0.215758, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_gallons_2() {
+		let result: f64 = volume::u_s_teaspoons::to_gallons(12345.0);
+		assert_approx_eq!(13.384583, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_gallons_3() {
+		let result: f64 = volume::u_s_teaspoons::to_gallons(90001.0);
+		assert_approx_eq!(97.580059, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_fluid_ounces_1() {
+		let result: f64 = volume::u_s_teaspoons::to_fluid_ounces(123.0);
+		assert_approx_eq!(21.3373, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_fluid_ounces_2() {
+		let result: f64 = volume::u_s_teaspoons::to_fluid_ounces(89.0);
+		assert_approx_eq!(15.4392, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_fluid_ounces_3() {
+		let result: f64 = volume::u_s_teaspoons::to_fluid_ounces(1009.0);
+		assert_approx_eq!(175.035, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_tablespoons_1() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_tablespoons(190.0);
+		assert_approx_eq!(63.3333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_tablespoons_2() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_tablespoons(5.6);
+		assert_approx_eq!(1.86667, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_tablespoons_3() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_tablespoons(0.7);
+		assert_approx_eq!(0.233333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_quarts_1() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_quarts(100.4);
+		assert_approx_eq!(0.5229165, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_quarts_2() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_quarts(9000.0);
+		assert_approx_eq!(46.87498, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_quarts_3() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_quarts(1234.0);
+		assert_approx_eq!(6.427081, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_pints_1() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_pints(109.0);
+		assert_approx_eq!(1.13542, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_pints_2() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_pints(3400.0);
+		assert_approx_eq!(35.41666, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_pints_3() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_pints(10.7);
+		assert_approx_eq!(0.1114583, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_gallons_1() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_gallons(109.0);
+		assert_approx_eq!(0.141927, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_gallons_2() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_gallons(9876.0);
+		assert_approx_eq!(12.85937, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_gallons_3() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_gallons(10900.0);
+		assert_approx_eq!(14.192704, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_fluid_ounces_1() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_fluid_ounces(180.0);
+		assert_approx_eq!(30.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_fluid_ounces_2() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_fluid_ounces(5.6);
+		assert_approx_eq!(0.933333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_fluid_ounces_3() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_fluid_ounces(900.5);
+		assert_approx_eq!(150.08328, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_cups_1() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_cups(90.0);
+		assert_approx_eq!(1.875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_cups_2() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_cups(4500.8);
+		assert_approx_eq!(93.7666363, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_teaspoons_to_u_s_cups_3() {
+		let result: f64 = volume::u_s_teaspoons::to_u_s_cups(0.9);
+		assert_approx_eq!(0.01875, result, 0.01);
+	}
+
 }

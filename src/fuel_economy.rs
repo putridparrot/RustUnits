@@ -4,7 +4,7 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-///Fuel Economy conversion functions
+/// Fuel Economy conversion functions
 pub mod fuel_economy {
 	/// Kilometre Per Litre conversion functions
 	pub mod kilometre_per_litre {
@@ -51,4 +51,137 @@ pub mod fuel_economy {
 			return value * 1.20095;
 		}
 	}
+}
+
+#[cfg(test)]
+mod tests {
+	use super::*;
+	use assert_approx_eq::assert_approx_eq;
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometre_per_litre_to_u_s_miles_per_gallon_1() {
+		let result: f64 = fuel_economy::kilometre_per_litre::to_u_s_miles_per_gallon(109.0);
+		assert_approx_eq!(256.384, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometre_per_litre_to_u_s_miles_per_gallon_2() {
+		let result: f64 = fuel_economy::kilometre_per_litre::to_u_s_miles_per_gallon(9.4);
+		assert_approx_eq!(22.1102, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometre_per_litre_to_u_s_miles_per_gallon_3() {
+		let result: f64 = fuel_economy::kilometre_per_litre::to_u_s_miles_per_gallon(1.3);
+		assert_approx_eq!(3.05779, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometre_per_litre_to_miles_per_gallon_1() {
+		let result: f64 = fuel_economy::kilometre_per_litre::to_miles_per_gallon(5.0);
+		assert_approx_eq!(14.124, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometre_per_litre_to_miles_per_gallon_2() {
+		let result: f64 = fuel_economy::kilometre_per_litre::to_miles_per_gallon(180.0);
+		assert_approx_eq!(508.466, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometre_per_litre_to_miles_per_gallon_3() {
+		let result: f64 = fuel_economy::kilometre_per_litre::to_miles_per_gallon(5.4);
+		assert_approx_eq!(15.254, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_gallon_to_kilometre_per_litre_1() {
+		let result: f64 = fuel_economy::miles_per_gallon::to_kilometre_per_litre(12.0);
+		assert_approx_eq!(4.24807, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_gallon_to_kilometre_per_litre_2() {
+		let result: f64 = fuel_economy::miles_per_gallon::to_kilometre_per_litre(8.2);
+		assert_approx_eq!(2.90285, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_gallon_to_kilometre_per_litre_3() {
+		let result: f64 = fuel_economy::miles_per_gallon::to_kilometre_per_litre(0.5);
+		assert_approx_eq!(0.177003, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_gallon_to_u_s_miles_per_gallon_1() {
+		let result: f64 = fuel_economy::miles_per_gallon::to_u_s_miles_per_gallon(1.4);
+		assert_approx_eq!(1.16574, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_gallon_to_u_s_miles_per_gallon_2() {
+		let result: f64 = fuel_economy::miles_per_gallon::to_u_s_miles_per_gallon(709.0);
+		assert_approx_eq!(590.36575, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_gallon_to_u_s_miles_per_gallon_3() {
+		let result: f64 = fuel_economy::miles_per_gallon::to_u_s_miles_per_gallon(0.9);
+		assert_approx_eq!(0.74941, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_miles_per_gallon_to_kilometre_per_litre_1() {
+		let result: f64 = fuel_economy::u_s_miles_per_gallon::to_kilometre_per_litre(23.0);
+		assert_approx_eq!(9.77831, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_miles_per_gallon_to_kilometre_per_litre_2() {
+		let result: f64 = fuel_economy::u_s_miles_per_gallon::to_kilometre_per_litre(7.0);
+		assert_approx_eq!(2.97601, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_miles_per_gallon_to_kilometre_per_litre_3() {
+		let result: f64 = fuel_economy::u_s_miles_per_gallon::to_kilometre_per_litre(0.9);
+		assert_approx_eq!(0.382629, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_miles_per_gallon_to_miles_per_gallon_1() {
+		let result: f64 = fuel_economy::u_s_miles_per_gallon::to_miles_per_gallon(109.0);
+		assert_approx_eq!(130.9036, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_miles_per_gallon_to_miles_per_gallon_2() {
+		let result: f64 = fuel_economy::u_s_miles_per_gallon::to_miles_per_gallon(78.2);
+		assert_approx_eq!(93.91432, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_miles_per_gallon_to_miles_per_gallon_3() {
+		let result: f64 = fuel_economy::u_s_miles_per_gallon::to_miles_per_gallon(0.9);
+		assert_approx_eq!(1.08086, result, 0.01);
+	}
+
 }

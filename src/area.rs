@@ -4,7 +4,7 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-///Area conversion functions
+/// Area conversion functions
 pub mod area {
 	/// Acres conversion functions
 	pub mod acres {
@@ -366,4 +366,1187 @@ pub mod area {
 			return value / 4840.0;
 		}
 	}
+}
+
+#[cfg(test)]
+mod tests {
+	use super::*;
+	use assert_approx_eq::assert_approx_eq;
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_kilometres_1() {
+		let result: f64 = area::acres::to_square_kilometres(100.0);
+		assert_approx_eq!(0.404686, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_kilometres_2() {
+		let result: f64 = area::acres::to_square_kilometres(90.0);
+		assert_approx_eq!(0.364217, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_kilometres_3() {
+		let result: f64 = area::acres::to_square_kilometres(1800.0);
+		assert_approx_eq!(7.284342, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_metres_1() {
+		let result: f64 = area::acres::to_square_metres(1.2);
+		assert_approx_eq!(4856.23, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_metres_2() {
+		let result: f64 = area::acres::to_square_metres(0.8);
+		assert_approx_eq!(3237.49, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_metres_3() {
+		let result: f64 = area::acres::to_square_metres(5.6);
+		assert_approx_eq!(22662.416, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_miles_1() {
+		let result: f64 = area::acres::to_square_miles(1009.0);
+		assert_approx_eq!(1.576562, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_miles_2() {
+		let result: f64 = area::acres::to_square_miles(90.0);
+		assert_approx_eq!(0.140625, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_miles_3() {
+		let result: f64 = area::acres::to_square_miles(765.0);
+		assert_approx_eq!(1.19531, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_yards_1() {
+		let result: f64 = area::acres::to_square_yards(3.4);
+		assert_approx_eq!(16456.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_yards_2() {
+		let result: f64 = area::acres::to_square_yards(0.7);
+		assert_approx_eq!(3388.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_yards_3() {
+		let result: f64 = area::acres::to_square_yards(0.01);
+		assert_approx_eq!(48.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_feet_1() {
+		let result: f64 = area::acres::to_square_feet(0.01);
+		assert_approx_eq!(435.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_feet_2() {
+		let result: f64 = area::acres::to_square_feet(12.0);
+		assert_approx_eq!(522720.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_feet_3() {
+		let result: f64 = area::acres::to_square_feet(0.67);
+		assert_approx_eq!(29185.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_inches_1() {
+		let result: f64 = area::acres::to_square_inches(0.09);
+		assert_approx_eq!(564537.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_inches_2() {
+		let result: f64 = area::acres::to_square_inches(0.005);
+		assert_approx_eq!(31363.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_square_inches_3() {
+		let result: f64 = area::acres::to_square_inches(0.012);
+		assert_approx_eq!(75271.68, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_hectares_1() {
+		let result: f64 = area::acres::to_hectares(1109.0);
+		assert_approx_eq!(448.7964, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_hectares_2() {
+		let result: f64 = area::acres::to_hectares(5.6);
+		assert_approx_eq!(2.26624, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownacres_to_hectares_3() {
+		let result: f64 = area::acres::to_hectares(1.23);
+		assert_approx_eq!(0.4977633, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_kilometres_1() {
+		let result: f64 = area::hectares::to_square_kilometres(15000.0);
+		assert_approx_eq!(150.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_kilometres_2() {
+		let result: f64 = area::hectares::to_square_kilometres(300.0);
+		assert_approx_eq!(3.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_kilometres_3() {
+		let result: f64 = area::hectares::to_square_kilometres(45.6);
+		assert_approx_eq!(0.456, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_metres_1() {
+		let result: f64 = area::hectares::to_square_metres(1.4);
+		assert_approx_eq!(14000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_metres_2() {
+		let result: f64 = area::hectares::to_square_metres(0.9);
+		assert_approx_eq!(9000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_metres_3() {
+		let result: f64 = area::hectares::to_square_metres(0.012);
+		assert_approx_eq!(120.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_miles_1() {
+		let result: f64 = area::hectares::to_square_miles(1102.0);
+		assert_approx_eq!(4.254846, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_miles_2() {
+		let result: f64 = area::hectares::to_square_miles(4500.0);
+		assert_approx_eq!(17.3746, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_miles_3() {
+		let result: f64 = area::hectares::to_square_miles(90.0);
+		assert_approx_eq!(0.347492, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_yards_1() {
+		let result: f64 = area::hectares::to_square_yards(1.2);
+		assert_approx_eq!(14351.8805556, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_yards_2() {
+		let result: f64 = area::hectares::to_square_yards(0.8);
+		assert_approx_eq!(9567.92, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_yards_3() {
+		let result: f64 = area::hectares::to_square_yards(34.0);
+		assert_approx_eq!(406636.615, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_feet_1() {
+		let result: f64 = area::hectares::to_square_feet(3.4);
+		assert_approx_eq!(365972.599, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_feet_2() {
+		let result: f64 = area::hectares::to_square_feet(0.09);
+		assert_approx_eq!(9687.519, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_feet_3() {
+		let result: f64 = area::hectares::to_square_feet(1.2);
+		assert_approx_eq!(129166.7999, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_inches_1() {
+		let result: f64 = area::hectares::to_square_inches(0.009);
+		assert_approx_eq!(139500.28, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_inches_2() {
+		let result: f64 = area::hectares::to_square_inches(0.01);
+		assert_approx_eq!(155000.31, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_square_inches_3() {
+		let result: f64 = area::hectares::to_square_inches(0.0061);
+		assert_approx_eq!(94550.1891, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_acres_1() {
+		let result: f64 = area::hectares::to_acres(1.2);
+		assert_approx_eq!(2.96526, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_acres_2() {
+		let result: f64 = area::hectares::to_acres(0.8);
+		assert_approx_eq!(1.97684, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhectares_to_acres_3() {
+		let result: f64 = area::hectares::to_acres(4.2);
+		assert_approx_eq!(10.3784, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_kilometres_1() {
+		let result: f64 = area::square_feet::to_square_kilometres(88997766.0);
+		assert_approx_eq!(8.2681630146, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_kilometres_2() {
+		let result: f64 = area::square_feet::to_square_kilometres(10009002.0);
+		assert_approx_eq!(0.92986671317, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_kilometres_3() {
+		let result: f64 = area::square_feet::to_square_kilometres(987654321.0);
+		assert_approx_eq!(91.75608889, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_metres_1() {
+		let result: f64 = area::square_feet::to_square_metres(900.0);
+		assert_approx_eq!(83.6127, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_metres_2() {
+		let result: f64 = area::square_feet::to_square_metres(799.123);
+		assert_approx_eq!(74.24095603, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_metres_3() {
+		let result: f64 = area::square_feet::to_square_metres(500.0);
+		assert_approx_eq!(46.4515, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_miles_1() {
+		let result: f64 = area::square_feet::to_square_miles(12000000.0);
+		assert_approx_eq!(0.43044077135, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_miles_2() {
+		let result: f64 = area::square_feet::to_square_miles(987654321.0);
+		assert_approx_eq!(35.4272239799, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_miles_3() {
+		let result: f64 = area::square_feet::to_square_miles(900800700.0);
+		assert_approx_eq!(32.3117790117, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_yards_1() {
+		let result: f64 = area::square_feet::to_square_yards(909.0);
+		assert_approx_eq!(101.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_yards_2() {
+		let result: f64 = area::square_feet::to_square_yards(123.456);
+		assert_approx_eq!(13.71733333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_yards_3() {
+		let result: f64 = area::square_feet::to_square_yards(8009.0);
+		assert_approx_eq!(889.8889, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_inches_1() {
+		let result: f64 = area::square_feet::to_square_inches(6.7);
+		assert_approx_eq!(964.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_inches_2() {
+		let result: f64 = area::square_feet::to_square_inches(1.5);
+		assert_approx_eq!(216.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_square_inches_3() {
+		let result: f64 = area::square_feet::to_square_inches(0.9);
+		assert_approx_eq!(129.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_hectares_1() {
+		let result: f64 = area::square_feet::to_hectares(90000.0);
+		assert_approx_eq!(0.83612736, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_hectares_2() {
+		let result: f64 = area::square_feet::to_hectares(120120.0);
+		assert_approx_eq!(1.11595132, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_hectares_3() {
+		let result: f64 = area::square_feet::to_hectares(90071.0);
+		assert_approx_eq!(0.83678697, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_acres_1() {
+		let result: f64 = area::square_feet::to_acres(90000.0);
+		assert_approx_eq!(2.0661157, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_acres_2() {
+		let result: f64 = area::square_feet::to_acres(123456.0);
+		assert_approx_eq!(2.83415978, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_feet_to_acres_3() {
+		let result: f64 = area::square_feet::to_acres(8809.0);
+		assert_approx_eq!(0.2022268, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_kilometres_1() {
+		let result: f64 = area::square_inches::to_square_kilometres(678900000.0);
+		assert_approx_eq!(0.437999124, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_kilometres_2() {
+		let result: f64 = area::square_inches::to_square_kilometres(10000000000.0);
+		assert_approx_eq!(6.4516, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_kilometres_3() {
+		let result: f64 = area::square_inches::to_square_kilometres(9e12);
+		assert_approx_eq!(5806.44, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_metres_1() {
+		let result: f64 = area::square_inches::to_square_metres(1090.0);
+		assert_approx_eq!(0.7032244, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_metres_2() {
+		let result: f64 = area::square_inches::to_square_metres(1.3e6);
+		assert_approx_eq!(838.708, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_metres_3() {
+		let result: f64 = area::square_inches::to_square_metres(9988.0);
+		assert_approx_eq!(6.443858, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_miles_1() {
+		let result: f64 = area::square_inches::to_square_miles(1007008000.0);
+		assert_approx_eq!(0.2508433450668, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_miles_2() {
+		let result: f64 = area::square_inches::to_square_miles(1.2e12);
+		assert_approx_eq!(298.9172023262932, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_miles_3() {
+		let result: f64 = area::square_inches::to_square_miles(250e7);
+		assert_approx_eq!(0.6227441715131, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_yards_1() {
+		let result: f64 = area::square_inches::to_square_yards(900.0);
+		assert_approx_eq!(0.694444, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_yards_2() {
+		let result: f64 = area::square_inches::to_square_yards(15000.0);
+		assert_approx_eq!(11.574074, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_yards_3() {
+		let result: f64 = area::square_inches::to_square_yards(3e6);
+		assert_approx_eq!(2314.814815, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_feet_1() {
+		let result: f64 = area::square_inches::to_square_feet(34.0);
+		assert_approx_eq!(0.236111, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_feet_2() {
+		let result: f64 = area::square_inches::to_square_feet(1002.0);
+		assert_approx_eq!(6.958333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_square_feet_3() {
+		let result: f64 = area::square_inches::to_square_feet(890.0);
+		assert_approx_eq!(6.18056, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_hectares_1() {
+		let result: f64 = area::square_inches::to_hectares(9000000.0);
+		assert_approx_eq!(0.580644, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_hectares_2() {
+		let result: f64 = area::square_inches::to_hectares(12345678.0);
+		assert_approx_eq!(0.79649376185, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_hectares_3() {
+		let result: f64 = area::square_inches::to_hectares(99887766.0);
+		assert_approx_eq!(6.4443591113, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_acres_1() {
+		let result: f64 = area::square_inches::to_acres(900100.0);
+		assert_approx_eq!(0.143496199, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_acres_2() {
+		let result: f64 = area::square_inches::to_acres(5e6);
+		assert_approx_eq!(0.7971125395, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_inches_to_acres_3() {
+		let result: f64 = area::square_inches::to_acres(12345678.0);
+		assert_approx_eq!(1.9681789486, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_metres_1() {
+		let result: f64 = area::square_kilometres::to_square_metres(0.12);
+		assert_approx_eq!(120000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_metres_2() {
+		let result: f64 = area::square_kilometres::to_square_metres(0.9);
+		assert_approx_eq!(900000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_metres_3() {
+		let result: f64 = area::square_kilometres::to_square_metres(8.123456);
+		assert_approx_eq!(8123456.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_miles_1() {
+		let result: f64 = area::square_kilometres::to_square_miles(492.098);
+		assert_approx_eq!(190.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_miles_2() {
+		let result: f64 = area::square_kilometres::to_square_miles(23.3099);
+		assert_approx_eq!(9.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_miles_3() {
+		let result: f64 = area::square_kilometres::to_square_miles(4661.979);
+		assert_approx_eq!(1800.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_yards_1() {
+		let result: f64 = area::square_kilometres::to_square_yards(0.158028071);
+		assert_approx_eq!(189000.0005, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_yards_2() {
+		let result: f64 = area::square_kilometres::to_square_yards(8.361272764);
+		assert_approx_eq!(9999999.0310, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_yards_3() {
+		let result: f64 = area::square_kilometres::to_square_yards(0.6);
+		assert_approx_eq!(717594.030, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_feet_1() {
+		let result: f64 = area::square_kilometres::to_square_feet(0.009);
+		assert_approx_eq!(96875.194, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_feet_2() {
+		let result: f64 = area::square_kilometres::to_square_feet(0.08);
+		assert_approx_eq!(861112.833, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_feet_3() {
+		let result: f64 = area::square_kilometres::to_square_feet(0.123);
+		assert_approx_eq!(1323960.9812553, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_inches_1() {
+		let result: f64 = area::square_kilometres::to_square_inches(0.0008);
+		assert_approx_eq!(1240002.48, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_inches_2() {
+		let result: f64 = area::square_kilometres::to_square_inches(0.00123);
+		assert_approx_eq!(1906503.813, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_square_inches_3() {
+		let result: f64 = area::square_kilometres::to_square_inches(0.000045);
+		assert_approx_eq!(69750.1395, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_hectares_1() {
+		let result: f64 = area::square_kilometres::to_hectares(190.0);
+		assert_approx_eq!(19000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_hectares_2() {
+		let result: f64 = area::square_kilometres::to_hectares(55.67);
+		assert_approx_eq!(5567.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_hectares_3() {
+		let result: f64 = area::square_kilometres::to_hectares(0.9);
+		assert_approx_eq!(90.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_acres_1() {
+		let result: f64 = area::square_kilometres::to_acres(30.393962);
+		assert_approx_eq!(7510.4999900100, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_acres_2() {
+		let result: f64 = area::square_kilometres::to_acres(54.1);
+		assert_approx_eq!(13368.3805, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_kilometres_to_acres_3() {
+		let result: f64 = area::square_kilometres::to_acres(90.67);
+		assert_approx_eq!(22405.0103, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_kilometres_1() {
+		let result: f64 = area::square_metres::to_square_kilometres(19000.0);
+		assert_approx_eq!(0.019, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_kilometres_2() {
+		let result: f64 = area::square_metres::to_square_kilometres(123456.0);
+		assert_approx_eq!(0.123456, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_kilometres_3() {
+		let result: f64 = area::square_metres::to_square_kilometres(900100.0);
+		assert_approx_eq!(0.9001, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_miles_1() {
+		let result: f64 = area::square_metres::to_square_miles(190009.0);
+		assert_approx_eq!(0.073362885, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_miles_2() {
+		let result: f64 = area::square_metres::to_square_miles(12345678.0);
+		assert_approx_eq!(4.7666929245, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_miles_3() {
+		let result: f64 = area::square_metres::to_square_miles(777666.0);
+		assert_approx_eq!(0.300258521, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_yards_1() {
+		let result: f64 = area::square_metres::to_square_yards(5.0);
+		assert_approx_eq!(5.97995, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_yards_2() {
+		let result: f64 = area::square_metres::to_square_yards(1.23);
+		assert_approx_eq!(1.471068, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_yards_3() {
+		let result: f64 = area::square_metres::to_square_yards(700.0);
+		assert_approx_eq!(837.193, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_feet_1() {
+		let result: f64 = area::square_metres::to_square_feet(90.0);
+		assert_approx_eq!(968.752, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_feet_2() {
+		let result: f64 = area::square_metres::to_square_feet(180.0);
+		assert_approx_eq!(1937.52, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_feet_3() {
+		let result: f64 = area::square_metres::to_square_feet(123.4);
+		assert_approx_eq!(1328.2775, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_inches_1() {
+		let result: f64 = area::square_metres::to_square_inches(8.0);
+		assert_approx_eq!(12400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_inches_2() {
+		let result: f64 = area::square_metres::to_square_inches(1.23);
+		assert_approx_eq!(1906.504, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_square_inches_3() {
+		let result: f64 = area::square_metres::to_square_inches(0.9);
+		assert_approx_eq!(1395.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_hectares_1() {
+		let result: f64 = area::square_metres::to_hectares(1234.0);
+		assert_approx_eq!(0.1234, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_hectares_2() {
+		let result: f64 = area::square_metres::to_hectares(560.9);
+		assert_approx_eq!(0.05609, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_hectares_3() {
+		let result: f64 = area::square_metres::to_hectares(100900.0);
+		assert_approx_eq!(10.09, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_acres_1() {
+		let result: f64 = area::square_metres::to_acres(986.0);
+		assert_approx_eq!(0.243646, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_acres_2() {
+		let result: f64 = area::square_metres::to_acres(1020.0);
+		assert_approx_eq!(0.2520475, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_metres_to_acres_3() {
+		let result: f64 = area::square_metres::to_acres(666111.0);
+		assert_approx_eq!(164.599613, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_kilometres_1() {
+		let result: f64 = area::square_miles::to_square_kilometres(3.0);
+		assert_approx_eq!(7.76996, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_kilometres_2() {
+		let result: f64 = area::square_miles::to_square_kilometres(0.9);
+		assert_approx_eq!(2.33099, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_kilometres_3() {
+		let result: f64 = area::square_miles::to_square_kilometres(100.0);
+		assert_approx_eq!(258.999, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_metres_1() {
+		let result: f64 = area::square_miles::to_square_metres(0.009);
+		assert_approx_eq!(23309.893, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_metres_2() {
+		let result: f64 = area::square_miles::to_square_metres(0.010);
+		assert_approx_eq!(25899.88, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_metres_3() {
+		let result: f64 = area::square_miles::to_square_metres(0.0006);
+		assert_approx_eq!(1553.99287, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_yards_1() {
+		let result: f64 = area::square_miles::to_square_yards(0.01);
+		assert_approx_eq!(30976.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_yards_2() {
+		let result: f64 = area::square_miles::to_square_yards(0.00123);
+		assert_approx_eq!(3810.048, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_yards_3() {
+		let result: f64 = area::square_miles::to_square_yards(0.09);
+		assert_approx_eq!(278784.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_feet_1() {
+		let result: f64 = area::square_miles::to_square_feet(0.01);
+		assert_approx_eq!(278784.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_feet_2() {
+		let result: f64 = area::square_miles::to_square_feet(0.005);
+		assert_approx_eq!(139392.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_feet_3() {
+		let result: f64 = area::square_miles::to_square_feet(0.08);
+		assert_approx_eq!(2230272.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_inches_1() {
+		let result: f64 = area::square_miles::to_square_inches(0.0001);
+		assert_approx_eq!(401448.96, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_inches_2() {
+		let result: f64 = area::square_miles::to_square_inches(0.00098);
+		assert_approx_eq!(3934199.808, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_square_inches_3() {
+		let result: f64 = area::square_miles::to_square_inches(0.000007);
+		assert_approx_eq!(28101.4272, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_hectares_1() {
+		let result: f64 = area::square_miles::to_hectares(100.0);
+		assert_approx_eq!(25900.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_hectares_2() {
+		let result: f64 = area::square_miles::to_hectares(2.3);
+		assert_approx_eq!(595.697, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_hectares_3() {
+		let result: f64 = area::square_miles::to_hectares(0.9);
+		assert_approx_eq!(233.099, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_acres_1() {
+		let result: f64 = area::square_miles::to_acres(2.0);
+		assert_approx_eq!(1280.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_acres_2() {
+		let result: f64 = area::square_miles::to_acres(0.1);
+		assert_approx_eq!(64.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_miles_to_acres_3() {
+		let result: f64 = area::square_miles::to_acres(4.6);
+		assert_approx_eq!(2944.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_kilometres_1() {
+		let result: f64 = area::square_yards::to_square_kilometres(900000.0);
+		assert_approx_eq!(0.752514624, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_kilometres_2() {
+		let result: f64 = area::square_yards::to_square_kilometres(190190.0);
+		assert_approx_eq!(0.159023063, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_kilometres_3() {
+		let result: f64 = area::square_yards::to_square_kilometres(7000000.0);
+		assert_approx_eq!(5.85289152, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_metres_1() {
+		let result: f64 = area::square_yards::to_square_metres(700.0);
+		assert_approx_eq!(585.289, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_metres_2() {
+		let result: f64 = area::square_yards::to_square_metres(12.0);
+		assert_approx_eq!(10.0335, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_metres_3() {
+		let result: f64 = area::square_yards::to_square_metres(9.1);
+		assert_approx_eq!(7.60876, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_miles_1() {
+		let result: f64 = area::square_yards::to_square_miles(98700.0);
+		assert_approx_eq!(0.031863378, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_miles_2() {
+		let result: f64 = area::square_yards::to_square_miles(8888888.0);
+		assert_approx_eq!(2.869604855, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_miles_3() {
+		let result: f64 = area::square_yards::to_square_miles(100200300.0);
+		assert_approx_eq!(32.3477208161, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_feet_1() {
+		let result: f64 = area::square_yards::to_square_feet(12.0);
+		assert_approx_eq!(108.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_feet_2() {
+		let result: f64 = area::square_yards::to_square_feet(5.6);
+		assert_approx_eq!(50.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_feet_3() {
+		let result: f64 = area::square_yards::to_square_feet(102.5);
+		assert_approx_eq!(922.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_inches_1() {
+		let result: f64 = area::square_yards::to_square_inches(56.7);
+		assert_approx_eq!(73483.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_inches_2() {
+		let result: f64 = area::square_yards::to_square_inches(1.8);
+		assert_approx_eq!(2332.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_square_inches_3() {
+		let result: f64 = area::square_yards::to_square_inches(0.2);
+		assert_approx_eq!(259.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_hectares_1() {
+		let result: f64 = area::square_yards::to_hectares(10090.0);
+		assert_approx_eq!(0.84365251, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_hectares_2() {
+		let result: f64 = area::square_yards::to_hectares(98765.0);
+		assert_approx_eq!(8.2580119, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_hectares_3() {
+		let result: f64 = area::square_yards::to_hectares(3090.09);
+		assert_approx_eq!(0.2583634, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_acres_1() {
+		let result: f64 = area::square_yards::to_acres(1000.0);
+		assert_approx_eq!(0.206612, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_acres_2() {
+		let result: f64 = area::square_yards::to_acres(899.0);
+		assert_approx_eq!(0.185744, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownsquare_yards_to_acres_3() {
+		let result: f64 = area::square_yards::to_acres(5678.0);
+		assert_approx_eq!(1.17314, result, 0.01);
+	}
+
 }

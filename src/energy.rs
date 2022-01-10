@@ -4,7 +4,7 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-///Energy conversion functions
+/// Energy conversion functions
 pub mod energy {
 	/// Btu conversion functions
 	pub mod btu {
@@ -468,4 +468,1523 @@ pub mod energy {
 			return value * 2655.22;
 		}
 	}
+}
+
+#[cfg(test)]
+mod tests {
+	use super::*;
+	use assert_approx_eq::assert_approx_eq;
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_kilojoules_1() {
+		let result: f64 = energy::btu::to_kilojoules(100.0);
+		assert_approx_eq!(105.506, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_kilojoules_2() {
+		let result: f64 = energy::btu::to_kilojoules(987.65);
+		assert_approx_eq!(1042.03, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_kilojoules_3() {
+		let result: f64 = energy::btu::to_kilojoules(555666.0);
+		assert_approx_eq!(586258.6917293, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_kilocalories_1() {
+		let result: f64 = energy::btu::to_kilocalories(67.9);
+		assert_approx_eq!(17.12196, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_kilocalories_2() {
+		let result: f64 = energy::btu::to_kilocalories(109.9);
+		assert_approx_eq!(27.712868, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_kilocalories_3() {
+		let result: f64 = energy::btu::to_kilocalories(5000.0);
+		assert_approx_eq!(1260.716, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_joules_1() {
+		let result: f64 = energy::btu::to_joules(5.0);
+		assert_approx_eq!(5275.3, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_joules_2() {
+		let result: f64 = energy::btu::to_joules(912.9);
+		assert_approx_eq!(963164.274, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_joules_3() {
+		let result: f64 = energy::btu::to_joules(109.0);
+		assert_approx_eq!(115001.54, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_calories_1() {
+		let result: f64 = energy::btu::to_calories(56.0);
+		assert_approx_eq!(14121.184, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_calories_2() {
+		let result: f64 = energy::btu::to_calories(123.0);
+		assert_approx_eq!(31016.172, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_calories_3() {
+		let result: f64 = energy::btu::to_calories(0.9);
+		assert_approx_eq!(226.9476, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_u_s_therms_1() {
+		let result: f64 = energy::btu::to_u_s_therms(12000.0);
+		assert_approx_eq!(0.120028657, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_u_s_therms_2() {
+		let result: f64 = energy::btu::to_u_s_therms(9876.5);
+		assert_approx_eq!(0.098788586, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_u_s_therms_3() {
+		let result: f64 = energy::btu::to_u_s_therms(666.999);
+		assert_approx_eq!(0.006671583, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_watt_hours_1() {
+		let result: f64 = energy::btu::to_watt_hours(900.0);
+		assert_approx_eq!(263.764, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_watt_hours_2() {
+		let result: f64 = energy::btu::to_watt_hours(125.7);
+		assert_approx_eq!(36.839034, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_watt_hours_3() {
+		let result: f64 = energy::btu::to_watt_hours(0.99);
+		assert_approx_eq!(0.2901404, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_kilowatt_hours_1() {
+		let result: f64 = energy::btu::to_kilowatt_hours(9000.0);
+		assert_approx_eq!(2.63764, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_kilowatt_hours_2() {
+		let result: f64 = energy::btu::to_kilowatt_hours(12345.0);
+		assert_approx_eq!(3.6179624, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_kilowatt_hours_3() {
+		let result: f64 = energy::btu::to_kilowatt_hours(8090.8);
+		assert_approx_eq!(2.37117941, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_foot_pounds_1() {
+		let result: f64 = energy::btu::to_foot_pounds(189.0);
+		assert_approx_eq!(147073.9409, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_foot_pounds_2() {
+		let result: f64 = energy::btu::to_foot_pounds(0.3);
+		assert_approx_eq!(233.451, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownbtu_to_foot_pounds_3() {
+		let result: f64 = energy::btu::to_foot_pounds(2.6);
+		assert_approx_eq!(2023.24, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_kilojoules_1() {
+		let result: f64 = energy::calories::to_kilojoules(109.0);
+		assert_approx_eq!(0.456056, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_kilojoules_2() {
+		let result: f64 = energy::calories::to_kilojoules(12.3);
+		assert_approx_eq!(0.0514632, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_kilojoules_3() {
+		let result: f64 = energy::calories::to_kilojoules(9876.0);
+		assert_approx_eq!(41.32118, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_kilocalories_1() {
+		let result: f64 = energy::calories::to_kilocalories(900.0);
+		assert_approx_eq!(0.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_kilocalories_2() {
+		let result: f64 = energy::calories::to_kilocalories(1782.0);
+		assert_approx_eq!(1.782, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_kilocalories_3() {
+		let result: f64 = energy::calories::to_kilocalories(900800.0);
+		assert_approx_eq!(900.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_joules_1() {
+		let result: f64 = energy::calories::to_joules(98.0);
+		assert_approx_eq!(410.032, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_joules_2() {
+		let result: f64 = energy::calories::to_joules(1.67);
+		assert_approx_eq!(6.98728, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_joules_3() {
+		let result: f64 = energy::calories::to_joules(55.0);
+		assert_approx_eq!(230.12, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_btu_1() {
+		let result: f64 = energy::calories::to_btu(550.0);
+		assert_approx_eq!(2.18112, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_btu_2() {
+		let result: f64 = energy::calories::to_btu(1234.0);
+		assert_approx_eq!(4.893633, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_btu_3() {
+		let result: f64 = energy::calories::to_btu(900.9);
+		assert_approx_eq!(3.5726692, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_u_s_therms_1() {
+		let result: f64 = energy::calories::to_u_s_therms(9000000.0);
+		assert_approx_eq!(0.356995242, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_u_s_therms_2() {
+		let result: f64 = energy::calories::to_u_s_therms(12e6);
+		assert_approx_eq!(0.475993657, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_u_s_therms_3() {
+		let result: f64 = energy::calories::to_u_s_therms(100200300.0);
+		assert_approx_eq!(3.974558932, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_watt_hours_1() {
+		let result: f64 = energy::calories::to_watt_hours(600.0);
+		assert_approx_eq!(0.697333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_watt_hours_2() {
+		let result: f64 = energy::calories::to_watt_hours(1234.5);
+		assert_approx_eq!(1.43476333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_watt_hours_3() {
+		let result: f64 = energy::calories::to_watt_hours(88.7);
+		assert_approx_eq!(0.1030891, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_kilowatt_hours_1() {
+		let result: f64 = energy::calories::to_kilowatt_hours(100900.0);
+		assert_approx_eq!(0.117268222, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_kilowatt_hours_2() {
+		let result: f64 = energy::calories::to_kilowatt_hours(987654.0);
+		assert_approx_eq!(1.14787343, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_kilowatt_hours_3() {
+		let result: f64 = energy::calories::to_kilowatt_hours(506012.0);
+		assert_approx_eq!(0.588098391, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_foot_pounds_1() {
+		let result: f64 = energy::calories::to_foot_pounds(123.0);
+		assert_approx_eq!(379.573, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_foot_pounds_2() {
+		let result: f64 = energy::calories::to_foot_pounds(9.01);
+		assert_approx_eq!(27.8045, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowncalories_to_foot_pounds_3() {
+		let result: f64 = energy::calories::to_foot_pounds(2.8);
+		assert_approx_eq!(8.64069, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_kilojoules_1() {
+		let result: f64 = energy::foot_pounds::to_kilojoules(190.0);
+		assert_approx_eq!(0.257605, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_kilojoules_2() {
+		let result: f64 = energy::foot_pounds::to_kilojoules(4.6);
+		assert_approx_eq!(0.00623676, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_kilojoules_3() {
+		let result: f64 = energy::foot_pounds::to_kilojoules(123.8);
+		assert_approx_eq!(0.16785026, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_kilocalories_1() {
+		let result: f64 = energy::foot_pounds::to_kilocalories(1999.0);
+		assert_approx_eq!(0.6477725, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_kilocalories_2() {
+		let result: f64 = energy::foot_pounds::to_kilocalories(890.8);
+		assert_approx_eq!(0.2886622, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_kilocalories_3() {
+		let result: f64 = energy::foot_pounds::to_kilocalories(12000.0);
+		assert_approx_eq!(3.8885792, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_joules_1() {
+		let result: f64 = energy::foot_pounds::to_joules(190.0);
+		assert_approx_eq!(257.605, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_joules_2() {
+		let result: f64 = energy::foot_pounds::to_joules(23.4);
+		assert_approx_eq!(31.72614, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_joules_3() {
+		let result: f64 = energy::foot_pounds::to_joules(9.2);
+		assert_approx_eq!(12.4735, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_btu_1() {
+		let result: f64 = energy::foot_pounds::to_btu(9000.0);
+		assert_approx_eq!(11.56561, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_btu_2() {
+		let result: f64 = energy::foot_pounds::to_btu(45.6);
+		assert_approx_eq!(0.05859908, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_btu_3() {
+		let result: f64 = energy::foot_pounds::to_btu(1996.0);
+		assert_approx_eq!(2.564995, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_calories_1() {
+		let result: f64 = energy::foot_pounds::to_calories(123.0);
+		assert_approx_eq!(39.8579, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_calories_2() {
+		let result: f64 = energy::foot_pounds::to_calories(54.7);
+		assert_approx_eq!(17.72544, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_calories_3() {
+		let result: f64 = energy::foot_pounds::to_calories(109.2);
+		assert_approx_eq!(35.386071, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_u_s_therms_1() {
+		let result: f64 = energy::foot_pounds::to_u_s_therms(19000000.0);
+		assert_approx_eq!(0.24422111613, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_u_s_therms_2() {
+		let result: f64 = energy::foot_pounds::to_u_s_therms(1234567.0);
+		assert_approx_eq!(0.01586880688, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_u_s_therms_3() {
+		let result: f64 = energy::foot_pounds::to_u_s_therms(100200300.0);
+		assert_approx_eq!(1.28794890016, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_watt_hours_1() {
+		let result: f64 = energy::foot_pounds::to_watt_hours(44.0);
+		assert_approx_eq!(0.0165711, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_watt_hours_2() {
+		let result: f64 = energy::foot_pounds::to_watt_hours(9080.0);
+		assert_approx_eq!(3.419674, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_watt_hours_3() {
+		let result: f64 = energy::foot_pounds::to_watt_hours(1200.0);
+		assert_approx_eq!(0.4519393, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_kilowatt_hours_1() {
+		let result: f64 = energy::foot_pounds::to_kilowatt_hours(900000.0);
+		assert_approx_eq!(0.338954487, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_kilowatt_hours_2() {
+		let result: f64 = energy::foot_pounds::to_kilowatt_hours(100200.0);
+		assert_approx_eq!(0.0377369329, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfoot_pounds_to_kilowatt_hours_3() {
+		let result: f64 = energy::foot_pounds::to_kilowatt_hours(9876543.0);
+		assert_approx_eq!(3.719665074, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_kilojoules_1() {
+		let result: f64 = energy::joules::to_kilojoules(790.0);
+		assert_approx_eq!(0.79, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_kilojoules_2() {
+		let result: f64 = energy::joules::to_kilojoules(800100.0);
+		assert_approx_eq!(800.1, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_kilojoules_3() {
+		let result: f64 = energy::joules::to_kilojoules(509.2);
+		assert_approx_eq!(0.5092, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_kilocalories_1() {
+		let result: f64 = energy::joules::to_kilocalories(790.0);
+		assert_approx_eq!(0.188815, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_kilocalories_2() {
+		let result: f64 = energy::joules::to_kilocalories(125.9);
+		assert_approx_eq!(0.030090822, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_kilocalories_3() {
+		let result: f64 = energy::joules::to_kilocalories(8000.0);
+		assert_approx_eq!(1.912046, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_btu_1() {
+		let result: f64 = energy::joules::to_btu(500.0);
+		assert_approx_eq!(0.473909, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_btu_2() {
+		let result: f64 = energy::joules::to_btu(1910.0);
+		assert_approx_eq!(1.810331, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_btu_3() {
+		let result: f64 = energy::joules::to_btu(67000.1);
+		assert_approx_eq!(63.50384184, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_calories_1() {
+		let result: f64 = energy::joules::to_calories(67.0);
+		assert_approx_eq!(16.0134, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_calories_2() {
+		let result: f64 = energy::joules::to_calories(909.0);
+		assert_approx_eq!(217.256, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_calories_3() {
+		let result: f64 = energy::joules::to_calories(190.0);
+		assert_approx_eq!(45.4111, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_u_s_therms_1() {
+		let result: f64 = energy::joules::to_u_s_therms(100090000.0);
+		assert_approx_eq!(0.948896667059, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_u_s_therms_2() {
+		let result: f64 = energy::joules::to_u_s_therms(55.7e6);
+		assert_approx_eq!(0.52806018938, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_u_s_therms_3() {
+		let result: f64 = energy::joules::to_u_s_therms(1234567890.0);
+		assert_approx_eq!(11.70423974501, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_watt_hours_1() {
+		let result: f64 = energy::joules::to_watt_hours(56000.0);
+		assert_approx_eq!(15.555556, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_watt_hours_2() {
+		let result: f64 = energy::joules::to_watt_hours(890.0);
+		assert_approx_eq!(0.247222, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_watt_hours_3() {
+		let result: f64 = energy::joules::to_watt_hours(22001.0);
+		assert_approx_eq!(6.1113889, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_kilowatt_hours_1() {
+		let result: f64 = energy::joules::to_kilowatt_hours(560000.8);
+		assert_approx_eq!(0.1555557, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_kilowatt_hours_2() {
+		let result: f64 = energy::joules::to_kilowatt_hours(1234567.0);
+		assert_approx_eq!(0.3429352778, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_kilowatt_hours_3() {
+		let result: f64 = energy::joules::to_kilowatt_hours(900100.0);
+		assert_approx_eq!(0.250027778, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_foot_pounds_1() {
+		let result: f64 = energy::joules::to_foot_pounds(900.0);
+		assert_approx_eq!(663.806, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_foot_pounds_2() {
+		let result: f64 = energy::joules::to_foot_pounds(10.2);
+		assert_approx_eq!(7.523134, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownjoules_to_foot_pounds_3() {
+		let result: f64 = energy::joules::to_foot_pounds(6.7);
+		assert_approx_eq!(4.94167, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_kilojoules_1() {
+		let result: f64 = energy::kilocalories::to_kilojoules(67.0);
+		assert_approx_eq!(280.328, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_kilojoules_2() {
+		let result: f64 = energy::kilocalories::to_kilojoules(4.5);
+		assert_approx_eq!(18.828, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_kilojoules_3() {
+		let result: f64 = energy::kilocalories::to_kilojoules(100.3);
+		assert_approx_eq!(419.6552, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_joules_1() {
+		let result: f64 = energy::kilocalories::to_joules(100.3);
+		assert_approx_eq!(419655.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_joules_2() {
+		let result: f64 = energy::kilocalories::to_joules(0.9);
+		assert_approx_eq!(3765.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_joules_3() {
+		let result: f64 = energy::kilocalories::to_joules(3.4);
+		assert_approx_eq!(14225.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_btu_1() {
+		let result: f64 = energy::kilocalories::to_btu(3.4);
+		assert_approx_eq!(13.4833, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_btu_2() {
+		let result: f64 = energy::kilocalories::to_btu(109.0);
+		assert_approx_eq!(432.2940, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_btu_3() {
+		let result: f64 = energy::kilocalories::to_btu(22.89);
+		assert_approx_eq!(90.774114, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_calories_1() {
+		let result: f64 = energy::kilocalories::to_calories(22.8);
+		assert_approx_eq!(22800.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_calories_2() {
+		let result: f64 = energy::kilocalories::to_calories(76.23);
+		assert_approx_eq!(76230.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_calories_3() {
+		let result: f64 = energy::kilocalories::to_calories(0.07);
+		assert_approx_eq!(70.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_u_s_therms_1() {
+		let result: f64 = energy::kilocalories::to_u_s_therms(12345.0);
+		assert_approx_eq!(0.4896388, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_u_s_therms_2() {
+		let result: f64 = energy::kilocalories::to_u_s_therms(90002.0);
+		assert_approx_eq!(3.5700317, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_u_s_therms_3() {
+		let result: f64 = energy::kilocalories::to_u_s_therms(180180.0);
+		assert_approx_eq!(7.14704457, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_watt_hours_1() {
+		let result: f64 = energy::kilocalories::to_watt_hours(89.0);
+		assert_approx_eq!(103.438, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_watt_hours_2() {
+		let result: f64 = energy::kilocalories::to_watt_hours(23.6);
+		assert_approx_eq!(27.42844, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_watt_hours_3() {
+		let result: f64 = energy::kilocalories::to_watt_hours(0.9);
+		assert_approx_eq!(1.046, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_kilowatt_hours_1() {
+		let result: f64 = energy::kilocalories::to_kilowatt_hours(456.0);
+		assert_approx_eq!(0.529973, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_kilowatt_hours_2() {
+		let result: f64 = energy::kilocalories::to_kilowatt_hours(1090.8);
+		assert_approx_eq!(1.267752, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_kilowatt_hours_3() {
+		let result: f64 = energy::kilocalories::to_kilowatt_hours(567.1);
+		assert_approx_eq!(0.65909622, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_foot_pounds_1() {
+		let result: f64 = energy::kilocalories::to_foot_pounds(109.0);
+		assert_approx_eq!(336369.64, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_foot_pounds_2() {
+		let result: f64 = energy::kilocalories::to_foot_pounds(0.5);
+		assert_approx_eq!(1542.98, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilocalories_to_foot_pounds_3() {
+		let result: f64 = energy::kilocalories::to_foot_pounds(2.4);
+		assert_approx_eq!(7406.3, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_kilocalories_1() {
+		let result: f64 = energy::kilojoules::to_kilocalories(199.0);
+		assert_approx_eq!(47.5621, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_kilocalories_2() {
+		let result: f64 = energy::kilojoules::to_kilocalories(0.67);
+		assert_approx_eq!(0.1601338, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_kilocalories_3() {
+		let result: f64 = energy::kilojoules::to_kilocalories(4.7);
+		assert_approx_eq!(1.12333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_joules_1() {
+		let result: f64 = energy::kilojoules::to_joules(4.7);
+		assert_approx_eq!(4700.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_joules_2() {
+		let result: f64 = energy::kilojoules::to_joules(7.8);
+		assert_approx_eq!(7800.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_joules_3() {
+		let result: f64 = energy::kilojoules::to_joules(1800.0);
+		assert_approx_eq!(1800000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_btu_1() {
+		let result: f64 = energy::kilojoules::to_btu(1800.0);
+		assert_approx_eq!(1706.070, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_btu_2() {
+		let result: f64 = energy::kilojoules::to_btu(1.4);
+		assert_approx_eq!(1.32694, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_btu_3() {
+		let result: f64 = energy::kilojoules::to_btu(89.2);
+		assert_approx_eq!(84.54529, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_calories_1() {
+		let result: f64 = energy::kilojoules::to_calories(67.0);
+		assert_approx_eq!(16013.381899, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_calories_2() {
+		let result: f64 = energy::kilojoules::to_calories(1.4);
+		assert_approx_eq!(334.608, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_calories_3() {
+		let result: f64 = energy::kilojoules::to_calories(87.0);
+		assert_approx_eq!(20793.5, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_u_s_therms_1() {
+		let result: f64 = energy::kilojoules::to_u_s_therms(123456.0);
+		assert_approx_eq!(1.17041649, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_u_s_therms_2() {
+		let result: f64 = energy::kilojoules::to_u_s_therms(88000.0);
+		assert_approx_eq!(0.83427822, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_u_s_therms_3() {
+		let result: f64 = energy::kilojoules::to_u_s_therms(9000.0);
+		assert_approx_eq!(0.08532391, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_watt_hours_1() {
+		let result: f64 = energy::kilojoules::to_watt_hours(98000.0);
+		assert_approx_eq!(27222.222, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_watt_hours_2() {
+		let result: f64 = energy::kilojoules::to_watt_hours(1.5);
+		assert_approx_eq!(0.416667, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_watt_hours_3() {
+		let result: f64 = energy::kilojoules::to_watt_hours(67.9);
+		assert_approx_eq!(18.86111, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_kilowatt_hours_1() {
+		let result: f64 = energy::kilojoules::to_kilowatt_hours(8000.0);
+		assert_approx_eq!(2.222222, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_kilowatt_hours_2() {
+		let result: f64 = energy::kilojoules::to_kilowatt_hours(67.99);
+		assert_approx_eq!(0.018886111, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_kilowatt_hours_3() {
+		let result: f64 = energy::kilojoules::to_kilowatt_hours(406.8);
+		assert_approx_eq!(0.113, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_foot_pounds_1() {
+		let result: f64 = energy::kilojoules::to_foot_pounds(100.9);
+		assert_approx_eq!(74420.00579, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_foot_pounds_2() {
+		let result: f64 = energy::kilojoules::to_foot_pounds(2.4);
+		assert_approx_eq!(1770.15, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilojoules_to_foot_pounds_3() {
+		let result: f64 = energy::kilojoules::to_foot_pounds(0.9);
+		assert_approx_eq!(663.806, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_kilojoules_1() {
+		let result: f64 = energy::kilowatt_hours::to_kilojoules(0.6);
+		assert_approx_eq!(2160.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_kilojoules_2() {
+		let result: f64 = energy::kilowatt_hours::to_kilojoules(134.0);
+		assert_approx_eq!(482400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_kilojoules_3() {
+		let result: f64 = energy::kilowatt_hours::to_kilojoules(45.6);
+		assert_approx_eq!(164160.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_kilocalories_1() {
+		let result: f64 = energy::kilowatt_hours::to_kilocalories(45.6);
+		assert_approx_eq!(39235.1976, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_kilocalories_2() {
+		let result: f64 = energy::kilowatt_hours::to_kilocalories(12.0);
+		assert_approx_eq!(10325.052, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_kilocalories_3() {
+		let result: f64 = energy::kilowatt_hours::to_kilocalories(0.4);
+		assert_approx_eq!(344.168, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_joules_1() {
+		let result: f64 = energy::kilowatt_hours::to_joules(0.01);
+		assert_approx_eq!(36000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_joules_2() {
+		let result: f64 = energy::kilowatt_hours::to_joules(0.009);
+		assert_approx_eq!(32400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_joules_3() {
+		let result: f64 = energy::kilowatt_hours::to_joules(2.0);
+		assert_approx_eq!(7.2e+6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_btu_1() {
+		let result: f64 = energy::kilowatt_hours::to_btu(2.0);
+		assert_approx_eq!(6824.28, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_btu_2() {
+		let result: f64 = energy::kilowatt_hours::to_btu(0.7);
+		assert_approx_eq!(2388.4979, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_btu_3() {
+		let result: f64 = energy::kilowatt_hours::to_btu(0.02);
+		assert_approx_eq!(68.24283, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_calories_1() {
+		let result: f64 = energy::kilowatt_hours::to_calories(0.1);
+		assert_approx_eq!(86042.1, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_calories_2() {
+		let result: f64 = energy::kilowatt_hours::to_calories(0.07);
+		assert_approx_eq!(60229.47, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_calories_3() {
+		let result: f64 = energy::kilowatt_hours::to_calories(0.0123);
+		assert_approx_eq!(10583.174, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_u_s_therms_1() {
+		let result: f64 = energy::kilowatt_hours::to_u_s_therms(5.0);
+		assert_approx_eq!(0.170648, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_u_s_therms_2() {
+		let result: f64 = energy::kilowatt_hours::to_u_s_therms(234.0);
+		assert_approx_eq!(7.98632, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_u_s_therms_3() {
+		let result: f64 = energy::kilowatt_hours::to_u_s_therms(1001.0);
+		assert_approx_eq!(34.16369, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_watt_hours_1() {
+		let result: f64 = energy::kilowatt_hours::to_watt_hours(123.0);
+		assert_approx_eq!(123000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_watt_hours_2() {
+		let result: f64 = energy::kilowatt_hours::to_watt_hours(98.4);
+		assert_approx_eq!(98400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_watt_hours_3() {
+		let result: f64 = energy::kilowatt_hours::to_watt_hours(1.6);
+		assert_approx_eq!(1600.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_foot_pounds_1() {
+		let result: f64 = energy::kilowatt_hours::to_foot_pounds(0.001);
+		assert_approx_eq!(2655.196219, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_foot_pounds_2() {
+		let result: f64 = energy::kilowatt_hours::to_foot_pounds(0.09);
+		assert_approx_eq!(238967.6597, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilowatt_hours_to_foot_pounds_3() {
+		let result: f64 = energy::kilowatt_hours::to_foot_pounds(0.0006);
+		assert_approx_eq!(1593.1177314, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_kilojoules_1() {
+		let result: f64 = energy::u_s_therms::to_kilojoules(0.009);
+		assert_approx_eq!(949.3236, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_kilojoules_2() {
+		let result: f64 = energy::u_s_therms::to_kilojoules(3.0);
+		assert_approx_eq!(316440.12, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_kilojoules_3() {
+		let result: f64 = energy::u_s_therms::to_kilojoules(1.9);
+		assert_approx_eq!(200412.075, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_kilocalories_1() {
+		let result: f64 = energy::u_s_therms::to_kilocalories(1.1);
+		assert_approx_eq!(27731.44, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_kilocalories_2() {
+		let result: f64 = energy::u_s_therms::to_kilocalories(0.04);
+		assert_approx_eq!(1008.417, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_kilocalories_3() {
+		let result: f64 = energy::u_s_therms::to_kilocalories(0.0123);
+		assert_approx_eq!(310.088174, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_joules_1() {
+		let result: f64 = energy::u_s_therms::to_joules(0.008);
+		assert_approx_eq!(843843.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_joules_2() {
+		let result: f64 = energy::u_s_therms::to_joules(3.4e-6);
+		assert_approx_eq!(358.633, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_joules_3() {
+		let result: f64 = energy::u_s_therms::to_joules(0.00678);
+		assert_approx_eq!(715157.112, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_btu_1() {
+		let result: f64 = energy::u_s_therms::to_btu(0.00666);
+		assert_approx_eq!(665.8409891, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_btu_2() {
+		let result: f64 = energy::u_s_therms::to_btu(2.0);
+		assert_approx_eq!(199952.249, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_btu_3() {
+		let result: f64 = energy::u_s_therms::to_btu(0.9);
+		assert_approx_eq!(89978.51204, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_calories_1() {
+		let result: f64 = energy::u_s_therms::to_calories(0.003);
+		assert_approx_eq!(75631.262, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_calories_2() {
+		let result: f64 = energy::u_s_therms::to_calories(6.8e-3);
+		assert_approx_eq!(171430.856, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_calories_3() {
+		let result: f64 = energy::u_s_therms::to_calories(0.0008);
+		assert_approx_eq!(20168.3365, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_watt_hours_1() {
+		let result: f64 = energy::u_s_therms::to_watt_hours(6.0);
+		assert_approx_eq!(175800.59, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_watt_hours_2() {
+		let result: f64 = energy::u_s_therms::to_watt_hours(1.9);
+		assert_approx_eq!(55670.189, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_watt_hours_3() {
+		let result: f64 = energy::u_s_therms::to_watt_hours(0.07);
+		assert_approx_eq!(2051.008, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_kilowatt_hours_1() {
+		let result: f64 = energy::u_s_therms::to_kilowatt_hours(0.9);
+		assert_approx_eq!(26.3701, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_kilowatt_hours_2() {
+		let result: f64 = energy::u_s_therms::to_kilowatt_hours(7.9);
+		assert_approx_eq!(231.471, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_kilowatt_hours_3() {
+		let result: f64 = energy::u_s_therms::to_kilowatt_hours(1.4);
+		assert_approx_eq!(41.0202, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_foot_pounds_1() {
+		let result: f64 = energy::u_s_therms::to_foot_pounds(0.009);
+		assert_approx_eq!(700352.43389267, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_foot_pounds_2() {
+		let result: f64 = energy::u_s_therms::to_foot_pounds(0.02);
+		assert_approx_eq!(1556338.74198, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownu_s_therms_to_foot_pounds_3() {
+		let result: f64 = energy::u_s_therms::to_foot_pounds(0.0003);
+		assert_approx_eq!(23345.081129, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_kilojoules_1() {
+		let result: f64 = energy::watt_hours::to_kilojoules(1.6);
+		assert_approx_eq!(5.76, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_kilojoules_2() {
+		let result: f64 = energy::watt_hours::to_kilojoules(67.0);
+		assert_approx_eq!(241.2, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_kilojoules_3() {
+		let result: f64 = energy::watt_hours::to_kilojoules(8.12);
+		assert_approx_eq!(29.232, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_kilocalories_1() {
+		let result: f64 = energy::watt_hours::to_kilocalories(8.12);
+		assert_approx_eq!(6.986616, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_kilocalories_2() {
+		let result: f64 = energy::watt_hours::to_kilocalories(170.0);
+		assert_approx_eq!(146.272, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_kilocalories_3() {
+		let result: f64 = energy::watt_hours::to_kilocalories(19.2);
+		assert_approx_eq!(16.52008, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_joules_1() {
+		let result: f64 = energy::watt_hours::to_joules(6.7);
+		assert_approx_eq!(24120.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_joules_2() {
+		let result: f64 = energy::watt_hours::to_joules(12.34);
+		assert_approx_eq!(44424.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_joules_3() {
+		let result: f64 = energy::watt_hours::to_joules(0.09);
+		assert_approx_eq!(324.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_btu_1() {
+		let result: f64 = energy::watt_hours::to_btu(34.0);
+		assert_approx_eq!(116.013, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_btu_2() {
+		let result: f64 = energy::watt_hours::to_btu(179.2);
+		assert_approx_eq!(611.45578, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_btu_3() {
+		let result: f64 = energy::watt_hours::to_btu(0.9);
+		assert_approx_eq!(3.07093, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_calories_1() {
+		let result: f64 = energy::watt_hours::to_calories(0.2);
+		assert_approx_eq!(172.084, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_calories_2() {
+		let result: f64 = energy::watt_hours::to_calories(0.09);
+		assert_approx_eq!(77.43786, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_calories_3() {
+		let result: f64 = energy::watt_hours::to_calories(12.0);
+		assert_approx_eq!(10325.06754, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_u_s_therms_1() {
+		let result: f64 = energy::watt_hours::to_u_s_therms(1090.0);
+		assert_approx_eq!(0.03720122, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_u_s_therms_2() {
+		let result: f64 = energy::watt_hours::to_u_s_therms(49990.0);
+		assert_approx_eq!(1.7061369, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_u_s_therms_3() {
+		let result: f64 = energy::watt_hours::to_u_s_therms(900800.0);
+		assert_approx_eq!(30.7439107, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_kilowatt_hours_1() {
+		let result: f64 = energy::watt_hours::to_kilowatt_hours(98.0);
+		assert_approx_eq!(0.098, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_kilowatt_hours_2() {
+		let result: f64 = energy::watt_hours::to_kilowatt_hours(12.5);
+		assert_approx_eq!(0.0125, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_kilowatt_hours_3() {
+		let result: f64 = energy::watt_hours::to_kilowatt_hours(0.6);
+		assert_approx_eq!(0.0006, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_foot_pounds_1() {
+		let result: f64 = energy::watt_hours::to_foot_pounds(1.5);
+		assert_approx_eq!(3982.829, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_foot_pounds_2() {
+		let result: f64 = energy::watt_hours::to_foot_pounds(0.3);
+		assert_approx_eq!(796.567, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownwatt_hours_to_foot_pounds_3() {
+		let result: f64 = energy::watt_hours::to_foot_pounds(90.1);
+		assert_approx_eq!(239235.3219, result, 0.01);
+	}
+
 }

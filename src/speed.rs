@@ -4,7 +4,7 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-///Speed conversion functions
+/// Speed conversion functions
 pub mod speed {
 	/// Feet Per Second conversion functions
 	pub mod feet_per_second {
@@ -141,4 +141,431 @@ pub mod speed {
 			return value / 1.15078;
 		}
 	}
+}
+
+#[cfg(test)]
+mod tests {
+	use super::*;
+	use assert_approx_eq::assert_approx_eq;
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_miles_per_hour_1() {
+		let result: f64 = speed::feet_per_second::to_miles_per_hour(14.5);
+		assert_approx_eq!(9.886364, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_miles_per_hour_2() {
+		let result: f64 = speed::feet_per_second::to_miles_per_hour(100.0);
+		assert_approx_eq!(68.1818, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_miles_per_hour_3() {
+		let result: f64 = speed::feet_per_second::to_miles_per_hour(1.6);
+		assert_approx_eq!(1.09091, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_kilometres_per_hour_1() {
+		let result: f64 = speed::feet_per_second::to_kilometres_per_hour(1.5);
+		assert_approx_eq!(1.64592, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_kilometres_per_hour_2() {
+		let result: f64 = speed::feet_per_second::to_kilometres_per_hour(67.9);
+		assert_approx_eq!(74.50531, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_kilometres_per_hour_3() {
+		let result: f64 = speed::feet_per_second::to_kilometres_per_hour(109.0);
+		assert_approx_eq!(119.604, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_metres_per_second_1() {
+		let result: f64 = speed::feet_per_second::to_metres_per_second(10.8);
+		assert_approx_eq!(3.29184, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_metres_per_second_2() {
+		let result: f64 = speed::feet_per_second::to_metres_per_second(66.0);
+		assert_approx_eq!(20.1168, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_metres_per_second_3() {
+		let result: f64 = speed::feet_per_second::to_metres_per_second(2.3);
+		assert_approx_eq!(0.70104, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_knots_1() {
+		let result: f64 = speed::feet_per_second::to_knots(2.3);
+		assert_approx_eq!(1.36271, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_knots_2() {
+		let result: f64 = speed::feet_per_second::to_knots(666.0);
+		assert_approx_eq!(394.594, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownfeet_per_second_to_knots_3() {
+		let result: f64 = speed::feet_per_second::to_knots(17.1);
+		assert_approx_eq!(10.13147, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_miles_per_hour_1() {
+		let result: f64 = speed::kilometres_per_hour::to_miles_per_hour(67.0);
+		assert_approx_eq!(41.6319, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_miles_per_hour_2() {
+		let result: f64 = speed::kilometres_per_hour::to_miles_per_hour(12.0);
+		assert_approx_eq!(7.45645, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_miles_per_hour_3() {
+		let result: f64 = speed::kilometres_per_hour::to_miles_per_hour(6.3);
+		assert_approx_eq!(3.91464, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_feet_per_second_1() {
+		let result: f64 = speed::kilometres_per_hour::to_feet_per_second(5.0);
+		assert_approx_eq!(4.55672, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_feet_per_second_2() {
+		let result: f64 = speed::kilometres_per_hour::to_feet_per_second(1.5);
+		assert_approx_eq!(1.36702, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_feet_per_second_3() {
+		let result: f64 = speed::kilometres_per_hour::to_feet_per_second(89.8);
+		assert_approx_eq!(81.83873, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_metres_per_second_1() {
+		let result: f64 = speed::kilometres_per_hour::to_metres_per_second(67.0);
+		assert_approx_eq!(18.6111, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_metres_per_second_2() {
+		let result: f64 = speed::kilometres_per_hour::to_metres_per_second(5.9);
+		assert_approx_eq!(1.63889, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_metres_per_second_3() {
+		let result: f64 = speed::kilometres_per_hour::to_metres_per_second(900.0);
+		assert_approx_eq!(250.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_knots_1() {
+		let result: f64 = speed::kilometres_per_hour::to_knots(900.0);
+		assert_approx_eq!(485.961, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_knots_2() {
+		let result: f64 = speed::kilometres_per_hour::to_knots(3.9);
+		assert_approx_eq!(2.10583, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownkilometres_per_hour_to_knots_3() {
+		let result: f64 = speed::kilometres_per_hour::to_knots(12.0);
+		assert_approx_eq!(6.47948, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_miles_per_hour_1() {
+		let result: f64 = speed::knots::to_miles_per_hour(8.0);
+		assert_approx_eq!(9.20624, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_miles_per_hour_2() {
+		let result: f64 = speed::knots::to_miles_per_hour(1.2);
+		assert_approx_eq!(1.38094, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_miles_per_hour_3() {
+		let result: f64 = speed::knots::to_miles_per_hour(670.0);
+		assert_approx_eq!(771.022, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_kilometres_per_hour_1() {
+		let result: f64 = speed::knots::to_kilometres_per_hour(678.0);
+		assert_approx_eq!(1255.66, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_kilometres_per_hour_2() {
+		let result: f64 = speed::knots::to_kilometres_per_hour(1.8);
+		assert_approx_eq!(3.3336, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_kilometres_per_hour_3() {
+		let result: f64 = speed::knots::to_kilometres_per_hour(56.0);
+		assert_approx_eq!(103.712, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_feet_per_second_1() {
+		let result: f64 = speed::knots::to_feet_per_second(56.0);
+		assert_approx_eq!(94.5174, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_feet_per_second_2() {
+		let result: f64 = speed::knots::to_feet_per_second(4.7);
+		assert_approx_eq!(7.93271, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_feet_per_second_3() {
+		let result: f64 = speed::knots::to_feet_per_second(3.0);
+		assert_approx_eq!(5.06343, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_metres_per_second_1() {
+		let result: f64 = speed::knots::to_metres_per_second(5.0);
+		assert_approx_eq!(2.57222, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_metres_per_second_2() {
+		let result: f64 = speed::knots::to_metres_per_second(9.1);
+		assert_approx_eq!(4.68144, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownknots_to_metres_per_second_3() {
+		let result: f64 = speed::knots::to_metres_per_second(190.0);
+		assert_approx_eq!(97.7444, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_miles_per_hour_1() {
+		let result: f64 = speed::metres_per_second::to_miles_per_hour(13.0);
+		assert_approx_eq!(29.0802, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_miles_per_hour_2() {
+		let result: f64 = speed::metres_per_second::to_miles_per_hour(6.7);
+		assert_approx_eq!(14.9875, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_miles_per_hour_3() {
+		let result: f64 = speed::metres_per_second::to_miles_per_hour(140.0);
+		assert_approx_eq!(313.171, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_kilometres_per_hour_1() {
+		let result: f64 = speed::metres_per_second::to_kilometres_per_hour(800.0);
+		assert_approx_eq!(2880.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_kilometres_per_hour_2() {
+		let result: f64 = speed::metres_per_second::to_kilometres_per_hour(7.8);
+		assert_approx_eq!(28.08, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_kilometres_per_hour_3() {
+		let result: f64 = speed::metres_per_second::to_kilometres_per_hour(9000.0);
+		assert_approx_eq!(32400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_feet_per_second_1() {
+		let result: f64 = speed::metres_per_second::to_feet_per_second(9000.0);
+		assert_approx_eq!(29527.56, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_feet_per_second_2() {
+		let result: f64 = speed::metres_per_second::to_feet_per_second(3.4);
+		assert_approx_eq!(11.1549, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_feet_per_second_3() {
+		let result: f64 = speed::metres_per_second::to_feet_per_second(12.0);
+		assert_approx_eq!(39.3701, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_knots_1() {
+		let result: f64 = speed::metres_per_second::to_knots(12.0);
+		assert_approx_eq!(23.3261, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_knots_2() {
+		let result: f64 = speed::metres_per_second::to_knots(6.3);
+		assert_approx_eq!(12.2462, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmetres_per_second_to_knots_3() {
+		let result: f64 = speed::metres_per_second::to_knots(9.0);
+		assert_approx_eq!(17.4946, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_kilometres_per_hour_1() {
+		let result: f64 = speed::miles_per_hour::to_kilometres_per_hour(345.0);
+		assert_approx_eq!(555.224, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_kilometres_per_hour_2() {
+		let result: f64 = speed::miles_per_hour::to_kilometres_per_hour(1.6);
+		assert_approx_eq!(2.57495, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_kilometres_per_hour_3() {
+		let result: f64 = speed::miles_per_hour::to_kilometres_per_hour(0.5);
+		assert_approx_eq!(0.804672, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_feet_per_second_1() {
+		let result: f64 = speed::miles_per_hour::to_feet_per_second(0.5);
+		assert_approx_eq!(0.733333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_feet_per_second_2() {
+		let result: f64 = speed::miles_per_hour::to_feet_per_second(123.0);
+		assert_approx_eq!(180.4, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_feet_per_second_3() {
+		let result: f64 = speed::miles_per_hour::to_feet_per_second(4.5);
+		assert_approx_eq!(6.6, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_metres_per_second_1() {
+		let result: f64 = speed::miles_per_hour::to_metres_per_second(4.5);
+		assert_approx_eq!(2.01168, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_metres_per_second_2() {
+		let result: f64 = speed::miles_per_hour::to_metres_per_second(100.0);
+		assert_approx_eq!(44.704, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_metres_per_second_3() {
+		let result: f64 = speed::miles_per_hour::to_metres_per_second(40.0);
+		assert_approx_eq!(17.8816, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_knots_1() {
+		let result: f64 = speed::miles_per_hour::to_knots(30.0);
+		assert_approx_eq!(26.0693, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_knots_2() {
+		let result: f64 = speed::miles_per_hour::to_knots(4.5);
+		assert_approx_eq!(3.91039, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmiles_per_hour_to_knots_3() {
+		let result: f64 = speed::miles_per_hour::to_knots(55.0);
+		assert_approx_eq!(47.7937, result, 0.01);
+	}
+
 }
