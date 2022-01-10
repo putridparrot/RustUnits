@@ -1,6 +1,6 @@
 # RustUnits
 
-[![Build](https://github.com/putridparrot/RustUnits/actions/workflows/build.yaml/badge.svg)](https://github.com/putridparrot/RustUnits/actions/workflows/build.yaml)
+[![Build](https://github.com/putridparrot/RustUnits/actions/workflows/build.yml/badge.svg)](https://github.com/putridparrot/RustUnits/actions/workflows/build.yml)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/putridparrot/PutridParrot.Units/blob/master/LICENSE.md)
 [![GitHub Releases](https://img.shields.io/github/release/putridparrot/RustUnits.svg)](https://github.com/putridparrot/RustUnits/releases)
 [![GitHub Issues](https://img.shields.io/github/issues/putridparrot/RustUnits.svg)](https://github.com/putridparrot/RustUnits/issues)
