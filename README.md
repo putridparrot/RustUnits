@@ -14,8 +14,9 @@ The main aim for this project is to produce conversion functions for the various
 [C#](https://github.com/putridparrot/PutridParrot.Units)  
 [F#](https://github.com/putridparrot/FSharp.Units)  
 [Java](https://github.com/putridparrot/JavaUnits)  
+[Python](https://github.com/putridparrot/PyUnits)  
 [Swift](https://github.com/putridparrot/SwiftUnits)  
-[TypeScript](https://github.com/putridparrot/unit-conversions)  
+[TypeScript](https://github.com/putridparrot/unit-conversions)   
 
 ### Example
 
