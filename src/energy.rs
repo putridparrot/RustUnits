@@ -18,7 +18,7 @@ pub mod energy {
 		/// # Arguments
 		/// * `value` - The Btu input value
 		pub fn to_kilocalories(value: f64) -> f64 {
-			return value / 3.966;
+			return value / 3.9673727240424;
 		}
 		/// Converts the supplied Btu value to Joules
 		/// # Arguments
@@ -231,7 +231,7 @@ pub mod energy {
 		/// # Arguments
 		/// * `value` - The Kilocalories input value
 		pub fn to_btu(value: f64) -> f64 {
-			return value * 3.966;
+			return value * 3.9673727240424;
 		}
 		/// Converts the supplied Kilocalories value to Calories
 		/// # Arguments
@@ -351,7 +351,7 @@ pub mod energy {
 		/// # Arguments
 		/// * `value` - The Kilowatt Hours input value
 		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 29.3;
+			return value / 29.3001;
 		}
 		/// Converts the supplied Kilowatt Hours value to Watt Hours
 		/// # Arguments
@@ -408,7 +408,7 @@ pub mod energy {
 		/// # Arguments
 		/// * `value` - The US Therms input value
 		pub fn to_kilowatt_hours(value: f64) -> f64 {
-			return value * 29.3;
+			return value * 29.3001;
 		}
 		/// Converts the supplied US Therms value to Foot Pounds
 		/// # Arguments
@@ -507,14 +507,14 @@ mod tests {
 	#[test]
 	fn it_convert_knownbtu_to_kilocalories_2() {
 		let result: f64 = energy::btu::to_kilocalories(109.9);
-		assert_approx_eq!(27.712868, result, 0.01);
+		assert_approx_eq!(27.7009516484, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
 	fn it_convert_knownbtu_to_kilocalories_3() {
 		let result: f64 = energy::btu::to_kilocalories(5000.0);
-		assert_approx_eq!(1260.716, result, 0.01);
+		assert_approx_eq!(1260.279874814, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
@@ -1200,14 +1200,14 @@ mod tests {
 	#[test]
 	fn it_convert_knownkilocalories_to_btu_2() {
 		let result: f64 = energy::kilocalories::to_btu(109.0);
-		assert_approx_eq!(432.2940, result, 0.01);
+		assert_approx_eq!(432.4436269206, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
 	fn it_convert_knownkilocalories_to_btu_3() {
 		let result: f64 = energy::kilocalories::to_btu(22.89);
-		assert_approx_eq!(90.774114, result, 0.01);
+		assert_approx_eq!(90.8131616, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests

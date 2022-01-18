@@ -126,13 +126,13 @@ pub mod length {
 		/// # Arguments
 		/// * `value` - The Inches input value
 		pub fn to_metres(value: f64) -> f64 {
-			return value * 0.0254;
+			return value / 39.3701;
 		}
 		/// Converts the supplied Inches value to Kilometres
 		/// # Arguments
 		/// * `value` - The Inches input value
 		pub fn to_kilometres(value: f64) -> f64 {
-			return value * 0.0000254;
+			return value / 39370.07874;
 		}
 		/// Converts the supplied Inches value to Feet
 		/// # Arguments
@@ -183,7 +183,7 @@ pub mod length {
 		/// # Arguments
 		/// * `value` - The Kilometres input value
 		pub fn to_inches(value: f64) -> f64 {
-			return value / 0.0000254;
+			return value * 39370.07874;
 		}
 		/// Converts the supplied Kilometres value to Feet
 		/// # Arguments
@@ -234,7 +234,7 @@ pub mod length {
 		/// # Arguments
 		/// * `value` - The Metres input value
 		pub fn to_inches(value: f64) -> f64 {
-			return value / 0.0254;
+			return value * 39.3701;
 		}
 		/// Converts the supplied Metres value to Feet
 		/// # Arguments
@@ -1043,14 +1043,14 @@ mod tests {
 	#[test]
 	fn it_convert_knownkilometres_to_inches_1() {
 		let result: f64 = length::kilometres::to_inches(1.2);
-		assert_approx_eq!(47244.1, result, 0.01);
+		assert_approx_eq!(47244.094488, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
 	fn it_convert_knownkilometres_to_inches_2() {
 		let result: f64 = length::kilometres::to_inches(0.65);
-		assert_approx_eq!(25590.55, result, 0.01);
+		assert_approx_eq!(25590.551181, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests

@@ -69,7 +69,7 @@ pub mod area {
 		/// # Arguments
 		/// * `value` - The Hectares input value
 		pub fn to_square_miles(value: f64) -> f64 {
-			return value / 259.0;
+			return value / 258.99881103;
 		}
 		/// Converts the supplied Hectares value to Square Yards
 		/// # Arguments
@@ -108,7 +108,7 @@ pub mod area {
 		/// # Arguments
 		/// * `value` - The Square Feet input value
 		pub fn to_square_metres(value: f64) -> f64 {
-			return value / 10.764;
+			return value / 10.76391042;
 		}
 		/// Converts the supplied Square Feet value to Square Miles
 		/// # Arguments
@@ -249,13 +249,13 @@ pub mod area {
 		/// # Arguments
 		/// * `value` - The Square Metres input value
 		pub fn to_square_yards(value: f64) -> f64 {
-			return value * 1.196;
+			return value * 1.1959900463;
 		}
 		/// Converts the supplied Square Metres value to Square Feet
 		/// # Arguments
 		/// * `value` - The Square Metres input value
 		pub fn to_square_feet(value: f64) -> f64 {
-			return value * 10.764;
+			return value * 10.76391042;
 		}
 		/// Converts the supplied Square Metres value to Square Inches
 		/// # Arguments
@@ -312,7 +312,7 @@ pub mod area {
 		/// # Arguments
 		/// * `value` - The Square Miles input value
 		pub fn to_hectares(value: f64) -> f64 {
-			return value * 259.0;
+			return value * 258.99881103;
 		}
 		/// Converts the supplied Square Miles value to Acres
 		/// # Arguments
@@ -333,7 +333,7 @@ pub mod area {
 		/// # Arguments
 		/// * `value` - The Square Yards input value
 		pub fn to_square_metres(value: f64) -> f64 {
-			return value / 1.196;
+			return value / 1.1959900463;
 		}
 		/// Converts the supplied Square Yards value to Square Miles
 		/// # Arguments
@@ -1175,21 +1175,21 @@ mod tests {
 	#[test]
 	fn it_convert_knownsquare_metres_to_square_feet_1() {
 		let result: f64 = area::square_metres::to_square_feet(90.0);
-		assert_approx_eq!(968.752, result, 0.01);
+		assert_approx_eq!(968.7519375, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
 	fn it_convert_knownsquare_metres_to_square_feet_2() {
 		let result: f64 = area::square_metres::to_square_feet(180.0);
-		assert_approx_eq!(1937.52, result, 0.01);
+		assert_approx_eq!(1937.503875, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
 	fn it_convert_knownsquare_metres_to_square_feet_3() {
 		let result: f64 = area::square_metres::to_square_feet(123.4);
-		assert_approx_eq!(1328.2775, result, 0.01);
+		assert_approx_eq!(1328.2665454, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
@@ -1364,7 +1364,7 @@ mod tests {
 	#[test]
 	fn it_convert_knownsquare_miles_to_hectares_1() {
 		let result: f64 = area::square_miles::to_hectares(100.0);
-		assert_approx_eq!(25900.0, result, 0.01);
+		assert_approx_eq!(25899.881103, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
