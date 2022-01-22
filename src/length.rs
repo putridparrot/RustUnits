@@ -126,7 +126,7 @@ pub mod length {
 		/// # Arguments
 		/// * `value` - The Inches input value
 		pub fn to_metres(value: f64) -> f64 {
-			return value / 39.3701;
+			return value / 39.37007874;
 		}
 		/// Converts the supplied Inches value to Kilometres
 		/// # Arguments
@@ -234,7 +234,7 @@ pub mod length {
 		/// # Arguments
 		/// * `value` - The Metres input value
 		pub fn to_inches(value: f64) -> f64 {
-			return value * 39.3701;
+			return value * 39.37007874;
 		}
 		/// Converts the supplied Metres value to Feet
 		/// # Arguments
