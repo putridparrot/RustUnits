@@ -18,7 +18,7 @@ pub mod energy {
 		/// # Arguments
 		/// * `value` - The Btu input value
 		pub fn to_kilocalories(value: f64) -> f64 {
-			return value / 3.9673727240424;
+			return value * 0.2521644007218;
 		}
 		/// Converts the supplied Btu value to Joules
 		/// # Arguments
@@ -30,7 +30,7 @@ pub mod energy {
 		/// # Arguments
 		/// * `value` - The Btu input value
 		pub fn to_calories(value: f64) -> f64 {
-			return value * 252.164;
+			return value * 252.1644007218;
 		}
 		/// Converts the supplied Btu value to US Therms
 		/// # Arguments
@@ -87,7 +87,7 @@ pub mod energy {
 		/// # Arguments
 		/// * `value` - The Calories input value
 		pub fn to_btu(value: f64) -> f64 {
-			return value / 252.164;
+			return value / 252.1644007218;
 		}
 		/// Converts the supplied Calories value to US Therms
 		/// # Arguments
@@ -309,7 +309,7 @@ pub mod energy {
 		/// # Arguments
 		/// * `value` - The Kilocalories input value
 		pub fn to_btu(value: f64) -> f64 {
-			return value * 3.9673727240424;
+			return value / 0.2521644007218;
 		}
 		/// Converts the supplied Kilocalories value to Calories
 		/// # Arguments
@@ -321,7 +321,7 @@ pub mod energy {
 		/// # Arguments
 		/// * `value` - The Kilocalories input value
 		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 25210.4;
+			return value / 25210.44007218;
 		}
 		/// Converts the supplied Kilocalories value to Watt Hours
 		/// # Arguments
@@ -474,7 +474,7 @@ pub mod energy {
 		/// # Arguments
 		/// * `value` - The US Therms input value
 		pub fn to_kilocalories(value: f64) -> f64 {
-			return value * 25210.4;
+			return value * 25210.44007218;
 		}
 		/// Converts the supplied US Therms value to Joules
 		/// # Arguments
@@ -615,14 +615,14 @@ mod tests {
 	#[test]
 	fn it_convert_knownbtu_to_kilocalories_2() {
 		let result: f64 = energy::btu::to_kilocalories(109.9);
-		assert_approx_eq!(27.7009516484, result, 0.01);
+		assert_approx_eq!(27.712867639325825, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
 	fn it_convert_knownbtu_to_kilocalories_3() {
 		let result: f64 = energy::btu::to_kilocalories(5000.0);
-		assert_approx_eq!(1260.279874814, result, 0.01);
+		assert_approx_eq!(1260.8220036090, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
@@ -650,14 +650,14 @@ mod tests {
 	#[test]
 	fn it_convert_knownbtu_to_calories_1() {
 		let result: f64 = energy::btu::to_calories(56.0);
-		assert_approx_eq!(14121.184, result, 0.01);
+		assert_approx_eq!(14121.20644042079, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
 	fn it_convert_knownbtu_to_calories_2() {
 		let result: f64 = energy::btu::to_calories(123.0);
-		assert_approx_eq!(31016.172, result, 0.01);
+		assert_approx_eq!(31016.221288781402, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
@@ -1581,14 +1581,14 @@ mod tests {
 	#[test]
 	fn it_convert_knownkilocalories_to_btu_2() {
 		let result: f64 = energy::kilocalories::to_btu(109.0);
-		assert_approx_eq!(432.4436269206, result, 0.01);
+		assert_approx_eq!(432.2576846216055, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
 	fn it_convert_knownkilocalories_to_btu_3() {
 		let result: f64 = energy::kilocalories::to_btu(22.89);
-		assert_approx_eq!(90.8131616, result, 0.01);
+		assert_approx_eq!(90.77411377053717, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
@@ -2120,7 +2120,7 @@ mod tests {
 	#[test]
 	fn it_convert_knownu_s_therms_to_kilocalories_1() {
 		let result: f64 = energy::u_s_therms::to_kilocalories(1.1);
-		assert_approx_eq!(27731.44, result, 0.01);
+		assert_approx_eq!(27731.484079398004, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests

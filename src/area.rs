@@ -48,7 +48,7 @@ pub mod area {
 		/// # Arguments
 		/// * `value` - The Acres input value
 		pub fn to_hectares(value: f64) -> f64 {
-			return value / 2.471;
+			return value / 2.4710538146717;
 		}
 	}
 	/// Hectares conversion functions
@@ -93,7 +93,7 @@ pub mod area {
 		/// # Arguments
 		/// * `value` - The Hectares input value
 		pub fn to_acres(value: f64) -> f64 {
-			return value * 2.471;
+			return value * 2.4710538146717;
 		}
 	}
 	/// Square Feet conversion functions
