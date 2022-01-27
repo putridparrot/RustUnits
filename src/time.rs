@@ -138,7 +138,7 @@ pub mod time {
 		/// # Arguments
 		/// * `value` - The Decades input value
 		pub fn to_weeks(value: f64) -> f64 {
-			return value * 521.0;
+			return value * 521.429;
 		}
 		/// Converts the supplied Decades value to Months
 		/// # Arguments
@@ -405,7 +405,7 @@ pub mod time {
 		/// # Arguments
 		/// * `value` - The Weeks input value
 		pub fn to_decades(value: f64) -> f64 {
-			return value / 521.0;
+			return value / 521.429;
 		}
 		/// Converts the supplied Weeks value to Centuries
 		/// # Arguments

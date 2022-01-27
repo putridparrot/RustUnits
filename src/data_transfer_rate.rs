@@ -129,7 +129,7 @@ pub mod data_transfer_rate {
 		/// # Arguments
 		/// * `value` - The GigaBits Per Second input value
 		pub fn to_mebibits_per_second(value: f64) -> f64 {
-			return value * 954.0;
+			return value * 953.67431640625;
 		}
 	}
 	/// GigaBytes Per Second conversion functions
@@ -231,7 +231,7 @@ pub mod data_transfer_rate {
 		/// # Arguments
 		/// * `value` - The Kibibits Per Second input value
 		pub fn to_kilo_bytes_per_second(value: f64) -> f64 {
-			return value / 7.812;
+			return value / 7.8125;
 		}
 		/// Converts the supplied Kibibits Per Second value to MegaBytes Per Second
 		/// # Arguments
@@ -375,7 +375,7 @@ pub mod data_transfer_rate {
 		/// # Arguments
 		/// * `value` - The KiloBytes Per Second input value
 		pub fn to_kibibits_per_second(value: f64) -> f64 {
-			return value * 7.812;
+			return value * 7.8125;
 		}
 		/// Converts the supplied KiloBytes Per Second value to Mebibits Per Second
 		/// # Arguments
@@ -408,7 +408,7 @@ pub mod data_transfer_rate {
 		/// # Arguments
 		/// * `value` - The Mebibits Per Second input value
 		pub fn to_giga_bits_per_second(value: f64) -> f64 {
-			return value / 954.0;
+			return value / 953.67431640625;
 		}
 		/// Converts the supplied Mebibits Per Second value to TeraBits Per Second
 		/// # Arguments
@@ -1116,14 +1116,14 @@ mod tests {
 	#[test]
 	fn it_convert_knowngiga_bits_per_second_to_mebibits_per_second_2() {
 		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mebibits_per_second(0.9);
-		assert_approx_eq!(858.6, result, 0.01);
+		assert_approx_eq!(858.3068847656, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
 	fn it_convert_knowngiga_bits_per_second_to_mebibits_per_second_3() {
 		let result: f64 = data_transfer_rate::giga_bits_per_second::to_mebibits_per_second(6.1);
-		assert_approx_eq!(5819.4, result, 0.01);
+		assert_approx_eq!(5817.413330078, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
@@ -1935,7 +1935,7 @@ mod tests {
 	#[test]
 	fn it_convert_knownkilo_bytes_per_second_to_kibibits_per_second_2() {
 		let result: f64 = data_transfer_rate::kilo_bytes_per_second::to_kibibits_per_second(6e+3);
-		assert_approx_eq!(46872.0, result, 0.01);
+		assert_approx_eq!(46875.0, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests

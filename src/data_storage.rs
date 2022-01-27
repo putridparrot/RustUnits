@@ -129,7 +129,7 @@ pub mod data_storage {
 		/// # Arguments
 		/// * `value` - The Gigabits input value
 		pub fn to_mebibits(value: f64) -> f64 {
-			return value * 954.0;
+			return value * 953.67431640625;
 		}
 	}
 	/// Gigabytes conversion functions
@@ -231,7 +231,7 @@ pub mod data_storage {
 		/// # Arguments
 		/// * `value` - The Kibibits input value
 		pub fn to_kilobytes(value: f64) -> f64 {
-			return value / 7.812;
+			return value / 7.8125;
 		}
 		/// Converts the supplied Kibibits value to Megabytes
 		/// # Arguments
@@ -375,7 +375,7 @@ pub mod data_storage {
 		/// # Arguments
 		/// * `value` - The Kilobytes input value
 		pub fn to_kibibits(value: f64) -> f64 {
-			return value * 7.812;
+			return value * 7.8125;
 		}
 		/// Converts the supplied Kilobytes value to Mebibits
 		/// # Arguments
@@ -408,7 +408,7 @@ pub mod data_storage {
 		/// # Arguments
 		/// * `value` - The Mebibits input value
 		pub fn to_gigabits(value: f64) -> f64 {
-			return value / 954.0;
+			return value / 953.67431640625;
 		}
 		/// Converts the supplied Mebibits value to Terabits
 		/// # Arguments
@@ -1116,14 +1116,14 @@ mod tests {
 	#[test]
 	fn it_convert_knowngigabits_to_mebibits_2() {
 		let result: f64 = data_storage::gigabits::to_mebibits(0.9);
-		assert_approx_eq!(858.6, result, 0.01);
+		assert_approx_eq!(858.30688476562, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
 	fn it_convert_knowngigabits_to_mebibits_3() {
 		let result: f64 = data_storage::gigabits::to_mebibits(6.1);
-		assert_approx_eq!(5819.4, result, 0.01);
+		assert_approx_eq!(5817.413330078125, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
@@ -1935,7 +1935,7 @@ mod tests {
 	#[test]
 	fn it_convert_knownkilobytes_to_kibibits_2() {
 		let result: f64 = data_storage::kilobytes::to_kibibits(6e+3);
-		assert_approx_eq!(46872.0, result, 0.01);
+		assert_approx_eq!(46875.0, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
