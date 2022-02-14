@@ -1,3 +1,7 @@
+//! # Rust Units
+//!
+//! A library of categories or units of measurement conversion functions
+
 pub mod angle;
 pub mod area;
 pub mod data_storage;

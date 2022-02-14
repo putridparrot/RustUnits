@@ -1,6 +1,6 @@
 [package]
 name = "units"
-version = "0.1.11"
+version = "0.1.11-alpha"
 edition = "2018"
 authors = ["Mark Timmings <mark.timmings@putridparrot.com>"]
 license = "MIT"
