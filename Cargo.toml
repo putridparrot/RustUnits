@@ -1,5 +1,5 @@
 [package]
-name = "units"
+name = "unit-conversions"
 version = "0.1.11-alpha"
 edition = "2018"
 authors = ["Mark Timmings <mark.timmings@putridparrot.com>"]
