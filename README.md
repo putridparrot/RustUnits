@@ -1,4 +1,4 @@
-# RustUnits
+# Rust unit-conversions
 
 [![Build](https://github.com/putridparrot/RustUnits/actions/workflows/build.yml/badge.svg)](https://github.com/putridparrot/RustUnits/actions/workflows/build.yml)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/putridparrot/PutridParrot.Units/blob/master/LICENSE.md)
