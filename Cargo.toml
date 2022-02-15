@@ -1,10 +1,14 @@
 [package]
 name = "unit-conversions"
-version = "0.1.11-alpha"
+version = "0.1.11-alpha.3"
 edition = "2018"
 authors = ["Mark Timmings <mark.timmings@putridparrot.com>"]
 license = "MIT"
 description = "Various units of measurement conversions"
+exclude = [
+        "./github",
+        "./example"
+    ]
 
 documentation = "https://github.com/putridparrot/RustUnits"
 homepage = "https://github.com/putridparrot/RustUnits"
@@ -16,9 +20,6 @@ keywords = [
     "measurement",
     "conversions"
 ]
-
-[lib]
-name = "units"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

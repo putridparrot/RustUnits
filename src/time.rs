@@ -4,1354 +4,464 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-/// Time conversion functions
-pub mod time {
-	/// Centuries conversion functions
-	pub mod centuries {
-		/// Converts the supplied Centuries value to Seconds
-		/// # Arguments
-		/// * `value` - The Centuries input value
-		pub fn to_seconds(value: f64) -> f64 {
-			return value * 3.154e+9;
-		}
-		/// Converts the supplied Centuries value to Minutes
-		/// # Arguments
-		/// * `value` - The Centuries input value
-		pub fn to_minutes(value: f64) -> f64 {
-			return value * 5.256e+7;
-		}
-		/// Converts the supplied Centuries value to Hours
-		/// # Arguments
-		/// * `value` - The Centuries input value
-		pub fn to_hours(value: f64) -> f64 {
-			return value * 876000.0;
-		}
-		/// Converts the supplied Centuries value to Days
-		/// # Arguments
-		/// * `value` - The Centuries input value
-		pub fn to_days(value: f64) -> f64 {
-			return value * 36500.0;
-		}
-		/// Converts the supplied Centuries value to Weeks
-		/// # Arguments
-		/// * `value` - The Centuries input value
-		pub fn to_weeks(value: f64) -> f64 {
-			return value * 5214.29;
-		}
-		/// Converts the supplied Centuries value to Months
-		/// # Arguments
-		/// * `value` - The Centuries input value
-		pub fn to_months(value: f64) -> f64 {
-			return value * 1200.0;
-		}
-		/// Converts the supplied Centuries value to Years
-		/// # Arguments
-		/// * `value` - The Centuries input value
-		pub fn to_years(value: f64) -> f64 {
-			return value * 100.0;
-		}
-		/// Converts the supplied Centuries value to Decades
-		/// # Arguments
-		/// * `value` - The Centuries input value
-		pub fn to_decades(value: f64) -> f64 {
-			return value * 10.0;
-		}
+//! # Time based converters
+
+/// Centuries conversion functions
+pub mod centuries {
+	/// Converts the supplied Centuries value to Seconds
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value * 3.154e+9;
 	}
-	/// Days conversion functions
-	pub mod days {
-		/// Converts the supplied Days value to Seconds
-		/// # Arguments
-		/// * `value` - The Days input value
-		pub fn to_seconds(value: f64) -> f64 {
-			return value * 86400.0;
-		}
-		/// Converts the supplied Days value to Minutes
-		/// # Arguments
-		/// * `value` - The Days input value
-		pub fn to_minutes(value: f64) -> f64 {
-			return value * 1440.0;
-		}
-		/// Converts the supplied Days value to Hours
-		/// # Arguments
-		/// * `value` - The Days input value
-		pub fn to_hours(value: f64) -> f64 {
-			return value * 24.0;
-		}
-		/// Converts the supplied Days value to Weeks
-		/// # Arguments
-		/// * `value` - The Days input value
-		pub fn to_weeks(value: f64) -> f64 {
-			return value / 7.0;
-		}
-		/// Converts the supplied Days value to Months
-		/// # Arguments
-		/// * `value` - The Days input value
-		pub fn to_months(value: f64) -> f64 {
-			return value / 30.4167;
-		}
-		/// Converts the supplied Days value to Years
-		/// # Arguments
-		/// * `value` - The Days input value
-		pub fn to_years(value: f64) -> f64 {
-			return value / 365.0;
-		}
-		/// Converts the supplied Days value to Decades
-		/// # Arguments
-		/// * `value` - The Days input value
-		pub fn to_decades(value: f64) -> f64 {
-			return value / 3650.0;
-		}
-		/// Converts the supplied Days value to Centuries
-		/// # Arguments
-		/// * `value` - The Days input value
-		pub fn to_centuries(value: f64) -> f64 {
-			return value / 36500.0;
-		}
+	/// Converts the supplied Centuries value to Minutes
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value * 5.256e+7;
 	}
-	/// Decades conversion functions
-	pub mod decades {
-		/// Converts the supplied Decades value to Seconds
-		/// # Arguments
-		/// * `value` - The Decades input value
-		pub fn to_seconds(value: f64) -> f64 {
-			return value * 3.154e+8;
-		}
-		/// Converts the supplied Decades value to Minutes
-		/// # Arguments
-		/// * `value` - The Decades input value
-		pub fn to_minutes(value: f64) -> f64 {
-			return value * 5.256e+6;
-		}
-		/// Converts the supplied Decades value to Hours
-		/// # Arguments
-		/// * `value` - The Decades input value
-		pub fn to_hours(value: f64) -> f64 {
-			return value * 87600.0;
-		}
-		/// Converts the supplied Decades value to Days
-		/// # Arguments
-		/// * `value` - The Decades input value
-		pub fn to_days(value: f64) -> f64 {
-			return value * 3650.0;
-		}
-		/// Converts the supplied Decades value to Weeks
-		/// # Arguments
-		/// * `value` - The Decades input value
-		pub fn to_weeks(value: f64) -> f64 {
-			return value * 521.429;
-		}
-		/// Converts the supplied Decades value to Months
-		/// # Arguments
-		/// * `value` - The Decades input value
-		pub fn to_months(value: f64) -> f64 {
-			return value * 120.0;
-		}
-		/// Converts the supplied Decades value to Years
-		/// # Arguments
-		/// * `value` - The Decades input value
-		pub fn to_years(value: f64) -> f64 {
-			return value * 10.0;
-		}
-		/// Converts the supplied Decades value to Centuries
-		/// # Arguments
-		/// * `value` - The Decades input value
-		pub fn to_centuries(value: f64) -> f64 {
-			return value / 10.0;
-		}
+	/// Converts the supplied Centuries value to Hours
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value * 876000.0;
 	}
-	/// Hours conversion functions
-	pub mod hours {
-		/// Converts the supplied Hours value to Seconds
-		/// # Arguments
-		/// * `value` - The Hours input value
-		pub fn to_seconds(value: f64) -> f64 {
-			return value * 3600.0;
-		}
-		/// Converts the supplied Hours value to Minutes
-		/// # Arguments
-		/// * `value` - The Hours input value
-		pub fn to_minutes(value: f64) -> f64 {
-			return value * 60.0;
-		}
-		/// Converts the supplied Hours value to Days
-		/// # Arguments
-		/// * `value` - The Hours input value
-		pub fn to_days(value: f64) -> f64 {
-			return value / 24.0;
-		}
-		/// Converts the supplied Hours value to Weeks
-		/// # Arguments
-		/// * `value` - The Hours input value
-		pub fn to_weeks(value: f64) -> f64 {
-			return value / 168.0;
-		}
-		/// Converts the supplied Hours value to Months
-		/// # Arguments
-		/// * `value` - The Hours input value
-		pub fn to_months(value: f64) -> f64 {
-			return value / 730.001;
-		}
-		/// Converts the supplied Hours value to Years
-		/// # Arguments
-		/// * `value` - The Hours input value
-		pub fn to_years(value: f64) -> f64 {
-			return value / 8760.0;
-		}
-		/// Converts the supplied Hours value to Decades
-		/// # Arguments
-		/// * `value` - The Hours input value
-		pub fn to_decades(value: f64) -> f64 {
-			return value / 87600.0;
-		}
-		/// Converts the supplied Hours value to Centuries
-		/// # Arguments
-		/// * `value` - The Hours input value
-		pub fn to_centuries(value: f64) -> f64 {
-			return value / 876000.0;
-		}
+	/// Converts the supplied Centuries value to Days
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_days(value: f64) -> f64 {
+		return value * 36500.0;
 	}
-	/// Minutes conversion functions
-	pub mod minutes {
-		/// Converts the supplied Minutes value to Seconds
-		/// # Arguments
-		/// * `value` - The Minutes input value
-		pub fn to_seconds(value: f64) -> f64 {
-			return value * 60.0;
-		}
-		/// Converts the supplied Minutes value to Hours
-		/// # Arguments
-		/// * `value` - The Minutes input value
-		pub fn to_hours(value: f64) -> f64 {
-			return value / 60.0;
-		}
-		/// Converts the supplied Minutes value to Days
-		/// # Arguments
-		/// * `value` - The Minutes input value
-		pub fn to_days(value: f64) -> f64 {
-			return value / 1440.0;
-		}
-		/// Converts the supplied Minutes value to Weeks
-		/// # Arguments
-		/// * `value` - The Minutes input value
-		pub fn to_weeks(value: f64) -> f64 {
-			return value / 10080.0;
-		}
-		/// Converts the supplied Minutes value to Months
-		/// # Arguments
-		/// * `value` - The Minutes input value
-		pub fn to_months(value: f64) -> f64 {
-			return value / 43800.0;
-		}
-		/// Converts the supplied Minutes value to Years
-		/// # Arguments
-		/// * `value` - The Minutes input value
-		pub fn to_years(value: f64) -> f64 {
-			return value / 525600.0;
-		}
-		/// Converts the supplied Minutes value to Decades
-		/// # Arguments
-		/// * `value` - The Minutes input value
-		pub fn to_decades(value: f64) -> f64 {
-			return value / 5.256e+6;
-		}
-		/// Converts the supplied Minutes value to Centuries
-		/// # Arguments
-		/// * `value` - The Minutes input value
-		pub fn to_centuries(value: f64) -> f64 {
-			return value / 5.256e+7;
-		}
+	/// Converts the supplied Centuries value to Weeks
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value * 5214.29;
 	}
-	/// Months conversion functions
-	pub mod months {
-		/// Converts the supplied Months value to Seconds
-		/// # Arguments
-		/// * `value` - The Months input value
-		pub fn to_seconds(value: f64) -> f64 {
-			return value * 2.628e+6;
-		}
-		/// Converts the supplied Months value to Minutes
-		/// # Arguments
-		/// * `value` - The Months input value
-		pub fn to_minutes(value: f64) -> f64 {
-			return value * 43800.0;
-		}
-		/// Converts the supplied Months value to Hours
-		/// # Arguments
-		/// * `value` - The Months input value
-		pub fn to_hours(value: f64) -> f64 {
-			return value * 730.001;
-		}
-		/// Converts the supplied Months value to Days
-		/// # Arguments
-		/// * `value` - The Months input value
-		pub fn to_days(value: f64) -> f64 {
-			return value * 30.4167;
-		}
-		/// Converts the supplied Months value to Weeks
-		/// # Arguments
-		/// * `value` - The Months input value
-		pub fn to_weeks(value: f64) -> f64 {
-			return value * 4.34524;
-		}
-		/// Converts the supplied Months value to Years
-		/// # Arguments
-		/// * `value` - The Months input value
-		pub fn to_years(value: f64) -> f64 {
-			return value / 12.0;
-		}
-		/// Converts the supplied Months value to Decades
-		/// # Arguments
-		/// * `value` - The Months input value
-		pub fn to_decades(value: f64) -> f64 {
-			return value / 120.0;
-		}
-		/// Converts the supplied Months value to Centuries
-		/// # Arguments
-		/// * `value` - The Months input value
-		pub fn to_centuries(value: f64) -> f64 {
-			return value / 1200.0;
-		}
+	/// Converts the supplied Centuries value to Months
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_months(value: f64) -> f64 {
+		return value * 1200.0;
 	}
-	/// Seconds conversion functions
-	pub mod seconds {
-		/// Converts the supplied Seconds value to Minutes
-		/// # Arguments
-		/// * `value` - The Seconds input value
-		pub fn to_minutes(value: f64) -> f64 {
-			return value / 60.0;
-		}
-		/// Converts the supplied Seconds value to Hours
-		/// # Arguments
-		/// * `value` - The Seconds input value
-		pub fn to_hours(value: f64) -> f64 {
-			return value / 3600.0;
-		}
-		/// Converts the supplied Seconds value to Days
-		/// # Arguments
-		/// * `value` - The Seconds input value
-		pub fn to_days(value: f64) -> f64 {
-			return value / 86400.0;
-		}
-		/// Converts the supplied Seconds value to Weeks
-		/// # Arguments
-		/// * `value` - The Seconds input value
-		pub fn to_weeks(value: f64) -> f64 {
-			return value / 604800.0;
-		}
-		/// Converts the supplied Seconds value to Months
-		/// # Arguments
-		/// * `value` - The Seconds input value
-		pub fn to_months(value: f64) -> f64 {
-			return value / 2.628e+6;
-		}
-		/// Converts the supplied Seconds value to Years
-		/// # Arguments
-		/// * `value` - The Seconds input value
-		pub fn to_years(value: f64) -> f64 {
-			return value / 3.1536e+7;
-		}
-		/// Converts the supplied Seconds value to Decades
-		/// # Arguments
-		/// * `value` - The Seconds input value
-		pub fn to_decades(value: f64) -> f64 {
-			return value / 3.154e+8;
-		}
-		/// Converts the supplied Seconds value to Centuries
-		/// # Arguments
-		/// * `value` - The Seconds input value
-		pub fn to_centuries(value: f64) -> f64 {
-			return value / 3.154e+9;
-		}
+	/// Converts the supplied Centuries value to Years
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_years(value: f64) -> f64 {
+		return value * 100.0;
 	}
-	/// Weeks conversion functions
-	pub mod weeks {
-		/// Converts the supplied Weeks value to Seconds
-		/// # Arguments
-		/// * `value` - The Weeks input value
-		pub fn to_seconds(value: f64) -> f64 {
-			return value * 604800.0;
-		}
-		/// Converts the supplied Weeks value to Minutes
-		/// # Arguments
-		/// * `value` - The Weeks input value
-		pub fn to_minutes(value: f64) -> f64 {
-			return value * 10080.0;
-		}
-		/// Converts the supplied Weeks value to Hours
-		/// # Arguments
-		/// * `value` - The Weeks input value
-		pub fn to_hours(value: f64) -> f64 {
-			return value * 168.0;
-		}
-		/// Converts the supplied Weeks value to Days
-		/// # Arguments
-		/// * `value` - The Weeks input value
-		pub fn to_days(value: f64) -> f64 {
-			return value * 7.0;
-		}
-		/// Converts the supplied Weeks value to Months
-		/// # Arguments
-		/// * `value` - The Weeks input value
-		pub fn to_months(value: f64) -> f64 {
-			return value / 4.34524;
-		}
-		/// Converts the supplied Weeks value to Years
-		/// # Arguments
-		/// * `value` - The Weeks input value
-		pub fn to_years(value: f64) -> f64 {
-			return value / 52.143;
-		}
-		/// Converts the supplied Weeks value to Decades
-		/// # Arguments
-		/// * `value` - The Weeks input value
-		pub fn to_decades(value: f64) -> f64 {
-			return value / 521.429;
-		}
-		/// Converts the supplied Weeks value to Centuries
-		/// # Arguments
-		/// * `value` - The Weeks input value
-		pub fn to_centuries(value: f64) -> f64 {
-			return value / 5214.29;
-		}
-	}
-	/// Years conversion functions
-	pub mod years {
-		/// Converts the supplied Years value to Seconds
-		/// # Arguments
-		/// * `value` - The Years input value
-		pub fn to_seconds(value: f64) -> f64 {
-			return value * 3.1536e+7;
-		}
-		/// Converts the supplied Years value to Minutes
-		/// # Arguments
-		/// * `value` - The Years input value
-		pub fn to_minutes(value: f64) -> f64 {
-			return value * 525600.0;
-		}
-		/// Converts the supplied Years value to Hours
-		/// # Arguments
-		/// * `value` - The Years input value
-		pub fn to_hours(value: f64) -> f64 {
-			return value * 8760.0;
-		}
-		/// Converts the supplied Years value to Days
-		/// # Arguments
-		/// * `value` - The Years input value
-		pub fn to_days(value: f64) -> f64 {
-			return value * 365.0;
-		}
-		/// Converts the supplied Years value to Weeks
-		/// # Arguments
-		/// * `value` - The Years input value
-		pub fn to_weeks(value: f64) -> f64 {
-			return value * 52.143;
-		}
-		/// Converts the supplied Years value to Months
-		/// # Arguments
-		/// * `value` - The Years input value
-		pub fn to_months(value: f64) -> f64 {
-			return value * 12.0;
-		}
-		/// Converts the supplied Years value to Decades
-		/// # Arguments
-		/// * `value` - The Years input value
-		pub fn to_decades(value: f64) -> f64 {
-			return value / 10.0;
-		}
-		/// Converts the supplied Years value to Centuries
-		/// # Arguments
-		/// * `value` - The Years input value
-		pub fn to_centuries(value: f64) -> f64 {
-			return value / 100.0;
-		}
+	/// Converts the supplied Centuries value to Decades
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value * 10.0;
 	}
 }
-
-#[cfg(test)]
-mod tests {
-	use super::*;
-	use assert_approx_eq::assert_approx_eq;
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_seconds_1() {
-		let result: f64 = time::days::to_seconds(1.4);
-		assert_approx_eq!(120960.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_seconds_2() {
-		let result: f64 = time::days::to_seconds(0.06);
-		assert_approx_eq!(5184.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_seconds_3() {
-		let result: f64 = time::days::to_seconds(0.2);
-		assert_approx_eq!(17280.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_minutes_1() {
-		let result: f64 = time::days::to_minutes(34.0);
-		assert_approx_eq!(48960.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_minutes_2() {
-		let result: f64 = time::days::to_minutes(0.06);
-		assert_approx_eq!(86.4, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_minutes_3() {
-		let result: f64 = time::days::to_minutes(8.1);
-		assert_approx_eq!(11664.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_hours_1() {
-		let result: f64 = time::days::to_hours(8.1);
-		assert_approx_eq!(194.4, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_hours_2() {
-		let result: f64 = time::days::to_hours(0.2);
-		assert_approx_eq!(4.8, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_hours_3() {
-		let result: f64 = time::days::to_hours(121.0);
-		assert_approx_eq!(2904.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_weeks_1() {
-		let result: f64 = time::days::to_weeks(121.0);
-		assert_approx_eq!(17.2857, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_weeks_2() {
-		let result: f64 = time::days::to_weeks(7.2);
-		assert_approx_eq!(1.02857, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_weeks_3() {
-		let result: f64 = time::days::to_weeks(0.9);
-		assert_approx_eq!(0.128571, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_months_1() {
-		let result: f64 = time::days::to_months(0.9);
-		assert_approx_eq!(0.029589, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_months_2() {
-		let result: f64 = time::days::to_months(108.0);
-		assert_approx_eq!(3.55068, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_months_3() {
-		let result: f64 = time::days::to_months(55.0);
-		assert_approx_eq!(1.80822, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_years_1() {
-		let result: f64 = time::days::to_years(55.0);
-		assert_approx_eq!(0.150685, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_years_2() {
-		let result: f64 = time::days::to_years(123.0);
-		assert_approx_eq!(0.336986, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndays_to_years_3() {
-		let result: f64 = time::days::to_years(900.0);
-		assert_approx_eq!(2.46575, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_seconds_1() {
-		let result: f64 = time::hours::to_seconds(12.0);
-		assert_approx_eq!(43200.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_seconds_2() {
-		let result: f64 = time::hours::to_seconds(3.2);
-		assert_approx_eq!(11520.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_seconds_3() {
-		let result: f64 = time::hours::to_seconds(0.3);
-		assert_approx_eq!(1080.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_minutes_1() {
-		let result: f64 = time::hours::to_minutes(0.3);
-		assert_approx_eq!(18.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_minutes_2() {
-		let result: f64 = time::hours::to_minutes(700.0);
-		assert_approx_eq!(42000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_minutes_3() {
-		let result: f64 = time::hours::to_minutes(4.8);
-		assert_approx_eq!(288.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_days_1() {
-		let result: f64 = time::hours::to_days(4.8);
-		assert_approx_eq!(0.2, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_days_2() {
-		let result: f64 = time::hours::to_days(190.0);
-		assert_approx_eq!(7.91667, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_days_3() {
-		let result: f64 = time::hours::to_days(8.5);
-		assert_approx_eq!(0.354167, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_weeks_1() {
-		let result: f64 = time::hours::to_weeks(800.0);
-		assert_approx_eq!(4.7619, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_weeks_2() {
-		let result: f64 = time::hours::to_weeks(90.0);
-		assert_approx_eq!(0.535714, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_weeks_3() {
-		let result: f64 = time::hours::to_weeks(102.0);
-		assert_approx_eq!(0.607143, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_months_1() {
-		let result: f64 = time::hours::to_months(102.0);
-		assert_approx_eq!(0.139726, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_months_2() {
-		let result: f64 = time::hours::to_months(9876.0);
-		assert_approx_eq!(13.52875, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_months_3() {
-		let result: f64 = time::hours::to_months(100.8);
-		assert_approx_eq!(0.13808204, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_years_1() {
-		let result: f64 = time::hours::to_years(9000.0);
-		assert_approx_eq!(1.027397, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_years_2() {
-		let result: f64 = time::hours::to_years(1003.0);
-		assert_approx_eq!(0.1144977, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownhours_to_years_3() {
-		let result: f64 = time::hours::to_years(809.0);
-		assert_approx_eq!(0.0923516, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_seconds_1() {
-		let result: f64 = time::minutes::to_seconds(90.0);
-		assert_approx_eq!(5400.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_seconds_2() {
-		let result: f64 = time::minutes::to_seconds(0.9);
-		assert_approx_eq!(54.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_seconds_3() {
-		let result: f64 = time::minutes::to_seconds(123.0);
-		assert_approx_eq!(7380.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_hours_1() {
-		let result: f64 = time::minutes::to_hours(123.0);
-		assert_approx_eq!(2.05, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_hours_2() {
-		let result: f64 = time::minutes::to_hours(77.0);
-		assert_approx_eq!(1.28333, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_hours_3() {
-		let result: f64 = time::minutes::to_hours(0.8);
-		assert_approx_eq!(0.0133333, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_days_1() {
-		let result: f64 = time::minutes::to_days(800.0);
-		assert_approx_eq!(0.555556, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_days_2() {
-		let result: f64 = time::minutes::to_days(190.0);
-		assert_approx_eq!(0.131944, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_days_3() {
-		let result: f64 = time::minutes::to_days(55.0);
-		assert_approx_eq!(0.0381944, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_weeks_1() {
-		let result: f64 = time::minutes::to_weeks(1900.0);
-		assert_approx_eq!(0.1884921, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_weeks_2() {
-		let result: f64 = time::minutes::to_weeks(800.0);
-		assert_approx_eq!(0.0793651, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_weeks_3() {
-		let result: f64 = time::minutes::to_weeks(12345.0);
-		assert_approx_eq!(1.2247024, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_months_1() {
-		let result: f64 = time::minutes::to_months(1234.0);
-		assert_approx_eq!(0.02817349, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_months_2() {
-		let result: f64 = time::minutes::to_months(90000.0);
-		assert_approx_eq!(2.0547923, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_months_3() {
-		let result: f64 = time::minutes::to_months(7100.0);
-		assert_approx_eq!(0.1621003, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_years_1() {
-		let result: f64 = time::minutes::to_years(900800.0);
-		assert_approx_eq!(1.71385084, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_years_2() {
-		let result: f64 = time::minutes::to_years(12345.0);
-		assert_approx_eq!(0.023487443, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminutes_to_years_3() {
-		let result: f64 = time::minutes::to_years(610910.0);
-		assert_approx_eq!(1.16230974, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_seconds_1() {
-		let result: f64 = time::months::to_seconds(0.03);
-		assert_approx_eq!(78840.00, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_seconds_2() {
-		let result: f64 = time::months::to_seconds(0.1);
-		assert_approx_eq!(262800.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_seconds_3() {
-		let result: f64 = time::months::to_seconds(0.008);
-		assert_approx_eq!(21024.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_minutes_1() {
-		let result: f64 = time::months::to_minutes(0.7);
-		assert_approx_eq!(30660.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_minutes_2() {
-		let result: f64 = time::months::to_minutes(1.4);
-		assert_approx_eq!(61319.99, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_minutes_3() {
-		let result: f64 = time::months::to_minutes(5.0);
-		assert_approx_eq!(219000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_hours_1() {
-		let result: f64 = time::months::to_hours(4.0);
-		assert_approx_eq!(2920.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_hours_2() {
-		let result: f64 = time::months::to_hours(0.3);
-		assert_approx_eq!(219.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_hours_3() {
-		let result: f64 = time::months::to_hours(4.5);
-		assert_approx_eq!(3285.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_days_1() {
-		let result: f64 = time::months::to_days(4.5);
-		assert_approx_eq!(136.875, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_days_2() {
-		let result: f64 = time::months::to_days(90.0);
-		assert_approx_eq!(2737.5029, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_days_3() {
-		let result: f64 = time::months::to_days(0.4);
-		assert_approx_eq!(12.1667, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_weeks_1() {
-		let result: f64 = time::months::to_weeks(0.5);
-		assert_approx_eq!(2.17262, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_weeks_2() {
-		let result: f64 = time::months::to_weeks(88.0);
-		assert_approx_eq!(382.381120, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_weeks_3() {
-		let result: f64 = time::months::to_weeks(12.6);
-		assert_approx_eq!(54.75006, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_years_1() {
-		let result: f64 = time::months::to_years(12.6);
-		assert_approx_eq!(1.050001, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_years_2() {
-		let result: f64 = time::months::to_years(109.0);
-		assert_approx_eq!(9.08334, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmonths_to_years_3() {
-		let result: f64 = time::months::to_years(23.0);
-		assert_approx_eq!(1.91667, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_minutes_1() {
-		let result: f64 = time::seconds::to_minutes(100.0);
-		assert_approx_eq!(1.66667, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_minutes_2() {
-		let result: f64 = time::seconds::to_minutes(9000.0);
-		assert_approx_eq!(150.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_minutes_3() {
-		let result: f64 = time::seconds::to_minutes(2300.0);
-		assert_approx_eq!(38.33333, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_hours_1() {
-		let result: f64 = time::seconds::to_hours(2300.0);
-		assert_approx_eq!(0.6388889, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_hours_2() {
-		let result: f64 = time::seconds::to_hours(9999.0);
-		assert_approx_eq!(2.7775, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_hours_3() {
-		let result: f64 = time::seconds::to_hours(36000.0);
-		assert_approx_eq!(10.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_days_1() {
-		let result: f64 = time::seconds::to_days(36000.0);
-		assert_approx_eq!(0.41666667, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_days_2() {
-		let result: f64 = time::seconds::to_days(90000.0);
-		assert_approx_eq!(1.0416667, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_days_3() {
-		let result: f64 = time::seconds::to_days(190000.0);
-		assert_approx_eq!(2.19907407, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_weeks_1() {
-		let result: f64 = time::seconds::to_weeks(190000.0);
-		assert_approx_eq!(0.314153439, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_weeks_2() {
-		let result: f64 = time::seconds::to_weeks(1234567.0);
-		assert_approx_eq!(2.041281415, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_weeks_3() {
-		let result: f64 = time::seconds::to_weeks(100200.0);
-		assert_approx_eq!(0.165674603, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_months_1() {
-		let result: f64 = time::seconds::to_months(1000000.0);
-		assert_approx_eq!(0.380517087, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_months_2() {
-		let result: f64 = time::seconds::to_months(9876543.0);
-		assert_approx_eq!(3.75819337, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_months_3() {
-		let result: f64 = time::seconds::to_months(200900.0);
-		assert_approx_eq!(0.0764458827, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_years_1() {
-		let result: f64 = time::seconds::to_years(123456789.0);
-		assert_approx_eq!(3.91478909817, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_years_2() {
-		let result: f64 = time::seconds::to_years(100900.0);
-		assert_approx_eq!(0.00319951801, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_to_years_3() {
-		let result: f64 = time::seconds::to_years(987654.0);
-		assert_approx_eq!(0.0313183029, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_seconds_1() {
-		let result: f64 = time::weeks::to_seconds(0.1);
-		assert_approx_eq!(60480.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_seconds_2() {
-		let result: f64 = time::weeks::to_seconds(0.08);
-		assert_approx_eq!(48384.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_seconds_3() {
-		let result: f64 = time::weeks::to_seconds(3.0);
-		assert_approx_eq!(1814400.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_minutes_1() {
-		let result: f64 = time::weeks::to_minutes(2.0);
-		assert_approx_eq!(20160.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_minutes_2() {
-		let result: f64 = time::weeks::to_minutes(0.4);
-		assert_approx_eq!(4032.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_minutes_3() {
-		let result: f64 = time::weeks::to_minutes(0.02);
-		assert_approx_eq!(201.6, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_hours_1() {
-		let result: f64 = time::weeks::to_hours(0.02);
-		assert_approx_eq!(3.36, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_hours_2() {
-		let result: f64 = time::weeks::to_hours(77.0);
-		assert_approx_eq!(12936.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_hours_3() {
-		let result: f64 = time::weeks::to_hours(9.2);
-		assert_approx_eq!(1545.6, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_days_1() {
-		let result: f64 = time::weeks::to_days(9.2);
-		assert_approx_eq!(64.4, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_days_2() {
-		let result: f64 = time::weeks::to_days(169.0);
-		assert_approx_eq!(1183.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_days_3() {
-		let result: f64 = time::weeks::to_days(4.0);
-		assert_approx_eq!(28.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_months_1() {
-		let result: f64 = time::weeks::to_months(4.0);
-		assert_approx_eq!(0.920547, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_months_2() {
-		let result: f64 = time::weeks::to_months(900.0);
-		assert_approx_eq!(207.12319687, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_months_3() {
-		let result: f64 = time::weeks::to_months(3.8);
-		assert_approx_eq!(0.87452, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_years_1() {
-		let result: f64 = time::weeks::to_years(3.0);
-		assert_approx_eq!(0.0575342, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_years_2() {
-		let result: f64 = time::weeks::to_years(235.0);
-		assert_approx_eq!(4.50685, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownweeks_to_years_3() {
-		let result: f64 = time::weeks::to_years(1090.0);
-		assert_approx_eq!(20.90411, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_seconds_1() {
-		let result: f64 = time::years::to_seconds(0.06);
-		assert_approx_eq!(1892160.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_seconds_2() {
-		let result: f64 = time::years::to_seconds(0.009);
-		assert_approx_eq!(283824.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_seconds_3() {
-		let result: f64 = time::years::to_seconds(0.02);
-		assert_approx_eq!(630720.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_minutes_1() {
-		let result: f64 = time::years::to_minutes(0.02);
-		assert_approx_eq!(10512.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_minutes_2() {
-		let result: f64 = time::years::to_minutes(0.3);
-		assert_approx_eq!(157680.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_minutes_3() {
-		let result: f64 = time::years::to_minutes(0.001);
-		assert_approx_eq!(525.6, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_hours_1() {
-		let result: f64 = time::years::to_hours(0.001);
-		assert_approx_eq!(8.76, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_hours_2() {
-		let result: f64 = time::years::to_hours(0.3);
-		assert_approx_eq!(2628.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_hours_3() {
-		let result: f64 = time::years::to_hours(2.0);
-		assert_approx_eq!(17520.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_days_1() {
-		let result: f64 = time::years::to_days(2.0);
-		assert_approx_eq!(730.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_days_2() {
-		let result: f64 = time::years::to_days(1009.0);
-		assert_approx_eq!(368285.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_days_3() {
-		let result: f64 = time::years::to_days(7.0);
-		assert_approx_eq!(2555.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_weeks_1() {
-		let result: f64 = time::years::to_weeks(7.0);
-		assert_approx_eq!(365.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_weeks_2() {
-		let result: f64 = time::years::to_weeks(1.3);
-		assert_approx_eq!(67.7857, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_weeks_3() {
-		let result: f64 = time::years::to_weeks(88.0);
-		assert_approx_eq!(4588.5839, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_months_1() {
-		let result: f64 = time::years::to_months(6.0);
-		assert_approx_eq!(71.9999, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_months_2() {
-		let result: f64 = time::years::to_months(12.0);
-		assert_approx_eq!(144.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownyears_to_months_3() {
-		let result: f64 = time::years::to_months(0.3);
-		assert_approx_eq!(3.6, result, 0.01);
-	}
-
+/// Days conversion functions
+pub mod days {
+	/// Converts the supplied Days value to Seconds
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value * 86400.0;
+	}
+	/// Converts the supplied Days value to Minutes
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value * 1440.0;
+	}
+	/// Converts the supplied Days value to Hours
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value * 24.0;
+	}
+	/// Converts the supplied Days value to Weeks
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value / 7.0;
+	}
+	/// Converts the supplied Days value to Months
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_months(value: f64) -> f64 {
+		return value / 30.4167;
+	}
+	/// Converts the supplied Days value to Years
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_years(value: f64) -> f64 {
+		return value / 365.0;
+	}
+	/// Converts the supplied Days value to Decades
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value / 3650.0;
+	}
+	/// Converts the supplied Days value to Centuries
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 36500.0;
+	}
+}
+/// Decades conversion functions
+pub mod decades {
+	/// Converts the supplied Decades value to Seconds
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value * 3.154e+8;
+	}
+	/// Converts the supplied Decades value to Minutes
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value * 5.256e+6;
+	}
+	/// Converts the supplied Decades value to Hours
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value * 87600.0;
+	}
+	/// Converts the supplied Decades value to Days
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_days(value: f64) -> f64 {
+		return value * 3650.0;
+	}
+	/// Converts the supplied Decades value to Weeks
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value * 521.429;
+	}
+	/// Converts the supplied Decades value to Months
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_months(value: f64) -> f64 {
+		return value * 120.0;
+	}
+	/// Converts the supplied Decades value to Years
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_years(value: f64) -> f64 {
+		return value * 10.0;
+	}
+	/// Converts the supplied Decades value to Centuries
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 10.0;
+	}
+}
+/// Hours conversion functions
+pub mod hours {
+	/// Converts the supplied Hours value to Seconds
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value * 3600.0;
+	}
+	/// Converts the supplied Hours value to Minutes
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value * 60.0;
+	}
+	/// Converts the supplied Hours value to Days
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_days(value: f64) -> f64 {
+		return value / 24.0;
+	}
+	/// Converts the supplied Hours value to Weeks
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value / 168.0;
+	}
+	/// Converts the supplied Hours value to Months
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_months(value: f64) -> f64 {
+		return value / 730.001;
+	}
+	/// Converts the supplied Hours value to Years
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_years(value: f64) -> f64 {
+		return value / 8760.0;
+	}
+	/// Converts the supplied Hours value to Decades
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value / 87600.0;
+	}
+	/// Converts the supplied Hours value to Centuries
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 876000.0;
+	}
+}
+/// Minutes conversion functions
+pub mod minutes {
+	/// Converts the supplied Minutes value to Seconds
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value * 60.0;
+	}
+	/// Converts the supplied Minutes value to Hours
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value / 60.0;
+	}
+	/// Converts the supplied Minutes value to Days
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_days(value: f64) -> f64 {
+		return value / 1440.0;
+	}
+	/// Converts the supplied Minutes value to Weeks
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value / 10080.0;
+	}
+	/// Converts the supplied Minutes value to Months
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_months(value: f64) -> f64 {
+		return value / 43800.0;
+	}
+	/// Converts the supplied Minutes value to Years
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_years(value: f64) -> f64 {
+		return value / 525600.0;
+	}
+	/// Converts the supplied Minutes value to Decades
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value / 5.256e+6;
+	}
+	/// Converts the supplied Minutes value to Centuries
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 5.256e+7;
+	}
+}
+/// Months conversion functions
+pub mod months {
+	/// Converts the supplied Months value to Seconds
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value * 2.628e+6;
+	}
+	/// Converts the supplied Months value to Minutes
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value * 43800.0;
+	}
+	/// Converts the supplied Months value to Hours
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value * 730.001;
+	}
+	/// Converts the supplied Months value to Days
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_days(value: f64) -> f64 {
+		return value * 30.4167;
+	}
+	/// Converts the supplied Months value to Weeks
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value * 4.34524;
+	}
+	/// Converts the supplied Months value to Years
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_years(value: f64) -> f64 {
+		return value / 12.0;
+	}
+	/// Converts the supplied Months value to Decades
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value / 120.0;
+	}
+	/// Converts the supplied Months value to Centuries
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 1200.0;
+	}
+}
+/// Seconds conversion functions
+pub mod seconds {
+	/// Converts the supplied Seconds value to Minutes
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value / 60.0;
+	}
+	/// Converts the supplied Seconds value to Hours
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value / 3600.0;
+	}
+	/// Converts the supplied Seconds value to Days
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_days(value: f64) -> f64 {
+		return value / 86400.0;
+	}
+	/// Converts the supplied Seconds value to Weeks
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value / 604800.0;
+	}
+	/// Converts the supplied Seconds value to Months
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_months(value: f64) -> f64 {
+		return value / 2.628e+6;
+	}
+	/// Converts the supplied Seconds value to Years
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_years(value: f64) -> f64 {
+		return value / 3.1536e+7;
+	}
+	/// Converts the supplied Seconds value to Decades
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value / 3.154e+8;
+	}
+	/// Converts the supplied Seconds value to Centuries
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 3.154e+9;
+	}
+}
+/// Weeks conversion functions
+pub mod weeks {
+	/// Converts the supplied Weeks value to Seconds
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value * 604800.0;
+	}
+	/// Converts the supplied Weeks value to Minutes
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value * 10080.0;
+	}
+	/// Converts the supplied Weeks value to Hours
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value * 168.0;
+	}
+	/// Converts the supplied Weeks value to Days
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_days(value: f64) -> f64 {
+		return value * 7.0;
+	}
+	/// Converts the supplied Weeks value to Months
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_months(value: f64) -> f64 {
+		return value / 4.34524;
+	}
+	/// Converts the supplied Weeks value to Years
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_years(value: f64) -> f64 {
+		return value / 52.143;
+	}
+	/// Converts the supplied Weeks value to Decades
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value / 521.429;
+	}
+	/// Converts the supplied Weeks value to Centuries
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 5214.29;
+	}
+}
+/// Years conversion functions
+pub mod years {
+	/// Converts the supplied Years value to Seconds
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value * 3.1536e+7;
+	}
+	/// Converts the supplied Years value to Minutes
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value * 525600.0;
+	}
+	/// Converts the supplied Years value to Hours
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value * 8760.0;
+	}
+	/// Converts the supplied Years value to Days
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_days(value: f64) -> f64 {
+		return value * 365.0;
+	}
+	/// Converts the supplied Years value to Weeks
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value * 52.143;
+	}
+	/// Converts the supplied Years value to Months
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_months(value: f64) -> f64 {
+		return value * 12.0;
+	}
+	/// Converts the supplied Years value to Decades
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value / 10.0;
+	}
+	/// Converts the supplied Years value to Centuries
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 100.0;
+	}
 }

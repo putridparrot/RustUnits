@@ -23,7 +23,12 @@ Package available via [crates.io](https://crates.io/crates/unit-conversions)
 Example of usage:
 
 ```
-let radians: f64 = angle::degrees::to_radians(8000.0);
+use unit_conversions::*;
+
+fn main() {
+    let radians: f64 = angle::degrees::to_radians(800.0);
+    println!("{}", radians);
+}
 ```
 
 Each unit of measure then includes functions to convert to each for example, converting each Temperature unit of measure to each other Temperature.

@@ -4,349 +4,89 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-/// Luminous Energy conversion functions
-pub mod luminous_energy {
-	/// LumenHour conversion functions
-	pub mod lumen_hour {
-		/// Converts the supplied LumenHour value to Talbot
-		/// # Arguments
-		/// * `value` - The LumenHour input value
-		pub fn to_talbot(value: f64) -> f64 {
-			return value * 3600.0;
-		}
-		/// Converts the supplied LumenHour value to LumenMinute
-		/// # Arguments
-		/// * `value` - The LumenHour input value
-		pub fn to_lumen_minute(value: f64) -> f64 {
-			return value * 60.0;
-		}
-		/// Converts the supplied LumenHour value to LumenSecond
-		/// # Arguments
-		/// * `value` - The LumenHour input value
-		pub fn to_lumen_second(value: f64) -> f64 {
-			return value * 3600.0;
-		}
+//! # Luminous Energy based converters
+
+/// LumenHour conversion functions
+pub mod lumen_hour {
+	/// Converts the supplied LumenHour value to Talbot
+	/// # Arguments
+	/// * `value` - The LumenHour input value
+	pub fn to_talbot(value: f64) -> f64 {
+		return value * 3600.0;
 	}
-	/// LumenMinute conversion functions
-	pub mod lumen_minute {
-		/// Converts the supplied LumenMinute value to Talbot
-		/// # Arguments
-		/// * `value` - The LumenMinute input value
-		pub fn to_talbot(value: f64) -> f64 {
-			return value * 60.0;
-		}
-		/// Converts the supplied LumenMinute value to LumenHour
-		/// # Arguments
-		/// * `value` - The LumenMinute input value
-		pub fn to_lumen_hour(value: f64) -> f64 {
-			return value / 60.0;
-		}
-		/// Converts the supplied LumenMinute value to LumenSecond
-		/// # Arguments
-		/// * `value` - The LumenMinute input value
-		pub fn to_lumen_second(value: f64) -> f64 {
-			return value * 60.0;
-		}
+	/// Converts the supplied LumenHour value to LumenMinute
+	/// # Arguments
+	/// * `value` - The LumenHour input value
+	pub fn to_lumen_minute(value: f64) -> f64 {
+		return value * 60.0;
 	}
-	/// LumenSecond conversion functions
-	pub mod lumen_second {
-		/// Converts the supplied LumenSecond value to Talbot
-		/// # Arguments
-		/// * `value` - The LumenSecond input value
-		pub fn to_talbot(value: f64) -> f64 {
-			return value;
-		}
-		/// Converts the supplied LumenSecond value to LumenHour
-		/// # Arguments
-		/// * `value` - The LumenSecond input value
-		pub fn to_lumen_hour(value: f64) -> f64 {
-			return value / 3600.0;
-		}
-		/// Converts the supplied LumenSecond value to LumenMinute
-		/// # Arguments
-		/// * `value` - The LumenSecond input value
-		pub fn to_lumen_minute(value: f64) -> f64 {
-			return value / 60.0;
-		}
-	}
-	/// Talbot conversion functions
-	pub mod talbot {
-		/// Converts the supplied Talbot value to LumenSecond
-		/// # Arguments
-		/// * `value` - The Talbot input value
-		pub fn to_lumen_second(value: f64) -> f64 {
-			return value;
-		}
-		/// Converts the supplied Talbot value to LumenHour
-		/// # Arguments
-		/// * `value` - The Talbot input value
-		pub fn to_lumen_hour(value: f64) -> f64 {
-			return value / 3600.0;
-		}
-		/// Converts the supplied Talbot value to LumenMinute
-		/// # Arguments
-		/// * `value` - The Talbot input value
-		pub fn to_lumen_minute(value: f64) -> f64 {
-			return value / 60.0;
-		}
+	/// Converts the supplied LumenHour value to LumenSecond
+	/// # Arguments
+	/// * `value` - The LumenHour input value
+	pub fn to_lumen_second(value: f64) -> f64 {
+		return value * 3600.0;
 	}
 }
-
-#[cfg(test)]
-mod tests {
-	use super::*;
-	use assert_approx_eq::assert_approx_eq;
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_hour_to_talbot_1() {
-		let result: f64 = luminous_energy::lumen_hour::to_talbot(9.0);
-		assert_approx_eq!(32400.0, result, 0.01);
+/// LumenMinute conversion functions
+pub mod lumen_minute {
+	/// Converts the supplied LumenMinute value to Talbot
+	/// # Arguments
+	/// * `value` - The LumenMinute input value
+	pub fn to_talbot(value: f64) -> f64 {
+		return value * 60.0;
 	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_hour_to_talbot_2() {
-		let result: f64 = luminous_energy::lumen_hour::to_talbot(1.2);
-		assert_approx_eq!(4320.0, result, 0.01);
+	/// Converts the supplied LumenMinute value to LumenHour
+	/// # Arguments
+	/// * `value` - The LumenMinute input value
+	pub fn to_lumen_hour(value: f64) -> f64 {
+		return value / 60.0;
 	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_hour_to_talbot_3() {
-		let result: f64 = luminous_energy::lumen_hour::to_talbot(4.0);
-		assert_approx_eq!(14400.0, result, 0.01);
+	/// Converts the supplied LumenMinute value to LumenSecond
+	/// # Arguments
+	/// * `value` - The LumenMinute input value
+	pub fn to_lumen_second(value: f64) -> f64 {
+		return value * 60.0;
 	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_hour_to_lumen_minute_1() {
-		let result: f64 = luminous_energy::lumen_hour::to_lumen_minute(1.2);
-		assert_approx_eq!(72.0, result, 0.01);
+}
+/// LumenSecond conversion functions
+pub mod lumen_second {
+	/// Converts the supplied LumenSecond value to Talbot
+	/// # Arguments
+	/// * `value` - The LumenSecond input value
+	pub fn to_talbot(value: f64) -> f64 {
+		return value;
 	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_hour_to_lumen_minute_2() {
-		let result: f64 = luminous_energy::lumen_hour::to_lumen_minute(0.8);
-		assert_approx_eq!(48.0, result, 0.01);
+	/// Converts the supplied LumenSecond value to LumenHour
+	/// # Arguments
+	/// * `value` - The LumenSecond input value
+	pub fn to_lumen_hour(value: f64) -> f64 {
+		return value / 3600.0;
 	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_hour_to_lumen_minute_3() {
-		let result: f64 = luminous_energy::lumen_hour::to_lumen_minute(109.00);
-		assert_approx_eq!(6540.0, result, 0.01);
+	/// Converts the supplied LumenSecond value to LumenMinute
+	/// # Arguments
+	/// * `value` - The LumenSecond input value
+	pub fn to_lumen_minute(value: f64) -> f64 {
+		return value / 60.0;
 	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_hour_to_lumen_second_1() {
-		let result: f64 = luminous_energy::lumen_hour::to_lumen_second(109.0);
-		assert_approx_eq!(392400.0, result, 0.01);
+}
+/// Talbot conversion functions
+pub mod talbot {
+	/// Converts the supplied Talbot value to LumenSecond
+	/// # Arguments
+	/// * `value` - The Talbot input value
+	pub fn to_lumen_second(value: f64) -> f64 {
+		return value;
 	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_hour_to_lumen_second_2() {
-		let result: f64 = luminous_energy::lumen_hour::to_lumen_second(6.1);
-		assert_approx_eq!(21960.0, result, 0.01);
+	/// Converts the supplied Talbot value to LumenHour
+	/// # Arguments
+	/// * `value` - The Talbot input value
+	pub fn to_lumen_hour(value: f64) -> f64 {
+		return value / 3600.0;
 	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_hour_to_lumen_second_3() {
-		let result: f64 = luminous_energy::lumen_hour::to_lumen_second(0.7);
-		assert_approx_eq!(2520.0, result, 0.01);
+	/// Converts the supplied Talbot value to LumenMinute
+	/// # Arguments
+	/// * `value` - The Talbot input value
+	pub fn to_lumen_minute(value: f64) -> f64 {
+		return value / 60.0;
 	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_minute_to_talbot_1() {
-		let result: f64 = luminous_energy::lumen_minute::to_talbot(0.7);
-		assert_approx_eq!(42.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_minute_to_talbot_2() {
-		let result: f64 = luminous_energy::lumen_minute::to_talbot(678.0);
-		assert_approx_eq!(40680.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_minute_to_talbot_3() {
-		let result: f64 = luminous_energy::lumen_minute::to_talbot(89.0);
-		assert_approx_eq!(5340.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_minute_to_lumen_hour_1() {
-		let result: f64 = luminous_energy::lumen_minute::to_lumen_hour(89.0);
-		assert_approx_eq!(1.4833, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_minute_to_lumen_hour_2() {
-		let result: f64 = luminous_energy::lumen_minute::to_lumen_hour(9.0);
-		assert_approx_eq!(0.15, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_minute_to_lumen_hour_3() {
-		let result: f64 = luminous_energy::lumen_minute::to_lumen_hour(0.123);
-		assert_approx_eq!(0.00205, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_minute_to_lumen_second_1() {
-		let result: f64 = luminous_energy::lumen_minute::to_lumen_second(0.123);
-		assert_approx_eq!(7.38, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_minute_to_lumen_second_2() {
-		let result: f64 = luminous_energy::lumen_minute::to_lumen_second(8000.0);
-		assert_approx_eq!(480000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_minute_to_lumen_second_3() {
-		let result: f64 = luminous_energy::lumen_minute::to_lumen_second(34.1);
-		assert_approx_eq!(2046.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_second_to_talbot_1() {
-		let result: f64 = luminous_energy::lumen_second::to_talbot(190.0);
-		assert_approx_eq!(190.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_second_to_talbot_2() {
-		let result: f64 = luminous_energy::lumen_second::to_talbot(0.6);
-		assert_approx_eq!(0.6, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_second_to_talbot_3() {
-		let result: f64 = luminous_energy::lumen_second::to_talbot(5000.0);
-		assert_approx_eq!(5000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_second_to_lumen_hour_1() {
-		let result: f64 = luminous_energy::lumen_second::to_lumen_hour(190.0);
-		assert_approx_eq!(0.052778, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_second_to_lumen_hour_2() {
-		let result: f64 = luminous_energy::lumen_second::to_lumen_hour(200600.0);
-		assert_approx_eq!(55.7222, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_second_to_lumen_hour_3() {
-		let result: f64 = luminous_energy::lumen_second::to_lumen_hour(1234.0);
-		assert_approx_eq!(0.342778, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_second_to_lumen_minute_1() {
-		let result: f64 = luminous_energy::lumen_second::to_lumen_minute(10900.0);
-		assert_approx_eq!(181.6667, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_second_to_lumen_minute_2() {
-		let result: f64 = luminous_energy::lumen_second::to_lumen_minute(50.3);
-		assert_approx_eq!(0.83833, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownlumen_second_to_lumen_minute_3() {
-		let result: f64 = luminous_energy::lumen_second::to_lumen_minute(276.0);
-		assert_approx_eq!(4.6, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowntalbot_to_lumen_second_1() {
-		let result: f64 = luminous_energy::talbot::to_lumen_second(100.0);
-		assert_approx_eq!(100.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowntalbot_to_lumen_second_2() {
-		let result: f64 = luminous_energy::talbot::to_lumen_second(0.9);
-		assert_approx_eq!(0.9, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowntalbot_to_lumen_second_3() {
-		let result: f64 = luminous_energy::talbot::to_lumen_second(23.1);
-		assert_approx_eq!(23.1, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowntalbot_to_lumen_hour_1() {
-		let result: f64 = luminous_energy::talbot::to_lumen_hour(800.0);
-		assert_approx_eq!(0.222, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowntalbot_to_lumen_hour_2() {
-		let result: f64 = luminous_energy::talbot::to_lumen_hour(6789.0);
-		assert_approx_eq!(1.885833, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowntalbot_to_lumen_hour_3() {
-		let result: f64 = luminous_energy::talbot::to_lumen_hour(10900.0);
-		assert_approx_eq!(3.027778, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowntalbot_to_lumen_minute_1() {
-		let result: f64 = luminous_energy::talbot::to_lumen_minute(900.0);
-		assert_approx_eq!(15.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowntalbot_to_lumen_minute_2() {
-		let result: f64 = luminous_energy::talbot::to_lumen_minute(78.9);
-		assert_approx_eq!(1.315, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowntalbot_to_lumen_minute_3() {
-		let result: f64 = luminous_energy::talbot::to_lumen_minute(1500.0);
-		assert_approx_eq!(25.0, result, 0.01);
-	}
-
 }

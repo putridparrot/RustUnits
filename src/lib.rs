@@ -7,6 +7,7 @@ pub mod area;
 pub mod data_storage;
 pub mod data_transfer_rate;
 pub mod energy;
+pub mod force;
 pub mod frequency;
 pub mod fuel_economy;
 pub mod length;

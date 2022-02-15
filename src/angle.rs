@@ -4,862 +4,203 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-/// Angle conversion functions
-pub mod angle {
-	/// Degrees conversion functions
-	pub mod degrees {
-		/// Converts the supplied Degrees value to Radians
-		/// # Arguments
-		/// * `value` - The Degrees input value
-		pub fn to_radians(value: f64) -> f64 {
-			return value * std::f64::consts::PI/180.0;
-		}
-		/// Converts the supplied Degrees value to Gradians
-		/// # Arguments
-		/// * `value` - The Degrees input value
-		pub fn to_gradians(value: f64) -> f64 {
-			return value * 200.0/180.0;
-		}
-		/// Converts the supplied Degrees value to Milliradians
-		/// # Arguments
-		/// * `value` - The Degrees input value
-		pub fn to_milliradians(value: f64) -> f64 {
-			return value * (1000.0 * std::f64::consts::PI)/180.0;
-		}
-		/// Converts the supplied Degrees value to Minute Of Arc
-		/// # Arguments
-		/// * `value` - The Degrees input value
-		pub fn to_minute_of_arc(value: f64) -> f64 {
-			return value * 60.0;
-		}
-		/// Converts the supplied Degrees value to Seconds Of Arc
-		/// # Arguments
-		/// * `value` - The Degrees input value
-		pub fn to_seconds_of_arc(value: f64) -> f64 {
-			return value * 3600.0;
-		}
+//! # Angle based converters
+
+/// Degrees conversion functions
+pub mod degrees {
+	/// Converts the supplied Degrees value to Radians
+	/// # Arguments
+	/// * `value` - The Degrees input value
+	pub fn to_radians(value: f64) -> f64 {
+		return value * std::f64::consts::PI/180.0;
 	}
-	/// Gradians conversion functions
-	pub mod gradians {
-		/// Converts the supplied Gradians value to Degrees
-		/// # Arguments
-		/// * `value` - The Gradians input value
-		pub fn to_degrees(value: f64) -> f64 {
-			return value * 180.0/200.0;
-		}
-		/// Converts the supplied Gradians value to Radians
-		/// # Arguments
-		/// * `value` - The Gradians input value
-		pub fn to_radians(value: f64) -> f64 {
-			return value * std::f64::consts::PI/200.0;
-		}
-		/// Converts the supplied Gradians value to Milliradians
-		/// # Arguments
-		/// * `value` - The Gradians input value
-		pub fn to_milliradians(value: f64) -> f64 {
-			return value * (1000.0*std::f64::consts::PI)/200.0;
-		}
-		/// Converts the supplied Gradians value to Minute Of Arc
-		/// # Arguments
-		/// * `value` - The Gradians input value
-		pub fn to_minute_of_arc(value: f64) -> f64 {
-			return value * 54.0;
-		}
-		/// Converts the supplied Gradians value to Seconds Of Arc
-		/// # Arguments
-		/// * `value` - The Gradians input value
-		pub fn to_seconds_of_arc(value: f64) -> f64 {
-			return value * 3240.0;
-		}
+	/// Converts the supplied Degrees value to Gradians
+	/// # Arguments
+	/// * `value` - The Degrees input value
+	pub fn to_gradians(value: f64) -> f64 {
+		return value * 200.0/180.0;
 	}
-	/// Milliradians conversion functions
-	pub mod milliradians {
-		/// Converts the supplied Milliradians value to Degrees
-		/// # Arguments
-		/// * `value` - The Milliradians input value
-		pub fn to_degrees(value: f64) -> f64 {
-			return value * 180.0/(1000.0 * std::f64::consts::PI);
-		}
-		/// Converts the supplied Milliradians value to Radians
-		/// # Arguments
-		/// * `value` - The Milliradians input value
-		pub fn to_radians(value: f64) -> f64 {
-			return value / 1000.0;
-		}
-		/// Converts the supplied Milliradians value to Gradians
-		/// # Arguments
-		/// * `value` - The Milliradians input value
-		pub fn to_gradians(value: f64) -> f64 {
-			return value * 200.0/(1000.0 * std::f64::consts::PI);
-		}
-		/// Converts the supplied Milliradians value to Minute Of Arc
-		/// # Arguments
-		/// * `value` - The Milliradians input value
-		pub fn to_minute_of_arc(value: f64) -> f64 {
-			return value * (60.0 * 180.0)/(1000.0 * std::f64::consts::PI);
-		}
-		/// Converts the supplied Milliradians value to Seconds Of Arc
-		/// # Arguments
-		/// * `value` - The Milliradians input value
-		pub fn to_seconds_of_arc(value: f64) -> f64 {
-			return value * (3600.0 * 180.0)/(1000.0 * std::f64::consts::PI);
-		}
+	/// Converts the supplied Degrees value to Milliradians
+	/// # Arguments
+	/// * `value` - The Degrees input value
+	pub fn to_milliradians(value: f64) -> f64 {
+		return value * (1000.0 * std::f64::consts::PI)/180.0;
 	}
-	/// Minute Of Arc conversion functions
-	pub mod minute_of_arc {
-		/// Converts the supplied Minute Of Arc value to Degrees
-		/// # Arguments
-		/// * `value` - The Minute Of Arc input value
-		pub fn to_degrees(value: f64) -> f64 {
-			return value / 60.0;
-		}
-		/// Converts the supplied Minute Of Arc value to Radians
-		/// # Arguments
-		/// * `value` - The Minute Of Arc input value
-		pub fn to_radians(value: f64) -> f64 {
-			return value * std::f64::consts::PI/(60.0 * 180.0);
-		}
-		/// Converts the supplied Minute Of Arc value to Gradians
-		/// # Arguments
-		/// * `value` - The Minute Of Arc input value
-		pub fn to_gradians(value: f64) -> f64 {
-			return value / 54.0;
-		}
-		/// Converts the supplied Minute Of Arc value to Milliradians
-		/// # Arguments
-		/// * `value` - The Minute Of Arc input value
-		pub fn to_milliradians(value: f64) -> f64 {
-			return value * (1000.0 * std::f64::consts::PI) / (60.0 * 180.0);
-		}
-		/// Converts the supplied Minute Of Arc value to Seconds Of Arc
-		/// # Arguments
-		/// * `value` - The Minute Of Arc input value
-		pub fn to_seconds_of_arc(value: f64) -> f64 {
-			return value * 60.0;
-		}
+	/// Converts the supplied Degrees value to Minute Of Arc
+	/// # Arguments
+	/// * `value` - The Degrees input value
+	pub fn to_minute_of_arc(value: f64) -> f64 {
+		return value * 60.0;
 	}
-	/// Radians conversion functions
-	pub mod radians {
-		/// Converts the supplied Radians value to Degrees
-		/// # Arguments
-		/// * `value` - The Radians input value
-		pub fn to_degrees(value: f64) -> f64 {
-			return value * 180.0/std::f64::consts::PI;
-		}
-		/// Converts the supplied Radians value to Gradians
-		/// # Arguments
-		/// * `value` - The Radians input value
-		pub fn to_gradians(value: f64) -> f64 {
-			return value * 200.0/std::f64::consts::PI;
-		}
-		/// Converts the supplied Radians value to Milliradians
-		/// # Arguments
-		/// * `value` - The Radians input value
-		pub fn to_milliradians(value: f64) -> f64 {
-			return value * 1000.0;
-		}
-		/// Converts the supplied Radians value to Minute Of Arc
-		/// # Arguments
-		/// * `value` - The Radians input value
-		pub fn to_minute_of_arc(value: f64) -> f64 {
-			return value * (60.0 * 180.0)/std::f64::consts::PI;
-		}
-		/// Converts the supplied Radians value to Seconds Of Arc
-		/// # Arguments
-		/// * `value` - The Radians input value
-		pub fn to_seconds_of_arc(value: f64) -> f64 {
-			return value * (3600.0 * 180.0)/std::f64::consts::PI;
-		}
-	}
-	/// Seconds Of Arc conversion functions
-	pub mod seconds_of_arc {
-		/// Converts the supplied Seconds Of Arc value to Degrees
-		/// # Arguments
-		/// * `value` - The Seconds Of Arc input value
-		pub fn to_degrees(value: f64) -> f64 {
-			return value / 3600.0;
-		}
-		/// Converts the supplied Seconds Of Arc value to Radians
-		/// # Arguments
-		/// * `value` - The Seconds Of Arc input value
-		pub fn to_radians(value: f64) -> f64 {
-			return value * std::f64::consts::PI/(180.0 * 3600.0);
-		}
-		/// Converts the supplied Seconds Of Arc value to Gradians
-		/// # Arguments
-		/// * `value` - The Seconds Of Arc input value
-		pub fn to_gradians(value: f64) -> f64 {
-			return value / 3240.0;
-		}
-		/// Converts the supplied Seconds Of Arc value to Milliradians
-		/// # Arguments
-		/// * `value` - The Seconds Of Arc input value
-		pub fn to_milliradians(value: f64) -> f64 {
-			return value * (1000.0 * std::f64::consts::PI) / (180.0 * 3600.0);
-		}
-		/// Converts the supplied Seconds Of Arc value to Minute Of Arc
-		/// # Arguments
-		/// * `value` - The Seconds Of Arc input value
-		pub fn to_minute_of_arc(value: f64) -> f64 {
-			return value / 60.0;
-		}
+	/// Converts the supplied Degrees value to Seconds Of Arc
+	/// # Arguments
+	/// * `value` - The Degrees input value
+	pub fn to_seconds_of_arc(value: f64) -> f64 {
+		return value * 3600.0;
 	}
 }
-
-#[cfg(test)]
-mod tests {
-	use super::*;
-	use assert_approx_eq::assert_approx_eq;
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_radians_1() {
-		let result: f64 = angle::degrees::to_radians(98.8);
-		assert_approx_eq!(1.724385, result, 0.01);
+/// Gradians conversion functions
+pub mod gradians {
+	/// Converts the supplied Gradians value to Degrees
+	/// # Arguments
+	/// * `value` - The Gradians input value
+	pub fn to_degrees(value: f64) -> f64 {
+		return value * 180.0/200.0;
+	}
+	/// Converts the supplied Gradians value to Radians
+	/// # Arguments
+	/// * `value` - The Gradians input value
+	pub fn to_radians(value: f64) -> f64 {
+		return value * std::f64::consts::PI/200.0;
+	}
+	/// Converts the supplied Gradians value to Milliradians
+	/// # Arguments
+	/// * `value` - The Gradians input value
+	pub fn to_milliradians(value: f64) -> f64 {
+		return value * (1000.0*std::f64::consts::PI)/200.0;
+	}
+	/// Converts the supplied Gradians value to Minute Of Arc
+	/// # Arguments
+	/// * `value` - The Gradians input value
+	pub fn to_minute_of_arc(value: f64) -> f64 {
+		return value * 54.0;
+	}
+	/// Converts the supplied Gradians value to Seconds Of Arc
+	/// # Arguments
+	/// * `value` - The Gradians input value
+	pub fn to_seconds_of_arc(value: f64) -> f64 {
+		return value * 3240.0;
+	}
+}
+/// Milliradians conversion functions
+pub mod milliradians {
+	/// Converts the supplied Milliradians value to Degrees
+	/// # Arguments
+	/// * `value` - The Milliradians input value
+	pub fn to_degrees(value: f64) -> f64 {
+		return value * 180.0/(1000.0 * std::f64::consts::PI);
+	}
+	/// Converts the supplied Milliradians value to Radians
+	/// # Arguments
+	/// * `value` - The Milliradians input value
+	pub fn to_radians(value: f64) -> f64 {
+		return value / 1000.0;
+	}
+	/// Converts the supplied Milliradians value to Gradians
+	/// # Arguments
+	/// * `value` - The Milliradians input value
+	pub fn to_gradians(value: f64) -> f64 {
+		return value * 200.0/(1000.0 * std::f64::consts::PI);
+	}
+	/// Converts the supplied Milliradians value to Minute Of Arc
+	/// # Arguments
+	/// * `value` - The Milliradians input value
+	pub fn to_minute_of_arc(value: f64) -> f64 {
+		return value * (60.0 * 180.0)/(1000.0 * std::f64::consts::PI);
+	}
+	/// Converts the supplied Milliradians value to Seconds Of Arc
+	/// # Arguments
+	/// * `value` - The Milliradians input value
+	pub fn to_seconds_of_arc(value: f64) -> f64 {
+		return value * (3600.0 * 180.0)/(1000.0 * std::f64::consts::PI);
+	}
+}
+/// Minute Of Arc conversion functions
+pub mod minute_of_arc {
+	/// Converts the supplied Minute Of Arc value to Degrees
+	/// # Arguments
+	/// * `value` - The Minute Of Arc input value
+	pub fn to_degrees(value: f64) -> f64 {
+		return value / 60.0;
+	}
+	/// Converts the supplied Minute Of Arc value to Radians
+	/// # Arguments
+	/// * `value` - The Minute Of Arc input value
+	pub fn to_radians(value: f64) -> f64 {
+		return value * std::f64::consts::PI/(60.0 * 180.0);
+	}
+	/// Converts the supplied Minute Of Arc value to Gradians
+	/// # Arguments
+	/// * `value` - The Minute Of Arc input value
+	pub fn to_gradians(value: f64) -> f64 {
+		return value / 54.0;
+	}
+	/// Converts the supplied Minute Of Arc value to Milliradians
+	/// # Arguments
+	/// * `value` - The Minute Of Arc input value
+	pub fn to_milliradians(value: f64) -> f64 {
+		return value * (1000.0 * std::f64::consts::PI) / (60.0 * 180.0);
+	}
+	/// Converts the supplied Minute Of Arc value to Seconds Of Arc
+	/// # Arguments
+	/// * `value` - The Minute Of Arc input value
+	pub fn to_seconds_of_arc(value: f64) -> f64 {
+		return value * 60.0;
+	}
+}
+/// Radians conversion functions
+pub mod radians {
+	/// Converts the supplied Radians value to Degrees
+	/// # Arguments
+	/// * `value` - The Radians input value
+	pub fn to_degrees(value: f64) -> f64 {
+		return value * 180.0/std::f64::consts::PI;
+	}
+	/// Converts the supplied Radians value to Gradians
+	/// # Arguments
+	/// * `value` - The Radians input value
+	pub fn to_gradians(value: f64) -> f64 {
+		return value * 200.0/std::f64::consts::PI;
+	}
+	/// Converts the supplied Radians value to Milliradians
+	/// # Arguments
+	/// * `value` - The Radians input value
+	pub fn to_milliradians(value: f64) -> f64 {
+		return value * 1000.0;
+	}
+	/// Converts the supplied Radians value to Minute Of Arc
+	/// # Arguments
+	/// * `value` - The Radians input value
+	pub fn to_minute_of_arc(value: f64) -> f64 {
+		return value * (60.0 * 180.0)/std::f64::consts::PI;
+	}
+	/// Converts the supplied Radians value to Seconds Of Arc
+	/// # Arguments
+	/// * `value` - The Radians input value
+	pub fn to_seconds_of_arc(value: f64) -> f64 {
+		return value * (3600.0 * 180.0)/std::f64::consts::PI;
+	}
+}
+/// Seconds Of Arc conversion functions
+pub mod seconds_of_arc {
+	/// Converts the supplied Seconds Of Arc value to Degrees
+	/// # Arguments
+	/// * `value` - The Seconds Of Arc input value
+	pub fn to_degrees(value: f64) -> f64 {
+		return value / 3600.0;
+	}
+	/// Converts the supplied Seconds Of Arc value to Radians
+	/// # Arguments
+	/// * `value` - The Seconds Of Arc input value
+	pub fn to_radians(value: f64) -> f64 {
+		return value * std::f64::consts::PI/(180.0 * 3600.0);
+	}
+	/// Converts the supplied Seconds Of Arc value to Gradians
+	/// # Arguments
+	/// * `value` - The Seconds Of Arc input value
+	pub fn to_gradians(value: f64) -> f64 {
+		return value / 3240.0;
+	}
+	/// Converts the supplied Seconds Of Arc value to Milliradians
+	/// # Arguments
+	/// * `value` - The Seconds Of Arc input value
+	pub fn to_milliradians(value: f64) -> f64 {
+		return value * (1000.0 * std::f64::consts::PI) / (180.0 * 3600.0);
+	}
+	/// Converts the supplied Seconds Of Arc value to Minute Of Arc
+	/// # Arguments
+	/// * `value` - The Seconds Of Arc input value
+	pub fn to_minute_of_arc(value: f64) -> f64 {
+		return value / 60.0;
 	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_radians_2() {
-		let result: f64 = angle::degrees::to_radians(8000.0);
-		assert_approx_eq!(139.6263, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_radians_3() {
-		let result: f64 = angle::degrees::to_radians(8.0);
-		assert_approx_eq!(0.139626, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_gradians_1() {
-		let result: f64 = angle::degrees::to_gradians(123.0);
-		assert_approx_eq!(136.667, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_gradians_2() {
-		let result: f64 = angle::degrees::to_gradians(65.0);
-		assert_approx_eq!(72.2222, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_gradians_3() {
-		let result: f64 = angle::degrees::to_gradians(900.0);
-		assert_approx_eq!(1000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_milliradians_1() {
-		let result: f64 = angle::degrees::to_milliradians(900.0);
-		assert_approx_eq!(15707.969, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_milliradians_2() {
-		let result: f64 = angle::degrees::to_milliradians(76.0);
-		assert_approx_eq!(1326.45, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_milliradians_3() {
-		let result: f64 = angle::degrees::to_milliradians(4.5);
-		assert_approx_eq!(78.5398, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_milliradians_4() {
-		let result: f64 = angle::degrees::to_milliradians(23333.11);
-		assert_approx_eq!(407239.5873, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_minute_of_arc_1() {
-		let result: f64 = angle::degrees::to_minute_of_arc(97.0);
-		assert_approx_eq!(5820.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_minute_of_arc_2() {
-		let result: f64 = angle::degrees::to_minute_of_arc(8.65);
-		assert_approx_eq!(519.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_minute_of_arc_3() {
-		let result: f64 = angle::degrees::to_minute_of_arc(12.0);
-		assert_approx_eq!(720.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_seconds_of_arc_1() {
-		let result: f64 = angle::degrees::to_seconds_of_arc(12.0);
-		assert_approx_eq!(43200.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_seconds_of_arc_2() {
-		let result: f64 = angle::degrees::to_seconds_of_arc(910.4);
-		assert_approx_eq!(3277440.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowndegrees_to_seconds_of_arc_3() {
-		let result: f64 = angle::degrees::to_seconds_of_arc(5.6);
-		assert_approx_eq!(20160.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_degrees_1() {
-		let result: f64 = angle::gradians::to_degrees(5.6);
-		assert_approx_eq!(5.04, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_degrees_2() {
-		let result: f64 = angle::gradians::to_degrees(167.0);
-		assert_approx_eq!(150.3, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_degrees_3() {
-		let result: f64 = angle::gradians::to_degrees(0.1);
-		assert_approx_eq!(0.09, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_radians_1() {
-		let result: f64 = angle::gradians::to_radians(67.9);
-		assert_approx_eq!(1.066571, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_radians_2() {
-		let result: f64 = angle::gradians::to_radians(8000.0);
-		assert_approx_eq!(125.6637, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_radians_3() {
-		let result: f64 = angle::gradians::to_radians(6.5);
-		assert_approx_eq!(0.102102, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_milliradians_1() {
-		let result: f64 = angle::gradians::to_milliradians(8.1);
-		assert_approx_eq!(127.2348, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_milliradians_2() {
-		let result: f64 = angle::gradians::to_milliradians(900.0);
-		assert_approx_eq!(14137.167, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_milliradians_3() {
-		let result: f64 = angle::gradians::to_milliradians(1902.5);
-		assert_approx_eq!(29884.4, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_minute_of_arc_1() {
-		let result: f64 = angle::gradians::to_minute_of_arc(80.9);
-		assert_approx_eq!(4368.6, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_minute_of_arc_2() {
-		let result: f64 = angle::gradians::to_minute_of_arc(1678.0);
-		assert_approx_eq!(90612.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_minute_of_arc_3() {
-		let result: f64 = angle::gradians::to_minute_of_arc(900.0);
-		assert_approx_eq!(48600.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_seconds_of_arc_1() {
-		let result: f64 = angle::gradians::to_seconds_of_arc(0.9);
-		assert_approx_eq!(2916.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_seconds_of_arc_2() {
-		let result: f64 = angle::gradians::to_seconds_of_arc(12.3);
-		assert_approx_eq!(39852.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowngradians_to_seconds_of_arc_3() {
-		let result: f64 = angle::gradians::to_seconds_of_arc(5.1);
-		assert_approx_eq!(16524.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_degrees_1() {
-		let result: f64 = angle::milliradians::to_degrees(5.9);
-		assert_approx_eq!(0.338045, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_degrees_2() {
-		let result: f64 = angle::milliradians::to_degrees(109.0);
-		assert_approx_eq!(6.24524, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_degrees_3() {
-		let result: f64 = angle::milliradians::to_degrees(7009.0);
-		assert_approx_eq!(401.5861, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_degrees_4() {
-		let result: f64 = angle::milliradians::to_degrees(407239.5873);
-		assert_approx_eq!(23333.11, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_radians_1() {
-		let result: f64 = angle::milliradians::to_radians(8011.0);
-		assert_approx_eq!(8.011, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_radians_2() {
-		let result: f64 = angle::milliradians::to_radians(7689.0);
-		assert_approx_eq!(7.689, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_radians_3() {
-		let result: f64 = angle::milliradians::to_radians(129.0);
-		assert_approx_eq!(0.129, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_gradians_1() {
-		let result: f64 = angle::milliradians::to_gradians(129.0);
-		assert_approx_eq!(8.2124, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_gradians_2() {
-		let result: f64 = angle::milliradians::to_gradians(800.0);
-		assert_approx_eq!(50.9296, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_gradians_3() {
-		let result: f64 = angle::milliradians::to_gradians(12.89);
-		assert_approx_eq!(0.8206029, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_minute_of_arc_1() {
-		let result: f64 = angle::milliradians::to_minute_of_arc(12.0);
-		assert_approx_eq!(41.253, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_minute_of_arc_2() {
-		let result: f64 = angle::milliradians::to_minute_of_arc(0.9);
-		assert_approx_eq!(3.09397, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_minute_of_arc_3() {
-		let result: f64 = angle::milliradians::to_minute_of_arc(800.0);
-		assert_approx_eq!(2750.2, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_seconds_of_arc_1() {
-		let result: f64 = angle::milliradians::to_seconds_of_arc(67.0);
-		assert_approx_eq!(13819.742, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_seconds_of_arc_2() {
-		let result: f64 = angle::milliradians::to_seconds_of_arc(900.0);
-		assert_approx_eq!(185638.32562238674, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownmilliradians_to_seconds_of_arc_3() {
-		let result: f64 = angle::milliradians::to_seconds_of_arc(812.5);
-		assert_approx_eq!(167590.16, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_degrees_1() {
-		let result: f64 = angle::minute_of_arc::to_degrees(89.0);
-		assert_approx_eq!(1.48333, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_degrees_2() {
-		let result: f64 = angle::minute_of_arc::to_degrees(160.5);
-		assert_approx_eq!(2.675, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_degrees_3() {
-		let result: f64 = angle::minute_of_arc::to_degrees(0.9);
-		assert_approx_eq!(0.015, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_radians_1() {
-		let result: f64 = angle::minute_of_arc::to_radians(1790.0);
-		assert_approx_eq!(0.5206899, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_radians_2() {
-		let result: f64 = angle::minute_of_arc::to_radians(9999.0);
-		assert_approx_eq!(2.908591, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_radians_3() {
-		let result: f64 = angle::minute_of_arc::to_radians(12345.0);
-		assert_approx_eq!(3.5910149, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_gradians_1() {
-		let result: f64 = angle::minute_of_arc::to_gradians(300.0);
-		assert_approx_eq!(5.55556, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_gradians_2() {
-		let result: f64 = angle::minute_of_arc::to_gradians(1009.0);
-		assert_approx_eq!(18.68519, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_gradians_3() {
-		let result: f64 = angle::minute_of_arc::to_gradians(6700.5);
-		assert_approx_eq!(124.083335, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_milliradians_1() {
-		let result: f64 = angle::minute_of_arc::to_milliradians(600.0);
-		assert_approx_eq!(174.533, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_milliradians_2() {
-		let result: f64 = angle::minute_of_arc::to_milliradians(90.7);
-		assert_approx_eq!(26.38356, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_milliradians_3() {
-		let result: f64 = angle::minute_of_arc::to_milliradians(1700.0);
-		assert_approx_eq!(494.51, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_seconds_of_arc_1() {
-		let result: f64 = angle::minute_of_arc::to_seconds_of_arc(0.9);
-		assert_approx_eq!(54.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_seconds_of_arc_2() {
-		let result: f64 = angle::minute_of_arc::to_seconds_of_arc(70.0);
-		assert_approx_eq!(4200.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownminute_of_arc_to_seconds_of_arc_3() {
-		let result: f64 = angle::minute_of_arc::to_seconds_of_arc(901.6);
-		assert_approx_eq!(54096.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_degrees_1() {
-		let result: f64 = angle::radians::to_degrees(4.5);
-		assert_approx_eq!(257.831, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_degrees_2() {
-		let result: f64 = angle::radians::to_degrees(0.9);
-		assert_approx_eq!(51.5662, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_degrees_3() {
-		let result: f64 = angle::radians::to_degrees(78.9);
-		assert_approx_eq!(4520.637, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_gradians_1() {
-		let result: f64 = angle::radians::to_gradians(5.0);
-		assert_approx_eq!(318.31, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_gradians_2() {
-		let result: f64 = angle::radians::to_gradians(0.9);
-		assert_approx_eq!(57.2958, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_gradians_3() {
-		let result: f64 = angle::radians::to_gradians(89.0);
-		assert_approx_eq!(5665.92, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_milliradians_1() {
-		let result: f64 = angle::radians::to_milliradians(5.0);
-		assert_approx_eq!(5000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_milliradians_2() {
-		let result: f64 = angle::radians::to_milliradians(0.13);
-		assert_approx_eq!(130.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_milliradians_3() {
-		let result: f64 = angle::radians::to_milliradians(0.13);
-		assert_approx_eq!(130.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_milliradians_4() {
-		let result: f64 = angle::radians::to_milliradians(89.1);
-		assert_approx_eq!(89100.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_minute_of_arc_1() {
-		let result: f64 = angle::radians::to_minute_of_arc(6.0);
-		assert_approx_eq!(20626.480624709635, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_minute_of_arc_2() {
-		let result: f64 = angle::radians::to_minute_of_arc(0.8);
-		assert_approx_eq!(2750.2, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_minute_of_arc_3() {
-		let result: f64 = angle::radians::to_minute_of_arc(2.3);
-		assert_approx_eq!(7906.82, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_seconds_of_arc_1() {
-		let result: f64 = angle::radians::to_seconds_of_arc(0.8);
-		assert_approx_eq!(165011.84499767708, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_seconds_of_arc_2() {
-		let result: f64 = angle::radians::to_seconds_of_arc(0.001);
-		assert_approx_eq!(206.26481, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownradians_to_seconds_of_arc_3() {
-		let result: f64 = angle::radians::to_seconds_of_arc(0.9);
-		assert_approx_eq!(185638.32562238674, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_degrees_1() {
-		let result: f64 = angle::seconds_of_arc::to_degrees(900.0);
-		assert_approx_eq!(0.25, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_degrees_2() {
-		let result: f64 = angle::seconds_of_arc::to_degrees(123.4);
-		assert_approx_eq!(0.034277778, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_degrees_3() {
-		let result: f64 = angle::seconds_of_arc::to_degrees(8000.0);
-		assert_approx_eq!(2.222222, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_radians_1() {
-		let result: f64 = angle::seconds_of_arc::to_radians(190000.0);
-		assert_approx_eq!(0.921145994, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_radians_2() {
-		let result: f64 = angle::seconds_of_arc::to_radians(88990.0);
-		assert_approx_eq!(0.43143569, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_radians_3() {
-		let result: f64 = angle::seconds_of_arc::to_radians(100000.0);
-		assert_approx_eq!(0.48481368, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_gradians_1() {
-		let result: f64 = angle::seconds_of_arc::to_gradians(1000.0);
-		assert_approx_eq!(0.308642, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_gradians_2() {
-		let result: f64 = angle::seconds_of_arc::to_gradians(809.0);
-		assert_approx_eq!(0.249691, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_gradians_3() {
-		let result: f64 = angle::seconds_of_arc::to_gradians(1567.9);
-		assert_approx_eq!(0.483919761, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_milliradians_1() {
-		let result: f64 = angle::seconds_of_arc::to_milliradians(1234.0);
-		assert_approx_eq!(5.982601, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_milliradians_2() {
-		let result: f64 = angle::seconds_of_arc::to_milliradians(909.0);
-		assert_approx_eq!(4.40696, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_milliradians_3() {
-		let result: f64 = angle::seconds_of_arc::to_milliradians(190009.0);
-		assert_approx_eq!(921.189627, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_minute_of_arc_1() {
-		let result: f64 = angle::seconds_of_arc::to_minute_of_arc(100.0);
-		assert_approx_eq!(1.66667, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_minute_of_arc_2() {
-		let result: f64 = angle::seconds_of_arc::to_minute_of_arc(908.0);
-		assert_approx_eq!(15.1333, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownseconds_of_arc_to_minute_of_arc_3() {
-		let result: f64 = angle::seconds_of_arc::to_minute_of_arc(8091.0);
-		assert_approx_eq!(134.85, result, 0.01);
-	}
-
 }

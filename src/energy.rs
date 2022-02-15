@@ -4,2473 +4,575 @@
 // Changes to this file will be lost if the code is regenerated
 // </auto-generated>
 
-/// Energy conversion functions
-pub mod energy {
-	/// Btu conversion functions
-	pub mod btu {
-		/// Converts the supplied Btu value to Kilojoules
-		/// # Arguments
-		/// * `value` - The Btu input value
-		pub fn to_kilojoules(value: f64) -> f64 {
-			return value * 1.0550559;
-		}
-		/// Converts the supplied Btu value to Kilocalories
-		/// # Arguments
-		/// * `value` - The Btu input value
-		pub fn to_kilocalories(value: f64) -> f64 {
-			return value * 0.2521644007218;
-		}
-		/// Converts the supplied Btu value to Joules
-		/// # Arguments
-		/// * `value` - The Btu input value
-		pub fn to_joules(value: f64) -> f64 {
-			return value * 1055.06;
-		}
-		/// Converts the supplied Btu value to Calories
-		/// # Arguments
-		/// * `value` - The Btu input value
-		pub fn to_calories(value: f64) -> f64 {
-			return value * 252.1644007218;
-		}
-		/// Converts the supplied Btu value to US Therms
-		/// # Arguments
-		/// * `value` - The Btu input value
-		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 99976.12448781215;
-		}
-		/// Converts the supplied Btu value to Watt Hours
-		/// # Arguments
-		/// * `value` - The Btu input value
-		pub fn to_watt_hours(value: f64) -> f64 {
-			return value * 0.293071;
-		}
-		/// Converts the supplied Btu value to Kilowatt Hours
-		/// # Arguments
-		/// * `value` - The Btu input value
-		pub fn to_kilowatt_hours(value: f64) -> f64 {
-			return value / 3412.14;
-		}
-		/// Converts the supplied Btu value to Foot Pounds
-		/// # Arguments
-		/// * `value` - The Btu input value
-		pub fn to_foot_pounds(value: f64) -> f64 {
-			return value * 778.169;
-		}
-		/// Converts the supplied Btu value to Electronvolts
-		/// # Arguments
-		/// * `value` - The Btu input value
-		pub fn to_electronvolts(value: f64) -> f64 {
-			return value * 6585141385224143241216.00;
-		}
+//! # Energy based converters
+
+/// Btu conversion functions
+pub mod btu {
+	/// Converts the supplied Btu value to Kilojoules
+	/// # Arguments
+	/// * `value` - The Btu input value
+	pub fn to_kilojoules(value: f64) -> f64 {
+		return value * 1.0550559;
 	}
-	/// Calories conversion functions
-	pub mod calories {
-		/// Converts the supplied Calories value to Kilojoules
-		/// # Arguments
-		/// * `value` - The Calories input value
-		pub fn to_kilojoules(value: f64) -> f64 {
-			return value / 239.0057;
-		}
-		/// Converts the supplied Calories value to Kilocalories
-		/// # Arguments
-		/// * `value` - The Calories input value
-		pub fn to_kilocalories(value: f64) -> f64 {
-			return value / 1000.0;
-		}
-		/// Converts the supplied Calories value to Joules
-		/// # Arguments
-		/// * `value` - The Calories input value
-		pub fn to_joules(value: f64) -> f64 {
-			return value * 4.184;
-		}
-		/// Converts the supplied Calories value to Btu
-		/// # Arguments
-		/// * `value` - The Calories input value
-		pub fn to_btu(value: f64) -> f64 {
-			return value / 252.1644007218;
-		}
-		/// Converts the supplied Calories value to US Therms
-		/// # Arguments
-		/// * `value` - The Calories input value
-		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 25210420.0;
-		}
-		/// Converts the supplied Calories value to Watt Hours
-		/// # Arguments
-		/// * `value` - The Calories input value
-		pub fn to_watt_hours(value: f64) -> f64 {
-			return value * 0.00116222;
-		}
-		/// Converts the supplied Calories value to Kilowatt Hours
-		/// # Arguments
-		/// * `value` - The Calories input value
-		pub fn to_kilowatt_hours(value: f64) -> f64 {
-			return value / 860421.0;
-		}
-		/// Converts the supplied Calories value to Foot Pounds
-		/// # Arguments
-		/// * `value` - The Calories input value
-		pub fn to_foot_pounds(value: f64) -> f64 {
-			return value * 3.08596;
-		}
-		/// Converts the supplied Calories value to Electronvolts
-		/// # Arguments
-		/// * `value` - The Calories input value
-		pub fn to_electronvolts(value: f64) -> f64 {
-			return value * 2.6131936951817e+19;
-		}
+	/// Converts the supplied Btu value to Kilocalories
+	/// # Arguments
+	/// * `value` - The Btu input value
+	pub fn to_kilocalories(value: f64) -> f64 {
+		return value * 0.2521644007218;
 	}
-	/// Electronvolts conversion functions
-	pub mod electronvolts {
-		/// Converts the supplied Electronvolts value to Kilojoules
-		/// # Arguments
-		/// * `value` - The Electronvolts input value
-		pub fn to_kilojoules(value: f64) -> f64 {
-			return value / 6241509744511500156928.00;
-		}
-		/// Converts the supplied Electronvolts value to Kilocalories
-		/// # Arguments
-		/// * `value` - The Electronvolts input value
-		pub fn to_kilocalories(value: f64) -> f64 {
-			return value / 26131952998320305078272.00;
-		}
-		/// Converts the supplied Electronvolts value to Joules
-		/// # Arguments
-		/// * `value` - The Electronvolts input value
-		pub fn to_joules(value: f64) -> f64 {
-			return value / 6241509343300000000.0;
-		}
-		/// Converts the supplied Electronvolts value to Btu
-		/// # Arguments
-		/// * `value` - The Electronvolts input value
-		pub fn to_btu(value: f64) -> f64 {
-			return value / 6585141385224143241216.0;
-		}
-		/// Converts the supplied Electronvolts value to Calories
-		/// # Arguments
-		/// * `value` - The Electronvolts input value
-		pub fn to_calories(value: f64) -> f64 {
-			return value / 2.6131936951817e+19;
-		}
-		/// Converts the supplied Electronvolts value to US Therms
-		/// # Arguments
-		/// * `value` - The Electronvolts input value
-		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 6.5835660010911e+26;
-		}
-		/// Converts the supplied Electronvolts value to Watt Hours
-		/// # Arguments
-		/// * `value` - The Electronvolts input value
-		pub fn to_watt_hours(value: f64) -> f64 {
-			return value / 2.2469422907138e+22;
-		}
-		/// Converts the supplied Electronvolts value to Kilowatt Hours
-		/// # Arguments
-		/// * `value` - The Electronvolts input value
-		pub fn to_kilowatt_hours(value: f64) -> f64 {
-			return value / 2.246943e+25;
-		}
-		/// Converts the supplied Electronvolts value to Foot Pounds
-		/// # Arguments
-		/// * `value` - The Electronvolts input value
-		pub fn to_foot_pounds(value: f64) -> f64 {
-			return value / 8462350936293971968.00;
-		}
+	/// Converts the supplied Btu value to Joules
+	/// # Arguments
+	/// * `value` - The Btu input value
+	pub fn to_joules(value: f64) -> f64 {
+		return value * 1055.06;
 	}
-	/// Foot Pounds conversion functions
-	pub mod foot_pounds {
-		/// Converts the supplied Foot Pounds value to Kilojoules
-		/// # Arguments
-		/// * `value` - The Foot Pounds input value
-		pub fn to_kilojoules(value: f64) -> f64 {
-			return value / 737.562;
-		}
-		/// Converts the supplied Foot Pounds value to Kilocalories
-		/// # Arguments
-		/// * `value` - The Foot Pounds input value
-		pub fn to_kilocalories(value: f64) -> f64 {
-			return value / 3085.96;
-		}
-		/// Converts the supplied Foot Pounds value to Joules
-		/// # Arguments
-		/// * `value` - The Foot Pounds input value
-		pub fn to_joules(value: f64) -> f64 {
-			return value * 1.35582;
-		}
-		/// Converts the supplied Foot Pounds value to Btu
-		/// # Arguments
-		/// * `value` - The Foot Pounds input value
-		pub fn to_btu(value: f64) -> f64 {
-			return value / 778.169;
-		}
-		/// Converts the supplied Foot Pounds value to Calories
-		/// # Arguments
-		/// * `value` - The Foot Pounds input value
-		pub fn to_calories(value: f64) -> f64 {
-			return value / 3.08596;
-		}
-		/// Converts the supplied Foot Pounds value to US Therms
-		/// # Arguments
-		/// * `value` - The Foot Pounds input value
-		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 77816937.099186;
-		}
-		/// Converts the supplied Foot Pounds value to Watt Hours
-		/// # Arguments
-		/// * `value` - The Foot Pounds input value
-		pub fn to_watt_hours(value: f64) -> f64 {
-			return value / 2655.22;
-		}
-		/// Converts the supplied Foot Pounds value to Kilowatt Hours
-		/// # Arguments
-		/// * `value` - The Foot Pounds input value
-		pub fn to_kilowatt_hours(value: f64) -> f64 {
-			return value * 0.00000037662;
-		}
-		/// Converts the supplied Foot Pounds value to Electronvolts
-		/// # Arguments
-		/// * `value` - The Foot Pounds input value
-		pub fn to_electronvolts(value: f64) -> f64 {
-			return value * 8462350936293971968.00;
-		}
+	/// Converts the supplied Btu value to Calories
+	/// # Arguments
+	/// * `value` - The Btu input value
+	pub fn to_calories(value: f64) -> f64 {
+		return value * 252.1644007218;
 	}
-	/// Joules conversion functions
-	pub mod joules {
-		/// Converts the supplied Joules value to Kilojoules
-		/// # Arguments
-		/// * `value` - The Joules input value
-		pub fn to_kilojoules(value: f64) -> f64 {
-			return value / 1000.0;
-		}
-		/// Converts the supplied Joules value to Kilocalories
-		/// # Arguments
-		/// * `value` - The Joules input value
-		pub fn to_kilocalories(value: f64) -> f64 {
-			return value / 4184.0;
-		}
-		/// Converts the supplied Joules value to Btu
-		/// # Arguments
-		/// * `value` - The Joules input value
-		pub fn to_btu(value: f64) -> f64 {
-			return value / 1055.06;
-		}
-		/// Converts the supplied Joules value to Calories
-		/// # Arguments
-		/// * `value` - The Joules input value
-		pub fn to_calories(value: f64) -> f64 {
-			return value / 4.184;
-		}
-		/// Converts the supplied Joules value to US Therms
-		/// # Arguments
-		/// * `value` - The Joules input value
-		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 105480400.0;
-		}
-		/// Converts the supplied Joules value to Watt Hours
-		/// # Arguments
-		/// * `value` - The Joules input value
-		pub fn to_watt_hours(value: f64) -> f64 {
-			return value / 3600.0;
-		}
-		/// Converts the supplied Joules value to Kilowatt Hours
-		/// # Arguments
-		/// * `value` - The Joules input value
-		pub fn to_kilowatt_hours(value: f64) -> f64 {
-			return value / 3.6e+6;
-		}
-		/// Converts the supplied Joules value to Foot Pounds
-		/// # Arguments
-		/// * `value` - The Joules input value
-		pub fn to_foot_pounds(value: f64) -> f64 {
-			return value / 1.35582;
-		}
-		/// Converts the supplied Joules value to Electronvolts
-		/// # Arguments
-		/// * `value` - The Joules input value
-		pub fn to_electronvolts(value: f64) -> f64 {
-			return value * 6241509343300000000.0;
-		}
+	/// Converts the supplied Btu value to US Therms
+	/// # Arguments
+	/// * `value` - The Btu input value
+	pub fn to_u_s_therms(value: f64) -> f64 {
+		return value / 99976.12448781215;
 	}
-	/// Kilocalories conversion functions
-	pub mod kilocalories {
-		/// Converts the supplied Kilocalories value to Kilojoules
-		/// # Arguments
-		/// * `value` - The Kilocalories input value
-		pub fn to_kilojoules(value: f64) -> f64 {
-			return value * 4.184;
-		}
-		/// Converts the supplied Kilocalories value to Joules
-		/// # Arguments
-		/// * `value` - The Kilocalories input value
-		pub fn to_joules(value: f64) -> f64 {
-			return value * 4184.0;
-		}
-		/// Converts the supplied Kilocalories value to Btu
-		/// # Arguments
-		/// * `value` - The Kilocalories input value
-		pub fn to_btu(value: f64) -> f64 {
-			return value / 0.2521644007218;
-		}
-		/// Converts the supplied Kilocalories value to Calories
-		/// # Arguments
-		/// * `value` - The Kilocalories input value
-		pub fn to_calories(value: f64) -> f64 {
-			return value * 1000.0;
-		}
-		/// Converts the supplied Kilocalories value to US Therms
-		/// # Arguments
-		/// * `value` - The Kilocalories input value
-		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 25210.44007218;
-		}
-		/// Converts the supplied Kilocalories value to Watt Hours
-		/// # Arguments
-		/// * `value` - The Kilocalories input value
-		pub fn to_watt_hours(value: f64) -> f64 {
-			return value * 1.16222;
-		}
-		/// Converts the supplied Kilocalories value to Kilowatt Hours
-		/// # Arguments
-		/// * `value` - The Kilocalories input value
-		pub fn to_kilowatt_hours(value: f64) -> f64 {
-			return value / 860.421;
-		}
-		/// Converts the supplied Kilocalories value to Foot Pounds
-		/// # Arguments
-		/// * `value` - The Kilocalories input value
-		pub fn to_foot_pounds(value: f64) -> f64 {
-			return value * 3085.96;
-		}
-		/// Converts the supplied Kilocalories value to Electronvolts
-		/// # Arguments
-		/// * `value` - The Kilocalories input value
-		pub fn to_electronvolts(value: f64) -> f64 {
-			return value * 26131952998320305078272.00;
-		}
+	/// Converts the supplied Btu value to Watt Hours
+	/// # Arguments
+	/// * `value` - The Btu input value
+	pub fn to_watt_hours(value: f64) -> f64 {
+		return value * 0.293071;
 	}
-	/// Kilojoules conversion functions
-	pub mod kilojoules {
-		/// Converts the supplied Kilojoules value to Kilocalories
-		/// # Arguments
-		/// * `value` - The Kilojoules input value
-		pub fn to_kilocalories(value: f64) -> f64 {
-			return value / 4.184;
-		}
-		/// Converts the supplied Kilojoules value to Joules
-		/// # Arguments
-		/// * `value` - The Kilojoules input value
-		pub fn to_joules(value: f64) -> f64 {
-			return value * 1000.0;
-		}
-		/// Converts the supplied Kilojoules value to Btu
-		/// # Arguments
-		/// * `value` - The Kilojoules input value
-		pub fn to_btu(value: f64) -> f64 {
-			return value / 1.0550559;
-		}
-		/// Converts the supplied Kilojoules value to Calories
-		/// # Arguments
-		/// * `value` - The Kilojoules input value
-		pub fn to_calories(value: f64) -> f64 {
-			return value * 239.0057;
-		}
-		/// Converts the supplied Kilojoules value to US Therms
-		/// # Arguments
-		/// * `value` - The Kilojoules input value
-		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 105480.04;
-		}
-		/// Converts the supplied Kilojoules value to Watt Hours
-		/// # Arguments
-		/// * `value` - The Kilojoules input value
-		pub fn to_watt_hours(value: f64) -> f64 {
-			return value / 3.6;
-		}
-		/// Converts the supplied Kilojoules value to Kilowatt Hours
-		/// # Arguments
-		/// * `value` - The Kilojoules input value
-		pub fn to_kilowatt_hours(value: f64) -> f64 {
-			return value / 3600.0;
-		}
-		/// Converts the supplied Kilojoules value to Foot Pounds
-		/// # Arguments
-		/// * `value` - The Kilojoules input value
-		pub fn to_foot_pounds(value: f64) -> f64 {
-			return value * 737.562;
-		}
-		/// Converts the supplied Kilojoules value to Electronvolts
-		/// # Arguments
-		/// * `value` - The Kilojoules input value
-		pub fn to_electronvolts(value: f64) -> f64 {
-			return value * 6241509744511500156928.00;
-		}
+	/// Converts the supplied Btu value to Kilowatt Hours
+	/// # Arguments
+	/// * `value` - The Btu input value
+	pub fn to_kilowatt_hours(value: f64) -> f64 {
+		return value / 3412.14;
 	}
-	/// Kilowatt Hours conversion functions
-	pub mod kilowatt_hours {
-		/// Converts the supplied Kilowatt Hours value to Kilojoules
-		/// # Arguments
-		/// * `value` - The Kilowatt Hours input value
-		pub fn to_kilojoules(value: f64) -> f64 {
-			return value * 3600.0;
-		}
-		/// Converts the supplied Kilowatt Hours value to Kilocalories
-		/// # Arguments
-		/// * `value` - The Kilowatt Hours input value
-		pub fn to_kilocalories(value: f64) -> f64 {
-			return value * 860.421;
-		}
-		/// Converts the supplied Kilowatt Hours value to Joules
-		/// # Arguments
-		/// * `value` - The Kilowatt Hours input value
-		pub fn to_joules(value: f64) -> f64 {
-			return value * 3.6e+6;
-		}
-		/// Converts the supplied Kilowatt Hours value to Btu
-		/// # Arguments
-		/// * `value` - The Kilowatt Hours input value
-		pub fn to_btu(value: f64) -> f64 {
-			return value * 3412.14;
-		}
-		/// Converts the supplied Kilowatt Hours value to Calories
-		/// # Arguments
-		/// * `value` - The Kilowatt Hours input value
-		pub fn to_calories(value: f64) -> f64 {
-			return value * 860421.0;
-		}
-		/// Converts the supplied Kilowatt Hours value to US Therms
-		/// # Arguments
-		/// * `value` - The Kilowatt Hours input value
-		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 29.3001;
-		}
-		/// Converts the supplied Kilowatt Hours value to Watt Hours
-		/// # Arguments
-		/// * `value` - The Kilowatt Hours input value
-		pub fn to_watt_hours(value: f64) -> f64 {
-			return value * 1000.0;
-		}
-		/// Converts the supplied Kilowatt Hours value to Foot Pounds
-		/// # Arguments
-		/// * `value` - The Kilowatt Hours input value
-		pub fn to_foot_pounds(value: f64) -> f64 {
-			return value / 0.00000037662;
-		}
-		/// Converts the supplied Kilowatt Hours value to Electronvolts
-		/// # Arguments
-		/// * `value` - The Kilowatt Hours input value
-		pub fn to_electronvolts(value: f64) -> f64 {
-			return value * 2.246943e+25;
-		}
+	/// Converts the supplied Btu value to Foot Pounds
+	/// # Arguments
+	/// * `value` - The Btu input value
+	pub fn to_foot_pounds(value: f64) -> f64 {
+		return value * 778.169;
 	}
-	/// US Therms conversion functions
-	pub mod u_s_therms {
-		/// Converts the supplied US Therms value to Kilojoules
-		/// # Arguments
-		/// * `value` - The US Therms input value
-		pub fn to_kilojoules(value: f64) -> f64 {
-			return value * 105480.04;
-		}
-		/// Converts the supplied US Therms value to Kilocalories
-		/// # Arguments
-		/// * `value` - The US Therms input value
-		pub fn to_kilocalories(value: f64) -> f64 {
-			return value * 25210.44007218;
-		}
-		/// Converts the supplied US Therms value to Joules
-		/// # Arguments
-		/// * `value` - The US Therms input value
-		pub fn to_joules(value: f64) -> f64 {
-			return value * 105480400.0;
-		}
-		/// Converts the supplied US Therms value to Btu
-		/// # Arguments
-		/// * `value` - The US Therms input value
-		pub fn to_btu(value: f64) -> f64 {
-			return value * 99976.12448781215;
-		}
-		/// Converts the supplied US Therms value to Calories
-		/// # Arguments
-		/// * `value` - The US Therms input value
-		pub fn to_calories(value: f64) -> f64 {
-			return value * 25210420.0;
-		}
-		/// Converts the supplied US Therms value to Watt Hours
-		/// # Arguments
-		/// * `value` - The US Therms input value
-		pub fn to_watt_hours(value: f64) -> f64 {
-			return value * 29300.1;
-		}
-		/// Converts the supplied US Therms value to Kilowatt Hours
-		/// # Arguments
-		/// * `value` - The US Therms input value
-		pub fn to_kilowatt_hours(value: f64) -> f64 {
-			return value * 29.3001;
-		}
-		/// Converts the supplied US Therms value to Foot Pounds
-		/// # Arguments
-		/// * `value` - The US Therms input value
-		pub fn to_foot_pounds(value: f64) -> f64 {
-			return value * 77816937.099186;
-		}
-		/// Converts the supplied US Therms value to Electronvolts
-		/// # Arguments
-		/// * `value` - The US Therms input value
-		pub fn to_electronvolts(value: f64) -> f64 {
-			return value * 6.5835660010911e+26;
-		}
-	}
-	/// Watt Hours conversion functions
-	pub mod watt_hours {
-		/// Converts the supplied Watt Hours value to Kilojoules
-		/// # Arguments
-		/// * `value` - The Watt Hours input value
-		pub fn to_kilojoules(value: f64) -> f64 {
-			return value * 3.6;
-		}
-		/// Converts the supplied Watt Hours value to Kilocalories
-		/// # Arguments
-		/// * `value` - The Watt Hours input value
-		pub fn to_kilocalories(value: f64) -> f64 {
-			return value / 1.16222;
-		}
-		/// Converts the supplied Watt Hours value to Joules
-		/// # Arguments
-		/// * `value` - The Watt Hours input value
-		pub fn to_joules(value: f64) -> f64 {
-			return value * 3600.0;
-		}
-		/// Converts the supplied Watt Hours value to Btu
-		/// # Arguments
-		/// * `value` - The Watt Hours input value
-		pub fn to_btu(value: f64) -> f64 {
-			return value / 0.293071;
-		}
-		/// Converts the supplied Watt Hours value to Calories
-		/// # Arguments
-		/// * `value` - The Watt Hours input value
-		pub fn to_calories(value: f64) -> f64 {
-			return value / 0.00116222;
-		}
-		/// Converts the supplied Watt Hours value to US Therms
-		/// # Arguments
-		/// * `value` - The Watt Hours input value
-		pub fn to_u_s_therms(value: f64) -> f64 {
-			return value / 29300.1;
-		}
-		/// Converts the supplied Watt Hours value to Kilowatt Hours
-		/// # Arguments
-		/// * `value` - The Watt Hours input value
-		pub fn to_kilowatt_hours(value: f64) -> f64 {
-			return value / 1000.0;
-		}
-		/// Converts the supplied Watt Hours value to Foot Pounds
-		/// # Arguments
-		/// * `value` - The Watt Hours input value
-		pub fn to_foot_pounds(value: f64) -> f64 {
-			return value * 2655.22;
-		}
-		/// Converts the supplied Watt Hours value to Electronvolts
-		/// # Arguments
-		/// * `value` - The Watt Hours input value
-		pub fn to_electronvolts(value: f64) -> f64 {
-			return value * 2.2469422907138e+22;
-		}
+	/// Converts the supplied Btu value to Electronvolts
+	/// # Arguments
+	/// * `value` - The Btu input value
+	pub fn to_electronvolts(value: f64) -> f64 {
+		return value * 6585141385224143241216.00;
 	}
 }
-
-#[cfg(test)]
-mod tests {
-	use super::*;
-	use assert_approx_eq::assert_approx_eq;
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_kilojoules_1() {
-		let result: f64 = energy::btu::to_kilojoules(100.0);
-		assert_approx_eq!(105.506, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_kilojoules_2() {
-		let result: f64 = energy::btu::to_kilojoules(987.65);
-		assert_approx_eq!(1042.03, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_kilojoules_3() {
-		let result: f64 = energy::btu::to_kilojoules(555666.0);
-		assert_approx_eq!(586258.6917293, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_kilocalories_1() {
-		let result: f64 = energy::btu::to_kilocalories(67.9);
-		assert_approx_eq!(17.12196, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_kilocalories_2() {
-		let result: f64 = energy::btu::to_kilocalories(109.9);
-		assert_approx_eq!(27.712867639325825, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_kilocalories_3() {
-		let result: f64 = energy::btu::to_kilocalories(5000.0);
-		assert_approx_eq!(1260.8220036090, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_joules_1() {
-		let result: f64 = energy::btu::to_joules(5.0);
-		assert_approx_eq!(5275.3, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_joules_2() {
-		let result: f64 = energy::btu::to_joules(912.9);
-		assert_approx_eq!(963164.274, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_joules_3() {
-		let result: f64 = energy::btu::to_joules(109.0);
-		assert_approx_eq!(115001.54, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_calories_1() {
-		let result: f64 = energy::btu::to_calories(56.0);
-		assert_approx_eq!(14121.20644042079, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_calories_2() {
-		let result: f64 = energy::btu::to_calories(123.0);
-		assert_approx_eq!(31016.221288781402, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_calories_3() {
-		let result: f64 = energy::btu::to_calories(0.9);
-		assert_approx_eq!(226.9476, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_u_s_therms_1() {
-		let result: f64 = energy::btu::to_u_s_therms(12000.0);
-		assert_approx_eq!(0.120028657, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_u_s_therms_2() {
-		let result: f64 = energy::btu::to_u_s_therms(9876.5);
-		assert_approx_eq!(0.098788586, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_u_s_therms_3() {
-		let result: f64 = energy::btu::to_u_s_therms(666.999);
-		assert_approx_eq!(0.006671583, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_watt_hours_1() {
-		let result: f64 = energy::btu::to_watt_hours(900.0);
-		assert_approx_eq!(263.764, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_watt_hours_2() {
-		let result: f64 = energy::btu::to_watt_hours(125.7);
-		assert_approx_eq!(36.839034, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_watt_hours_3() {
-		let result: f64 = energy::btu::to_watt_hours(0.99);
-		assert_approx_eq!(0.2901404, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_kilowatt_hours_1() {
-		let result: f64 = energy::btu::to_kilowatt_hours(9000.0);
-		assert_approx_eq!(2.63764, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_kilowatt_hours_2() {
-		let result: f64 = energy::btu::to_kilowatt_hours(12345.0);
-		assert_approx_eq!(3.6179624, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_kilowatt_hours_3() {
-		let result: f64 = energy::btu::to_kilowatt_hours(8090.8);
-		assert_approx_eq!(2.37117941, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_foot_pounds_1() {
-		let result: f64 = energy::btu::to_foot_pounds(189.0);
-		assert_approx_eq!(147073.9409, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_foot_pounds_2() {
-		let result: f64 = energy::btu::to_foot_pounds(0.3);
-		assert_approx_eq!(233.451, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_foot_pounds_3() {
-		let result: f64 = energy::btu::to_foot_pounds(2.6);
-		assert_approx_eq!(2023.24, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_electronvolts_1() {
-		let result: f64 = energy::btu::to_electronvolts(0.0000000789);
-		assert_approx_eq!(519567655294184.88, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_electronvolts_2() {
-		let result: f64 = energy::btu::to_electronvolts(0.000001002);
-		assert_approx_eq!(6598311667994592.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownbtu_to_electronvolts_3() {
-		let result: f64 = energy::btu::to_electronvolts(0.000000001);
-		assert_approx_eq!(6585141385224.14, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_kilojoules_1() {
-		let result: f64 = energy::calories::to_kilojoules(109.0);
-		assert_approx_eq!(0.456056, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_kilojoules_2() {
-		let result: f64 = energy::calories::to_kilojoules(12.3);
-		assert_approx_eq!(0.0514632, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_kilojoules_3() {
-		let result: f64 = energy::calories::to_kilojoules(9876.0);
-		assert_approx_eq!(41.32118, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_kilocalories_1() {
-		let result: f64 = energy::calories::to_kilocalories(900.0);
-		assert_approx_eq!(0.9, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_kilocalories_2() {
-		let result: f64 = energy::calories::to_kilocalories(1782.0);
-		assert_approx_eq!(1.782, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_kilocalories_3() {
-		let result: f64 = energy::calories::to_kilocalories(900800.0);
-		assert_approx_eq!(900.8, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_joules_1() {
-		let result: f64 = energy::calories::to_joules(98.0);
-		assert_approx_eq!(410.032, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_joules_2() {
-		let result: f64 = energy::calories::to_joules(1.67);
-		assert_approx_eq!(6.98728, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_joules_3() {
-		let result: f64 = energy::calories::to_joules(55.0);
-		assert_approx_eq!(230.12, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_btu_1() {
-		let result: f64 = energy::calories::to_btu(550.0);
-		assert_approx_eq!(2.18112, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_btu_2() {
-		let result: f64 = energy::calories::to_btu(1234.0);
-		assert_approx_eq!(4.893633, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_btu_3() {
-		let result: f64 = energy::calories::to_btu(900.9);
-		assert_approx_eq!(3.5726692, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_u_s_therms_1() {
-		let result: f64 = energy::calories::to_u_s_therms(9000000.0);
-		assert_approx_eq!(0.356995242, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_u_s_therms_2() {
-		let result: f64 = energy::calories::to_u_s_therms(12e6);
-		assert_approx_eq!(0.475993657, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_u_s_therms_3() {
-		let result: f64 = energy::calories::to_u_s_therms(100200300.0);
-		assert_approx_eq!(3.974558932, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_watt_hours_1() {
-		let result: f64 = energy::calories::to_watt_hours(600.0);
-		assert_approx_eq!(0.697333, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_watt_hours_2() {
-		let result: f64 = energy::calories::to_watt_hours(1234.5);
-		assert_approx_eq!(1.43476333, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_watt_hours_3() {
-		let result: f64 = energy::calories::to_watt_hours(88.7);
-		assert_approx_eq!(0.1030891, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_kilowatt_hours_1() {
-		let result: f64 = energy::calories::to_kilowatt_hours(100900.0);
-		assert_approx_eq!(0.117268222, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_kilowatt_hours_2() {
-		let result: f64 = energy::calories::to_kilowatt_hours(987654.0);
-		assert_approx_eq!(1.14787343, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_kilowatt_hours_3() {
-		let result: f64 = energy::calories::to_kilowatt_hours(506012.0);
-		assert_approx_eq!(0.588098391, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_foot_pounds_1() {
-		let result: f64 = energy::calories::to_foot_pounds(123.0);
-		assert_approx_eq!(379.573, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_foot_pounds_2() {
-		let result: f64 = energy::calories::to_foot_pounds(9.01);
-		assert_approx_eq!(27.8045, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_foot_pounds_3() {
-		let result: f64 = energy::calories::to_foot_pounds(2.8);
-		assert_approx_eq!(8.64069, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_electronvolts_1() {
-		let result: f64 = energy::calories::to_electronvolts(0.0000091);
-		assert_approx_eq!(237800626261534.66, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_electronvolts_2() {
-		let result: f64 = energy::calories::to_electronvolts(0.0008);
-		assert_approx_eq!(20905549561453600.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knowncalories_to_electronvolts_3() {
-		let result: f64 = energy::calories::to_electronvolts(0.00123);
-		assert_approx_eq!(32142282450734908.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_kilojoules_1() {
-		let result: f64 = energy::electronvolts::to_kilojoules(123456789.0);
-		assert_approx_eq!(1.9779957413e-14, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_kilojoules_2() {
-		let result: f64 = energy::electronvolts::to_kilojoules(900900900.0);
-		assert_approx_eq!(1.4434023094e-13, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_kilojoules_3() {
-		let result: f64 = energy::electronvolts::to_kilojoules(123456789123456789.0);
-		assert_approx_eq!(1.977995743237493669e-5, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_kilocalories_1() {
-		let result: f64 = energy::electronvolts::to_kilocalories(100200300400.0);
-		assert_approx_eq!(1.6053857310684e-11, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_kilocalories_2() {
-		let result: f64 = energy::electronvolts::to_kilocalories(123456789.0);
-		assert_approx_eq!(1.9779957413e-14, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_kilocalories_3() {
-		let result: f64 = energy::electronvolts::to_kilocalories(900800700600.0);
-		assert_approx_eq!(1.4432417722369e-10, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_joules_1() {
-		let result: f64 = energy::electronvolts::to_joules(123456789123.0);
-		assert_approx_eq!(1.9779957432302e-8, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_joules_2() {
-		let result: f64 = energy::electronvolts::to_joules(900800700600.0);
-		assert_approx_eq!(1.4432417722369e-7, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_joules_3() {
-		let result: f64 = energy::electronvolts::to_joules(999888777666.0);
-		assert_approx_eq!(1.601998367183e-7, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_btu_1() {
-		let result: f64 = energy::electronvolts::to_btu(100020003000100020003000.0);
-		assert_approx_eq!(15.188741377060267723, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_btu_2() {
-		let result: f64 = energy::electronvolts::to_btu(999888777666999888777666.0);
-		assert_approx_eq!(151.84014791315084381, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_btu_3() {
-		let result: f64 = energy::electronvolts::to_btu(12345678912341234567891234.0);
-		assert_approx_eq!(1874.7782293466862029, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_calories_1() {
-		let result: f64 = energy::electronvolts::to_calories(666333111999.0);
-		assert_approx_eq!(2.5515853167503e-8, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_calories_2() {
-		let result: f64 = energy::electronvolts::to_calories(999888777666555.0);
-		assert_approx_eq!(3.8288679904011702e-5, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_calories_3() {
-		let result: f64 = energy::electronvolts::to_calories(12345678901234.0);
-		assert_approx_eq!(4.727523282641506e-7, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_u_s_therms_1() {
-		let result: f64 = energy::electronvolts::to_u_s_therms(666333111999.0);
-		assert_approx_eq!(1.0118737258101e-10, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_u_s_therms_2() {
-		let result: f64 = energy::electronvolts::to_u_s_therms(999888777666555.0);
-		assert_approx_eq!(1.5184014791308327e-7, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_u_s_therms_3() {
-		let result: f64 = energy::electronvolts::to_u_s_therms(12345678901234.0);
-		assert_approx_eq!(1.874778227659974e-9, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_watt_hours_1() {
-		let result: f64 = energy::electronvolts::to_watt_hours(100900700100.0);
-		assert_approx_eq!(4.490576030342e-12, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_watt_hours_2() {
-		let result: f64 = energy::electronvolts::to_watt_hours(9000800070006000.0);
-		assert_approx_eq!(4.00579748289276988e-7, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_watt_hours_3() {
-		let result: f64 = energy::electronvolts::to_watt_hours(12345678987654321.0);
-		assert_approx_eq!(5.494432653620188248e-7, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_kilowatt_hours_1() {
-		let result: f64 = energy::electronvolts::to_kilowatt_hours(100900700100.0);
-		assert_approx_eq!(4.490576030342e-15, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_kilowatt_hours_2() {
-		let result: f64 = energy::electronvolts::to_kilowatt_hours(999988887777.0);
-		assert_approx_eq!(4.4504410034909e-14, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_kilowatt_hours_3() {
-		let result: f64 = energy::electronvolts::to_kilowatt_hours(12345678987654321.0);
-		assert_approx_eq!(5.494432653620187834e-10, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_foot_pounds_1() {
-		let result: f64 = energy::electronvolts::to_foot_pounds(100900700100.0);
-		assert_approx_eq!(1.1923484070355e-8, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_foot_pounds_2() {
-		let result: f64 = energy::electronvolts::to_foot_pounds(999988887777.0);
-		assert_approx_eq!(1.1816916594359e-7, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownelectronvolts_to_foot_pounds_3() {
-		let result: f64 = energy::electronvolts::to_foot_pounds(12345678987654321.0);
-		assert_approx_eq!(0.0014588948005427860004, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_kilojoules_1() {
-		let result: f64 = energy::foot_pounds::to_kilojoules(190.0);
-		assert_approx_eq!(0.257605, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_kilojoules_2() {
-		let result: f64 = energy::foot_pounds::to_kilojoules(4.6);
-		assert_approx_eq!(0.00623676, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_kilojoules_3() {
-		let result: f64 = energy::foot_pounds::to_kilojoules(123.8);
-		assert_approx_eq!(0.16785026, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_kilocalories_1() {
-		let result: f64 = energy::foot_pounds::to_kilocalories(1999.0);
-		assert_approx_eq!(0.6477725, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_kilocalories_2() {
-		let result: f64 = energy::foot_pounds::to_kilocalories(890.8);
-		assert_approx_eq!(0.2886622, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_kilocalories_3() {
-		let result: f64 = energy::foot_pounds::to_kilocalories(12000.0);
-		assert_approx_eq!(3.8885792, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_joules_1() {
-		let result: f64 = energy::foot_pounds::to_joules(190.0);
-		assert_approx_eq!(257.605, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_joules_2() {
-		let result: f64 = energy::foot_pounds::to_joules(23.4);
-		assert_approx_eq!(31.72614, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_joules_3() {
-		let result: f64 = energy::foot_pounds::to_joules(9.2);
-		assert_approx_eq!(12.4735, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_btu_1() {
-		let result: f64 = energy::foot_pounds::to_btu(9000.0);
-		assert_approx_eq!(11.56561, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_btu_2() {
-		let result: f64 = energy::foot_pounds::to_btu(45.6);
-		assert_approx_eq!(0.05859908, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_btu_3() {
-		let result: f64 = energy::foot_pounds::to_btu(1996.0);
-		assert_approx_eq!(2.564995, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_calories_1() {
-		let result: f64 = energy::foot_pounds::to_calories(123.0);
-		assert_approx_eq!(39.8579, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_calories_2() {
-		let result: f64 = energy::foot_pounds::to_calories(54.7);
-		assert_approx_eq!(17.72544, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_calories_3() {
-		let result: f64 = energy::foot_pounds::to_calories(109.2);
-		assert_approx_eq!(35.386071, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_u_s_therms_1() {
-		let result: f64 = energy::foot_pounds::to_u_s_therms(19000000.0);
-		assert_approx_eq!(0.24422111613, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_u_s_therms_2() {
-		let result: f64 = energy::foot_pounds::to_u_s_therms(1234567.0);
-		assert_approx_eq!(0.01586880688, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_u_s_therms_3() {
-		let result: f64 = energy::foot_pounds::to_u_s_therms(100200300.0);
-		assert_approx_eq!(1.28794890016, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_watt_hours_1() {
-		let result: f64 = energy::foot_pounds::to_watt_hours(44.0);
-		assert_approx_eq!(0.0165711, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_watt_hours_2() {
-		let result: f64 = energy::foot_pounds::to_watt_hours(9080.0);
-		assert_approx_eq!(3.419674, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_watt_hours_3() {
-		let result: f64 = energy::foot_pounds::to_watt_hours(1200.0);
-		assert_approx_eq!(0.4519393, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_kilowatt_hours_1() {
-		let result: f64 = energy::foot_pounds::to_kilowatt_hours(900000.0);
-		assert_approx_eq!(0.338954487, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_kilowatt_hours_2() {
-		let result: f64 = energy::foot_pounds::to_kilowatt_hours(100200.0);
-		assert_approx_eq!(0.0377369329, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_kilowatt_hours_3() {
-		let result: f64 = energy::foot_pounds::to_kilowatt_hours(9876543.0);
-		assert_approx_eq!(3.719665074, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_electronvolts_1() {
-		let result: f64 = energy::foot_pounds::to_electronvolts(0.00123);
-		assert_approx_eq!(10408691651641586.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_electronvolts_2() {
-		let result: f64 = energy::foot_pounds::to_electronvolts(0.0009);
-		assert_approx_eq!(7616115842664575.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownfoot_pounds_to_electronvolts_3() {
-		let result: f64 = energy::foot_pounds::to_electronvolts(0.00000888);
-		assert_approx_eq!(75145676314290.469, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_kilojoules_1() {
-		let result: f64 = energy::joules::to_kilojoules(790.0);
-		assert_approx_eq!(0.79, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_kilojoules_2() {
-		let result: f64 = energy::joules::to_kilojoules(800100.0);
-		assert_approx_eq!(800.1, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_kilojoules_3() {
-		let result: f64 = energy::joules::to_kilojoules(509.2);
-		assert_approx_eq!(0.5092, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_kilocalories_1() {
-		let result: f64 = energy::joules::to_kilocalories(790.0);
-		assert_approx_eq!(0.188815, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_kilocalories_2() {
-		let result: f64 = energy::joules::to_kilocalories(125.9);
-		assert_approx_eq!(0.030090822, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_kilocalories_3() {
-		let result: f64 = energy::joules::to_kilocalories(8000.0);
-		assert_approx_eq!(1.912046, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_btu_1() {
-		let result: f64 = energy::joules::to_btu(500.0);
-		assert_approx_eq!(0.473909, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_btu_2() {
-		let result: f64 = energy::joules::to_btu(1910.0);
-		assert_approx_eq!(1.810331, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_btu_3() {
-		let result: f64 = energy::joules::to_btu(67000.1);
-		assert_approx_eq!(63.50384184, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_calories_1() {
-		let result: f64 = energy::joules::to_calories(67.0);
-		assert_approx_eq!(16.0134, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_calories_2() {
-		let result: f64 = energy::joules::to_calories(909.0);
-		assert_approx_eq!(217.256, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_calories_3() {
-		let result: f64 = energy::joules::to_calories(190.0);
-		assert_approx_eq!(45.4111, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_u_s_therms_1() {
-		let result: f64 = energy::joules::to_u_s_therms(100090000.0);
-		assert_approx_eq!(0.948896667059, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_u_s_therms_2() {
-		let result: f64 = energy::joules::to_u_s_therms(55.7e6);
-		assert_approx_eq!(0.52806018938, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_u_s_therms_3() {
-		let result: f64 = energy::joules::to_u_s_therms(1234567890.0);
-		assert_approx_eq!(11.70423974501, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_watt_hours_1() {
-		let result: f64 = energy::joules::to_watt_hours(56000.0);
-		assert_approx_eq!(15.555556, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_watt_hours_2() {
-		let result: f64 = energy::joules::to_watt_hours(890.0);
-		assert_approx_eq!(0.247222, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_watt_hours_3() {
-		let result: f64 = energy::joules::to_watt_hours(22001.0);
-		assert_approx_eq!(6.1113889, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_kilowatt_hours_1() {
-		let result: f64 = energy::joules::to_kilowatt_hours(560000.8);
-		assert_approx_eq!(0.1555557, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_kilowatt_hours_2() {
-		let result: f64 = energy::joules::to_kilowatt_hours(1234567.0);
-		assert_approx_eq!(0.3429352778, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_kilowatt_hours_3() {
-		let result: f64 = energy::joules::to_kilowatt_hours(900100.0);
-		assert_approx_eq!(0.250027778, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_foot_pounds_1() {
-		let result: f64 = energy::joules::to_foot_pounds(900.0);
-		assert_approx_eq!(663.806, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_foot_pounds_2() {
-		let result: f64 = energy::joules::to_foot_pounds(10.2);
-		assert_approx_eq!(7.523134, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_foot_pounds_3() {
-		let result: f64 = energy::joules::to_foot_pounds(6.7);
-		assert_approx_eq!(4.94167, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_electronvolts_1() {
-		let result: f64 = energy::joules::to_electronvolts(0.00000888);
-		assert_approx_eq!(55424602968504.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_electronvolts_2() {
-		let result: f64 = energy::joules::to_electronvolts(0.00001234);
-		assert_approx_eq!(77020225296322.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownjoules_to_electronvolts_3() {
-		let result: f64 = energy::joules::to_electronvolts(0.00000666);
-		assert_approx_eq!(41568452226378.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_kilojoules_1() {
-		let result: f64 = energy::kilocalories::to_kilojoules(67.0);
-		assert_approx_eq!(280.328, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_kilojoules_2() {
-		let result: f64 = energy::kilocalories::to_kilojoules(4.5);
-		assert_approx_eq!(18.828, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_kilojoules_3() {
-		let result: f64 = energy::kilocalories::to_kilojoules(100.3);
-		assert_approx_eq!(419.6552, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_joules_1() {
-		let result: f64 = energy::kilocalories::to_joules(100.3);
-		assert_approx_eq!(419655.2, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_joules_2() {
-		let result: f64 = energy::kilocalories::to_joules(0.9);
-		assert_approx_eq!(3765.6, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_joules_3() {
-		let result: f64 = energy::kilocalories::to_joules(3.4);
-		assert_approx_eq!(14225.6, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_btu_1() {
-		let result: f64 = energy::kilocalories::to_btu(3.4);
-		assert_approx_eq!(13.4833, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_btu_2() {
-		let result: f64 = energy::kilocalories::to_btu(109.0);
-		assert_approx_eq!(432.2576846216055, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_btu_3() {
-		let result: f64 = energy::kilocalories::to_btu(22.89);
-		assert_approx_eq!(90.77411377053717, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_calories_1() {
-		let result: f64 = energy::kilocalories::to_calories(22.8);
-		assert_approx_eq!(22800.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_calories_2() {
-		let result: f64 = energy::kilocalories::to_calories(76.23);
-		assert_approx_eq!(76230.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_calories_3() {
-		let result: f64 = energy::kilocalories::to_calories(0.07);
-		assert_approx_eq!(70.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_u_s_therms_1() {
-		let result: f64 = energy::kilocalories::to_u_s_therms(12345.0);
-		assert_approx_eq!(0.4896388, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_u_s_therms_2() {
-		let result: f64 = energy::kilocalories::to_u_s_therms(90002.0);
-		assert_approx_eq!(3.5700317, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_u_s_therms_3() {
-		let result: f64 = energy::kilocalories::to_u_s_therms(180180.0);
-		assert_approx_eq!(7.14704457, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_watt_hours_1() {
-		let result: f64 = energy::kilocalories::to_watt_hours(89.0);
-		assert_approx_eq!(103.438, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_watt_hours_2() {
-		let result: f64 = energy::kilocalories::to_watt_hours(23.6);
-		assert_approx_eq!(27.42844, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_watt_hours_3() {
-		let result: f64 = energy::kilocalories::to_watt_hours(0.9);
-		assert_approx_eq!(1.046, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_kilowatt_hours_1() {
-		let result: f64 = energy::kilocalories::to_kilowatt_hours(456.0);
-		assert_approx_eq!(0.529973, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_kilowatt_hours_2() {
-		let result: f64 = energy::kilocalories::to_kilowatt_hours(1090.8);
-		assert_approx_eq!(1.267752, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_kilowatt_hours_3() {
-		let result: f64 = energy::kilocalories::to_kilowatt_hours(567.1);
-		assert_approx_eq!(0.65909622, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_foot_pounds_1() {
-		let result: f64 = energy::kilocalories::to_foot_pounds(109.0);
-		assert_approx_eq!(336369.64, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_foot_pounds_2() {
-		let result: f64 = energy::kilocalories::to_foot_pounds(0.5);
-		assert_approx_eq!(1542.98, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_foot_pounds_3() {
-		let result: f64 = energy::kilocalories::to_foot_pounds(2.4);
-		assert_approx_eq!(7406.3, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_electronvolts_1() {
-		let result: f64 = energy::kilocalories::to_electronvolts(0.0000000666);
-		assert_approx_eq!(1740388069688132.2, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_electronvolts_2() {
-		let result: f64 = energy::kilocalories::to_electronvolts(0.000002);
-		assert_approx_eq!(52263905996640608.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilocalories_to_electronvolts_3() {
-		let result: f64 = energy::kilocalories::to_electronvolts(0.000000999);
-		assert_approx_eq!(26105821045321988.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_kilocalories_1() {
-		let result: f64 = energy::kilojoules::to_kilocalories(199.0);
-		assert_approx_eq!(47.5621, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_kilocalories_2() {
-		let result: f64 = energy::kilojoules::to_kilocalories(0.67);
-		assert_approx_eq!(0.1601338, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_kilocalories_3() {
-		let result: f64 = energy::kilojoules::to_kilocalories(4.7);
-		assert_approx_eq!(1.12333, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_joules_1() {
-		let result: f64 = energy::kilojoules::to_joules(4.7);
-		assert_approx_eq!(4700.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_joules_2() {
-		let result: f64 = energy::kilojoules::to_joules(7.8);
-		assert_approx_eq!(7800.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_joules_3() {
-		let result: f64 = energy::kilojoules::to_joules(1800.0);
-		assert_approx_eq!(1800000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_btu_1() {
-		let result: f64 = energy::kilojoules::to_btu(1800.0);
-		assert_approx_eq!(1706.070, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_btu_2() {
-		let result: f64 = energy::kilojoules::to_btu(1.4);
-		assert_approx_eq!(1.32694, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_btu_3() {
-		let result: f64 = energy::kilojoules::to_btu(89.2);
-		assert_approx_eq!(84.54529, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_calories_1() {
-		let result: f64 = energy::kilojoules::to_calories(67.0);
-		assert_approx_eq!(16013.381899, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_calories_2() {
-		let result: f64 = energy::kilojoules::to_calories(1.4);
-		assert_approx_eq!(334.608, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_calories_3() {
-		let result: f64 = energy::kilojoules::to_calories(87.0);
-		assert_approx_eq!(20793.5, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_u_s_therms_1() {
-		let result: f64 = energy::kilojoules::to_u_s_therms(123456.0);
-		assert_approx_eq!(1.17041649, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_u_s_therms_2() {
-		let result: f64 = energy::kilojoules::to_u_s_therms(88000.0);
-		assert_approx_eq!(0.83427822, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_u_s_therms_3() {
-		let result: f64 = energy::kilojoules::to_u_s_therms(9000.0);
-		assert_approx_eq!(0.08532391, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_watt_hours_1() {
-		let result: f64 = energy::kilojoules::to_watt_hours(98000.0);
-		assert_approx_eq!(27222.222, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_watt_hours_2() {
-		let result: f64 = energy::kilojoules::to_watt_hours(1.5);
-		assert_approx_eq!(0.416667, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_watt_hours_3() {
-		let result: f64 = energy::kilojoules::to_watt_hours(67.9);
-		assert_approx_eq!(18.86111, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_kilowatt_hours_1() {
-		let result: f64 = energy::kilojoules::to_kilowatt_hours(8000.0);
-		assert_approx_eq!(2.222222, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_kilowatt_hours_2() {
-		let result: f64 = energy::kilojoules::to_kilowatt_hours(67.99);
-		assert_approx_eq!(0.018886111, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_kilowatt_hours_3() {
-		let result: f64 = energy::kilojoules::to_kilowatt_hours(406.8);
-		assert_approx_eq!(0.113, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_foot_pounds_1() {
-		let result: f64 = energy::kilojoules::to_foot_pounds(100.9);
-		assert_approx_eq!(74420.00579, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_foot_pounds_2() {
-		let result: f64 = energy::kilojoules::to_foot_pounds(2.4);
-		assert_approx_eq!(1770.15, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_foot_pounds_3() {
-		let result: f64 = energy::kilojoules::to_foot_pounds(0.9);
-		assert_approx_eq!(663.806, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_electronvolts_1() {
-		let result: f64 = energy::kilojoules::to_electronvolts(0.000000999);
-		assert_approx_eq!(6235268234766989.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_electronvolts_2() {
-		let result: f64 = energy::kilojoules::to_electronvolts(0.0000002);
-		assert_approx_eq!(1248301948902300.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilojoules_to_electronvolts_3() {
-		let result: f64 = energy::kilojoules::to_electronvolts(0.00567);
-		assert_approx_eq!(3.5389360251380204E+19, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_kilojoules_1() {
-		let result: f64 = energy::kilowatt_hours::to_kilojoules(0.6);
-		assert_approx_eq!(2160.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_kilojoules_2() {
-		let result: f64 = energy::kilowatt_hours::to_kilojoules(134.0);
-		assert_approx_eq!(482400.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_kilojoules_3() {
-		let result: f64 = energy::kilowatt_hours::to_kilojoules(45.6);
-		assert_approx_eq!(164160.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_kilocalories_1() {
-		let result: f64 = energy::kilowatt_hours::to_kilocalories(45.6);
-		assert_approx_eq!(39235.1976, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_kilocalories_2() {
-		let result: f64 = energy::kilowatt_hours::to_kilocalories(12.0);
-		assert_approx_eq!(10325.052, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_kilocalories_3() {
-		let result: f64 = energy::kilowatt_hours::to_kilocalories(0.4);
-		assert_approx_eq!(344.168, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_joules_1() {
-		let result: f64 = energy::kilowatt_hours::to_joules(0.01);
-		assert_approx_eq!(36000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_joules_2() {
-		let result: f64 = energy::kilowatt_hours::to_joules(0.009);
-		assert_approx_eq!(32400.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_joules_3() {
-		let result: f64 = energy::kilowatt_hours::to_joules(2.0);
-		assert_approx_eq!(7.2e+6, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_btu_1() {
-		let result: f64 = energy::kilowatt_hours::to_btu(2.0);
-		assert_approx_eq!(6824.28, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_btu_2() {
-		let result: f64 = energy::kilowatt_hours::to_btu(0.7);
-		assert_approx_eq!(2388.4979, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_btu_3() {
-		let result: f64 = energy::kilowatt_hours::to_btu(0.02);
-		assert_approx_eq!(68.24283, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_calories_1() {
-		let result: f64 = energy::kilowatt_hours::to_calories(0.1);
-		assert_approx_eq!(86042.1, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_calories_2() {
-		let result: f64 = energy::kilowatt_hours::to_calories(0.07);
-		assert_approx_eq!(60229.47, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_calories_3() {
-		let result: f64 = energy::kilowatt_hours::to_calories(0.0123);
-		assert_approx_eq!(10583.174, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_u_s_therms_1() {
-		let result: f64 = energy::kilowatt_hours::to_u_s_therms(5.0);
-		assert_approx_eq!(0.170648, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_u_s_therms_2() {
-		let result: f64 = energy::kilowatt_hours::to_u_s_therms(234.0);
-		assert_approx_eq!(7.98632, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_u_s_therms_3() {
-		let result: f64 = energy::kilowatt_hours::to_u_s_therms(1001.0);
-		assert_approx_eq!(34.16369, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_watt_hours_1() {
-		let result: f64 = energy::kilowatt_hours::to_watt_hours(123.0);
-		assert_approx_eq!(123000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_watt_hours_2() {
-		let result: f64 = energy::kilowatt_hours::to_watt_hours(98.4);
-		assert_approx_eq!(98400.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_watt_hours_3() {
-		let result: f64 = energy::kilowatt_hours::to_watt_hours(1.6);
-		assert_approx_eq!(1600.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_foot_pounds_1() {
-		let result: f64 = energy::kilowatt_hours::to_foot_pounds(0.001);
-		assert_approx_eq!(2655.196219, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_foot_pounds_2() {
-		let result: f64 = energy::kilowatt_hours::to_foot_pounds(0.09);
-		assert_approx_eq!(238967.6597, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_foot_pounds_3() {
-		let result: f64 = energy::kilowatt_hours::to_foot_pounds(0.0006);
-		assert_approx_eq!(1593.1177314, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_electronvolts_1() {
-		let result: f64 = energy::kilowatt_hours::to_electronvolts(0.000008);
-		assert_approx_eq!(179755440000000000000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_electronvolts_2() {
-		let result: f64 = energy::kilowatt_hours::to_electronvolts(0.0000000128);
-		assert_approx_eq!(2.8760870400000003E+17, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownkilowatt_hours_to_electronvolts_3() {
-		let result: f64 = energy::kilowatt_hours::to_electronvolts(0.0000000001);
-		assert_approx_eq!(2246943000000000.2, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_kilojoules_1() {
-		let result: f64 = energy::u_s_therms::to_kilojoules(0.009);
-		assert_approx_eq!(949.3236, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_kilojoules_2() {
-		let result: f64 = energy::u_s_therms::to_kilojoules(3.0);
-		assert_approx_eq!(316440.12, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_kilojoules_3() {
-		let result: f64 = energy::u_s_therms::to_kilojoules(1.9);
-		assert_approx_eq!(200412.075, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_kilocalories_1() {
-		let result: f64 = energy::u_s_therms::to_kilocalories(1.1);
-		assert_approx_eq!(27731.484079398004, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_kilocalories_2() {
-		let result: f64 = energy::u_s_therms::to_kilocalories(0.04);
-		assert_approx_eq!(1008.417, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_kilocalories_3() {
-		let result: f64 = energy::u_s_therms::to_kilocalories(0.0123);
-		assert_approx_eq!(310.088174, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_joules_1() {
-		let result: f64 = energy::u_s_therms::to_joules(0.008);
-		assert_approx_eq!(843843.2, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_joules_2() {
-		let result: f64 = energy::u_s_therms::to_joules(3.4e-6);
-		assert_approx_eq!(358.633, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_joules_3() {
-		let result: f64 = energy::u_s_therms::to_joules(0.00678);
-		assert_approx_eq!(715157.112, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_btu_1() {
-		let result: f64 = energy::u_s_therms::to_btu(0.00666);
-		assert_approx_eq!(665.8409891, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_btu_2() {
-		let result: f64 = energy::u_s_therms::to_btu(2.0);
-		assert_approx_eq!(199952.249, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_btu_3() {
-		let result: f64 = energy::u_s_therms::to_btu(0.9);
-		assert_approx_eq!(89978.51204, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_calories_1() {
-		let result: f64 = energy::u_s_therms::to_calories(0.003);
-		assert_approx_eq!(75631.262, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_calories_2() {
-		let result: f64 = energy::u_s_therms::to_calories(6.8e-3);
-		assert_approx_eq!(171430.856, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_calories_3() {
-		let result: f64 = energy::u_s_therms::to_calories(0.0008);
-		assert_approx_eq!(20168.3365, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_watt_hours_1() {
-		let result: f64 = energy::u_s_therms::to_watt_hours(6.0);
-		assert_approx_eq!(175800.59, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_watt_hours_2() {
-		let result: f64 = energy::u_s_therms::to_watt_hours(1.9);
-		assert_approx_eq!(55670.189, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_watt_hours_3() {
-		let result: f64 = energy::u_s_therms::to_watt_hours(0.07);
-		assert_approx_eq!(2051.008, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_kilowatt_hours_1() {
-		let result: f64 = energy::u_s_therms::to_kilowatt_hours(0.9);
-		assert_approx_eq!(26.3701, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_kilowatt_hours_2() {
-		let result: f64 = energy::u_s_therms::to_kilowatt_hours(7.9);
-		assert_approx_eq!(231.471, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_kilowatt_hours_3() {
-		let result: f64 = energy::u_s_therms::to_kilowatt_hours(1.4);
-		assert_approx_eq!(41.0202, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_foot_pounds_1() {
-		let result: f64 = energy::u_s_therms::to_foot_pounds(0.009);
-		assert_approx_eq!(700352.43389267, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_foot_pounds_2() {
-		let result: f64 = energy::u_s_therms::to_foot_pounds(0.02);
-		assert_approx_eq!(1556338.74198, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_foot_pounds_3() {
-		let result: f64 = energy::u_s_therms::to_foot_pounds(0.0003);
-		assert_approx_eq!(23345.081129, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_electronvolts_1() {
-		let result: f64 = energy::u_s_therms::to_electronvolts(0.0000009);
-		assert_approx_eq!(592520940098199000000.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_electronvolts_2() {
-		let result: f64 = energy::u_s_therms::to_electronvolts(0.000000001339);
-		assert_approx_eq!(8.815394875460983E+17, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownu_s_therms_to_electronvolts_3() {
-		let result: f64 = energy::u_s_therms::to_electronvolts(0.0000000000666);
-		assert_approx_eq!(43846549567266728.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_kilojoules_1() {
-		let result: f64 = energy::watt_hours::to_kilojoules(1.6);
-		assert_approx_eq!(5.76, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_kilojoules_2() {
-		let result: f64 = energy::watt_hours::to_kilojoules(67.0);
-		assert_approx_eq!(241.2, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_kilojoules_3() {
-		let result: f64 = energy::watt_hours::to_kilojoules(8.12);
-		assert_approx_eq!(29.232, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_kilocalories_1() {
-		let result: f64 = energy::watt_hours::to_kilocalories(8.12);
-		assert_approx_eq!(6.986616, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_kilocalories_2() {
-		let result: f64 = energy::watt_hours::to_kilocalories(170.0);
-		assert_approx_eq!(146.272, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_kilocalories_3() {
-		let result: f64 = energy::watt_hours::to_kilocalories(19.2);
-		assert_approx_eq!(16.52008, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_joules_1() {
-		let result: f64 = energy::watt_hours::to_joules(6.7);
-		assert_approx_eq!(24120.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_joules_2() {
-		let result: f64 = energy::watt_hours::to_joules(12.34);
-		assert_approx_eq!(44424.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_joules_3() {
-		let result: f64 = energy::watt_hours::to_joules(0.09);
-		assert_approx_eq!(324.0, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_btu_1() {
-		let result: f64 = energy::watt_hours::to_btu(34.0);
-		assert_approx_eq!(116.013, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_btu_2() {
-		let result: f64 = energy::watt_hours::to_btu(179.2);
-		assert_approx_eq!(611.45578, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_btu_3() {
-		let result: f64 = energy::watt_hours::to_btu(0.9);
-		assert_approx_eq!(3.07093, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_calories_1() {
-		let result: f64 = energy::watt_hours::to_calories(0.2);
-		assert_approx_eq!(172.084, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_calories_2() {
-		let result: f64 = energy::watt_hours::to_calories(0.09);
-		assert_approx_eq!(77.43786, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_calories_3() {
-		let result: f64 = energy::watt_hours::to_calories(12.0);
-		assert_approx_eq!(10325.06754, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_u_s_therms_1() {
-		let result: f64 = energy::watt_hours::to_u_s_therms(1090.0);
-		assert_approx_eq!(0.03720122, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_u_s_therms_2() {
-		let result: f64 = energy::watt_hours::to_u_s_therms(49990.0);
-		assert_approx_eq!(1.7061369, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_u_s_therms_3() {
-		let result: f64 = energy::watt_hours::to_u_s_therms(900800.0);
-		assert_approx_eq!(30.7439107, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_kilowatt_hours_1() {
-		let result: f64 = energy::watt_hours::to_kilowatt_hours(98.0);
-		assert_approx_eq!(0.098, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_kilowatt_hours_2() {
-		let result: f64 = energy::watt_hours::to_kilowatt_hours(12.5);
-		assert_approx_eq!(0.0125, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_kilowatt_hours_3() {
-		let result: f64 = energy::watt_hours::to_kilowatt_hours(0.6);
-		assert_approx_eq!(0.0006, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_foot_pounds_1() {
-		let result: f64 = energy::watt_hours::to_foot_pounds(1.5);
-		assert_approx_eq!(3982.829, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_foot_pounds_2() {
-		let result: f64 = energy::watt_hours::to_foot_pounds(0.3);
-		assert_approx_eq!(796.567, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_foot_pounds_3() {
-		let result: f64 = energy::watt_hours::to_foot_pounds(90.1);
-		assert_approx_eq!(239235.3219, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_electronvolts_1() {
-		let result: f64 = energy::watt_hours::to_electronvolts(0.0000000000666);
-		assert_approx_eq!(1496463565615.39, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_electronvolts_2() {
-		let result: f64 = energy::watt_hours::to_electronvolts(0.000000008);
-		assert_approx_eq!(179755383257104.03, result, 0.01);
-	}
-
-	/// Need to convert to parameterized tests
-	#[test]
-	fn it_convert_knownwatt_hours_to_electronvolts_3() {
-		let result: f64 = energy::watt_hours::to_electronvolts(0.0000123);
-		assert_approx_eq!(2.7637390175779744E+17, result, 0.01);
-	}
-
+/// Calories conversion functions
+pub mod calories {
+	/// Converts the supplied Calories value to Kilojoules
+	/// # Arguments
+	/// * `value` - The Calories input value
+	pub fn to_kilojoules(value: f64) -> f64 {
+		return value / 239.0057;
+	}
+	/// Converts the supplied Calories value to Kilocalories
+	/// # Arguments
+	/// * `value` - The Calories input value
+	pub fn to_kilocalories(value: f64) -> f64 {
+		return value / 1000.0;
+	}
+	/// Converts the supplied Calories value to Joules
+	/// # Arguments
+	/// * `value` - The Calories input value
+	pub fn to_joules(value: f64) -> f64 {
+		return value * 4.184;
+	}
+	/// Converts the supplied Calories value to Btu
+	/// # Arguments
+	/// * `value` - The Calories input value
+	pub fn to_btu(value: f64) -> f64 {
+		return value / 252.1644007218;
+	}
+	/// Converts the supplied Calories value to US Therms
+	/// # Arguments
+	/// * `value` - The Calories input value
+	pub fn to_u_s_therms(value: f64) -> f64 {
+		return value / 25210420.0;
+	}
+	/// Converts the supplied Calories value to Watt Hours
+	/// # Arguments
+	/// * `value` - The Calories input value
+	pub fn to_watt_hours(value: f64) -> f64 {
+		return value * 0.00116222;
+	}
+	/// Converts the supplied Calories value to Kilowatt Hours
+	/// # Arguments
+	/// * `value` - The Calories input value
+	pub fn to_kilowatt_hours(value: f64) -> f64 {
+		return value / 860421.0;
+	}
+	/// Converts the supplied Calories value to Foot Pounds
+	/// # Arguments
+	/// * `value` - The Calories input value
+	pub fn to_foot_pounds(value: f64) -> f64 {
+		return value * 3.08596;
+	}
+	/// Converts the supplied Calories value to Electronvolts
+	/// # Arguments
+	/// * `value` - The Calories input value
+	pub fn to_electronvolts(value: f64) -> f64 {
+		return value * 2.6131936951817e+19;
+	}
+}
+/// Electronvolts conversion functions
+pub mod electronvolts {
+	/// Converts the supplied Electronvolts value to Kilojoules
+	/// # Arguments
+	/// * `value` - The Electronvolts input value
+	pub fn to_kilojoules(value: f64) -> f64 {
+		return value / 6241509744511500156928.00;
+	}
+	/// Converts the supplied Electronvolts value to Kilocalories
+	/// # Arguments
+	/// * `value` - The Electronvolts input value
+	pub fn to_kilocalories(value: f64) -> f64 {
+		return value / 26131952998320305078272.00;
+	}
+	/// Converts the supplied Electronvolts value to Joules
+	/// # Arguments
+	/// * `value` - The Electronvolts input value
+	pub fn to_joules(value: f64) -> f64 {
+		return value / 6241509343300000000.0;
+	}
+	/// Converts the supplied Electronvolts value to Btu
+	/// # Arguments
+	/// * `value` - The Electronvolts input value
+	pub fn to_btu(value: f64) -> f64 {
+		return value / 6585141385224143241216.0;
+	}
+	/// Converts the supplied Electronvolts value to Calories
+	/// # Arguments
+	/// * `value` - The Electronvolts input value
+	pub fn to_calories(value: f64) -> f64 {
+		return value / 2.6131936951817e+19;
+	}
+	/// Converts the supplied Electronvolts value to US Therms
+	/// # Arguments
+	/// * `value` - The Electronvolts input value
+	pub fn to_u_s_therms(value: f64) -> f64 {
+		return value / 6.5835660010911e+26;
+	}
+	/// Converts the supplied Electronvolts value to Watt Hours
+	/// # Arguments
+	/// * `value` - The Electronvolts input value
+	pub fn to_watt_hours(value: f64) -> f64 {
+		return value / 2.2469422907138e+22;
+	}
+	/// Converts the supplied Electronvolts value to Kilowatt Hours
+	/// # Arguments
+	/// * `value` - The Electronvolts input value
+	pub fn to_kilowatt_hours(value: f64) -> f64 {
+		return value / 2.246943e+25;
+	}
+	/// Converts the supplied Electronvolts value to Foot Pounds
+	/// # Arguments
+	/// * `value` - The Electronvolts input value
+	pub fn to_foot_pounds(value: f64) -> f64 {
+		return value / 8462350936293971968.00;
+	}
+}
+/// Foot Pounds conversion functions
+pub mod foot_pounds {
+	/// Converts the supplied Foot Pounds value to Kilojoules
+	/// # Arguments
+	/// * `value` - The Foot Pounds input value
+	pub fn to_kilojoules(value: f64) -> f64 {
+		return value / 737.562;
+	}
+	/// Converts the supplied Foot Pounds value to Kilocalories
+	/// # Arguments
+	/// * `value` - The Foot Pounds input value
+	pub fn to_kilocalories(value: f64) -> f64 {
+		return value / 3085.96;
+	}
+	/// Converts the supplied Foot Pounds value to Joules
+	/// # Arguments
+	/// * `value` - The Foot Pounds input value
+	pub fn to_joules(value: f64) -> f64 {
+		return value * 1.35582;
+	}
+	/// Converts the supplied Foot Pounds value to Btu
+	/// # Arguments
+	/// * `value` - The Foot Pounds input value
+	pub fn to_btu(value: f64) -> f64 {
+		return value / 778.169;
+	}
+	/// Converts the supplied Foot Pounds value to Calories
+	/// # Arguments
+	/// * `value` - The Foot Pounds input value
+	pub fn to_calories(value: f64) -> f64 {
+		return value / 3.08596;
+	}
+	/// Converts the supplied Foot Pounds value to US Therms
+	/// # Arguments
+	/// * `value` - The Foot Pounds input value
+	pub fn to_u_s_therms(value: f64) -> f64 {
+		return value / 77816937.099186;
+	}
+	/// Converts the supplied Foot Pounds value to Watt Hours
+	/// # Arguments
+	/// * `value` - The Foot Pounds input value
+	pub fn to_watt_hours(value: f64) -> f64 {
+		return value / 2655.22;
+	}
+	/// Converts the supplied Foot Pounds value to Kilowatt Hours
+	/// # Arguments
+	/// * `value` - The Foot Pounds input value
+	pub fn to_kilowatt_hours(value: f64) -> f64 {
+		return value * 0.00000037662;
+	}
+	/// Converts the supplied Foot Pounds value to Electronvolts
+	/// # Arguments
+	/// * `value` - The Foot Pounds input value
+	pub fn to_electronvolts(value: f64) -> f64 {
+		return value * 8462350936293971968.00;
+	}
+}
+/// Joules conversion functions
+pub mod joules {
+	/// Converts the supplied Joules value to Kilojoules
+	/// # Arguments
+	/// * `value` - The Joules input value
+	pub fn to_kilojoules(value: f64) -> f64 {
+		return value / 1000.0;
+	}
+	/// Converts the supplied Joules value to Kilocalories
+	/// # Arguments
+	/// * `value` - The Joules input value
+	pub fn to_kilocalories(value: f64) -> f64 {
+		return value / 4184.0;
+	}
+	/// Converts the supplied Joules value to Btu
+	/// # Arguments
+	/// * `value` - The Joules input value
+	pub fn to_btu(value: f64) -> f64 {
+		return value / 1055.06;
+	}
+	/// Converts the supplied Joules value to Calories
+	/// # Arguments
+	/// * `value` - The Joules input value
+	pub fn to_calories(value: f64) -> f64 {
+		return value / 4.184;
+	}
+	/// Converts the supplied Joules value to US Therms
+	/// # Arguments
+	/// * `value` - The Joules input value
+	pub fn to_u_s_therms(value: f64) -> f64 {
+		return value / 105480400.0;
+	}
+	/// Converts the supplied Joules value to Watt Hours
+	/// # Arguments
+	/// * `value` - The Joules input value
+	pub fn to_watt_hours(value: f64) -> f64 {
+		return value / 3600.0;
+	}
+	/// Converts the supplied Joules value to Kilowatt Hours
+	/// # Arguments
+	/// * `value` - The Joules input value
+	pub fn to_kilowatt_hours(value: f64) -> f64 {
+		return value / 3.6e+6;
+	}
+	/// Converts the supplied Joules value to Foot Pounds
+	/// # Arguments
+	/// * `value` - The Joules input value
+	pub fn to_foot_pounds(value: f64) -> f64 {
+		return value / 1.35582;
+	}
+	/// Converts the supplied Joules value to Electronvolts
+	/// # Arguments
+	/// * `value` - The Joules input value
+	pub fn to_electronvolts(value: f64) -> f64 {
+		return value * 6241509343300000000.0;
+	}
+}
+/// Kilocalories conversion functions
+pub mod kilocalories {
+	/// Converts the supplied Kilocalories value to Kilojoules
+	/// # Arguments
+	/// * `value` - The Kilocalories input value
+	pub fn to_kilojoules(value: f64) -> f64 {
+		return value * 4.184;
+	}
+	/// Converts the supplied Kilocalories value to Joules
+	/// # Arguments
+	/// * `value` - The Kilocalories input value
+	pub fn to_joules(value: f64) -> f64 {
+		return value * 4184.0;
+	}
+	/// Converts the supplied Kilocalories value to Btu
+	/// # Arguments
+	/// * `value` - The Kilocalories input value
+	pub fn to_btu(value: f64) -> f64 {
+		return value / 0.2521644007218;
+	}
+	/// Converts the supplied Kilocalories value to Calories
+	/// # Arguments
+	/// * `value` - The Kilocalories input value
+	pub fn to_calories(value: f64) -> f64 {
+		return value * 1000.0;
+	}
+	/// Converts the supplied Kilocalories value to US Therms
+	/// # Arguments
+	/// * `value` - The Kilocalories input value
+	pub fn to_u_s_therms(value: f64) -> f64 {
+		return value / 25210.44007218;
+	}
+	/// Converts the supplied Kilocalories value to Watt Hours
+	/// # Arguments
+	/// * `value` - The Kilocalories input value
+	pub fn to_watt_hours(value: f64) -> f64 {
+		return value * 1.16222;
+	}
+	/// Converts the supplied Kilocalories value to Kilowatt Hours
+	/// # Arguments
+	/// * `value` - The Kilocalories input value
+	pub fn to_kilowatt_hours(value: f64) -> f64 {
+		return value / 860.421;
+	}
+	/// Converts the supplied Kilocalories value to Foot Pounds
+	/// # Arguments
+	/// * `value` - The Kilocalories input value
+	pub fn to_foot_pounds(value: f64) -> f64 {
+		return value * 3085.96;
+	}
+	/// Converts the supplied Kilocalories value to Electronvolts
+	/// # Arguments
+	/// * `value` - The Kilocalories input value
+	pub fn to_electronvolts(value: f64) -> f64 {
+		return value * 26131952998320305078272.00;
+	}
+}
+/// Kilojoules conversion functions
+pub mod kilojoules {
+	/// Converts the supplied Kilojoules value to Kilocalories
+	/// # Arguments
+	/// * `value` - The Kilojoules input value
+	pub fn to_kilocalories(value: f64) -> f64 {
+		return value / 4.184;
+	}
+	/// Converts the supplied Kilojoules value to Joules
+	/// # Arguments
+	/// * `value` - The Kilojoules input value
+	pub fn to_joules(value: f64) -> f64 {
+		return value * 1000.0;
+	}
+	/// Converts the supplied Kilojoules value to Btu
+	/// # Arguments
+	/// * `value` - The Kilojoules input value
+	pub fn to_btu(value: f64) -> f64 {
+		return value / 1.0550559;
+	}
+	/// Converts the supplied Kilojoules value to Calories
+	/// # Arguments
+	/// * `value` - The Kilojoules input value
+	pub fn to_calories(value: f64) -> f64 {
+		return value * 239.0057;
+	}
+	/// Converts the supplied Kilojoules value to US Therms
+	/// # Arguments
+	/// * `value` - The Kilojoules input value
+	pub fn to_u_s_therms(value: f64) -> f64 {
+		return value / 105480.04;
+	}
+	/// Converts the supplied Kilojoules value to Watt Hours
+	/// # Arguments
+	/// * `value` - The Kilojoules input value
+	pub fn to_watt_hours(value: f64) -> f64 {
+		return value / 3.6;
+	}
+	/// Converts the supplied Kilojoules value to Kilowatt Hours
+	/// # Arguments
+	/// * `value` - The Kilojoules input value
+	pub fn to_kilowatt_hours(value: f64) -> f64 {
+		return value / 3600.0;
+	}
+	/// Converts the supplied Kilojoules value to Foot Pounds
+	/// # Arguments
+	/// * `value` - The Kilojoules input value
+	pub fn to_foot_pounds(value: f64) -> f64 {
+		return value * 737.562;
+	}
+	/// Converts the supplied Kilojoules value to Electronvolts
+	/// # Arguments
+	/// * `value` - The Kilojoules input value
+	pub fn to_electronvolts(value: f64) -> f64 {
+		return value * 6241509744511500156928.00;
+	}
+}
+/// Kilowatt Hours conversion functions
+pub mod kilowatt_hours {
+	/// Converts the supplied Kilowatt Hours value to Kilojoules
+	/// # Arguments
+	/// * `value` - The Kilowatt Hours input value
+	pub fn to_kilojoules(value: f64) -> f64 {
+		return value * 3600.0;
+	}
+	/// Converts the supplied Kilowatt Hours value to Kilocalories
+	/// # Arguments
+	/// * `value` - The Kilowatt Hours input value
+	pub fn to_kilocalories(value: f64) -> f64 {
+		return value * 860.421;
+	}
+	/// Converts the supplied Kilowatt Hours value to Joules
+	/// # Arguments
+	/// * `value` - The Kilowatt Hours input value
+	pub fn to_joules(value: f64) -> f64 {
+		return value * 3.6e+6;
+	}
+	/// Converts the supplied Kilowatt Hours value to Btu
+	/// # Arguments
+	/// * `value` - The Kilowatt Hours input value
+	pub fn to_btu(value: f64) -> f64 {
+		return value * 3412.14;
+	}
+	/// Converts the supplied Kilowatt Hours value to Calories
+	/// # Arguments
+	/// * `value` - The Kilowatt Hours input value
+	pub fn to_calories(value: f64) -> f64 {
+		return value * 860421.0;
+	}
+	/// Converts the supplied Kilowatt Hours value to US Therms
+	/// # Arguments
+	/// * `value` - The Kilowatt Hours input value
+	pub fn to_u_s_therms(value: f64) -> f64 {
+		return value / 29.3001;
+	}
+	/// Converts the supplied Kilowatt Hours value to Watt Hours
+	/// # Arguments
+	/// * `value` - The Kilowatt Hours input value
+	pub fn to_watt_hours(value: f64) -> f64 {
+		return value * 1000.0;
+	}
+	/// Converts the supplied Kilowatt Hours value to Foot Pounds
+	/// # Arguments
+	/// * `value` - The Kilowatt Hours input value
+	pub fn to_foot_pounds(value: f64) -> f64 {
+		return value / 0.00000037662;
+	}
+	/// Converts the supplied Kilowatt Hours value to Electronvolts
+	/// # Arguments
+	/// * `value` - The Kilowatt Hours input value
+	pub fn to_electronvolts(value: f64) -> f64 {
+		return value * 2.246943e+25;
+	}
+}
+/// US Therms conversion functions
+pub mod u_s_therms {
+	/// Converts the supplied US Therms value to Kilojoules
+	/// # Arguments
+	/// * `value` - The US Therms input value
+	pub fn to_kilojoules(value: f64) -> f64 {
+		return value * 105480.04;
+	}
+	/// Converts the supplied US Therms value to Kilocalories
+	/// # Arguments
+	/// * `value` - The US Therms input value
+	pub fn to_kilocalories(value: f64) -> f64 {
+		return value * 25210.44007218;
+	}
+	/// Converts the supplied US Therms value to Joules
+	/// # Arguments
+	/// * `value` - The US Therms input value
+	pub fn to_joules(value: f64) -> f64 {
+		return value * 105480400.0;
+	}
+	/// Converts the supplied US Therms value to Btu
+	/// # Arguments
+	/// * `value` - The US Therms input value
+	pub fn to_btu(value: f64) -> f64 {
+		return value * 99976.12448781215;
+	}
+	/// Converts the supplied US Therms value to Calories
+	/// # Arguments
+	/// * `value` - The US Therms input value
+	pub fn to_calories(value: f64) -> f64 {
+		return value * 25210420.0;
+	}
+	/// Converts the supplied US Therms value to Watt Hours
+	/// # Arguments
+	/// * `value` - The US Therms input value
+	pub fn to_watt_hours(value: f64) -> f64 {
+		return value * 29300.1;
+	}
+	/// Converts the supplied US Therms value to Kilowatt Hours
+	/// # Arguments
+	/// * `value` - The US Therms input value
+	pub fn to_kilowatt_hours(value: f64) -> f64 {
+		return value * 29.3001;
+	}
+	/// Converts the supplied US Therms value to Foot Pounds
+	/// # Arguments
+	/// * `value` - The US Therms input value
+	pub fn to_foot_pounds(value: f64) -> f64 {
+		return value * 77816937.099186;
+	}
+	/// Converts the supplied US Therms value to Electronvolts
+	/// # Arguments
+	/// * `value` - The US Therms input value
+	pub fn to_electronvolts(value: f64) -> f64 {
+		return value * 6.5835660010911e+26;
+	}
+}
+/// Watt Hours conversion functions
+pub mod watt_hours {
+	/// Converts the supplied Watt Hours value to Kilojoules
+	/// # Arguments
+	/// * `value` - The Watt Hours input value
+	pub fn to_kilojoules(value: f64) -> f64 {
+		return value * 3.6;
+	}
+	/// Converts the supplied Watt Hours value to Kilocalories
+	/// # Arguments
+	/// * `value` - The Watt Hours input value
+	pub fn to_kilocalories(value: f64) -> f64 {
+		return value / 1.16222;
+	}
+	/// Converts the supplied Watt Hours value to Joules
+	/// # Arguments
+	/// * `value` - The Watt Hours input value
+	pub fn to_joules(value: f64) -> f64 {
+		return value * 3600.0;
+	}
+	/// Converts the supplied Watt Hours value to Btu
+	/// # Arguments
+	/// * `value` - The Watt Hours input value
+	pub fn to_btu(value: f64) -> f64 {
+		return value / 0.293071;
+	}
+	/// Converts the supplied Watt Hours value to Calories
+	/// # Arguments
+	/// * `value` - The Watt Hours input value
+	pub fn to_calories(value: f64) -> f64 {
+		return value / 0.00116222;
+	}
+	/// Converts the supplied Watt Hours value to US Therms
+	/// # Arguments
+	/// * `value` - The Watt Hours input value
+	pub fn to_u_s_therms(value: f64) -> f64 {
+		return value / 29300.1;
+	}
+	/// Converts the supplied Watt Hours value to Kilowatt Hours
+	/// # Arguments
+	/// * `value` - The Watt Hours input value
+	pub fn to_kilowatt_hours(value: f64) -> f64 {
+		return value / 1000.0;
+	}
+	/// Converts the supplied Watt Hours value to Foot Pounds
+	/// # Arguments
+	/// * `value` - The Watt Hours input value
+	pub fn to_foot_pounds(value: f64) -> f64 {
+		return value * 2655.22;
+	}
+	/// Converts the supplied Watt Hours value to Electronvolts
+	/// # Arguments
+	/// * `value` - The Watt Hours input value
+	pub fn to_electronvolts(value: f64) -> f64 {
+		return value * 2.2469422907138e+22;
+	}
 }
