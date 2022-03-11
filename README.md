@@ -12,6 +12,7 @@ Package available via [crates.io](https://crates.io/crates/unit-conversions)
 ### Unit conversions also available for 
 
 [C#](https://github.com/putridparrot/PutridParrot.Units)  
+[Dart](https://github.com/putridparrot/DartUnits)  
 [F#](https://github.com/putridparrot/FSharp.Units)  
 [Java](https://github.com/putridparrot/JavaUnits)  
 [Python](https://github.com/putridparrot/PyUnits)  
