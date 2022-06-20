@@ -8,6 +8,24 @@
 
 /// Centuries conversion functions
 pub mod centuries {
+	/// Converts the supplied Centuries value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 3.154e+18;
+	}
+	/// Converts the supplied Centuries value to Microseconds
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value * 3.154e+15;
+	}
+	/// Converts the supplied Centuries value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Centuries input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value * 3.154e+12;
+	}
 	/// Converts the supplied Centuries value to Seconds
 	/// # Arguments
 	/// * `value` - The Centuries input value
@@ -59,6 +77,24 @@ pub mod centuries {
 }
 /// Days conversion functions
 pub mod days {
+	/// Converts the supplied Days value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 8.64e+13;
+	}
+	/// Converts the supplied Days value to Microseconds
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value * 8.64e+10;
+	}
+	/// Converts the supplied Days value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Days input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value * 8.64e+7;
+	}
 	/// Converts the supplied Days value to Seconds
 	/// # Arguments
 	/// * `value` - The Days input value
@@ -110,6 +146,24 @@ pub mod days {
 }
 /// Decades conversion functions
 pub mod decades {
+	/// Converts the supplied Decades value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 3.154e+17;
+	}
+	/// Converts the supplied Decades value to Microseconds
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value * 3.154e+14;
+	}
+	/// Converts the supplied Decades value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Decades input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value * 3.154e+11;
+	}
 	/// Converts the supplied Decades value to Seconds
 	/// # Arguments
 	/// * `value` - The Decades input value
@@ -161,6 +215,24 @@ pub mod decades {
 }
 /// Hours conversion functions
 pub mod hours {
+	/// Converts the supplied Hours value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 3.6e+12;
+	}
+	/// Converts the supplied Hours value to Microseconds
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value * 3.6e+9;
+	}
+	/// Converts the supplied Hours value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Hours input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value * 3.6e+6;
+	}
 	/// Converts the supplied Hours value to Seconds
 	/// # Arguments
 	/// * `value` - The Hours input value
@@ -210,8 +282,164 @@ pub mod hours {
 		return value / 876000.0;
 	}
 }
+/// Microseconds conversion functions
+pub mod microseconds {
+	/// Converts the supplied Microseconds value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 1000.0;
+	}
+	/// Converts the supplied Microseconds value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value / 1000.0;
+	}
+	/// Converts the supplied Microseconds value to Seconds
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value / 1e+6;
+	}
+	/// Converts the supplied Microseconds value to Minutes
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value / 6e+7;
+	}
+	/// Converts the supplied Microseconds value to Hours
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value / 3.6e+9;
+	}
+	/// Converts the supplied Microseconds value to Days
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_days(value: f64) -> f64 {
+		return value / 8.64e+10;
+	}
+	/// Converts the supplied Microseconds value to Weeks
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value / 6.048e+11;
+	}
+	/// Converts the supplied Microseconds value to Months
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_months(value: f64) -> f64 {
+		return value / 2629746000000.0;
+	}
+	/// Converts the supplied Microseconds value to Years
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_years(value: f64) -> f64 {
+		return value / 3.154e+13;
+	}
+	/// Converts the supplied Microseconds value to Decades
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value / 3.154e+14;
+	}
+	/// Converts the supplied Microseconds value to Centuries
+	/// # Arguments
+	/// * `value` - The Microseconds input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 3.154e+15;
+	}
+}
+/// Milliseconds conversion functions
+pub mod milliseconds {
+	/// Converts the supplied Milliseconds value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 1e+6;
+	}
+	/// Converts the supplied Milliseconds value to Microseconds
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value * 1000.0;
+	}
+	/// Converts the supplied Milliseconds value to Seconds
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value / 1000.0;
+	}
+	/// Converts the supplied Milliseconds value to Minutes
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value / 60000.0;
+	}
+	/// Converts the supplied Milliseconds value to Hours
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value / 3.6e+6;
+	}
+	/// Converts the supplied Milliseconds value to Days
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_days(value: f64) -> f64 {
+		return value / 8.64e+7;
+	}
+	/// Converts the supplied Milliseconds value to Weeks
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value / 6.048e+8;
+	}
+	/// Converts the supplied Milliseconds value to Months
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_months(value: f64) -> f64 {
+		return value / 2629746000.0;
+	}
+	/// Converts the supplied Milliseconds value to Years
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_years(value: f64) -> f64 {
+		return value / 31556952000.0;
+	}
+	/// Converts the supplied Milliseconds value to Decades
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value / 3.154e+11;
+	}
+	/// Converts the supplied Milliseconds value to Centuries
+	/// # Arguments
+	/// * `value` - The Milliseconds input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 3.154e+12;
+	}
+}
 /// Minutes conversion functions
 pub mod minutes {
+	/// Converts the supplied Minutes value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 6e+10;
+	}
+	/// Converts the supplied Minutes value to Microseconds
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value * 6e+7;
+	}
+	/// Converts the supplied Minutes value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Minutes input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value * 60000.0;
+	}
 	/// Converts the supplied Minutes value to Seconds
 	/// # Arguments
 	/// * `value` - The Minutes input value
@@ -263,6 +491,24 @@ pub mod minutes {
 }
 /// Months conversion functions
 pub mod months {
+	/// Converts the supplied Months value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 2629746000000000.0;
+	}
+	/// Converts the supplied Months value to Microseconds
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value * 2629746000000.0;
+	}
+	/// Converts the supplied Months value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Months input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value * 2629746000.0;
+	}
 	/// Converts the supplied Months value to Seconds
 	/// # Arguments
 	/// * `value` - The Months input value
@@ -312,8 +558,95 @@ pub mod months {
 		return value / 1200.0;
 	}
 }
+/// Nanoseconds conversion functions
+pub mod nanoseconds {
+	/// Converts the supplied Nanoseconds value to Microseconds
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value / 1000.0;
+	}
+	/// Converts the supplied Nanoseconds value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value / 1e+6;
+	}
+	/// Converts the supplied Nanoseconds value to Seconds
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_seconds(value: f64) -> f64 {
+		return value / 1e+9;
+	}
+	/// Converts the supplied Nanoseconds value to Minutes
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_minutes(value: f64) -> f64 {
+		return value / 6e+10;
+	}
+	/// Converts the supplied Nanoseconds value to Hours
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_hours(value: f64) -> f64 {
+		return value / 3.6e+12;
+	}
+	/// Converts the supplied Nanoseconds value to Days
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_days(value: f64) -> f64 {
+		return value / 8.64e+13;
+	}
+	/// Converts the supplied Nanoseconds value to Weeks
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_weeks(value: f64) -> f64 {
+		return value / 6.048e+14;
+	}
+	/// Converts the supplied Nanoseconds value to Months
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_months(value: f64) -> f64 {
+		return value / 2629746000000000.0;
+	}
+	/// Converts the supplied Nanoseconds value to Years
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_years(value: f64) -> f64 {
+		return value / 3.154e+16;
+	}
+	/// Converts the supplied Nanoseconds value to Decades
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_decades(value: f64) -> f64 {
+		return value / 3.154e+17;
+	}
+	/// Converts the supplied Nanoseconds value to Centuries
+	/// # Arguments
+	/// * `value` - The Nanoseconds input value
+	pub fn to_centuries(value: f64) -> f64 {
+		return value / 3.154e+18;
+	}
+}
 /// Seconds conversion functions
 pub mod seconds {
+	/// Converts the supplied Seconds value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 1e+9;
+	}
+	/// Converts the supplied Seconds value to Microseconds
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value * 1e+6;
+	}
+	/// Converts the supplied Seconds value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Seconds input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value * 1000.0;
+	}
 	/// Converts the supplied Seconds value to Minutes
 	/// # Arguments
 	/// * `value` - The Seconds input value
@@ -365,6 +698,24 @@ pub mod seconds {
 }
 /// Weeks conversion functions
 pub mod weeks {
+	/// Converts the supplied Weeks value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 6.048e+14;
+	}
+	/// Converts the supplied Weeks value to Microseconds
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value * 6.048e+11;
+	}
+	/// Converts the supplied Weeks value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Weeks input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value * 6.048e+8;
+	}
 	/// Converts the supplied Weeks value to Seconds
 	/// # Arguments
 	/// * `value` - The Weeks input value
@@ -416,6 +767,24 @@ pub mod weeks {
 }
 /// Years conversion functions
 pub mod years {
+	/// Converts the supplied Years value to Nanoseconds
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_nanoseconds(value: f64) -> f64 {
+		return value * 3.154e+16;
+	}
+	/// Converts the supplied Years value to Microseconds
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_microseconds(value: f64) -> f64 {
+		return value * 3.154e+13;
+	}
+	/// Converts the supplied Years value to Milliseconds
+	/// # Arguments
+	/// * `value` - The Years input value
+	pub fn to_milliseconds(value: f64) -> f64 {
+		return value * 31556952000.0;
+	}
 	/// Converts the supplied Years value to Seconds
 	/// # Arguments
 	/// * `value` - The Years input value

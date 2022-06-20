@@ -12,6 +12,27 @@ mod tests {
 
 	/// Need to convert to parameterized tests
 	#[test]
+	fn it_convert_knowndays_to_milliseconds_1() {
+		let result: f64 = time::days::to_milliseconds(0.0009);
+		assert_approx_eq!(77760.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowndays_to_milliseconds_2() {
+		let result: f64 = time::days::to_milliseconds(0.03);
+		assert_approx_eq!(2592000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knowndays_to_milliseconds_3() {
+		let result: f64 = time::days::to_milliseconds(0.006);
+		assert_approx_eq!(518400.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
 	fn it_convert_knowndays_to_seconds_1() {
 		let result: f64 = time::days::to_seconds(1.4);
 		assert_approx_eq!(120960.0, result, 0.01);
@@ -134,6 +155,27 @@ mod tests {
 	fn it_convert_knowndays_to_years_3() {
 		let result: f64 = time::days::to_years(900.0);
 		assert_approx_eq!(2.46575, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhours_to_milliseconds_1() {
+		let result: f64 = time::hours::to_milliseconds(0.006);
+		assert_approx_eq!(21600.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhours_to_milliseconds_2() {
+		let result: f64 = time::hours::to_milliseconds(0.09);
+		assert_approx_eq!(324000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownhours_to_milliseconds_3() {
+		let result: f64 = time::hours::to_milliseconds(0.007);
+		assert_approx_eq!(25200.0, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
@@ -264,6 +306,174 @@ mod tests {
 
 	/// Need to convert to parameterized tests
 	#[test]
+	fn it_convert_knownmilliseconds_to_seconds_1() {
+		let result: f64 = time::milliseconds::to_seconds(8.0);
+		assert_approx_eq!(0.008, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_seconds_2() {
+		let result: f64 = time::milliseconds::to_seconds(780.0);
+		assert_approx_eq!(0.78, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_seconds_3() {
+		let result: f64 = time::milliseconds::to_seconds(900.0);
+		assert_approx_eq!(0.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_minutes_1() {
+		let result: f64 = time::milliseconds::to_minutes(900.0);
+		assert_approx_eq!(0.015, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_minutes_2() {
+		let result: f64 = time::milliseconds::to_minutes(67000.0);
+		assert_approx_eq!(1.1166667, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_minutes_3() {
+		let result: f64 = time::milliseconds::to_minutes(1234567.0);
+		assert_approx_eq!(20.57611667, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_hours_1() {
+		let result: f64 = time::milliseconds::to_hours(1234567.0);
+		assert_approx_eq!(0.3429352778, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_hours_2() {
+		let result: f64 = time::milliseconds::to_hours(100900.0);
+		assert_approx_eq!(0.0280277778, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_hours_3() {
+		let result: f64 = time::milliseconds::to_hours(46000.0);
+		assert_approx_eq!(0.012777778, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_days_1() {
+		let result: f64 = time::milliseconds::to_days(9000000.0);
+		assert_approx_eq!(0.1041666667, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_days_2() {
+		let result: f64 = time::milliseconds::to_days(123456789.0);
+		assert_approx_eq!(1.42889802083, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_days_3() {
+		let result: f64 = time::milliseconds::to_days(89008900.0);
+		assert_approx_eq!(1.0301956019, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_weeks_1() {
+		let result: f64 = time::milliseconds::to_weeks(89008900.0);
+		assert_approx_eq!(0.14717080026, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_weeks_2() {
+		let result: f64 = time::milliseconds::to_weeks(1234567890.0);
+		assert_approx_eq!(2.041282886905, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_weeks_3() {
+		let result: f64 = time::milliseconds::to_weeks(100200300.0);
+		assert_approx_eq!(0.165675099206, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_months_1() {
+		let result: f64 = time::milliseconds::to_months(100200300400.0);
+		assert_approx_eq!(38.102653412154631, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_months_2() {
+		let result: f64 = time::milliseconds::to_months(90001000.0);
+		assert_approx_eq!(0.034246918329, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_months_3() {
+		let result: f64 = time::milliseconds::to_months(8888888888.0);
+		assert_approx_eq!(3.382374104552, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_years_1() {
+		let result: f64 = time::milliseconds::to_years(8888888888.0);
+		assert_approx_eq!(0.28167767558793383, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_years_2() {
+		let result: f64 = time::milliseconds::to_years(123456789123.0);
+		assert_approx_eq!(3.9121899074093087, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmilliseconds_to_years_3() {
+		let result: f64 = time::milliseconds::to_years(900080007000.0);
+		assert_approx_eq!(28.522399977032002, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownminutes_to_milliseconds_1() {
+		let result: f64 = time::minutes::to_milliseconds(0.007);
+		assert_approx_eq!(420.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownminutes_to_milliseconds_2() {
+		let result: f64 = time::minutes::to_milliseconds(0.8);
+		assert_approx_eq!(48000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownminutes_to_milliseconds_3() {
+		let result: f64 = time::minutes::to_milliseconds(9.0);
+		assert_approx_eq!(540000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
 	fn it_convert_knownminutes_to_seconds_1() {
 		let result: f64 = time::minutes::to_seconds(90.0);
 		assert_approx_eq!(5400.0, result, 0.01);
@@ -386,6 +596,27 @@ mod tests {
 	fn it_convert_knownminutes_to_years_3() {
 		let result: f64 = time::minutes::to_years(610910.0);
 		assert_approx_eq!(1.16230974, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmonths_to_milliseconds_1() {
+		let result: f64 = time::months::to_milliseconds(0.00034);
+		assert_approx_eq!(894113.64, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmonths_to_milliseconds_2() {
+		let result: f64 = time::months::to_milliseconds(0.001);
+		assert_approx_eq!(2629746.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownmonths_to_milliseconds_3() {
+		let result: f64 = time::months::to_milliseconds(0.006);
+		assert_approx_eq!(15778476.0, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
@@ -516,6 +747,132 @@ mod tests {
 
 	/// Need to convert to parameterized tests
 	#[test]
+	fn it_convert_knownnanoseconds_to_microseconds_1() {
+		let result: f64 = time::nanoseconds::to_microseconds(1234.0);
+		assert_approx_eq!(1.234, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_microseconds_2() {
+		let result: f64 = time::nanoseconds::to_microseconds(90.9);
+		assert_approx_eq!(0.0909, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_microseconds_3() {
+		let result: f64 = time::nanoseconds::to_microseconds(70000.0);
+		assert_approx_eq!(70.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_milliseconds_1() {
+		let result: f64 = time::nanoseconds::to_milliseconds(70000.0);
+		assert_approx_eq!(0.07, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_milliseconds_2() {
+		let result: f64 = time::nanoseconds::to_milliseconds(123456.0);
+		assert_approx_eq!(0.123456, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_milliseconds_3() {
+		let result: f64 = time::nanoseconds::to_milliseconds(900900.0);
+		assert_approx_eq!(0.9009, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_seconds_1() {
+		let result: f64 = time::nanoseconds::to_seconds(900000000.0);
+		assert_approx_eq!(0.9, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_seconds_2() {
+		let result: f64 = time::nanoseconds::to_seconds(123456789.0);
+		assert_approx_eq!(0.123456789, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_seconds_3() {
+		let result: f64 = time::nanoseconds::to_seconds(800400700.0);
+		assert_approx_eq!(0.8004007, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_minutes_1() {
+		let result: f64 = time::nanoseconds::to_minutes(1234567890.0);
+		assert_approx_eq!(0.0205761315, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_minutes_2() {
+		let result: f64 = time::nanoseconds::to_minutes(800400700.0);
+		assert_approx_eq!(0.0133400116667, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_minutes_3() {
+		let result: f64 = time::nanoseconds::to_minutes(800100800.0);
+		assert_approx_eq!(0.0133350133333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_hours_1() {
+		let result: f64 = time::nanoseconds::to_hours(1234567890123.0);
+		assert_approx_eq!(0.3429355250341667, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_hours_2() {
+		let result: f64 = time::nanoseconds::to_hours(900800700600.0);
+		assert_approx_eq!(0.250222416833333, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownnanoseconds_to_hours_3() {
+		let result: f64 = time::nanoseconds::to_hours(66677788999.0);
+		assert_approx_eq!(0.018521608055278, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownseconds_to_milliseconds_1() {
+		let result: f64 = time::seconds::to_milliseconds(9.0);
+		assert_approx_eq!(9000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownseconds_to_milliseconds_2() {
+		let result: f64 = time::seconds::to_milliseconds(3.1);
+		assert_approx_eq!(3100.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownseconds_to_milliseconds_3() {
+		let result: f64 = time::seconds::to_milliseconds(0.9);
+		assert_approx_eq!(900.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
 	fn it_convert_knownseconds_to_minutes_1() {
 		let result: f64 = time::seconds::to_minutes(100.0);
 		assert_approx_eq!(1.66667, result, 0.01);
@@ -642,6 +999,27 @@ mod tests {
 
 	/// Need to convert to parameterized tests
 	#[test]
+	fn it_convert_knownweeks_to_milliseconds_1() {
+		let result: f64 = time::weeks::to_milliseconds(0.001);
+		assert_approx_eq!(604800.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownweeks_to_milliseconds_2() {
+		let result: f64 = time::weeks::to_milliseconds(0.005);
+		assert_approx_eq!(3024000.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownweeks_to_milliseconds_3() {
+		let result: f64 = time::weeks::to_milliseconds(0.0009);
+		assert_approx_eq!(544320.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
 	fn it_convert_knownweeks_to_seconds_1() {
 		let result: f64 = time::weeks::to_seconds(0.1);
 		assert_approx_eq!(60480.0, result, 0.01);
@@ -764,6 +1142,27 @@ mod tests {
 	fn it_convert_knownweeks_to_years_3() {
 		let result: f64 = time::weeks::to_years(1090.0);
 		assert_approx_eq!(20.90411, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyears_to_milliseconds_1() {
+		let result: f64 = time::years::to_milliseconds(0.001);
+		assert_approx_eq!(31556952.0, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyears_to_milliseconds_2() {
+		let result: f64 = time::years::to_milliseconds(0.0009);
+		assert_approx_eq!(28401256.8, result, 0.01);
+	}
+
+	/// Need to convert to parameterized tests
+	#[test]
+	fn it_convert_knownyears_to_milliseconds_3() {
+		let result: f64 = time::years::to_milliseconds(0.00034);
+		assert_approx_eq!(10729363.680000002, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
