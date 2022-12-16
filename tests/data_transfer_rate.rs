@@ -826,7 +826,7 @@ mod tests {
 	#[test]
 	fn it_convert_knownkibibits_per_second_to_tera_bytes_per_second_3() {
 		let result: f64 = data_transfer_rate::kibibits_per_second::to_tera_bytes_per_second(9000000.0);
-		assert_approx_eq!(0.009216, result, 0.01);
+		assert_approx_eq!(0.001152, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests

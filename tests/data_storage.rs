@@ -826,7 +826,7 @@ mod tests {
 	#[test]
 	fn it_convert_knownkibibits_to_terabytes_3() {
 		let result: f64 = data_storage::kibibits::to_terabytes(9000000.0);
-		assert_approx_eq!(0.009216, result, 0.01);
+		assert_approx_eq!(0.001152, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests

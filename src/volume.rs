@@ -6,6 +6,357 @@
 
 //! # Volume based converters
 
+/// Cubic Feet conversion functions
+pub mod cubic_feet {
+	/// Converts the supplied Cubic Feet value to Millilitres
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_millilitres(value: f64) -> f64 {
+		return value * 28316.8;
+	}
+	/// Converts the supplied Cubic Feet value to Litres
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_litres(value: f64) -> f64 {
+		return value * 28.3168;
+	}
+	/// Converts the supplied Cubic Feet value to Kilolitres
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_kilolitres(value: f64) -> f64 {
+		return value / 35.3147;
+	}
+	/// Converts the supplied Cubic Feet value to Teaspoons
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_teaspoons(value: f64) -> f64 {
+		return value * 4783.74;
+	}
+	/// Converts the supplied Cubic Feet value to Tablespoons
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_tablespoons(value: f64) -> f64 {
+		return value * 1594.58;
+	}
+	/// Converts the supplied Cubic Feet value to Quarts
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_quarts(value: f64) -> f64 {
+		return value * 24.9153;
+	}
+	/// Converts the supplied Cubic Feet value to Pints
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_pints(value: f64) -> f64 {
+		return value * 49.8307;
+	}
+	/// Converts the supplied Cubic Feet value to Gallons
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_gallons(value: f64) -> f64 {
+		return value * 6.22884;
+	}
+	/// Converts the supplied Cubic Feet value to Fluid Ounces
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_fluid_ounces(value: f64) -> f64 {
+		return value * 996.614;
+	}
+	/// Converts the supplied Cubic Feet value to US Teaspoons
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_u_s_teaspoons(value: f64) -> f64 {
+		return value * 5745.04;
+	}
+	/// Converts the supplied Cubic Feet value to US Tablespoons
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_u_s_tablespoons(value: f64) -> f64 {
+		return value * 1915.01;
+	}
+	/// Converts the supplied Cubic Feet value to US Quarts
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_u_s_quarts(value: f64) -> f64 {
+		return value * 29.9221;
+	}
+	/// Converts the supplied Cubic Feet value to US Pints
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_u_s_pints(value: f64) -> f64 {
+		return value * 59.8442;
+	}
+	/// Converts the supplied Cubic Feet value to US Gallons
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_u_s_gallons(value: f64) -> f64 {
+		return value * 7.48052;
+	}
+	/// Converts the supplied Cubic Feet value to US Fluid Ounces
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_u_s_fluid_ounces(value: f64) -> f64 {
+		return value * 957.506;
+	}
+	/// Converts the supplied Cubic Feet value to US Cups
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_u_s_cups(value: f64) -> f64 {
+		return value * 117.987;
+	}
+	/// Converts the supplied Cubic Feet value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 35.3147;
+	}
+	/// Converts the supplied Cubic Feet value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 1728.0;
+	}
+	/// Converts the supplied Cubic Feet value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Cubic Feet input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 5.61458;
+	}
+}
+/// Cubic Inches conversion functions
+pub mod cubic_inches {
+	/// Converts the supplied Cubic Inches value to Millilitres
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_millilitres(value: f64) -> f64 {
+		return value * 16.3871;
+	}
+	/// Converts the supplied Cubic Inches value to Litres
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_litres(value: f64) -> f64 {
+		return value / 61.0237;
+	}
+	/// Converts the supplied Cubic Inches value to Kilolitres
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_kilolitres(value: f64) -> f64 {
+		return value / 61023.7;
+	}
+	/// Converts the supplied Cubic Inches value to Teaspoons
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_teaspoons(value: f64) -> f64 {
+		return value * 2.76837;
+	}
+	/// Converts the supplied Cubic Inches value to Tablespoons
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_tablespoons(value: f64) -> f64 {
+		return value / 1.08367;
+	}
+	/// Converts the supplied Cubic Inches value to Quarts
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_quarts(value: f64) -> f64 {
+		return value / 69.3549;
+	}
+	/// Converts the supplied Cubic Inches value to Pints
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_pints(value: f64) -> f64 {
+		return value / 34.6774;
+	}
+	/// Converts the supplied Cubic Inches value to Gallons
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_gallons(value: f64) -> f64 {
+		return value / 277.419;
+	}
+	/// Converts the supplied Cubic Inches value to Fluid Ounces
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_fluid_ounces(value: f64) -> f64 {
+		return value / 1.73387;
+	}
+	/// Converts the supplied Cubic Inches value to US Teaspoons
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_u_s_teaspoons(value: f64) -> f64 {
+		return value * 3.32468;
+	}
+	/// Converts the supplied Cubic Inches value to US Tablespoons
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_u_s_tablespoons(value: f64) -> f64 {
+		return value * 1.10823;
+	}
+	/// Converts the supplied Cubic Inches value to US Quarts
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_u_s_quarts(value: f64) -> f64 {
+		return value / 57.75;
+	}
+	/// Converts the supplied Cubic Inches value to US Pints
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_u_s_pints(value: f64) -> f64 {
+		return value / 28.875;
+	}
+	/// Converts the supplied Cubic Inches value to US Gallons
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_u_s_gallons(value: f64) -> f64 {
+		return value / 231.0;
+	}
+	/// Converts the supplied Cubic Inches value to US Fluid Ounces
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_u_s_fluid_ounces(value: f64) -> f64 {
+		return value / 1.80469;
+	}
+	/// Converts the supplied Cubic Inches value to US Cups
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_u_s_cups(value: f64) -> f64 {
+		return value / 14.6457;
+	}
+	/// Converts the supplied Cubic Inches value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 61023.7;
+	}
+	/// Converts the supplied Cubic Inches value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 1728.0;
+	}
+	/// Converts the supplied Cubic Inches value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Cubic Inches input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 9702.0;
+	}
+}
+/// Cubic Metres conversion functions
+pub mod cubic_metres {
+	/// Converts the supplied Cubic Metres value to Millilitres
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_millilitres(value: f64) -> f64 {
+		return value * 1000000.0;
+	}
+	/// Converts the supplied Cubic Metres value to Litres
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_litres(value: f64) -> f64 {
+		return value * 1000.0;
+	}
+	/// Converts the supplied Cubic Metres value to Kilolitres
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_kilolitres(value: f64) -> f64 {
+		return value * 1.0;
+	}
+	/// Converts the supplied Cubic Metres value to Teaspoons
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_teaspoons(value: f64) -> f64 {
+		return value * 168936.0;
+	}
+	/// Converts the supplied Cubic Metres value to Tablespoons
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_tablespoons(value: f64) -> f64 {
+		return value * 56312.1;
+	}
+	/// Converts the supplied Cubic Metres value to Quarts
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_quarts(value: f64) -> f64 {
+		return value * 879.877;
+	}
+	/// Converts the supplied Cubic Metres value to Pints
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_pints(value: f64) -> f64 {
+		return value * 1759.75;
+	}
+	/// Converts the supplied Cubic Metres value to Gallons
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_gallons(value: f64) -> f64 {
+		return value * 219.969;
+	}
+	/// Converts the supplied Cubic Metres value to Fluid Ounces
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_fluid_ounces(value: f64) -> f64 {
+		return value * 35195.1;
+	}
+	/// Converts the supplied Cubic Metres value to US Teaspoons
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_u_s_teaspoons(value: f64) -> f64 {
+		return value * 202884.0;
+	}
+	/// Converts the supplied Cubic Metres value to US Tablespoons
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_u_s_tablespoons(value: f64) -> f64 {
+		return value * 67628.0;
+	}
+	/// Converts the supplied Cubic Metres value to US Quarts
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_u_s_quarts(value: f64) -> f64 {
+		return value * 1056.69;
+	}
+	/// Converts the supplied Cubic Metres value to US Pints
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_u_s_pints(value: f64) -> f64 {
+		return value * 2113.38;
+	}
+	/// Converts the supplied Cubic Metres value to US Gallons
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_u_s_gallons(value: f64) -> f64 {
+		return value * 264.172;
+	}
+	/// Converts the supplied Cubic Metres value to US Fluid Ounces
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_u_s_fluid_ounces(value: f64) -> f64 {
+		return value * 33814.0;
+	}
+	/// Converts the supplied Cubic Metres value to US Cups
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_u_s_cups(value: f64) -> f64 {
+		return value * 4166.67;
+	}
+	/// Converts the supplied Cubic Metres value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value * 35.3147;
+	}
+	/// Converts the supplied Cubic Metres value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 61023.7;
+	}
+	/// Converts the supplied Cubic Metres value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Cubic Metres input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value * 6.28981;
+	}
+}
 /// Fluid Ounces conversion functions
 pub mod fluid_ounces {
 	/// Converts the supplied Fluid Ounces value to Millilitres
@@ -97,6 +448,30 @@ pub mod fluid_ounces {
 	/// * `value` - The Fluid Ounces input value
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 8.3267384046639071232;
+	}
+	/// Converts the supplied Fluid Ounces value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Fluid Ounces input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 35195.1;
+	}
+	/// Converts the supplied Fluid Ounces value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Fluid Ounces input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 996.614;
+	}
+	/// Converts the supplied Fluid Ounces value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Fluid Ounces input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 1.73387;
+	}
+	/// Converts the supplied Fluid Ounces value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Fluid Ounces input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 5595.57;
 	}
 }
 /// Gallons conversion functions
@@ -191,6 +566,30 @@ pub mod gallons {
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 0.052042115029149417472;
 	}
+	/// Converts the supplied Gallons value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Gallons input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 219.969;
+	}
+	/// Converts the supplied Gallons value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Gallons input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 6.22884;
+	}
+	/// Converts the supplied Gallons value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Gallons input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 277.419;
+	}
+	/// Converts the supplied Gallons value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Gallons input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 34.9723;
+	}
 }
 /// Kilolitres conversion functions
 pub mod kilolitres {
@@ -283,6 +682,30 @@ pub mod kilolitres {
 	/// * `value` - The Kilolitres input value
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 0.000236588236499999989;
+	}
+	/// Converts the supplied Kilolitres value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Kilolitres input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value * 1.0;
+	}
+	/// Converts the supplied Kilolitres value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Kilolitres input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value * 35.3147;
+	}
+	/// Converts the supplied Kilolitres value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Kilolitres input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 61023.7;
+	}
+	/// Converts the supplied Kilolitres value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Kilolitres input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value * 6.28981;
 	}
 }
 /// Litres conversion functions
@@ -377,6 +800,30 @@ pub mod litres {
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 0.23658823649999998976;
 	}
+	/// Converts the supplied Litres value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Litres input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 1000.0;
+	}
+	/// Converts the supplied Litres value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Litres input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 28.3168;
+	}
+	/// Converts the supplied Litres value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Litres input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 61.0237;
+	}
+	/// Converts the supplied Litres value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Litres input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 158.987;
+	}
 }
 /// Millilitres conversion functions
 pub mod millilitres {
@@ -469,6 +916,147 @@ pub mod millilitres {
 	/// * `value` - The Millilitres input value
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 236.58823649999998976;
+	}
+	/// Converts the supplied Millilitres value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Millilitres input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 1000000.0;
+	}
+	/// Converts the supplied Millilitres value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Millilitres input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 28316.8;
+	}
+	/// Converts the supplied Millilitres value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Millilitres input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value / 16.3871;
+	}
+	/// Converts the supplied Millilitres value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Millilitres input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 158987.0;
+	}
+}
+/// Oil Barrels conversion functions
+pub mod oil_barrels {
+	/// Converts the supplied Oil Barrels value to Millilitres
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_millilitres(value: f64) -> f64 {
+		return value * 158987.0;
+	}
+	/// Converts the supplied Oil Barrels value to Litres
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_litres(value: f64) -> f64 {
+		return value * 158.987;
+	}
+	/// Converts the supplied Oil Barrels value to Kilolitres
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_kilolitres(value: f64) -> f64 {
+		return value / 6.28981;
+	}
+	/// Converts the supplied Oil Barrels value to Teaspoons
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_teaspoons(value: f64) -> f64 {
+		return value * 26858.7;
+	}
+	/// Converts the supplied Oil Barrels value to Tablespoons
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_tablespoons(value: f64) -> f64 {
+		return value * 8952.91;
+	}
+	/// Converts the supplied Oil Barrels value to Quarts
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_quarts(value: f64) -> f64 {
+		return value * 139.889;
+	}
+	/// Converts the supplied Oil Barrels value to Pints
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_pints(value: f64) -> f64 {
+		return value * 279.779;
+	}
+	/// Converts the supplied Oil Barrels value to Gallons
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_gallons(value: f64) -> f64 {
+		return value * 34.9723;
+	}
+	/// Converts the supplied Oil Barrels value to Fluid Ounces
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_fluid_ounces(value: f64) -> f64 {
+		return value * 5595.57;
+	}
+	/// Converts the supplied Oil Barrels value to US Teaspoons
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_u_s_teaspoons(value: f64) -> f64 {
+		return value * 32256.0;
+	}
+	/// Converts the supplied Oil Barrels value to US Tablespoons
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_u_s_tablespoons(value: f64) -> f64 {
+		return value * 10752.0;
+	}
+	/// Converts the supplied Oil Barrels value to US Quarts
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_u_s_quarts(value: f64) -> f64 {
+		return value * 168.0;
+	}
+	/// Converts the supplied Oil Barrels value to US Pints
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_u_s_pints(value: f64) -> f64 {
+		return value * 336.0;
+	}
+	/// Converts the supplied Oil Barrels value to US Gallons
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_u_s_gallons(value: f64) -> f64 {
+		return value * 42.0;
+	}
+	/// Converts the supplied Oil Barrels value to US Fluid Ounces
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_u_s_fluid_ounces(value: f64) -> f64 {
+		return value * 5376.0;
+	}
+	/// Converts the supplied Oil Barrels value to US Cups
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_u_s_cups(value: f64) -> f64 {
+		return value * 662.447;
+	}
+	/// Converts the supplied Oil Barrels value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 6.28981;
+	}
+	/// Converts the supplied Oil Barrels value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value * 5.61458;
+	}
+	/// Converts the supplied Oil Barrels value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Oil Barrels input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 9702.0;
 	}
 }
 /// Pints conversion functions
@@ -563,6 +1151,30 @@ pub mod pints {
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 0.41633692023319535616;
 	}
+	/// Converts the supplied Pints value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Pints input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 1759.75;
+	}
+	/// Converts the supplied Pints value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Pints input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 49.8307;
+	}
+	/// Converts the supplied Pints value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Pints input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 34.6774;
+	}
+	/// Converts the supplied Pints value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Pints input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 279.779;
+	}
 }
 /// Quarts conversion functions
 pub mod quarts {
@@ -655,6 +1267,30 @@ pub mod quarts {
 	/// * `value` - The Quarts input value
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 0.20816846011659767808;
+	}
+	/// Converts the supplied Quarts value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Quarts input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 879.877;
+	}
+	/// Converts the supplied Quarts value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Quarts input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 24.9153;
+	}
+	/// Converts the supplied Quarts value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Quarts input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 69.3549;
+	}
+	/// Converts the supplied Quarts value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Quarts input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 139.889;
 	}
 }
 /// Tablespoons conversion functions
@@ -749,6 +1385,30 @@ pub mod tablespoons {
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 13.322781447462250496;
 	}
+	/// Converts the supplied Tablespoons value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Tablespoons input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 56312.1;
+	}
+	/// Converts the supplied Tablespoons value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Tablespoons input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 1594.58;
+	}
+	/// Converts the supplied Tablespoons value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Tablespoons input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 1.08367;
+	}
+	/// Converts the supplied Tablespoons value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Tablespoons input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 8952.91;
+	}
 }
 /// Teaspoons conversion functions
 pub mod teaspoons {
@@ -841,6 +1501,30 @@ pub mod teaspoons {
 	/// * `value` - The Teaspoons input value
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 39.968344342386753536;
+	}
+	/// Converts the supplied Teaspoons value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The Teaspoons input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 168936.0;
+	}
+	/// Converts the supplied Teaspoons value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The Teaspoons input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 4783.74;
+	}
+	/// Converts the supplied Teaspoons value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The Teaspoons input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value / 2.76837;
+	}
+	/// Converts the supplied Teaspoons value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The Teaspoons input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 26858.7;
 	}
 }
 /// US Cups conversion functions
@@ -935,6 +1619,30 @@ pub mod u_s_cups {
 	pub fn to_u_s_fluid_ounces(value: f64) -> f64 {
 		return value * 8.0;
 	}
+	/// Converts the supplied US Cups value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The US Cups input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 4166.67;
+	}
+	/// Converts the supplied US Cups value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The US Cups input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 117.987;
+	}
+	/// Converts the supplied US Cups value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The US Cups input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 14.6457;
+	}
+	/// Converts the supplied US Cups value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The US Cups input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 662.447;
+	}
 }
 /// US Fluid Ounces conversion functions
 pub mod u_s_fluid_ounces {
@@ -1027,6 +1735,30 @@ pub mod u_s_fluid_ounces {
 	/// * `value` - The US Fluid Ounces input value
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 8.0;
+	}
+	/// Converts the supplied US Fluid Ounces value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The US Fluid Ounces input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 33814.0;
+	}
+	/// Converts the supplied US Fluid Ounces value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The US Fluid Ounces input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 957.506;
+	}
+	/// Converts the supplied US Fluid Ounces value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The US Fluid Ounces input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 1.80469;
+	}
+	/// Converts the supplied US Fluid Ounces value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The US Fluid Ounces input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 5376.0;
 	}
 }
 /// US Gallons conversion functions
@@ -1121,6 +1853,30 @@ pub mod u_s_gallons {
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value * 16.0;
 	}
+	/// Converts the supplied US Gallons value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The US Gallons input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 264.172;
+	}
+	/// Converts the supplied US Gallons value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The US Gallons input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 7.48052;
+	}
+	/// Converts the supplied US Gallons value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The US Gallons input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 231.0;
+	}
+	/// Converts the supplied US Gallons value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The US Gallons input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 42.0;
+	}
 }
 /// US Pints conversion functions
 pub mod u_s_pints {
@@ -1213,6 +1969,30 @@ pub mod u_s_pints {
 	/// * `value` - The US Pints input value
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value * 2.0;
+	}
+	/// Converts the supplied US Pints value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The US Pints input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 2113.38;
+	}
+	/// Converts the supplied US Pints value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The US Pints input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 59.8442;
+	}
+	/// Converts the supplied US Pints value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The US Pints input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 28.875;
+	}
+	/// Converts the supplied US Pints value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The US Pints input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 336.0;
 	}
 }
 /// US Quarts conversion functions
@@ -1307,6 +2087,30 @@ pub mod u_s_quarts {
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value * 4.0;
 	}
+	/// Converts the supplied US Quarts value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The US Quarts input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 1056.69;
+	}
+	/// Converts the supplied US Quarts value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The US Quarts input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 29.9221;
+	}
+	/// Converts the supplied US Quarts value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The US Quarts input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value * 57.75;
+	}
+	/// Converts the supplied US Quarts value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The US Quarts input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 168.0;
+	}
 }
 /// US Tablespoons conversion functions
 pub mod u_s_tablespoons {
@@ -1400,6 +2204,30 @@ pub mod u_s_tablespoons {
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 16.0;
 	}
+	/// Converts the supplied US Tablespoons value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The US Tablespoons input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 67628.0;
+	}
+	/// Converts the supplied US Tablespoons value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The US Tablespoons input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 1915.01;
+	}
+	/// Converts the supplied US Tablespoons value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The US Tablespoons input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value / 1.10823;
+	}
+	/// Converts the supplied US Tablespoons value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The US Tablespoons input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 10752.0;
+	}
 }
 /// US Teaspoons conversion functions
 pub mod u_s_teaspoons {
@@ -1492,5 +2320,29 @@ pub mod u_s_teaspoons {
 	/// * `value` - The US Teaspoons input value
 	pub fn to_u_s_cups(value: f64) -> f64 {
 		return value / 48.0;
+	}
+	/// Converts the supplied US Teaspoons value to Cubic Metres
+	/// # Arguments
+	/// * `value` - The US Teaspoons input value
+	pub fn to_cubic_metres(value: f64) -> f64 {
+		return value / 202884.0;
+	}
+	/// Converts the supplied US Teaspoons value to Cubic Feet
+	/// # Arguments
+	/// * `value` - The US Teaspoons input value
+	pub fn to_cubic_feet(value: f64) -> f64 {
+		return value / 5745.04;
+	}
+	/// Converts the supplied US Teaspoons value to Cubic Inches
+	/// # Arguments
+	/// * `value` - The US Teaspoons input value
+	pub fn to_cubic_inches(value: f64) -> f64 {
+		return value / 3.32468;
+	}
+	/// Converts the supplied US Teaspoons value to Oil Barrels
+	/// # Arguments
+	/// * `value` - The US Teaspoons input value
+	pub fn to_oil_barrels(value: f64) -> f64 {
+		return value / 32256.0;
 	}
 }
