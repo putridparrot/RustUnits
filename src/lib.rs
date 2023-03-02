@@ -19,3 +19,4 @@ pub mod speed;
 pub mod temperature;
 pub mod time;
 pub mod volume;
+pub mod power;
