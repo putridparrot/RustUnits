@@ -75,22 +75,22 @@ mod tests {
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knowncelsius_to_réaumur_1() {
-		let result: f64 = temperature::celsius::to_réaumur(123.0);
+	fn it_convert_knowncelsius_to_reaumur_1() {
+		let result: f64 = temperature::celsius::to_reaumur(123.0);
 		assert_approx_eq!(98.4, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knowncelsius_to_réaumur_2() {
-		let result: f64 = temperature::celsius::to_réaumur(15.67);
+	fn it_convert_knowncelsius_to_reaumur_2() {
+		let result: f64 = temperature::celsius::to_reaumur(15.67);
 		assert_approx_eq!(12.536, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knowncelsius_to_réaumur_3() {
-		let result: f64 = temperature::celsius::to_réaumur(87.0);
+	fn it_convert_knowncelsius_to_reaumur_3() {
+		let result: f64 = temperature::celsius::to_reaumur(87.0);
 		assert_approx_eq!(69.6, result, 0.01);
 	}
 
@@ -159,22 +159,22 @@ mod tests {
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownfahrenheit_to_réaumur_1() {
-		let result: f64 = temperature::fahrenheit::to_réaumur(67.0);
+	fn it_convert_knownfahrenheit_to_reaumur_1() {
+		let result: f64 = temperature::fahrenheit::to_reaumur(67.0);
 		assert_approx_eq!(15.555555556, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownfahrenheit_to_réaumur_2() {
-		let result: f64 = temperature::fahrenheit::to_réaumur(1.6);
+	fn it_convert_knownfahrenheit_to_reaumur_2() {
+		let result: f64 = temperature::fahrenheit::to_reaumur(1.6);
 		assert_approx_eq!(-13.511111111, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownfahrenheit_to_réaumur_3() {
-		let result: f64 = temperature::fahrenheit::to_réaumur(900.0);
+	fn it_convert_knownfahrenheit_to_reaumur_3() {
+		let result: f64 = temperature::fahrenheit::to_reaumur(900.0);
 		assert_approx_eq!(385.77777778, result, 0.01);
 	}
 
@@ -243,22 +243,22 @@ mod tests {
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownkelvin_to_réaumur_1() {
-		let result: f64 = temperature::kelvin::to_réaumur(900.0);
+	fn it_convert_knownkelvin_to_reaumur_1() {
+		let result: f64 = temperature::kelvin::to_reaumur(900.0);
 		assert_approx_eq!(501.48, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownkelvin_to_réaumur_2() {
-		let result: f64 = temperature::kelvin::to_réaumur(1.3);
+	fn it_convert_knownkelvin_to_reaumur_2() {
+		let result: f64 = temperature::kelvin::to_reaumur(1.3);
 		assert_approx_eq!(-217.48, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownkelvin_to_réaumur_3() {
-		let result: f64 = temperature::kelvin::to_réaumur(60.0);
+	fn it_convert_knownkelvin_to_reaumur_3() {
+		let result: f64 = temperature::kelvin::to_reaumur(60.0);
 		assert_approx_eq!(-170.52, result, 0.01);
 	}
 
@@ -327,106 +327,106 @@ mod tests {
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownrankine_to_réaumur_1() {
-		let result: f64 = temperature::rankine::to_réaumur(900.0);
+	fn it_convert_knownrankine_to_reaumur_1() {
+		let result: f64 = temperature::rankine::to_reaumur(900.0);
 		assert_approx_eq!(181.48, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownrankine_to_réaumur_2() {
-		let result: f64 = temperature::rankine::to_réaumur(34.9);
+	fn it_convert_knownrankine_to_reaumur_2() {
+		let result: f64 = temperature::rankine::to_reaumur(34.9);
 		assert_approx_eq!(-203.00888889, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownrankine_to_réaumur_3() {
-		let result: f64 = temperature::rankine::to_réaumur(0.7);
+	fn it_convert_knownrankine_to_reaumur_3() {
+		let result: f64 = temperature::rankine::to_reaumur(0.7);
 		assert_approx_eq!(-218.20888889, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_kelvin_1() {
-		let result: f64 = temperature::réaumur::to_kelvin(128.0);
+	fn it_convert_knownreaumur_to_kelvin_1() {
+		let result: f64 = temperature::reaumur::to_kelvin(128.0);
 		assert_approx_eq!(433.15, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_kelvin_2() {
-		let result: f64 = temperature::réaumur::to_kelvin(7.4);
+	fn it_convert_knownreaumur_to_kelvin_2() {
+		let result: f64 = temperature::reaumur::to_kelvin(7.4);
 		assert_approx_eq!(282.4, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_kelvin_3() {
-		let result: f64 = temperature::réaumur::to_kelvin(1.5);
+	fn it_convert_knownreaumur_to_kelvin_3() {
+		let result: f64 = temperature::reaumur::to_kelvin(1.5);
 		assert_approx_eq!(275.025, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_celsius_1() {
-		let result: f64 = temperature::réaumur::to_celsius(1.5);
+	fn it_convert_knownreaumur_to_celsius_1() {
+		let result: f64 = temperature::reaumur::to_celsius(1.5);
 		assert_approx_eq!(1.875, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_celsius_2() {
-		let result: f64 = temperature::réaumur::to_celsius(23.9);
+	fn it_convert_knownreaumur_to_celsius_2() {
+		let result: f64 = temperature::reaumur::to_celsius(23.9);
 		assert_approx_eq!(29.875, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_celsius_3() {
-		let result: f64 = temperature::réaumur::to_celsius(0.3);
+	fn it_convert_knownreaumur_to_celsius_3() {
+		let result: f64 = temperature::reaumur::to_celsius(0.3);
 		assert_approx_eq!(0.375, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_fahrenheit_1() {
-		let result: f64 = temperature::réaumur::to_fahrenheit(0.3);
+	fn it_convert_knownreaumur_to_fahrenheit_1() {
+		let result: f64 = temperature::reaumur::to_fahrenheit(0.3);
 		assert_approx_eq!(32.675, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_fahrenheit_2() {
-		let result: f64 = temperature::réaumur::to_fahrenheit(87.0);
+	fn it_convert_knownreaumur_to_fahrenheit_2() {
+		let result: f64 = temperature::reaumur::to_fahrenheit(87.0);
 		assert_approx_eq!(227.75, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_fahrenheit_3() {
-		let result: f64 = temperature::réaumur::to_fahrenheit(34.1);
+	fn it_convert_knownreaumur_to_fahrenheit_3() {
+		let result: f64 = temperature::reaumur::to_fahrenheit(34.1);
 		assert_approx_eq!(108.725, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_rankine_1() {
-		let result: f64 = temperature::réaumur::to_rankine(34.1);
+	fn it_convert_knownreaumur_to_rankine_1() {
+		let result: f64 = temperature::reaumur::to_rankine(34.1);
 		assert_approx_eq!(568.395, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_rankine_2() {
-		let result: f64 = temperature::réaumur::to_rankine(10.6);
+	fn it_convert_knownreaumur_to_rankine_2() {
+		let result: f64 = temperature::reaumur::to_rankine(10.6);
 		assert_approx_eq!(515.52, result, 0.01);
 	}
 
 	/// Need to convert to parameterized tests
 	#[test]
-	fn it_convert_knownréaumur_to_rankine_3() {
-		let result: f64 = temperature::réaumur::to_rankine(1.9);
+	fn it_convert_knownreaumur_to_rankine_3() {
+		let result: f64 = temperature::reaumur::to_rankine(1.9);
 		assert_approx_eq!(495.945, result, 0.01);
 	}
 

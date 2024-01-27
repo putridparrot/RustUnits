@@ -26,10 +26,10 @@ pub mod celsius {
 	pub fn to_rankine(value: f64) -> f64 {
 		return value * 9.0/5.0 + 491.67;
 	}
-	/// Converts the supplied Celsius value to Réaumur
+	/// Converts the supplied Celsius value to Reaumur
 	/// # Arguments
 	/// * `value` - The Celsius input value
-	pub fn to_réaumur(value: f64) -> f64 {
+	pub fn to_reaumur(value: f64) -> f64 {
 		return value / 1.25;
 	}
 }
@@ -53,10 +53,10 @@ pub mod fahrenheit {
 	pub fn to_rankine(value: f64) -> f64 {
 		return value + 459.67;
 	}
-	/// Converts the supplied Fahrenheit value to Réaumur
+	/// Converts the supplied Fahrenheit value to Reaumur
 	/// # Arguments
 	/// * `value` - The Fahrenheit input value
-	pub fn to_réaumur(value: f64) -> f64 {
+	pub fn to_reaumur(value: f64) -> f64 {
 		return (value - 32.0) / 2.25;
 	}
 }
@@ -80,10 +80,10 @@ pub mod kelvin {
 	pub fn to_rankine(value: f64) -> f64 {
 		return value * 1.8;
 	}
-	/// Converts the supplied Kelvin value to Réaumur
+	/// Converts the supplied Kelvin value to Reaumur
 	/// # Arguments
 	/// * `value` - The Kelvin input value
-	pub fn to_réaumur(value: f64) -> f64 {
+	pub fn to_reaumur(value: f64) -> f64 {
 		return (value - 273.15) / 1.25;
 	}
 }
@@ -107,36 +107,36 @@ pub mod rankine {
 	pub fn to_kelvin(value: f64) -> f64 {
 		return value / 1.8;
 	}
-	/// Converts the supplied Rankine value to Réaumur
+	/// Converts the supplied Rankine value to Reaumur
 	/// # Arguments
 	/// * `value` - The Rankine input value
-	pub fn to_réaumur(value: f64) -> f64 {
+	pub fn to_reaumur(value: f64) -> f64 {
 		return (value - 491.67) / 2.25;
 	}
 }
-/// Réaumur conversion functions
-pub mod réaumur {
-	/// Converts the supplied Réaumur value to Kelvin
+/// Reaumur conversion functions
+pub mod reaumur {
+	/// Converts the supplied Reaumur value to Kelvin
 	/// # Arguments
-	/// * `value` - The Réaumur input value
+	/// * `value` - The Reaumur input value
 	pub fn to_kelvin(value: f64) -> f64 {
 		return value * 1.25 + 273.15;
 	}
-	/// Converts the supplied Réaumur value to Celsius
+	/// Converts the supplied Reaumur value to Celsius
 	/// # Arguments
-	/// * `value` - The Réaumur input value
+	/// * `value` - The Reaumur input value
 	pub fn to_celsius(value: f64) -> f64 {
 		return value * 1.25;
 	}
-	/// Converts the supplied Réaumur value to Fahrenheit
+	/// Converts the supplied Reaumur value to Fahrenheit
 	/// # Arguments
-	/// * `value` - The Réaumur input value
+	/// * `value` - The Reaumur input value
 	pub fn to_fahrenheit(value: f64) -> f64 {
 		return value * 2.25 + 32.0;
 	}
-	/// Converts the supplied Réaumur value to Rankine
+	/// Converts the supplied Reaumur value to Rankine
 	/// # Arguments
-	/// * `value` - The Réaumur input value
+	/// * `value` - The Reaumur input value
 	pub fn to_rankine(value: f64) -> f64 {
 		return value * 2.25 + 491.67;
 	}
