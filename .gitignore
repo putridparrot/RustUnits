@@ -11,3 +11,5 @@ Cargo.lock
 
 /example/target
 /example/.idea
+/example
+/.idea
