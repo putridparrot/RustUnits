@@ -179,6 +179,7 @@ Each unit of measure then includes functions to convert to each for example, con
 	* Fahrenheit (F)
 	* Kelvin (K)
 	* Rankine (R)
+	* Réaumur (r)
 
 ### Time
 
